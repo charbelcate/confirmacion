@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Camino a la Confirmación</title>
+  <meta name="theme-color" content="#1F4E79" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+  <link rel="icon" href="/icons/icon-192.png" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div id="splash" class="splash">
+    <img src="/icons/portada-itinerario-fe.jpg" alt="Itinerario de fe, para jóvenes de Confirmación" class="splash-img" />
+    <div class="splash-overlay">
+      <h1 class="splash-titulo">Itinerario de fe</h1>
+      <p class="splash-subtitulo">para jóvenes de Confirmación</p>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <img src="/icons/san-charbel-header.png" alt="San Charbel" class="topbar-logo" />
+      <span class="topbar-title" id="topbar-title">Camino a la Confirmación</span>
+      <button id="btn-back" class="btn-icon" hidden aria-label="Volver">←</button>
+    </div>
+  </header>
+
+  <main id="app" class="app"></main>
+
+  <template id="tpl-login">
+    <section class="pantalla pantalla-login">
+      <h1>Camino a la Confirmación</h1>
+      <p class="subtitulo">Formación y reforzamiento catequético</p>
+      <p class="instruccion">Escribe tu código de catequesis para comenzar:</p>
+      <input id="input-codigo" type="text" placeholder="Ej: LUCIA-G3" autocomplete="off" />
+      <button id="btn-entrar" class="btn-primario">Entrar</button>
+      <p class="nota">Tu catequista te dio este código. No necesitas correo ni contraseña.</p>
+      <p class="enlace-catequista"><a href="#/catequista" id="link-catequista">¿Eres catequista? Entra aquí para ver el avance del grupo</a></p>
+    </section>
+  </template>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

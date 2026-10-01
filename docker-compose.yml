@@ -1,0 +1,18 @@
+services:
+  confirmacion-pwa:
+    build: .
+    container_name: confirmacion-pwa
+    restart: always
+    ports:
+      - "5000:5000"
+    volumes:
+      # Volumen 1: Persiste el código del backend aislando las rutas internas
+      - backend_data:/app/backend
+      # Volumen 2: Mantiene a salvo tu base de datos SQLite de forma independiente
+      - sqlite_data:/app/backend/db_persistent
+    environment:
+      - HF_HOME=/app/backend/.cache/huggingface
+      - PYTHONUNBUFFERED=1
+volumes:
+  backend_data:
+  sqlite_data:

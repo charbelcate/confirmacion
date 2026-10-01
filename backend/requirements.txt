@@ -1,0 +1,28 @@
+Flask==3.0.3
+gunicorn==22.0.0
+
+# --- Similitud semántica para respuestas abiertas (opcional) ---
+# Ver nlp_eval.py: si estas dos líneas no se instalan (o el modelo no se
+# puede descargar), la app sigue funcionando normalmente, solo que las
+# respuestas abiertas se evalúan únicamente con "palabras_esperadas"
+# (ver README, sección "Filtro de respuestas abiertas").
+#
+# IMPORTANTE: pip instala por defecto la versión de "torch" con soporte
+# CUDA (para GPU), que pesa varios GB de más y no sirve de nada en un
+# servidor sin GPU. La línea "--extra-index-url" de abajo hace que pip
+# instale en su lugar la versión CPU-only de torch (mucho más liviana),
+# que es lo que necesita este proyecto. Si tu servidor sí tiene GPU y
+# quieres aprovecharla, quita esa línea y la versión "+cpu" de torch, y
+# deja que pip instale su versión normal.
+#
+# La versión de "torch" fijada abajo debe existir como build "+cpu" para
+# TU versión de Python (pip la busca por su propio índice, no por PyPI).
+# Si el instalador dice "No matching distribution found for torch==X+cpu",
+# es que tu Python es más nuevo (o más viejo) que lo que esa versión de
+# torch soporta: corre
+#   pip index versions torch --extra-index-url https://download.pytorch.org/whl/cpu
+# para ver qué versiones "+cpu" existen para tu Python, y cambia el
+# número de abajo por la más reciente estable de esa lista.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.9.1+cpu
+sentence-transformers==3.1.1

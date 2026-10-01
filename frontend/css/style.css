@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap');
+
+:root {
+  --azul: #1F4E79;
+  --azul-claro: #2E5F8A;
+  --dorado: #C9972A;
+  --dorado-claro: #F3E3B7;
+  --crema: #F7F3E9;
+  --verde: #2E7D4F;
+  --rojo: #B4433A;
+  --gris: #6B6B6B;
+  --radio: 14px;
+  font-size: 16px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--crema);
+  color: #26261f;
+}
+
+.topbar {
+  position: sticky; top: 0; z-index: 10;
+  background: var(--azul);
+  color: white;
+  padding: env(safe-area-inset-top) 0 0 0;
+}
+.topbar-inner {
+  display: flex; align-items: center; gap: 10px;
+  padding: 14px 16px;
+  max-width: 640px; margin: 0 auto;
+}
+.topbar-title { font-weight: 700; font-size: 1.05rem; flex: 1; }
+.topbar-logo {
+  width: 34px; height: 34px; object-fit: contain; border-radius: 999px;
+  background: white; padding: 2px; flex-shrink: 0;
+}
+.btn-icon {
+  background: rgba(255,255,255,0.15); border: none; color: white;
+  width: 36px; height: 36px; border-radius: 999px; font-size: 1.1rem; cursor: pointer;
+}
+
+/* -------------------------------------------------------- splash inicial -- */
+/* Portada "Itinerario de fe", visible ~2 segundos al abrir la app (ver
+   app.js) y luego se oculta sola para continuar de inmediato. La foto
+   cubre toda la pantalla y el título va superpuesto abajo, sobre un
+   degradado oscuro que asegura buen contraste con cualquier imagen. */
+.splash {
+  position: fixed; inset: 0; z-index: 100;
+  display: flex; align-items: flex-end; justify-content: center;
+  background: var(--azul);
+  transition: opacity 0.4s ease;
+  overflow: hidden;
+}
+.splash.splash-oculto { opacity: 0; pointer-events: none; }
+.splash-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+}
+.splash-overlay {
+  position: relative; z-index: 1;
+  width: 100%;
+  padding: 40px 24px calc(56px + env(safe-area-inset-bottom));
+  text-align: center;
+  background: linear-gradient(to top, rgba(9,19,33,0.9) 0%, rgba(9,19,33,0.55) 55%, rgba(9,19,33,0) 100%);
+}
+.splash-titulo {
+  font-family: "Fredoka", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 2.3rem;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 0.3px;
+  text-shadow: 0 3px 14px rgba(0,0,0,0.5);
+}
+.splash-subtitulo {
+  font-family: "Fredoka", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.15rem;
+  color: var(--dorado-claro);
+  margin: 6px 0 0;
+  letter-spacing: 0.3px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.45);
+}
+
+.app { max-width: 640px; margin: 0 auto; padding: 20px 16px 60px; }
+
+.pantalla h1 { font-size: 1.4rem; color: var(--azul); margin: 8px 0 0; }
+.subtitulo { color: var(--dorado); font-weight: 600; margin: 2px 0 18px; }
+.instruccion { margin: 0 0 8px; }
+
+input[type="text"] {
+  width: 100%; padding: 14px; font-size: 1.05rem;
+  border: 2px solid #ddd2b0; border-radius: var(--radio);
+  margin-bottom: 12px; background: white;
+}
+
+.btn-primario {
+  width: 100%; padding: 14px; font-size: 1.05rem; font-weight: 700;
+  background: var(--azul); color: white; border: none; border-radius: var(--radio);
+  cursor: pointer;
+}
+.btn-primario:active { background: var(--azul-claro); }
+.btn-secundario {
+  width: 100%; padding: 12px; font-size: 1rem; font-weight: 600;
+  background: white; color: var(--azul); border: 2px solid var(--azul); border-radius: var(--radio);
+  cursor: pointer; margin-top: 10px;
+}
+.nota { color: var(--gris); font-size: 0.85rem; margin-top: 14px; }
+
+/* --- tarjetas de contenido / actividad --- */
+.lista-tarjetas { display: flex; flex-direction: column; gap: 12px; margin-top: 14px; }
+.tarjeta {
+  display: flex; align-items: center; gap: 12px;
+  background: white; border-radius: var(--radio); padding: 14px 16px;
+  border: 1px solid #eadfc0; cursor: pointer; text-align: left;
+  width: 100%; font-size: 1rem;
+}
+.tarjeta .num {
+  width: 34px; height: 34px; border-radius: 999px; background: var(--dorado-claro);
+  color: var(--azul); display: flex; align-items: center; justify-content: center;
+  font-weight: 700; flex-shrink: 0;
+}
+.tarjeta .info { flex: 1; }
+.tarjeta .titulo { font-weight: 700; color: #222; }
+.tarjeta .subinfo { font-size: 0.85rem; color: var(--gris); margin-top: 2px; }
+.badge {
+  font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 999px;
+  white-space: nowrap;
+}
+.badge-NO_LOGRADO, .badge-null { background: #eee; color: var(--gris); }
+.badge-EN_PROCESO { background: #FCEBC9; color: #8A5A00; }
+.badge-LOGRADO { background: #DFF3E4; color: var(--verde); }
+.badge-REQUIERE_ACOMPANAMIENTO { background: #FBE2DF; color: var(--rojo); }
+
+/* --- bloqueo de avance (no se puede saltar sin completar lo anterior) --- */
+.tarjeta-bloqueada { cursor: not-allowed; opacity: 0.55; }
+.tarjeta-bloqueada .num { background: #eee; color: var(--gris); }
+
+.aviso-bloqueo {
+  background: #FBE2DF; color: var(--rojo); border: 1px solid #f2c3bd;
+  border-radius: var(--radio); padding: 12px 14px; margin-bottom: 14px;
+  font-size: 0.92rem; font-weight: 600; transition: opacity 0.3s ease;
+  scroll-margin-top: 90px;
+}
+.aviso-bloqueo.aviso-oculto { opacity: 0; }
+
+.pantalla-bloqueada { text-align: center; padding-top: 30px; }
+.bloqueo-icono { font-size: 2.6rem; margin: 0 0 6px; }
+.pantalla-bloqueada h1 { font-size: 1.25rem; }
+.pantalla-bloqueada .mensaje { color: var(--gris); margin: 6px 0 22px; }
+
+.barra-progreso {
+  background: #eadfc0; border-radius: 999px; height: 8px; overflow: hidden; margin-top: 10px;
+}
+.barra-progreso > div { background: var(--verde); height: 100%; }
+
+/* --- actividad --- */
+.actividad-titulo { color: var(--azul); font-size: 1.2rem; margin: 4px 0 16px; }
+.item-pregunta { background: white; border-radius: var(--radio); padding: 14px; margin-bottom: 12px; border: 1px solid #eadfc0; }
+.item-pregunta .texto { font-weight: 600; margin-bottom: 10px; }
+
+.opciones { display: flex; flex-direction: column; gap: 8px; }
+.opcion {
+  padding: 10px 12px; border-radius: 10px; border: 2px solid #ddd2b0; background: var(--crema);
+  cursor: pointer; text-align: left; font-size: 0.98rem;
+}
+.opcion.seleccionada { border-color: var(--azul); background: var(--dorado-claro); }
+
+.vf-botones { display: flex; gap: 8px; }
+.vf-boton {
+  flex: 1; padding: 10px; border-radius: 10px; border: 2px solid #ddd2b0; background: var(--crema);
+  cursor: pointer; font-weight: 700;
+}
+.vf-boton.seleccionada { border-color: var(--azul); background: var(--dorado-claro); }
+
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.chip {
+  padding: 6px 12px; border-radius: 999px; border: 2px solid #ddd2b0; background: white;
+  cursor: pointer; font-size: 0.9rem;
+}
+.chip.seleccionada { border-color: var(--azul); background: var(--dorado-claro); }
+
+.parejas-cols { display: flex; gap: 10px; }
+.parejas-col { flex: 1; display: flex; flex-direction: column; gap: 8px; }
+.pareja-item {
+  padding: 10px; border-radius: 10px; border: 2px solid #ddd2b0; background: var(--crema);
+  cursor: pointer; font-size: 0.9rem; text-align: center;
+}
+.pareja-item.seleccionada { border-color: var(--azul); background: var(--dorado-claro); }
+.pareja-item.emparejada { opacity: 0.4; cursor: default; }
+.parejas-lista { margin-top: 12px; font-size: 0.88rem; color: var(--gris); }
+
+.sopa-grid { display: grid; gap: 2px; margin: 12px auto; width: fit-content; }
+.sopa-celda {
+  width: 26px; height: 26px; display: flex; align-items: center; justify-content: center;
+  background: white; border: 1px solid #eadfc0; font-weight: 700; font-size: 0.8rem;
+  cursor: pointer; user-select: none; border-radius: 4px;
+}
+.sopa-celda.seleccionada { background: var(--dorado-claro); }
+.sopa-celda.encontrada { background: var(--verde); color: white; }
+.sopa-lista-palabras { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+.sopa-lista-palabras span {
+  padding: 4px 10px; border-radius: 999px; background: #eee; font-size: 0.82rem; font-weight: 600;
+}
+.sopa-lista-palabras span.encontrada { background: var(--verde); color: white; }
+
+.panel-feedback {
+  margin-top: 18px; padding: 16px; border-radius: var(--radio);
+  border: 2px solid var(--dorado); background: white;
+}
+.panel-feedback.ok { border-color: var(--verde); }
+.panel-feedback.acompanamiento { border-color: var(--rojo); }
+.panel-feedback .mensaje { font-weight: 700; margin-bottom: 6px; }
+.panel-feedback .pista { color: var(--azul-claro); margin-top: 6px; }
+.panel-feedback .respuesta { color: var(--gris); font-size: 0.9rem; margin-top: 6px; }
+
+.cargando, .vacio { text-align: center; color: var(--gris); padding: 30px 0; }
+
+.panel-contenido-logrado {
+  margin-top: 14px; padding: 18px; border-radius: var(--radio); text-align: center;
+  background: linear-gradient(135deg, var(--dorado-claro), #ffffff);
+  border: 2px solid var(--dorado);
+}
+.panel-contenido-logrado .mensaje {
+  font-weight: 700; color: var(--azul); margin: 0 0 14px; font-size: 1.05rem; line-height: 1.4;
+}
+
+.situacion {
+  background: var(--dorado-claro); border-radius: 10px; padding: 10px 14px;
+  font-weight: 600; margin: 0 0 14px; color: #5a3f00;
+}
+.reflexion {
+  background: #EAF1F7; border-radius: 10px; padding: 10px 14px;
+  font-style: italic; color: var(--azul-claro); margin-top: 14px;
+}
+.cronometro { font-weight: 700; color: var(--rojo); margin: 0 0 10px; }
+
+.cruci-grid { display: grid; gap: 2px; margin: 12px auto; width: fit-content; }
+.cruci-celda {
+  width: 28px; height: 28px; position: relative;
+  background: white; border: 1px solid #eadfc0; border-radius: 3px;
+}
+.cruci-celda.cruci-bloqueada { background: transparent; border: none; }
+.cruci-num {
+  position: absolute; top: 1px; left: 2px; font-size: 0.55rem; font-weight: 700;
+  color: var(--gris); pointer-events: none;
+}
+.cruci-input {
+  width: 100%; height: 100%; border: none; background: transparent;
+  text-align: center; font-weight: 700; font-size: 1rem; text-transform: uppercase;
+  padding: 0; border-radius: 3px; font-family: inherit;
+}
+.cruci-input:focus { outline: 2px solid var(--azul); background: var(--dorado-claro); }
+.cruci-claves { margin-top: 16px; font-size: 0.92rem; }
+.cruci-claves-titulo { font-weight: 700; color: var(--azul); margin: 10px 0 4px; }
+.cruci-claves ol { list-style: none; padding-left: 0; margin: 0 0 6px; }
+.cruci-claves li { margin-bottom: 6px; line-height: 1.35; }
+.chips-grande .chip { padding: 10px 16px; font-size: 1rem; }
+textarea.input-abierta {
+  width: 100%; padding: 12px; font-size: 1rem; border: 2px solid #ddd2b0;
+  border-radius: 10px; font-family: inherit; resize: vertical;
+}
+
+/* ------------------------------------- banner "camino completo" en Inicio -- */
+.aviso-camino-completo {
+  display: block; text-decoration: none; margin: 0 0 18px; padding: 16px;
+  border-radius: var(--radio); text-align: center; cursor: pointer; border: none;
+  width: 100%; font: inherit;
+  background: linear-gradient(135deg, var(--dorado), var(--dorado-claro));
+  box-shadow: 0 2px 10px rgba(201,151,42,0.35);
+}
+.aviso-camino-completo .titulo {
+  display: block; font-weight: 700; color: var(--azul); font-size: 1.05rem; margin-bottom: 2px;
+}
+.aviso-camino-completo .subtitulo-aviso { display: block; color: #5a3f00; font-weight: 600; margin: 0; }
+
+/* ============================================================ celebración == */
+/* Animación final: un camino con los 16 encuentros, un niño que se une en
+   cada punto, hasta llegar a un altar donde Jesús los recibe con los brazos
+   abiertos. Todo dibujado con formas simples (SVG + CSS), sin fotos, para
+   mantener el mismo estilo cálido del resto de la app. Se muestra al
+   terminar la última actividad del último encuentro (PC16-C06) — ver
+   camino_completo en app.py y mostrarFeedback en este archivo. */
+.pantalla-celebracion { text-align: center; padding-top: 4px; }
+.pantalla-celebracion h1 {
+  font-family: "Fredoka", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+.celebracion-escena {
+  position: relative; width: 100%; max-width: 340px; margin: 0 auto;
+  background: linear-gradient(180deg, #EAF1F7 0%, var(--crema) 70%);
+  border-radius: var(--radio); overflow: hidden; border: 2px solid var(--dorado-claro);
+}
+.celebracion-svg { display: block; width: 100%; height: auto; }
+
+.camino-linea {
+  fill: none; stroke: var(--dorado); stroke-width: 5;
+  stroke-linecap: round; stroke-dasharray: 2 10;
+}
+.camino-punto { fill: var(--dorado-claro); stroke: var(--azul); stroke-width: 1.5; }
+.camino-punto-num { fill: var(--azul); font-size: 7px; font-weight: 700; text-anchor: middle; }
+
+.nino-camino { opacity: 0; transform-origin: center; animation: catequesis-nino-aparece 0.55s ease forwards; }
+.nino-cabeza { fill: var(--crema); stroke: var(--azul); stroke-width: 1.2; }
+@keyframes catequesis-nino-aparece {
+  from { opacity: 0; transform: scale(0.35) translateY(8px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.altar-grupo { opacity: 0.92; transition: filter 0.7s ease, transform 0.7s ease; transform-origin: center; }
+.altar-grupo.brillo { filter: drop-shadow(0 0 10px var(--dorado)) drop-shadow(0 0 18px var(--dorado-claro)); transform: scale(1.07); }
+.jesus-halo { fill: var(--dorado-claro); opacity: 0.85; }
+.jesus-halo.pulso { animation: catequesis-halo-pulso 1.8s ease-in-out infinite; }
+@keyframes catequesis-halo-pulso {
+  0%, 100% { opacity: 0.65; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.12); }
+}
+
+.celebracion-confeti { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.pieza-confeti {
+  position: absolute; top: -14px; width: 8px; height: 8px; border-radius: 2px;
+  animation-name: catequesis-confeti-cae; animation-timing-function: ease-in; animation-fill-mode: forwards;
+}
+@keyframes catequesis-confeti-cae {
+  from { transform: translateY(0) rotate(0deg); opacity: 1; }
+  to   { transform: translateY(360px) rotate(400deg); opacity: 0; }
+}
+
+.celebracion-texto {
+  position: relative; z-index: 2; padding: 18px 20px 22px;
+  opacity: 0; transform: translateY(14px) scale(0.97);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.celebracion-texto.visible { opacity: 1; transform: translateY(0) scale(1); }
+.celebracion-mensaje {
+  font-family: "Fredoka", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-weight: 700; font-size: 1.5rem; color: var(--azul); margin: 0 0 8px;
+}
+.celebracion-submensaje { color: #5a3f00; font-weight: 600; line-height: 1.45; margin: 0; }
+.celebracion-boton { margin-top: 20px; }
+
+/* --- módulo de catequista --- */
+.enlace-catequista { margin-top: 16px; font-size: 0.85rem; }
+.enlace-catequista a { color: var(--azul-claro); text-decoration: underline; }
+.mensaje-error { color: var(--rojo); font-weight: 600; }
+
+.lista-catequista { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.tarjeta-catequista {
+  background: white; border-radius: var(--radio); padding: 12px 14px;
+  border: 1px solid #eadfc0; cursor: pointer;
+}
+.catequista-fila-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.catequista-fila-top strong { color: var(--azul); font-size: 1.02rem; }
+.catequista-etiqueta { font-size: 0.8rem; font-weight: 700; white-space: nowrap; }
+.catequista-detalle { color: var(--gris); font-size: 0.85rem; margin: 6px 0 0; }
+
+.catequista-encuentro { margin-top: 18px; }
+.catequista-encuentro h2 { color: var(--azul); font-size: 1.05rem; margin: 0 0 8px; }
+.catequista-contenido {
+  background: white; border: 1px solid #eadfc0; border-radius: var(--radio);
+  padding: 10px 14px; margin-bottom: 8px;
+}
+.catequista-contenido summary { font-weight: 700; color: #222; cursor: pointer; }
+.catequista-lista-actividades { list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.catequista-actividad {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  padding: 8px 10px; border-radius: 10px; background: var(--crema); font-size: 0.88rem;
+}
+.catequista-actividad-estado { font-weight: 700; white-space: nowrap; font-size: 0.78rem; }
+.catequista-actividad.estado-logrado .catequista-actividad-estado { color: var(--verde); }
+.catequista-actividad.estado-en_proceso .catequista-actividad-estado { color: #8A5A00; }
+.catequista-actividad.estado-requiere_acompanamiento .catequista-actividad-estado { color: var(--rojo); }
+.catequista-actividad.estado-no_iniciada .catequista-actividad-estado,
+.catequista-actividad.estado-no_logrado .catequista-actividad-estado { color: var(--gris); }
+
+/* módulo de admin (reiniciar el tutorial desde cero) */
+.mensaje-peligro {
+  background: #FBEAE8; border: 2px solid var(--rojo); color: #7A2A23;
+  border-radius: var(--radio); padding: 14px; margin: 4px 0 18px; font-size: 0.92rem; line-height: 1.4;
+}
+.mensaje-peligro strong { color: var(--rojo); }
+.btn-peligro {
+  width: 100%; padding: 14px; font-size: 1.05rem; font-weight: 700;
+  background: var(--rojo); color: white; border: none; border-radius: var(--radio);
+  cursor: pointer;
+}
+.btn-peligro:disabled { background: #d8b4b0; cursor: not-allowed; }
+.admin-resultado { text-align: center; }
+.admin-resultado .icono-ok { font-size: 2.6rem; display: block; margin-bottom: 6px; }
