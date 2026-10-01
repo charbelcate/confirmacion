@@ -4,7 +4,7 @@ services:
     container_name: confirmacion-pwa
     restart: always
     ports:
-      - "5000:5000"
+      - "5010:5000"
     volumes:
       # Volumen 1: Persiste el código del backend aislando las rutas internas
       - backend_data:/app/backend
