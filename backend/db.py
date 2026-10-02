@@ -1,93 +1,128 @@
 # -*- coding: utf-8 -*-
 """
-Persistencia del progreso del niño — separada de la base de conocimiento
+Persistencia del progreso del joven — separada de la base de conocimiento
 (content.py), tal como define el modelo: "El conocimiento se mantendrá
-separado de las actividades y de los datos personales del niño."
+separado de las actividades y de los datos personales del joven."
 
-Se usa SQLite para este piloto (cero configuración). El documento maestro ya
-prevé migrar a PostgreSQL cuando el proyecto pase a producción; el código de
-la API no tendría que cambiar mucho porque las consultas son simples.
+Antes usaba SQLite en un archivo local; ahora usa MariaDB (vía PyMySQL),
+en el servicio MariaDB compartido de Easypanel, con una base de datos y un
+usuario propios para esta app (confirmacion_db / confirmacion_user) —
+aislados de las demás apps del mismo servidor. Esto evita el problema que
+tenía SQLite: si se borra y reinstala el servicio de la app en Easypanel,
+la base de datos (que vive en el servicio de MariaDB, separado) no se
+toca ni se pierde.
 
-No se guarda ningún dato personal del niño: solo un "código" que asigna el
-catequista (por ejemplo, un nombre corto o un código de grupo), sin correo,
-sin apellido, sin datos identificables.
+No se guarda ningún dato personal del joven: solo un "código" que asigna
+el catequista (por ejemplo, un nombre corto o un código de grupo), sin
+correo, sin apellido, sin datos identificables.
+
+Variables de entorno esperadas (configurarlas en Easypanel, sección
+Entorno del servicio):
+  DB_HOST     (opcional, por defecto "web_mariadb")
+  DB_PORT     (opcional, por defecto 3306)
+  DB_USER     (opcional, por defecto "confirmacion_user")
+  DB_NAME     (opcional, por defecto "confirmacion_db")
+  DB_PASSWORD (obligatoria — la contraseña de confirmacion_user)
 """
-import sqlite3
+import pymysql
+import pymysql.cursors
 import datetime
+import json
 import os
 
-# El archivo de la base de datos vive dentro de una subcarpeta dedicada
-# ("db_persistent") en vez de suelto en backend/, para que coincida con la
-# ruta que se monta como volumen persistente en producción (Easypanel,
-# sección "Almacenamiento" del servicio) — así el progreso sobrevive cada
-# vez que se reconstruye el contenedor. Mismo patrón que el tutor de
-# Primera Comunión. Se puede cambiar sin tocar código con la variable de
-# entorno CATEQUESIS_DATA_DIR, por si el volumen se monta en otra ruta.
-_CARPETA_DATOS = os.environ.get("CATEQUESIS_DATA_DIR") or os.path.join(
-    os.path.dirname(__file__), "db_persistent"
-)
-os.makedirs(_CARPETA_DATOS, exist_ok=True)
-DB_PATH = os.path.join(_CARPETA_DATOS, "catequesis_confirmacion.db")
+DB_HOST = os.environ.get("DB_HOST", "web_mariadb")
+DB_PORT = int(os.environ.get("DB_PORT", "3306"))
+DB_USER = os.environ.get("DB_USER", "confirmacion_user")
+DB_NAME = os.environ.get("DB_NAME", "confirmacion_db")
+DB_PASSWORD = os.environ.get("DB_PASSWORD")
+
+if not DB_PASSWORD:
+    raise RuntimeError(
+        "Falta la variable de entorno DB_PASSWORD (la contraseña de "
+        "confirmacion_user en MariaDB). Configúrala en Easypanel, "
+        "sección 'Entorno' del servicio de confirmación."
+    )
 
 
 def get_conn():
-    conn = sqlite3.connect(DB_PATH)
-    conn.row_factory = sqlite3.Row
-    return conn
+    return pymysql.connect(
+        host=DB_HOST,
+        port=DB_PORT,
+        user=DB_USER,
+        password=DB_PASSWORD,
+        database=DB_NAME,
+        charset="utf8mb4",
+        cursorclass=pymysql.cursors.DictCursor,
+        autocommit=False,
+    )
+
+
+def _ahora():
+    """Fecha/hora actual en el formato que MariaDB espera para DATETIME."""
+    return datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
 
 
 def init_db():
     conn = get_conn()
-    conn.executescript("""
-    CREATE TABLE IF NOT EXISTS ninos (
-        codigo TEXT PRIMARY KEY,
-        creado_en TEXT
-    );
-
-    CREATE TABLE IF NOT EXISTS intentos (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        codigo_nino TEXT,
-        encuentro_id TEXT,
-        contenido_id TEXT,
-        actividad_id TEXT,
-        intento INTEGER,
-        aciertos INTEGER,
-        total INTEGER,
-        estado_actividad TEXT,
-        pistas_usadas INTEGER,
-        fecha_hora TEXT
-    );
-
-    CREATE TABLE IF NOT EXISTS estado_actividad (
-        codigo_nino TEXT,
-        actividad_id TEXT,
-        contenido_id TEXT,
-        estado TEXT,
-        intentos INTEGER,
-        pistas_usadas INTEGER,
-        PRIMARY KEY (codigo_nino, actividad_id)
-    );
+    cur = conn.cursor()
+    cur.execute("""
+        CREATE TABLE IF NOT EXISTS ninos (
+            codigo VARCHAR(100) PRIMARY KEY,
+            creado_en DATETIME
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+    """)
+    cur.execute("""
+        CREATE TABLE IF NOT EXISTS intentos (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            codigo_nino VARCHAR(100),
+            encuentro_id VARCHAR(100),
+            contenido_id VARCHAR(100),
+            actividad_id VARCHAR(100),
+            intento INT,
+            aciertos INT,
+            total INT,
+            estado_actividad VARCHAR(50),
+            pistas_usadas INT,
+            fecha_hora DATETIME
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+    """)
+    cur.execute("""
+        CREATE TABLE IF NOT EXISTS estado_actividad (
+            codigo_nino VARCHAR(100),
+            actividad_id VARCHAR(100),
+            contenido_id VARCHAR(100),
+            estado VARCHAR(50),
+            intentos INT,
+            pistas_usadas INT,
+            PRIMARY KEY (codigo_nino, actividad_id)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
     """)
     conn.commit()
+    cur.close()
     conn.close()
 
 
 def asegurar_nino(codigo):
     conn = get_conn()
-    conn.execute(
-        "INSERT OR IGNORE INTO ninos (codigo, creado_en) VALUES (?, ?)",
-        (codigo, datetime.datetime.utcnow().isoformat()),
+    cur = conn.cursor()
+    cur.execute(
+        "INSERT IGNORE INTO ninos (codigo, creado_en) VALUES (%s, %s)",
+        (codigo, _ahora()),
     )
     conn.commit()
+    cur.close()
     conn.close()
 
 
 def obtener_estado_actividad(codigo_nino, actividad_id):
     conn = get_conn()
-    row = conn.execute(
-        "SELECT * FROM estado_actividad WHERE codigo_nino=? AND actividad_id=?",
+    cur = conn.cursor()
+    cur.execute(
+        "SELECT * FROM estado_actividad WHERE codigo_nino=%s AND actividad_id=%s",
         (codigo_nino, actividad_id),
-    ).fetchone()
+    )
+    row = cur.fetchone()
+    cur.close()
     conn.close()
     return dict(row) if row else None
 
@@ -95,49 +130,58 @@ def obtener_estado_actividad(codigo_nino, actividad_id):
 def registrar_intento(codigo_nino, encuentro_id, contenido_id, actividad_id,
                        intento, aciertos, total, estado_actividad, pistas_usadas):
     conn = get_conn()
-    conn.execute(
+    cur = conn.cursor()
+    cur.execute(
         """INSERT INTO intentos
            (codigo_nino, encuentro_id, contenido_id, actividad_id, intento,
             aciertos, total, estado_actividad, pistas_usadas, fecha_hora)
-           VALUES (?,?,?,?,?,?,?,?,?,?)""",
+           VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)""",
         (codigo_nino, encuentro_id, contenido_id, actividad_id, intento,
-         aciertos, total, estado_actividad, pistas_usadas,
-         datetime.datetime.utcnow().isoformat()),
+         aciertos, total, estado_actividad, pistas_usadas, _ahora()),
     )
-    conn.execute(
-        """INSERT INTO estado_actividad (codigo_nino, actividad_id, contenido_id, estado, intentos, pistas_usadas)
-           VALUES (?,?,?,?,?,?)
-           ON CONFLICT(codigo_nino, actividad_id)
-           DO UPDATE SET estado=excluded.estado, intentos=excluded.intentos,
-                         pistas_usadas=excluded.pistas_usadas""",
+    cur.execute(
+        """INSERT INTO estado_actividad
+           (codigo_nino, actividad_id, contenido_id, estado, intentos, pistas_usadas)
+           VALUES (%s,%s,%s,%s,%s,%s)
+           ON DUPLICATE KEY UPDATE
+               estado=VALUES(estado),
+               intentos=VALUES(intentos),
+               pistas_usadas=VALUES(pistas_usadas)""",
         (codigo_nino, actividad_id, contenido_id, estado_actividad, intento, pistas_usadas),
     )
     conn.commit()
+    cur.close()
     conn.close()
 
 
 def estados_de_contenido(codigo_nino, actividad_ids):
     conn = get_conn()
+    cur = conn.cursor()
     estados = []
     for aid in actividad_ids:
-        row = conn.execute(
-            "SELECT estado FROM estado_actividad WHERE codigo_nino=? AND actividad_id=?",
+        cur.execute(
+            "SELECT estado FROM estado_actividad WHERE codigo_nino=%s AND actividad_id=%s",
             (codigo_nino, aid),
-        ).fetchone()
+        )
+        row = cur.fetchone()
         estados.append(row["estado"] if row else None)
+    cur.close()
     conn.close()
     return estados
 
 
 def progreso_actividades(codigo_nino, actividad_ids):
     conn = get_conn()
+    cur = conn.cursor()
     out = {}
     for aid in actividad_ids:
-        row = conn.execute(
-            "SELECT estado, intentos, pistas_usadas FROM estado_actividad WHERE codigo_nino=? AND actividad_id=?",
+        cur.execute(
+            "SELECT estado, intentos, pistas_usadas FROM estado_actividad WHERE codigo_nino=%s AND actividad_id=%s",
             (codigo_nino, aid),
-        ).fetchone()
+        )
+        row = cur.fetchone()
         out[aid] = dict(row) if row else {"estado": None, "intentos": 0, "pistas_usadas": 0}
+    cur.close()
     conn.close()
     return out
 
@@ -149,7 +193,10 @@ def progreso_actividades(codigo_nino, actividad_ids):
 
 def nino_existe(codigo):
     conn = get_conn()
-    row = conn.execute("SELECT 1 FROM ninos WHERE codigo=?", (codigo,)).fetchone()
+    cur = conn.cursor()
+    cur.execute("SELECT 1 FROM ninos WHERE codigo=%s", (codigo,))
+    row = cur.fetchone()
+    cur.close()
     conn.close()
     return row is not None
 
@@ -160,12 +207,15 @@ def listar_ninos():
     la lista que ve el catequista (ver resumen_nino para el avance de cada
     uno)."""
     conn = get_conn()
-    rows = conn.execute(
+    cur = conn.cursor()
+    cur.execute(
         """SELECT n.codigo, n.creado_en, MAX(i.fecha_hora) AS ultima_actividad
            FROM ninos n LEFT JOIN intentos i ON i.codigo_nino = n.codigo
-           GROUP BY n.codigo
+           GROUP BY n.codigo, n.creado_en
            ORDER BY n.creado_en DESC"""
-    ).fetchall()
+    )
+    rows = cur.fetchall()
+    cur.close()
     conn.close()
     return [dict(r) for r in rows]
 
@@ -176,10 +226,13 @@ def resumen_nino(codigo):
     estado_actividad); el llamador las calcula como total - suma de estos
     conteos."""
     conn = get_conn()
-    filas = conn.execute(
-        "SELECT estado, COUNT(*) AS n FROM estado_actividad WHERE codigo_nino=? GROUP BY estado",
+    cur = conn.cursor()
+    cur.execute(
+        "SELECT estado, COUNT(*) AS n FROM estado_actividad WHERE codigo_nino=%s GROUP BY estado",
         (codigo,),
-    ).fetchall()
+    )
+    filas = cur.fetchall()
+    cur.close()
     conn.close()
     conteos = {"LOGRADO": 0, "EN_PROCESO": 0, "REQUIERE_ACOMPANAMIENTO": 0}
     for f in filas:
@@ -192,10 +245,13 @@ def progreso_completo_nino(codigo):
     código ya intentó, indexado por actividad_id — para armar el detalle
     completo que ve el catequista al entrar a un joven en particular."""
     conn = get_conn()
-    rows = conn.execute(
-        "SELECT actividad_id, estado, intentos, pistas_usadas FROM estado_actividad WHERE codigo_nino=?",
+    cur = conn.cursor()
+    cur.execute(
+        "SELECT actividad_id, estado, intentos, pistas_usadas FROM estado_actividad WHERE codigo_nino=%s",
         (codigo,),
-    ).fetchall()
+    )
+    rows = cur.fetchall()
+    cur.close()
     conn.close()
     return {r["actividad_id"]: dict(r) for r in rows}
 
@@ -209,20 +265,55 @@ def contar_registros():
     """Cuántos jóvenes/intentos hay antes de borrar — para mostrarlo en la
     confirmación y que quien limpia sepa el tamaño real de lo que borra."""
     conn = get_conn()
-    ninos = conn.execute("SELECT COUNT(*) AS n FROM ninos").fetchone()["n"]
-    intentos = conn.execute("SELECT COUNT(*) AS n FROM intentos").fetchone()["n"]
+    cur = conn.cursor()
+    cur.execute("SELECT COUNT(*) AS n FROM ninos")
+    ninos = cur.fetchone()["n"]
+    cur.execute("SELECT COUNT(*) AS n FROM intentos")
+    intentos = cur.fetchone()["n"]
+    cur.close()
     conn.close()
     return {"ninos": ninos, "intentos": intentos}
+
+
+def respaldar_a_archivo(ruta_archivo):
+    """Exporta TODAS las filas de las tres tablas a un archivo JSON, como
+    copia de seguridad antes de una limpieza total. Con SQLite esto era
+    una copia binaria del archivo .db; con MariaDB ya no hay un archivo
+    único que copiar, así que en su lugar se vuelca el contenido completo
+    de cada tabla a un JSON legible, por si hace falta revisarlo o
+    restaurarlo manualmente más adelante."""
+    conn = get_conn()
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM ninos")
+    ninos = cur.fetchall()
+    cur.execute("SELECT * FROM intentos")
+    intentos = cur.fetchall()
+    cur.execute("SELECT * FROM estado_actividad")
+    estado_actividad = cur.fetchall()
+    cur.close()
+    conn.close()
+
+    datos = {
+        "generado_en": _ahora(),
+        "ninos": ninos,
+        "intentos": intentos,
+        "estado_actividad": estado_actividad,
+    }
+    os.makedirs(os.path.dirname(ruta_archivo), exist_ok=True)
+    with open(ruta_archivo, "w", encoding="utf-8") as f:
+        json.dump(datos, f, ensure_ascii=False, indent=2, default=str)
 
 
 def limpiar_todo():
     """Borra TODO el progreso (las tres tablas), dejando las tablas vacías
     pero con su estructura intacta — como si nadie hubiera entrado nunca.
-    No hay "deshacer" dentro de la app; la llamada en app.py hace una copia
-    de respaldo del archivo .db antes de invocar esta función."""
+    No hay "deshacer" dentro de la app; la llamada en app.py hace un
+    respaldo en JSON antes de invocar esta función (ver respaldar_a_archivo)."""
     conn = get_conn()
-    conn.execute("DELETE FROM estado_actividad")
-    conn.execute("DELETE FROM intentos")
-    conn.execute("DELETE FROM ninos")
+    cur = conn.cursor()
+    cur.execute("DELETE FROM estado_actividad")
+    cur.execute("DELETE FROM intentos")
+    cur.execute("DELETE FROM ninos")
     conn.commit()
+    cur.close()
     conn.close()

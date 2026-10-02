@@ -1,5 +1,6 @@
 Flask==3.0.3
 gunicorn==22.0.0
+PyMySQL==1.1.1
 
 # --- Similitud semántica para respuestas abiertas (opcional) ---
 # Ver nlp_eval.py: si estas dos líneas no se instalan (o el modelo no se

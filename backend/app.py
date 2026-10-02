@@ -914,17 +914,22 @@ def api_admin_limpiar_bd():
 
     conteo_antes = db.contar_registros()
 
-    # Respaldo del archivo .db completo antes de borrar, por si hace falta
-    # recuperarlo manualmente desde el servidor más adelante. No es algo
-    # que la app pueda deshacer sola — es una copia de seguridad a nivel de
-    # archivo, para el administrador del servidor.
+    # Respaldo en JSON de todas las filas antes de borrar, por si hace
+    # falta revisarlo o restaurarlo manualmente más adelante. Con MariaDB
+    # ya no hay un único archivo .db que copiar (ver db.respaldar_a_archivo
+    # en db.py), así que se vuelca el contenido completo de las tablas a
+    # un JSON junto al código de la app.
     respaldo_nombre = None
-    if os.path.exists(db.DB_PATH):
+    try:
         sello = datetime.datetime.utcnow().strftime("%Y%m%d_%H%M%S")
-        respaldo_nombre = f"catequesis_confirmacion_respaldo_{sello}.db"
-        respaldo_ruta = os.path.join(os.path.dirname(db.DB_PATH), respaldo_nombre)
-        with open(db.DB_PATH, "rb") as origen, open(respaldo_ruta, "wb") as destino:
-            destino.write(origen.read())
+        respaldo_nombre = f"catequesis_confirmacion_respaldo_{sello}.json"
+        carpeta_respaldos = os.environ.get("CATEQUESIS_BACKUP_DIR") or os.path.join(
+            os.path.dirname(os.path.abspath(__file__)), "respaldos"
+        )
+        respaldo_ruta = os.path.join(carpeta_respaldos, respaldo_nombre)
+        db.respaldar_a_archivo(respaldo_ruta)
+    except Exception:
+        respaldo_nombre = None
 
     db.limpiar_todo()
 
