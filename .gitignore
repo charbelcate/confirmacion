@@ -3,3 +3,4 @@ __pycache__/
 db_persistent/
 backend/respaldos/
 .env
+_to_delete/
