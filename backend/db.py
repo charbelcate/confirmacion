@@ -62,6 +62,18 @@ def _ahora():
     return datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
 
 
+def _iso(valor):
+    """Convierte un datetime.datetime (lo que devuelve PyMySQL para una
+    columna DATETIME) a una cadena ISO 8601 — igual que lo devolvía
+    SQLite antes (ahí las fechas siempre eran texto plano). Así app.py
+    sigue recibiendo texto, como siempre, y no hay que tocarlo."""
+    if valor is None:
+        return None
+    if isinstance(valor, (datetime.datetime, datetime.date)):
+        return valor.isoformat()
+    return valor
+
+
 def init_db():
     conn = get_conn()
     cur = conn.cursor()
@@ -217,7 +229,14 @@ def listar_ninos():
     rows = cur.fetchall()
     cur.close()
     conn.close()
-    return [dict(r) for r in rows]
+    return [
+        {
+            "codigo": r["codigo"],
+            "creado_en": _iso(r["creado_en"]),
+            "ultima_actividad": _iso(r["ultima_actividad"]),
+        }
+        for r in rows
+    ]
 
 
 def resumen_nino(codigo):
