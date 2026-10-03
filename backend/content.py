@@ -200,6 +200,7 @@ PALABRAS_ALERTA = {
     "HERIR", "LASTIMAR", "MALTRATAR", "MALTRATO", "BURLARSE", "BURLAR",
     "HUMILLAR", "DESPRECIAR", "DESTRUIR", "PELEAR", "PELEA", "VENGAR",
     "VENGANZA", "ABANDONAR", "TRAICIONAR", "TRAICION", "RIDICULIZAR",
+    "APEDREAR", "APEDREARON", "APEDREAN", "DESOBEDECER", "BLASFEMAR",
 }
 
 ACTIVIDADES = {}
@@ -260,7 +261,7 @@ _agregar("C0N1-CO01", "A03", {
         {
             "texto": "¿Qué crees que sintieron Simón y Andrés al escuchar a Jesús llamarlos por su nombre? ¿Alguna vez sentiste que Dios te invitaba a hacer algo?",
             "abierta": True,
-            "palabras_esperadas": ["LLAMADO", "LLAMADA", "DIOS", "JESUS", "SEGUIR", "SORPRESA", "ALEGRIA", "MIEDO", "CONFIANZA", "INVITACION"],
+            "palabras_esperadas": ["LLAMADO", "LLAMADA", "SEGUIR", "SORPRESA", "ALEGRIA", "MIEDO", "CONFIANZA", "INVITACION"],
             "respuestas_referencia": [
                 "Sentí que Dios me invitaba a algo y me dio un poco de miedo pero también alegría.",
                 "Alguna vez sentí que Dios me llamaba a ayudar a alguien y decidí hacerle caso a esa idea.",

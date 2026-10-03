@@ -77,6 +77,29 @@ def contiene_palabra_alerta(texto):
     return bool(palabras & content.PALABRAS_ALERTA)
 
 
+# Frases que indican que la respuesta RECHAZA o contradice explícitamente
+# la idea sobre la que se pregunta (p. ej. "no debo hacer caso a la
+# palabra de Dios"). Si aparece una de estas señales, una coincidencia de
+# "palabras_esperadas" ya no basta para aceptar la respuesta de inmediato:
+# solo nombrar el tema ("Dios", "Jesús", "seguir") no es suficiente si la
+# frase lo está negando. En ese caso se exige además que la respuesta se
+# parezca en significado a alguna "respuestas_referencia" (nivel 2); si no
+# hay semejanza, queda correctamente como "fuera_de_tema".
+SENALES_NEGACION = [
+    "NO DEBO", "NO DEBERIA", "NO DEBIA", "NO HAY QUE HACER CASO",
+    "NO HAGO CASO", "NO LE HAGO CASO", "NO VOY A HACER CASO",
+    "NO CREO EN", "NO QUIERO SEGUIR", "NO VOY A SEGUIR", "ME NIEGO A",
+    "RECHAZO A", "NO ME IMPORTA DIOS", "NO ME IMPORTA JESUS",
+    "NO LE HAGO CASO A", "NO SE DEBE HACER CASO",
+]
+
+
+def _contiene_senal_negacion(texto_normalizado):
+    """True si `texto_normalizado` (ya pasado por sin_acentos) contiene
+    alguna frase de SENALES_NEGACION."""
+    return any(s in texto_normalizado for s in SENALES_NEGACION)
+
+
 def _evaluar_item_abierto(texto, item):
     """Evalúa un ítem 'abierta' (respuesta libre): devuelve (cuenta_como_
     acierto, motivo). motivo es None si se aceptó, o "vacio" / "alerta" /
@@ -119,7 +142,8 @@ def _evaluar_item_abierto(texto, item):
     esperadas = item.get("palabras_esperadas")
     if esperadas:
         normalizado = sin_acentos(texto)
-        if any(sin_acentos(w) in normalizado for w in esperadas):
+        coincide = any(sin_acentos(w) in normalizado for w in esperadas)
+        if coincide and not _contiene_senal_negacion(normalizado):
             return True, None
         referencias = item.get("respuestas_referencia")
         if referencias:
