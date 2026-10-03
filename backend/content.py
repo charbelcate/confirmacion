@@ -277,6 +277,7 @@ _agregar("C0N1-CO01", "A03", {
 _agregar("C0N1-CO01", "A04", {
     "tipo": "completar",
     "titulo": "Ordenar y reconstruir: la escena junto al lago",
+    "instruccion": "Lee el pasaje bíblico de este tema y ordena las siguientes frases según el orden en que ocurrieron, del 1 al último.",
     "items": [
         {"texto": "Simón y Andrés lo siguen como discípulos.", "respuesta": "5", "banco": ["1", "2", "3", "4", "5"]},
         {"texto": "Jesús camina por la orilla del mar de Galilea.", "respuesta": "1", "banco": ["1", "2", "3", "4", "5"]},
@@ -488,6 +489,7 @@ _agregar("C0N1-CO02", "A03", {
 _agregar("C0N1-CO02", "A04", {
     "tipo": "completar",
     "titulo": "Ordenar y reconstruir: de la llamada a la respuesta",
+    "instruccion": "Lee el pasaje bíblico de este tema y ordena las siguientes frases según el orden en que ocurrieron, del 1 al último.",
     "items": [
         {"texto": "Simón y Andrés caminan junto a Jesús como discípulos.", "respuesta": "4", "banco": ["1", "2", "3", "4"]},
         {"texto": "Jesús pronuncia la invitación: «Venid en pos de mí».", "respuesta": "1", "banco": ["1", "2", "3", "4"]},
@@ -693,6 +695,7 @@ _agregar("C0N1-CO03", "A03", {
 _agregar("C0N1-CO03", "A04", {
     "tipo": "completar",
     "titulo": "Ordenar y reconstruir: cómo se elige una prioridad",
+    "instruccion": "Lee el pasaje bíblico de este tema y ordena las siguientes frases según el orden en que ocurrieron, del 1 al último.",
     "items": [
         {"texto": "Se elige la nueva prioridad y se actúa en consecuencia.", "respuesta": "4", "banco": ["1", "2", "3", "4"]},
         {"texto": "Se identifica qué ocupa hoy el primer lugar en la vida.", "respuesta": "1", "banco": ["1", "2", "3", "4"]},
@@ -899,6 +902,7 @@ _agregar("C0N1-CO04", "A03", {
 _agregar("C0N1-CO04", "A04", {
     "tipo": "completar",
     "titulo": "Ordenar y reconstruir: etapas de un camino",
+    "instruccion": "Lee el pasaje bíblico de este tema y ordena las siguientes frases según el orden en que ocurrieron, del 1 al último.",
     "items": [
         {"texto": "El discípulo sigue aprendiendo y madurando en su fe con el paso del tiempo.", "respuesta": "4", "banco": ["1", "2", "3", "4"]},
         {"texto": "Una persona escucha por primera vez el llamado de Jesús.", "respuesta": "1", "banco": ["1", "2", "3", "4"]},
@@ -1104,6 +1108,7 @@ _agregar("C0N1-CO05", "A03", {
 _agregar("C0N1-CO05", "A04", {
     "tipo": "completar",
     "titulo": "Ordenar y reconstruir: de mi don a la misión",
+    "instruccion": "Lee el pasaje bíblico de este tema y ordena las siguientes frases según el orden en que ocurrieron, del 1 al último.",
     "items": [
         {"texto": "Esa capacidad se convierte en un servicio concreto para otra persona o para la comunidad.", "respuesta": "4", "banco": ["1", "2", "3", "4"]},
         {"texto": "Un joven descubre que tiene una capacidad o talento particular.", "respuesta": "1", "banco": ["1", "2", "3", "4"]},
@@ -1309,6 +1314,7 @@ _agregar("C0N1-CO06", "A03", {
 _agregar("C0N1-CO06", "A04", {
     "tipo": "completar",
     "titulo": "Ordenar y reconstruir: de solo a comunidad",
+    "instruccion": "Lee el pasaje bíblico de este tema y ordena las siguientes frases según el orden en que ocurrieron, del 1 al último.",
     "items": [
         {"texto": "El grupo entero es enviado a anunciar y a vivir la misión juntos.", "respuesta": "4", "banco": ["1", "2", "3", "4"]},
         {"texto": "Jesús sube al monte y llama a los que él quiere.", "respuesta": "1", "banco": ["1", "2", "3", "4"]},
@@ -1517,6 +1523,7 @@ _agregar("C0N2-CO01", "A03", {
 _agregar("C0N2-CO01", "A04", {
     "tipo": "completar",
     "titulo": "Ordenar y reconstruir: la noche de Samuel",
+    "instruccion": "Lee el pasaje bíblico de este tema y ordena las siguientes frases según el orden en que ocurrieron, del 1 al último.",
     "items": [
         {"texto": "Samuel responde: «Habla, Señor, que tu siervo escucha».", "respuesta": "5", "banco": ["1", "2", "3", "4", "5"]},
         {"texto": "Samuel duerme en el templo, cerca del arca de Dios.", "respuesta": "1", "banco": ["1", "2", "3", "4", "5"]},
@@ -1723,6 +1730,7 @@ _agregar("C0N2-CO02", "A03", {
 _agregar("C0N2-CO02", "A04", {
     "tipo": "completar",
     "titulo": "Ordenar y reconstruir: el camino del discernimiento",
+    "instruccion": "Lee el pasaje bíblico de este tema y ordena las siguientes frases según el orden en que ocurrieron, del 1 al último.",
     "items": [
         {"texto": "Se toma una decisión con más claridad y paz interior.", "respuesta": "4", "banco": ["1", "2", "3", "4"]},
         {"texto": "Se busca un momento de silencio para poder escuchar.", "respuesta": "1", "banco": ["1", "2", "3", "4"]},
@@ -1928,6 +1936,7 @@ _agregar("C0N2-CO03", "A03", {
 _agregar("C0N2-CO03", "A04", {
     "tipo": "completar",
     "titulo": "Ordenar y reconstruir: la Anunciación",
+    "instruccion": "Lee el pasaje bíblico de este tema y ordena las siguientes frases según el orden en que ocurrieron, del 1 al último.",
     "items": [
         {"texto": "María responde: «Hágase en mí según tu palabra».", "respuesta": "5", "banco": ["1", "2", "3", "4", "5"]},
         {"texto": "El ángel Gabriel se presenta ante María y la saluda.", "respuesta": "1", "banco": ["1", "2", "3", "4", "5"]},
@@ -2133,6 +2142,7 @@ _agregar("C0N2-CO04", "A03", {
 _agregar("C0N2-CO04", "A04", {
     "tipo": "completar",
     "titulo": "Ordenar y reconstruir: del miedo a la confianza",
+    "instruccion": "Lee el pasaje bíblico de este tema y ordena las siguientes frases según el orden en que ocurrieron, del 1 al último.",
     "items": [
         {"texto": "María, con confianza, responde que sí al plan de Dios.", "respuesta": "4", "banco": ["1", "2", "3", "4"]},
         {"texto": "María se turba y siente temor ante el saludo del ángel.", "respuesta": "1", "banco": ["1", "2", "3", "4"]},
@@ -2338,6 +2348,7 @@ _agregar("C0N2-CO05", "A03", {
 _agregar("C0N2-CO05", "A04", {
     "tipo": "completar",
     "titulo": "Ordenar y reconstruir: descubrir mi propia llamada",
+    "instruccion": "Lee el pasaje bíblico de este tema y ordena las siguientes frases según el orden en que ocurrieron, del 1 al último.",
     "items": [
         {"texto": "Se da un paso concreto para explorar esa pregunta vocacional.", "respuesta": "4", "banco": ["1", "2", "3", "4"]},
         {"texto": "Se presta atención a la propia historia, dones y circunstancias.", "respuesta": "1", "banco": ["1", "2", "3", "4"]},
@@ -2543,6 +2554,7 @@ _agregar("C0N2-CO06", "A03", {
 _agregar("C0N2-CO06", "A04", {
     "tipo": "completar",
     "titulo": "Ordenar y reconstruir: discernir acompañados",
+    "instruccion": "Lee el pasaje bíblico de este tema y ordena las siguientes frases según el orden en que ocurrieron, del 1 al último.",
     "items": [
         {"texto": "Con esa ayuda, la persona toma la decisión con más claridad y paz.", "respuesta": "4", "banco": ["1", "2", "3", "4"]},
         {"texto": "Una persona siente una inquietud o llamada que no termina de entender.", "respuesta": "1", "banco": ["1", "2", "3", "4"]},
@@ -2751,6 +2763,7 @@ _agregar("C0N3-CO01", "A03", {
 _agregar("C0N3-CO01", "A04", {
     "tipo": "completar",
     "titulo": "Ordenar y reconstruir: de la duda a la pregunta honesta",
+    "instruccion": "Lee el pasaje bíblico de este tema y ordena las siguientes frases según el orden en que ocurrieron, del 1 al último.",
     "items": [
         {"texto": "Esa búsqueda puede fortalecer la fe en vez de destruirla.", "respuesta": "4", "banco": ["1", "2", "3", "4"]},
         {"texto": "Aparece una duda o inquietud sobre algún aspecto de la fe.", "respuesta": "1", "banco": ["1", "2", "3", "4"]},
@@ -2956,6 +2969,7 @@ _agregar("C0N3-CO02", "A03", {
 _agregar("C0N3-CO02", "A04", {
     "tipo": "completar",
     "titulo": "Ordenar y reconstruir: cómo dialoga Pablo",
+    "instruccion": "Lee el pasaje bíblico de este tema y ordena las siguientes frases según el orden en que ocurrieron, del 1 al último.",
     "items": [
         {"texto": "Anuncia con respeto lo que él cree, partiendo de ese punto en común.", "respuesta": "4", "banco": ["1", "2", "3", "4"]},
         {"texto": "Pablo recorre la ciudad y observa con atención su cultura y sus creencias.", "respuesta": "1", "banco": ["1", "2", "3", "4"]},
@@ -3161,6 +3175,7 @@ _agregar("C0N3-CO03", "A03", {
 _agregar("C0N3-CO03", "A04", {
     "tipo": "completar",
     "titulo": "Ordenar y reconstruir: fe y razón dialogan",
+    "instruccion": "Lee el pasaje bíblico de este tema y ordena las siguientes frases según el orden en que ocurrieron, del 1 al último.",
     "items": [
         {"texto": "El resultado es una fe más reflexionada, sin dejar de ser fe.", "respuesta": "4", "banco": ["1", "2", "3", "4"]},
         {"texto": "Surge una pregunta que parece poner en tensión la fe y la razón.", "respuesta": "1", "banco": ["1", "2", "3", "4"]},
@@ -3365,6 +3380,7 @@ _agregar("C0N3-CO04", "A03", {
 _agregar("C0N3-CO04", "A04", {
     "tipo": "completar",
     "titulo": "Ordenar y reconstruir: Dios, creador y cercano",
+    "instruccion": "Lee el pasaje bíblico de este tema y ordena las siguientes frases según el orden en que ocurrieron, del 1 al último.",
     "items": [
         {"texto": "Ese mismo Dios no está lejos de cada uno de nosotros, aunque no siempre lo notemos.", "respuesta": "4", "banco": ["1", "2", "3", "4"]},
         {"texto": "Dios crea el mundo y todo lo que existe en él.", "respuesta": "1", "banco": ["1", "2", "3", "4"]},
@@ -3570,6 +3586,7 @@ _agregar("C0N3-CO05", "A03", {
 _agregar("C0N3-CO05", "A04", {
     "tipo": "completar",
     "titulo": "Ordenar y reconstruir: responder con calma",
+    "instruccion": "Lee el pasaje bíblico de este tema y ordena las siguientes frases según el orden en que ocurrieron, del 1 al último.",
     "items": [
         {"texto": "Se acepta que no todos van a estar de acuerdo, y eso también está bien.", "respuesta": "5", "banco": ["1", "2", "3", "4", "5"]},
         {"texto": "Alguien hace una pregunta difícil o incluso se burla de un tema de fe.", "respuesta": "1", "banco": ["1", "2", "3", "4", "5"]},
@@ -3776,6 +3793,7 @@ _agregar("C0N3-CO06", "A03", {
 _agregar("C0N3-CO06", "A04", {
     "tipo": "completar",
     "titulo": "Ordenar y reconstruir: dar razón de mi esperanza",
+    "instruccion": "Lee el pasaje bíblico de este tema y ordena las siguientes frases según el orden en que ocurrieron, del 1 al último.",
     "items": [
         {"texto": "Se confía en que el resultado de esa conversación no depende solo de uno mismo.", "respuesta": "4", "banco": ["1", "2", "3", "4"]},
         {"texto": "Se busca vivir de manera coherente con lo que se cree, como primer testimonio.", "respuesta": "1", "banco": ["1", "2", "3", "4"]},

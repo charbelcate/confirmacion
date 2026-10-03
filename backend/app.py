@@ -238,6 +238,7 @@ def actividad_publica(actividad_id, actividad):
             {"texto": it["texto"], "banco": it.get("banco", []), "abierta": it.get("abierta", False)}
             for it in actividad["items"]
         ]
+        base["instruccion"] = actividad.get("instruccion")
 
     elif tipo == "verdadero_falso":
         base["items"] = [{"texto": it["texto"]} for it in actividad["items"]]
