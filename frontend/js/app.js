@@ -105,6 +105,7 @@ function route() {
   // código del joven), así que se revisa ANTES del chequeo de getCodigo().
   if (ruta === "catequista") return pantallaCatequista();
   if (ruta === "catequista-nino" && param) return pantallaCatequistaNino(param);
+  if (ruta === "catequista-respuestas") return pantallaCatequistaRespuestas();
 
   // Panel de administrador (reiniciar el tutorial desde cero): otra sesión
   // aparte, sin enlace visible en ninguna pantalla — se entra solo
@@ -299,12 +300,17 @@ async function pantallaCatequista() {
         ${data.ninos.length === 0
           ? `<p class="mensaje">${sinResultados}</p>`
           : `<ul class="lista-catequista">${filas}</ul>`}
+        <p class="enlace-catequista"><a href="#" id="link-revisar-respuestas">Revisar respuestas abiertas</a></p>
         <p class="enlace-catequista"><a href="#" id="link-cambiar-grupo">Cambiar de grupo</a></p>
         <p class="enlace-catequista"><a href="#" id="link-salir-catequista">Salir del panel de catequista</a></p>
       </section>`;
 
     $app.querySelectorAll(".tarjeta-catequista").forEach(($li) => {
       $li.addEventListener("click", () => irA(`#/catequista-nino/${encodeURIComponent($li.dataset.codigo)}`));
+    });
+    document.getElementById("link-revisar-respuestas").addEventListener("click", (e) => {
+      e.preventDefault();
+      irA("#/catequista-respuestas");
     });
     document.getElementById("link-cambiar-grupo").addEventListener("click", (e) => {
       e.preventDefault();
@@ -374,6 +380,91 @@ async function pantallaCatequistaNino(codigo) {
   }
 }
 
+// ----------------------------------- revisión de respuestas abiertas --
+// El catequista lee cada respuesta a una pregunta abierta y confirma si
+// es válida o no, aunque el sistema la haya aceptado o rechazado
+// automáticamente — esas confirmaciones son las que después se usan para
+// ampliar los ejemplos de referencia que compara el modelo (ver
+// app.py, _evaluar_item_abierto, y db.py, listar_respuestas_validas_no_promovidas).
+const NOMBRE_MOTIVO_ABIERTA = {
+  alerta: "⚠️ Contenido de alerta",
+  fuera_de_tema: "❓ No coincidió con el tema",
+  vacio: "— vacía",
+};
+
+async function pantallaCatequistaRespuestas() {
+  if (!getClaveCatequista()) return pantallaFormularioClaveCatequista();
+
+  $back.hidden = false;
+  $title.textContent = "Revisar respuestas";
+  $app.innerHTML = '<p class="cargando">Cargando…</p>';
+
+  try {
+    const data = await api(`/api/catequista/respuestas-abiertas?clave=${encodeURIComponent(getClaveCatequista())}`);
+
+    if (!data.respuestas.length) {
+      $app.innerHTML = `
+        <section class="pantalla pantalla-catequista-respuestas">
+          <h1>Revisar respuestas abiertas</h1>
+          <p class="mensaje">No hay respuestas pendientes de revisión por ahora.</p>
+          <p class="enlace-catequista"><a href="#/catequista" id="link-volver-lista-resp">← Volver a la lista</a></p>
+        </section>`;
+      document.getElementById("link-volver-lista-resp").addEventListener("click", (e) => { e.preventDefault(); irA("#/catequista"); });
+      return;
+    }
+
+    const tarjetas = data.respuestas.map((r) => `
+      <li class="tarjeta tarjeta-respuesta-abierta" data-id="${r.id}">
+        <p class="respuesta-abierta-meta">
+          <strong>${r.codigo_nino}</strong> ·
+          ${r.logrado ? "✅ el sistema la aceptó" : (NOMBRE_MOTIVO_ABIERTA[r.motivo] || "no aceptada")}
+        </p>
+        <p class="respuesta-abierta-pregunta">${r.pregunta_texto}</p>
+        <p class="respuesta-abierta-texto">«${r.texto_respuesta}»</p>
+        <div class="respuesta-abierta-botones">
+          <button type="button" class="btn-secundario btn-marcar-respuesta" data-id="${r.id}" data-valido="1">✔ Marcar válida</button>
+          <button type="button" class="btn-secundario btn-marcar-respuesta" data-id="${r.id}" data-valido="0">✘ No es válida</button>
+        </div>
+      </li>`).join("");
+
+    $app.innerHTML = `
+      <section class="pantalla pantalla-catequista-respuestas">
+        <h1>Revisar respuestas abiertas</h1>
+        <p class="subtitulo">Lee cada respuesta y confirma si es válida, aunque el sistema la haya aceptado o rechazado — así se mejora la evaluación automática con el tiempo.</p>
+        <ul class="lista-catequista">${tarjetas}</ul>
+        <p class="enlace-catequista"><a href="#/catequista" id="link-volver-lista-resp">← Volver a la lista</a></p>
+      </section>`;
+
+    document.getElementById("link-volver-lista-resp").addEventListener("click", (e) => { e.preventDefault(); irA("#/catequista"); });
+
+    $app.querySelectorAll(".btn-marcar-respuesta").forEach(($btn) => {
+      $btn.addEventListener("click", async () => {
+        const id = $btn.dataset.id;
+        const valido = $btn.dataset.valido === "1";
+        $app.querySelectorAll(`.btn-marcar-respuesta[data-id="${id}"]`).forEach((b) => { b.disabled = true; });
+        try {
+          await api(`/api/catequista/respuestas-abiertas/${id}/marcar`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ clave: getClaveCatequista(), valido }),
+          });
+          const $li = $app.querySelector(`.tarjeta-respuesta-abierta[data-id="${id}"]`);
+          if ($li) $li.remove();
+        } catch (err) {
+          alert(err.message);
+          $app.querySelectorAll(`.btn-marcar-respuesta[data-id="${id}"]`).forEach((b) => { b.disabled = false; });
+        }
+      });
+    });
+  } catch (err) {
+    if (err.message.includes("incorrecta")) {
+      salirCatequista();
+      return pantallaFormularioClaveCatequista(err.message);
+    }
+    $app.innerHTML = `<p class="mensaje mensaje-error">${err.message}</p>`;
+  }
+}
+
 // --------------------------------------------------------------- admin --
 // Reiniciar el tutorial desde cero (borra el progreso de TODOS los jóvenes).
 // A propósito NO se guarda la clave de administrador en localStorage (a
@@ -420,6 +511,17 @@ async function pantallaAdminConfirmar() {
   $app.innerHTML = `
     <section class="pantalla pantalla-login">
       <h1>⚠️ Esto no se puede deshacer</h1>
+      ${estado.respuestas_validas_pendientes > 0 ? `
+      <div class="mensaje aviso-respuestas-pendientes">
+        <p>
+          📋 Hay <strong>${estado.respuestas_validas_pendientes}</strong>
+          ${estado.respuestas_validas_pendientes === 1 ? "respuesta abierta confirmada" : "respuestas abiertas confirmadas"}
+          por catequistas, esperando copiarse a "respuestas_referencia" en content.py.
+          Esto no tiene nada que ver con reiniciar el tutorial — es solo un aviso para que lo recuerdes.
+        </p>
+        <button type="button" id="btn-ver-respuestas-pendientes" class="btn-secundario">Ver detalle</button>
+        <div id="detalle-respuestas-pendientes"></div>
+      </div>` : ""}
       <p class="mensaje-peligro">
         Estás a punto de borrar el progreso de <strong>${estado.ninos}</strong> ${estado.ninos === 1 ? "joven" : "jóvenes"}
         (<strong>${estado.intentos}</strong> ${estado.intentos === 1 ? "actividad registrada" : "actividades registradas"} en total).
@@ -452,6 +554,50 @@ async function pantallaAdminConfirmar() {
       $app.innerHTML = `<p class="mensaje mensaje-error">${err.message}</p>`;
     }
   });
+  const btnVerDetalle = document.getElementById("btn-ver-respuestas-pendientes");
+  if (btnVerDetalle) {
+    btnVerDetalle.addEventListener("click", async () => {
+      const $detalle = document.getElementById("detalle-respuestas-pendientes");
+      btnVerDetalle.disabled = true;
+      btnVerDetalle.textContent = "Cargando…";
+      try {
+        const data = await api(`/api/admin/respuestas-validas?clave=${encodeURIComponent(claveAdminSesion)}`);
+        const lineas = data.respuestas.map((r) =>
+          `[${r.actividad_id} · ítem ${r.item_index}] ${r.codigo_nino}\nPregunta: ${r.pregunta_texto}\nRespuesta: ${r.texto_respuesta}\n`
+        );
+        const textoCompleto = lineas.join("\n");
+        const tarjetas = data.respuestas.map((r) => `
+          <li class="tarjeta tarjeta-respuesta-abierta">
+            <p class="respuesta-abierta-meta"><strong>${r.codigo_nino}</strong> · ${r.actividad_id} · ítem ${r.item_index}</p>
+            <p class="respuesta-abierta-pregunta">${r.pregunta_texto}</p>
+            <p class="respuesta-abierta-texto">«${r.texto_respuesta}»</p>
+          </li>`).join("");
+        $detalle.innerHTML = data.respuestas.length
+          ? `
+            <button type="button" id="btn-copiar-respuestas" class="btn-secundario">📋 Copiar todo</button>
+            <ul class="lista-catequista">${tarjetas}</ul>`
+          : `<p class="mensaje">No hay ninguna pendiente en este momento.</p>`;
+        const btnCopiar = document.getElementById("btn-copiar-respuestas");
+        if (btnCopiar) {
+          btnCopiar.addEventListener("click", async () => {
+            try {
+              await navigator.clipboard.writeText(textoCompleto);
+              btnCopiar.textContent = "✔ Copiado";
+            } catch {
+              btnCopiar.textContent = "No se pudo copiar — selecciona el texto manualmente";
+            }
+            setTimeout(() => { btnCopiar.textContent = "📋 Copiar todo"; }, 2500);
+          });
+        }
+      } catch (err) {
+        $detalle.innerHTML = `<p class="mensaje mensaje-error">${err.message}</p>`;
+      } finally {
+        btnVerDetalle.disabled = false;
+        btnVerDetalle.textContent = "Ver detalle";
+      }
+    });
+  }
+
   document.getElementById("link-cancelar-admin").addEventListener("click", (e) => {
     e.preventDefault();
     claveAdminSesion = "";

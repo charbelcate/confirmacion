@@ -154,6 +154,37 @@ def _evaluar_item_abierto(texto, item):
     return True, None
 
 
+def _guardar_respuestas_abiertas(codigo, actividad_id, a, respuestas):
+    """Guarda el texto de cada ítem 'abierta' que se respondió en esta
+    actividad, junto con el resultado de su evaluación automática —
+    para que el catequista pueda revisarlas después desde su panel y
+    confirmar cuáles son válidas (ver /api/catequista/respuestas-abiertas
+    y db.guardar_respuesta_abierta). Nunca debe romper el envío de la
+    actividad: si falla el guardado (p.ej. problema pasajero de conexión
+    con la base de datos), se ignora en silencio."""
+    for i, it in enumerate(a.get("items", [])):
+        if not it.get("abierta"):
+            continue
+        val = ((respuestas[i] if respuestas and i < len(respuestas) else "") or "").strip()
+        if not val:
+            continue
+        try:
+            ok, motivo = _evaluar_item_abierto(val, it)
+            db.guardar_respuesta_abierta(
+                codigo_nino=codigo,
+                encuentro_id=a["contenido_id"].split("-")[0],
+                contenido_id=a["contenido_id"],
+                actividad_id=actividad_id,
+                item_index=i,
+                pregunta_texto=it.get("texto", ""),
+                texto_respuesta=val,
+                logrado=ok,
+                motivo=motivo,
+            )
+        except Exception:
+            pass
+
+
 def _motivo_abiertos(items, respuestas):
     """Motivo más relevante entre los ítems 'abierta' de `items` que no se
     contaron como acierto ("alerta" pesa más que "fuera_de_tema"), o None
@@ -669,6 +700,8 @@ def api_responder(actividad_id):
     # genérico, y lo marcamos en la respuesta para que quede visible en el
     # registro de progreso del catequista.
     motivo_abierto = a["tipo"] in TIPOS_RELLENAR and _motivo_abiertos(a["items"], respuestas)
+    if a["tipo"] in TIPOS_RELLENAR:
+        _guardar_respuestas_abiertas(codigo, actividad_id, a, respuestas)
     alerta_contenido = motivo_abierto == "alerta"
     fuera_de_tema = motivo_abierto == "fuera_de_tema"
     if not resultado["logrado"]:
@@ -912,6 +945,59 @@ def api_catequista_nino(codigo):
 # por accidente. Antes de borrar, se guarda una copia de respaldo del
 # archivo de la base de datos junto al original.
 
+@app.route("/api/catequista/respuestas-abiertas")
+def api_catequista_respuestas_abiertas():
+    """Lista de respuestas a preguntas abiertas para que el catequista las
+    revise y confirme cuáles son válidas, aunque el sistema las haya
+    rechazado (o al revés). Por defecto solo las no revisadas todavía;
+    con ?todas=1 se listan también las ya marcadas."""
+    if not _autorizado_catequista():
+        return jsonify({"error": "Clave de catequista incorrecta."}), 403
+    solo_pendientes = request.args.get("todas") != "1"
+    return jsonify({"respuestas": db.listar_respuestas_abiertas(solo_pendientes=solo_pendientes)})
+
+
+@app.route("/api/catequista/respuestas-abiertas/<int:id_respuesta>/marcar", methods=["POST"])
+def api_catequista_marcar_respuesta(id_respuesta):
+    """El catequista confirma o descarta una respuesta abierta tras leerla.
+    No cambia el resultado que ya recibió el joven por esa actividad —
+    solo queda registrado para, más adelante, ampliar los ejemplos de
+    "respuestas_referencia" en content.py con las que se confirmen como
+    válidas (ver /api/admin/respuestas-validas)."""
+    datos = request.get_json(silent=True) or {}
+    clave = datos.get("clave") or request.args.get("clave") or ""
+    if clave != CLAVE_CATEQUISTA:
+        return jsonify({"error": "Clave de catequista incorrecta."}), 403
+    valido = bool(datos.get("valido"))
+    if not db.marcar_respuesta_abierta(id_respuesta, valido):
+        return jsonify({"error": "No se encontró esa respuesta."}), 404
+    return jsonify({"ok": True})
+
+
+@app.route("/api/admin/respuestas-validas")
+def api_admin_respuestas_validas():
+    """Respuestas que el catequista ya confirmó como válidas y todavía no
+    se agregaron a content.py. Pensada para copiarlas manualmente (o con
+    un script de apoyo) a "respuestas_referencia" del ítem correspondiente,
+    y luego llamar a /api/admin/respuestas-validas/promovidas con sus ids."""
+    clave = request.args.get("clave") or ""
+    if clave != CLAVE_ADMIN:
+        return jsonify({"error": "Clave de administrador incorrecta."}), 403
+    return jsonify({"respuestas": db.listar_respuestas_validas_no_promovidas()})
+
+
+@app.route("/api/admin/respuestas-validas/promovidas", methods=["POST"])
+def api_admin_marcar_promovidas():
+    """Marca estas respuestas (por id) como ya incorporadas a content.py,
+    para no volver a traerlas en la próxima ronda de /api/admin/respuestas-validas."""
+    datos = request.get_json(silent=True) or {}
+    clave = datos.get("clave") or ""
+    if clave != CLAVE_ADMIN:
+        return jsonify({"error": "Clave de administrador incorrecta."}), 403
+    n = db.marcar_promovidas(datos.get("ids") or [])
+    return jsonify({"ok": True, "marcadas": n})
+
+
 @app.route("/api/admin/estado-bd")
 def api_admin_estado_bd():
     """Solo consulta cuántos jóvenes/intentos hay registrados ahora mismo —
@@ -920,7 +1006,13 @@ def api_admin_estado_bd():
     clave = request.args.get("clave") or ""
     if clave != CLAVE_ADMIN:
         return jsonify({"error": "Clave de administrador incorrecta."}), 403
-    return jsonify(db.contar_registros())
+    datos = db.contar_registros()
+    # Cuántas respuestas abiertas ya confirmó algún catequista como válidas
+    # y todavía no se copiaron a "respuestas_referencia" en content.py (ver
+    # /api/admin/respuestas-validas) — para que quien administra la vea
+    # cada vez que entra aquí, sin tener que acordarse de revisar aparte.
+    datos["respuestas_validas_pendientes"] = len(db.listar_respuestas_validas_no_promovidas())
+    return jsonify(datos)
 
 
 @app.route("/api/admin/limpiar-bd", methods=["POST"])

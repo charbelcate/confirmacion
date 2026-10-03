@@ -109,6 +109,25 @@ def init_db():
             PRIMARY KEY (codigo_nino, actividad_id)
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
     """)
+    cur.execute("""
+        CREATE TABLE IF NOT EXISTS respuestas_abiertas (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            codigo_nino VARCHAR(100),
+            encuentro_id VARCHAR(100),
+            contenido_id VARCHAR(100),
+            actividad_id VARCHAR(100),
+            item_index INT,
+            pregunta_texto TEXT,
+            texto_respuesta TEXT,
+            logrado TINYINT(1),
+            motivo VARCHAR(50),
+            revisado TINYINT(1) DEFAULT 0,
+            valido_catequista TINYINT(1) NULL,
+            promovida TINYINT(1) DEFAULT 0,
+            fecha_hora DATETIME,
+            fecha_revision DATETIME NULL
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+    """)
     conn.commit()
     cur.close()
     conn.close()
@@ -196,6 +215,126 @@ def progreso_actividades(codigo_nino, actividad_ids):
     cur.close()
     conn.close()
     return out
+
+
+# ---------------------------------------- respuestas abiertas (revisión) --
+# Guarda el texto de cada respuesta a una pregunta "abierta" (ver
+# _evaluar_item_abierto en app.py), junto con el resultado automático de
+# su evaluación, para que el catequista pueda revisarlas después desde su
+# panel y confirmar cuáles son válidas aunque el sistema las haya
+# rechazado (o al revés). No afecta el resultado de la actividad del
+# joven: es solo un registro para revisión y mejora posterior — ver
+# listar_respuestas_validas_no_promovidas, que usa esas confirmaciones
+# para ampliar "respuestas_referencia" en content.py.
+
+def guardar_respuesta_abierta(codigo_nino, encuentro_id, contenido_id, actividad_id,
+                               item_index, pregunta_texto, texto_respuesta,
+                               logrado, motivo):
+    conn = get_conn()
+    cur = conn.cursor()
+    cur.execute(
+        """INSERT INTO respuestas_abiertas
+           (codigo_nino, encuentro_id, contenido_id, actividad_id, item_index,
+            pregunta_texto, texto_respuesta, logrado, motivo, fecha_hora)
+           VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)""",
+        (codigo_nino, encuentro_id, contenido_id, actividad_id, item_index,
+         pregunta_texto, texto_respuesta, 1 if logrado else 0, motivo, _ahora()),
+    )
+    conn.commit()
+    cur.close()
+    conn.close()
+
+
+def listar_respuestas_abiertas(solo_pendientes=True, limite=200):
+    """Respuestas a preguntas abiertas para la pantalla de revisión del
+    catequista. Por defecto solo las que todavía no se marcaron
+    (revisado=0) — ver marcar_respuesta_abierta. Las más recientes primero."""
+    conn = get_conn()
+    cur = conn.cursor()
+    if solo_pendientes:
+        cur.execute(
+            "SELECT * FROM respuestas_abiertas WHERE revisado=0 ORDER BY fecha_hora DESC LIMIT %s",
+            (limite,),
+        )
+    else:
+        cur.execute(
+            "SELECT * FROM respuestas_abiertas ORDER BY fecha_hora DESC LIMIT %s",
+            (limite,),
+        )
+    rows = cur.fetchall()
+    cur.close()
+    conn.close()
+    out = []
+    for r in rows:
+        d = dict(r)
+        d["fecha_hora"] = _iso(d["fecha_hora"])
+        d["fecha_revision"] = _iso(d["fecha_revision"])
+        out.append(d)
+    return out
+
+
+def marcar_respuesta_abierta(id_respuesta, valido):
+    """El catequista confirma (True) o descarta (False) una respuesta
+    abierta tras leerla. No borra nada; solo queda marcada como revisada
+    con su veredicto, para poder ampliar respuestas_referencia después."""
+    conn = get_conn()
+    cur = conn.cursor()
+    cur.execute(
+        "UPDATE respuestas_abiertas SET revisado=1, valido_catequista=%s, fecha_revision=%s WHERE id=%s",
+        (1 if valido else 0, _ahora(), id_respuesta),
+    )
+    conn.commit()
+    afectadas = cur.rowcount
+    cur.close()
+    conn.close()
+    return afectadas > 0
+
+
+def listar_respuestas_validas_no_promovidas(limite=500):
+    """Respuestas que el catequista ya confirmó como válidas y que todavía
+    no se agregaron a "respuestas_referencia" en content.py — ver
+    marcar_promovidas, que se llama después de copiarlas ahí a mano (o con
+    un script), para no volver a traer las mismas la próxima vez."""
+    conn = get_conn()
+    cur = conn.cursor()
+    cur.execute(
+        """SELECT * FROM respuestas_abiertas
+           WHERE valido_catequista=1 AND promovida=0
+           ORDER BY actividad_id, item_index, fecha_hora
+           LIMIT %s""",
+        (limite,),
+    )
+    rows = cur.fetchall()
+    cur.close()
+    conn.close()
+    out = []
+    for r in rows:
+        d = dict(r)
+        d["fecha_hora"] = _iso(d["fecha_hora"])
+        d["fecha_revision"] = _iso(d["fecha_revision"])
+        out.append(d)
+    return out
+
+
+def marcar_promovidas(ids):
+    """Marca estas respuestas (por id) como ya incorporadas a content.py,
+    para que listar_respuestas_validas_no_promovidas no las vuelva a
+    traer en la próxima ronda."""
+    ids = [int(i) for i in (ids or [])]
+    if not ids:
+        return 0
+    conn = get_conn()
+    cur = conn.cursor()
+    placeholders = ",".join(["%s"] * len(ids))
+    cur.execute(
+        f"UPDATE respuestas_abiertas SET promovida=1 WHERE id IN ({placeholders})",
+        tuple(ids),
+    )
+    conn.commit()
+    afectadas = cur.rowcount
+    cur.close()
+    conn.close()
+    return afectadas
 
 
 # --------------------------------------------------- módulo de catequista --
@@ -309,6 +448,8 @@ def respaldar_a_archivo(ruta_archivo):
     intentos = cur.fetchall()
     cur.execute("SELECT * FROM estado_actividad")
     estado_actividad = cur.fetchall()
+    cur.execute("SELECT * FROM respuestas_abiertas")
+    respuestas_abiertas = cur.fetchall()
     cur.close()
     conn.close()
 
@@ -317,6 +458,7 @@ def respaldar_a_archivo(ruta_archivo):
         "ninos": ninos,
         "intentos": intentos,
         "estado_actividad": estado_actividad,
+        "respuestas_abiertas": respuestas_abiertas,
     }
     os.makedirs(os.path.dirname(ruta_archivo), exist_ok=True)
     with open(ruta_archivo, "w", encoding="utf-8") as f:
@@ -331,6 +473,7 @@ def limpiar_todo():
     conn = get_conn()
     cur = conn.cursor()
     cur.execute("DELETE FROM estado_actividad")
+    cur.execute("DELETE FROM respuestas_abiertas")
     cur.execute("DELETE FROM intentos")
     cur.execute("DELETE FROM ninos")
     conn.commit()

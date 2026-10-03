@@ -391,3 +391,24 @@ textarea.input-abierta {
 .btn-peligro:disabled { background: #d8b4b0; cursor: not-allowed; }
 .admin-resultado { text-align: center; }
 .admin-resultado .icono-ok { font-size: 2.6rem; display: block; margin-bottom: 6px; }
+
+/* --- revisión de respuestas abiertas --- */
+.tarjeta-respuesta-abierta {
+  background: white; border-radius: var(--radio); padding: 12px 14px;
+  border: 1px solid #eadfc0; cursor: default;
+}
+.respuesta-abierta-meta { font-size: 0.8rem; color: var(--gris); margin: 0 0 6px; }
+.respuesta-abierta-pregunta { font-weight: 600; color: var(--azul); margin: 0 0 6px; }
+.respuesta-abierta-texto { margin: 0 0 10px; font-style: italic; }
+.respuesta-abierta-botones { display: flex; gap: 8px; flex-wrap: wrap; }
+.respuesta-abierta-botones .btn-marcar-respuesta { flex: 1; min-width: 120px; }
+
+.aviso-respuestas-pendientes {
+  background: #fff8e1; border: 1px solid #f0d78c; border-radius: var(--radio);
+  padding: 10px 14px; font-size: 0.9rem; margin-bottom: 14px;
+}
+.aviso-respuestas-pendientes code { font-size: 0.85em; }
+
+.aviso-respuestas-pendientes p { margin: 0 0 10px; }
+.aviso-respuestas-pendientes #detalle-respuestas-pendientes { margin-top: 12px; }
+.aviso-respuestas-pendientes .lista-catequista { margin-top: 10px; }
