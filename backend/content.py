@@ -450,21 +450,21 @@ def _agregar(contenido_id, sufijo, actividad):
 # --- C0N1-CO01 — Jesús llama por nuestro nombre --------------------------
 _agregar("C0N1-CO01", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: la llamada junto al lago",
+    "titulo": "Crucigrama bíblico: Mc 1,16-20",
     "items": [
-        {"texto": "Palabra que resume lo que Jesús hace cuando invita a alguien a seguirlo.", "respuesta": "LLAMADA"},
-        {"texto": "Quien camina por la orilla del lago de Galilea y llama a los primeros discípulos.", "respuesta": "JESUS"},
-        {"texto": "Nombre del primer pescador que Jesús llama (después será Pedro).", "respuesta": "SIMON"},
-        {"texto": "Hermano de Simón, llamado junto con él.", "respuesta": "ANDRES"},
-        {"texto": "Oficio de los primeros que Jesús llama.", "respuesta": "PESCADORES"},
-        {"texto": "Lo que hacen los llamados: caminar detrás de Jesús y aprender de él.", "respuesta": "SEGUIR"},
-        {"texto": "Lo que Simón y Andrés dejan en el suelo para seguir a Jesús.", "respuesta": "REDES"},
-        {"texto": "Quien aprende de un maestro y camina con él; así queda Simón después de la llamada.", "respuesta": "DISCIPULO"},
+        {"texto": "Mc 1,17 — Quien invita a los pescadores a seguirlo y les cambia el oficio es ______.", "respuesta": "JESUS"},
+        {"texto": "Mc 1,16 — Jesús vio a este pescador y a Andrés, de su misma familia, echando la red.", "respuesta": "SIMON"},
+        {"texto": "Mc 1,16 — Pescador de la misma familia que Simón, a quien Jesús vio junto al agua.", "respuesta": "ANDRES"},
+        {"texto": "Mc 1,20 — Jesús los ______ en seguida, y ellos dejaron a su padre en la barca.", "respuesta": "LLAMO"},
+        {"texto": "Mc 1,17 — Jesús promete que serán ______ de hombres, no de peces.", "respuesta": "PESCADORES"},
+        {"texto": "Mc 1,19 — Juan trabajaba en la barca junto a Santiago, su ______ (hijos de los mismos padres).", "respuesta": "HERMANO"},
+        {"texto": "Mc 1,16 — Región del norte de Israel cuyo lago bordeaba Jesús cuando llamó a los primeros pescadores.", "respuesta": "GALILEA"},
+        {"texto": "Mc 1,19 — Hijo de Zebedeo y hermano de Juan; Jesús lo vio poco más adelante (su nombre es el del apóstol patrono de España).", "respuesta": "SANTIAGO"},
     ],
-    "incluir": ["JESUS", "LLAMADA"],
+    "incluir": ["LLAMO", "PESCADORES"],
     "requisito": 6,
-    "pistas": ["Todas las palabras aparecen en el relato de Marcos 1,16-20.",
-               "JESUS y LLAMADA son las palabras centrales del contenido: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Mc 1,16-20: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "LLAMO y PESCADORES son las palabras centrales: Jesús llama a cada uno en su oficio y por su nombre."],
 })
 
 _agregar("C0N1-CO01", "A02", {
@@ -474,7 +474,7 @@ _agregar("C0N1-CO01", "A02", {
     "incluir": ["JESUS", "LLAMADA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: JESUS y SIMON.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N1-CO01", "A03", {
@@ -663,21 +663,21 @@ _agregar("C0N1-CO01", "A10", {
 # --- C0N1-CO02 — Seguir a Jesús implica una respuesta ---------------------
 _agregar("C0N1-CO02", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: una respuesta libre",
+    "titulo": "Crucigrama bíblico: Mc 1,16-20",
     "items": [
-        {"texto": "Lo que Jesús espera después de llamar: no una obligación, sino una...", "respuesta": "RESPUESTA"},
-        {"texto": "Cualidad de una decisión que no se toma por presión ni por miedo.", "respuesta": "LIBRE"},
-        {"texto": "Lo contrario de quedarse quieto: moverse, actuar, decidir.", "respuesta": "ACTUAR"},
-        {"texto": "Palabra que describe la fe que confía aunque no se vea todo con claridad.", "respuesta": "CONFIANZA"},
-        {"texto": "Lo que Simón y Andrés hacen «en seguida», sin dudarlo demasiado.", "respuesta": "OBEDECER"},
-        {"texto": "Lo que Jesús pronuncia y que cambia el rumbo de la vida de dos pescadores.", "respuesta": "PALABRA"},
-        {"texto": "Sentimiento que puede aparecer antes de tomar una decisión importante.", "respuesta": "DUDA"},
-        {"texto": "Lo que se necesita para pasar de escuchar a Jesús a caminar con él.", "respuesta": "DECISION"},
+        {"texto": "Mc 1,18 — Al oír la invitación, los dos hermanos ______ su trabajo y se fueron con él (7 letras).", "respuesta": "DEJARON"},
+        {"texto": "Mc 1,17 — Jesús dice que los hará pescadores de ______ (personas).", "respuesta": "HOMBRES"},
+        {"texto": "Mc 1,16 — Oficio de Simón y Andrés: se ganaban la vida con lo que sacaban del agua.", "respuesta": "PESCADORES"},
+        {"texto": "Mc 1,18 — Instrumento de pesca que los hermanos dejaron al seguir a Jesús (plural).", "respuesta": "REDES"},
+        {"texto": "Mc 1,20 — Zebedeo, que se quedó en la barca con los jornaleros, era el ______ de los dos hijos llamados.", "respuesta": "PADRE"},
+        {"texto": "Mc 1,16 — Andrés era el ______ de Simón: trabajaban juntos.", "respuesta": "HERMANO"},
+        {"texto": "Mc 1,17 — Quien dice a los pescadores que lo sigan es ______.", "respuesta": "JESUS"},
+        {"texto": "Mc 1,16 — Pescador que, con Andrés, de su misma familia, echaba la red cuando Jesús pasó.", "respuesta": "SIMON"},
     ],
-    "incluir": ["RESPUESTA", "LIBRE"],
+    "incluir": ["DEJARON", "PESCADORES"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con cómo se responde a una llamada.",
-               "RESPUESTA y LIBRE son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Mc 1,16-20: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "DEJARON y PESCADORES muestran la respuesta de los discípulos: dejar algo y cambiar de oficio para ir tras Jesús."],
 })
 
 _agregar("C0N1-CO02", "A02", {
@@ -687,7 +687,7 @@ _agregar("C0N1-CO02", "A02", {
     "incluir": ["RESPUESTA", "LIBRE"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: DUDA y LIBRE.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N1-CO02", "A03", {
@@ -869,21 +869,21 @@ _agregar("C0N1-CO02", "A10", {
 # --- C0N1-CO03 — Dejar las redes: prioridades y decisiones ---------------
 _agregar("C0N1-CO03", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: elegir prioridades",
+    "titulo": "Crucigrama bíblico: Mc 1,16-20",
     "items": [
-        {"texto": "Lo que Simón y Andrés dejan en el suelo para poder seguir a Jesús.", "respuesta": "REDES"},
-        {"texto": "Lo primero que se pone al elegir entre varias cosas importantes.", "respuesta": "PRIORIDAD"},
-        {"texto": "Acto de elegir una opción entre varias posibles.", "respuesta": "DECISION"},
-        {"texto": "Lo que ocupa el tiempo diario: estudios, redes sociales, amigos, deportes.", "respuesta": "RUTINA"},
-        {"texto": "Palabra que describe algo que ocupa el primer lugar en la vida de alguien.", "respuesta": "CENTRAL"},
-        {"texto": "Lo que se necesita soltar cuando algo nuevo e importante llega a la vida.", "respuesta": "SOLTAR"},
-        {"texto": "Sinónimo de escoger, entre dos o más caminos posibles.", "respuesta": "ELEGIR"},
-        {"texto": "Lo que tiene la vida cuando las prioridades están bien ordenadas.", "respuesta": "SENTIDO"},
+        {"texto": "Mc 1,19 — Los dos hermanos las arreglaban en su embarcación cuando Jesús los vio (herramientas de pesca, plural).", "respuesta": "REDES"},
+        {"texto": "Mc 1,20 — Los llamados ______ a su padre y a su trabajo para ir con Jesús (7 letras).", "respuesta": "DEJARON"},
+        {"texto": "Mc 1,19 — Embarcación pequeña donde Santiago y Juan trabajaban con su padre.", "respuesta": "BARCA"},
+        {"texto": "Mc 1,20 — Padre de Santiago y Juan, que se quedó con los jornaleros.", "respuesta": "ZEBEDEO"},
+        {"texto": "Mc 1,20 — Trabajadores a sueldo que se quedaron con Zebedeo mientras sus hijos se iban.", "respuesta": "JORNALEROS"},
+        {"texto": "Mc 1,19 — Hijo de Zebedeo y hermano de Juan (su nombre en español es el del apóstol patrono de España).", "respuesta": "SANTIAGO"},
+        {"texto": "Mc 1,19 — Hermano de Santiago, también llamado mientras arreglaba lo necesario para pescar.", "respuesta": "JUAN"},
+        {"texto": "Mc 1,20 — Zebedeo se quedó en la barca; era el ______ de los dos hermanos llamados.", "respuesta": "PADRE"},
     ],
-    "incluir": ["PRIORIDAD", "DECISION"],
+    "incluir": ["REDES", "DEJARON"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con elegir qué va primero en la vida.",
-               "PRIORIDAD y DECISION son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Mc 1,16-20: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "REDES y DEJARON son el corazón del tema: ¿qué prefieren los llamados, lo seguro de su oficio o a Jesús?"],
 })
 
 _agregar("C0N1-CO03", "A02", {
@@ -893,7 +893,7 @@ _agregar("C0N1-CO03", "A02", {
     "incluir": ["PRIORIDAD", "DECISION"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: REDES y SOLTAR.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N1-CO03", "A03", {
@@ -1076,21 +1076,21 @@ _agregar("C0N1-CO03", "A10", {
 # --- C0N1-CO04 — El discipulado es un camino ------------------------------
 _agregar("C0N1-CO04", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: un camino, no un salto",
+    "titulo": "Crucigrama bíblico: Mc 1,16-20 / Mt 28,18-20",
     "items": [
-        {"texto": "Palabra que describe el discipulado: no es un salto, es un...", "respuesta": "CAMINO"},
-        {"texto": "Lo que sucede cuando alguien cambia de mentalidad y de vida por Dios.", "respuesta": "CONVERSION"},
-        {"texto": "Lo contrario de quedarse igual: mejorar poco a poco.", "respuesta": "CRECER"},
-        {"texto": "Palabra que describe algo que toma tiempo, no que ocurre de un día para otro.", "respuesta": "PROCESO"},
-        {"texto": "Lo que hace un discípulo frente a su maestro: recibir enseñanza.", "respuesta": "APRENDER"},
-        {"texto": "Cruz que, según Lucas 9,23, cada discípulo debe cargar cada día.", "respuesta": "CRUZ"},
-        {"texto": "Palabra que describe algo que se repite día tras día, con constancia.", "respuesta": "DIARIO"},
-        {"texto": "Lo que un caminante necesita para no perderse en el camino.", "respuesta": "RUMBO"},
+        {"texto": "Mc 1,16 — Región cuyo lago recorría Jesús cuando empezó a llamar a sus primeros seguidores.", "respuesta": "GALILEA"},
+        {"texto": "Mc 1,19 — Juan trabajaba junto a Santiago, su ______ (hijos de los mismos padres).", "respuesta": "HERMANO"},
+        {"texto": "Mt 28,18 — Jesús afirma que ha recibido plenos poderes en la tierra y en el ______ (donde está Dios).", "respuesta": "CIELO"},
+        {"texto": "Mt 28,18 — Jesús recibe poder en el cielo y en la ______ (el lugar donde vivimos).", "respuesta": "TIERRA"},
+        {"texto": "Mt 28,20 — Jesús promete acompañar a los suyos hasta el fin del ______ (el planeta entero).", "respuesta": "MUNDO"},
+        {"texto": "Mt 28,19 — Jesús envía a hacer ______ (seguidores y alumnos suyos) de todos los pueblos.", "respuesta": "DISCIPULOS"},
+        {"texto": "Mt 28,20 — Lo que Jesús ha ______ (encargado, ordenado) es lo que hay que enseñar.", "respuesta": "MANDADO"},
+        {"texto": "Mt 28,20 — Acción de transmitir todo lo que Jesús encargó: ______ (9 letras).", "respuesta": "ENSEÑANDO"},
     ],
-    "incluir": ["CAMINO", "PROCESO"],
+    "incluir": ["GALILEA", "MUNDO"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con un discipulado que toma tiempo.",
-               "CAMINO y PROCESO son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Mc 1,16-20 y Mt 28,18-20: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "GALILEA y MUNDO marcan el recorrido: Jesús empieza llamando junto al lago y termina enviando hasta el fin del mundo."],
 })
 
 _agregar("C0N1-CO04", "A02", {
@@ -1100,7 +1100,7 @@ _agregar("C0N1-CO04", "A02", {
     "incluir": ["CAMINO", "PROCESO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: CRUZ y CAMINO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N1-CO04", "A03", {
@@ -1282,21 +1282,21 @@ _agregar("C0N1-CO04", "A10", {
 # --- C0N1-CO05 — Mis dones al servicio de la misión -----------------------
 _agregar("C0N1-CO05", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: dones para servir",
+    "titulo": "Crucigrama bíblico: Mc 1,17 / Mt 28,19-20",
     "items": [
-        {"texto": "Capacidad o talento que cada persona recibe de Dios para el bien de los demás.", "respuesta": "DON"},
-        {"texto": "Lo que se hace cuando se pone un don al servicio de otra persona.", "respuesta": "SERVIR"},
-        {"texto": "Palabra que describe la tarea de anunciar y vivir el Evangelio.", "respuesta": "MISION"},
-        {"texto": "Cualidad o habilidad natural que alguien tiene, por ejemplo cantar o escuchar bien.", "respuesta": "TALENTO"},
-        {"texto": "Comunidad de personas a la que cada joven puede aportar sus dones.", "respuesta": "IGLESIA"},
-        {"texto": "Palabra bíblica para «regalo», usada por San Pedro al hablar de los dones.", "respuesta": "GRACIA"},
-        {"texto": "Lo contrario de guardarse un don solo para uno mismo.", "respuesta": "COMPARTIR"},
-        {"texto": "Persona que recibe el servicio o la ayuda de otra.", "respuesta": "PROJIMO"},
+        {"texto": "Mc 1,17 — Jesús dice que los hará pescadores de ______ (personas).", "respuesta": "HOMBRES"},
+        {"texto": "Mc 1,17 — Jesús les cambia el oficio: serán ______ de gente en lugar de peces.", "respuesta": "PESCADORES"},
+        {"texto": "Mt 28,19 — Misión de ir a todos los pueblos ______ (sumergiendo en agua) a las personas (10 letras).", "respuesta": "BAUTIZANDO"},
+        {"texto": "Mt 28,19 — El Padre, el Hijo y el ______ Santo: así se nombra a Dios al bautizar.", "respuesta": "ESPIRITU"},
+        {"texto": "Mt 28,19 — Palabra que califica al Espíritu en la fórmula del bautismo.", "respuesta": "SANTO"},
+        {"texto": "Mt 28,19 — Se bautiza en el ______ de Dios Padre, Hijo y Espíritu Santo.", "respuesta": "NOMBRE"},
+        {"texto": "Mt 28,19 — Primera persona de la Trinidad nombrada al bautizar.", "respuesta": "PADRE"},
+        {"texto": "Mt 28,20 — Misión del discípulo, junto a bautizar: ______ lo que Jesús encargó (9 letras).", "respuesta": "ENSEÑANDO"},
     ],
-    "incluir": ["DON", "SERVIR"],
+    "incluir": ["PESCADORES", "BAUTIZANDO"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con los talentos puestos al servicio de otros.",
-               "DON y SERVIR son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Mc 1,17 y Mt 28,19-20: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "PESCADORES y BAUTIZANDO resumen la misión: ir hacia las personas y ofrecerles la vida de Jesús."],
 })
 
 _agregar("C0N1-CO05", "A02", {
@@ -1306,7 +1306,7 @@ _agregar("C0N1-CO05", "A02", {
     "incluir": ["DON", "SERVIR"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: DON y GRACIA.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N1-CO05", "A03", {
@@ -1488,21 +1488,21 @@ _agregar("C0N1-CO05", "A10", {
 # --- C0N1-CO06 — Seguir a Jesús con otros ---------------------------------
 _agregar("C0N1-CO06", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: seguir a Jesús en comunidad",
+    "titulo": "Crucigrama bíblico: Mc 1,16-20 / Mt 28,18-20",
     "items": [
-        {"texto": "Grupo de personas que comparten la fe y caminan juntas.", "respuesta": "COMUNIDAD"},
-        {"texto": "Número de discípulos que Jesús eligió como grupo cercano.", "respuesta": "DOCE"},
-        {"texto": "Palabra que describe la relación entre hermanos en la fe.", "respuesta": "FRATERNIDAD"},
-        {"texto": "Lo contrario de vivir la fe solo, aislado de los demás.", "respuesta": "JUNTOS"},
-        {"texto": "Grupo pequeño donde un joven vive de cerca su proceso de Confirmación.", "respuesta": "CATEQUESIS"},
-        {"texto": "Lo que se construye cuando un grupo se ayuda y se sostiene mutuamente.", "respuesta": "APOYO"},
-        {"texto": "Cualidad de estar presente y disponible para los demás del grupo.", "respuesta": "PRESENCIA"},
-        {"texto": "Palabra que describe pertenecer de verdad a un grupo o comunidad.", "respuesta": "PERTENECER"},
+        {"texto": "Mc 1,16 — Jesús vio a este pescador y a Andrés, de su misma familia, echando la red.", "respuesta": "SIMON"},
+        {"texto": "Mc 1,16 — Andrés era el ______ de Simón: trabajaban juntos.", "respuesta": "HERMANO"},
+        {"texto": "Mc 1,19 — Compañero de barca de Santiago, llamado junto a él.", "respuesta": "JUAN"},
+        {"texto": "Mc 1,16 — Jesús vio a Simón y a este otro pescador, de la misma familia, echando la red.", "respuesta": "ANDRES"},
+        {"texto": "Mc 1,19 — Padre de dos hermanos pescadores que se quedó en la barca mientras ellos seguían a Jesús.", "respuesta": "ZEBEDEO"},
+        {"texto": "Mt 28,19 — Jesús envía a ir a ______ los pueblos, sin dejar a nadie fuera.", "respuesta": "TODOS"},
+        {"texto": "Mt 28,20 — Jesús acompaña hasta el fin del ______ (el planeta entero).", "respuesta": "MUNDO"},
+        {"texto": "Mt 28,20 — Jesús envía a enseñar todo lo que él ha ______ (encargado, ordenado).", "respuesta": "MANDADO"},
     ],
-    "incluir": ["COMUNIDAD", "JUNTOS"],
+    "incluir": ["HERMANO", "TODOS"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con vivir la fe en comunidad, no en soledad.",
-               "COMUNIDAD y JUNTOS son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Mc 1,16-20 y Mt 28,18-20: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "En ambos textos nadie sigue solo: los llamados son parejas de hermanos y Jesús envía a todos, acompañándolos."],
 })
 
 _agregar("C0N1-CO06", "A02", {
@@ -1512,7 +1512,7 @@ _agregar("C0N1-CO06", "A02", {
     "incluir": ["COMUNIDAD", "JUNTOS"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: DOCE y APOYO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N1-CO06", "A03", {
@@ -1697,21 +1697,21 @@ _agregar("C0N1-CO06", "A10", {
 # --- C0N2-CO01 — Samuel aprende a escuchar --------------------------------
 _agregar("C0N2-CO01", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: Samuel escucha en el templo",
+    "titulo": "Crucigrama bíblico: 1 Sm 3,1-10",
     "items": [
-        {"texto": "Nombre del joven que servía en el templo y escuchó la voz de Dios de noche.", "respuesta": "SAMUEL"},
-        {"texto": "Sacerdote anciano bajo cuyo cuidado vivía Samuel en el templo.", "respuesta": "ELI"},
-        {"texto": "Número de veces que Samuel corrió donde Elí antes de entender quién lo llamaba.", "respuesta": "TRES"},
-        {"texto": "Lugar sagrado donde dormía Samuel y donde escuchó la voz.", "respuesta": "TEMPLO"},
-        {"texto": "Lo que Samuel hizo cada vez que escuchó su nombre: fue a ver a Elí.", "respuesta": "CORRIO"},
-        {"texto": "Acción de prestar atención con toda la mente y el corazón.", "respuesta": "ESCUCHAR"},
-        {"texto": "Palabra que describe estar dispuesto y abierto a lo que Dios pide.", "respuesta": "DISPONIBLE"},
-        {"texto": "Sonido que Samuel escuchó en la noche y que al principio no reconoció.", "respuesta": "VOZ"},
+        {"texto": "1 Sm 3,1 — Joven que servía al Señor junto al sacerdote Eli y fue llamado por su nombre.", "respuesta": "SAMUEL"},
+        {"texto": "1 Sm 3,4 — El Señor ______ a Samuel por su nombre mientras dormía (5 letras).", "respuesta": "LLAMO"},
+        {"texto": "1 Sm 3,3 — Todavía no se había apagado la ______ de Dios cuando el Señor llamó.", "respuesta": "LAMPARA"},
+        {"texto": "1 Sm 3,5 — Samuel fue ______ (a toda prisa) hacia Eli, creyendo que lo había llamado (9 letras).", "respuesta": "CORRIENDO"},
+        {"texto": "1 Sm 3,8 — El Señor llamó por ______ vez, y Eli comprendió quién llamaba.", "respuesta": "TERCERA"},
+        {"texto": "1 Sm 3,3 — Samuel ______ (estaba en pleno sueño) cuando oyó que lo llamaban (6 letras).", "respuesta": "DORMIA"},
+        {"texto": "1 Sm 3,1 — Samuel era todavía un ______ (muchacho) que servía bajo las órdenes de Eli.", "respuesta": "JOVEN"},
+        {"texto": "1 Sm 3,3 — Samuel descansaba cerca de este objeto sagrado, símbolo de la presencia de Dios.", "respuesta": "ARCA"},
     ],
-    "incluir": ["SAMUEL", "ESCUCHAR"],
+    "incluir": ["SAMUEL", "LLAMO"],
     "requisito": 6,
-    "pistas": ["Todas las palabras aparecen en el relato de 1 Samuel 3,1-10.",
-               "SAMUEL y ESCUCHAR son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de 1 Sm 3,1-10: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "SAMUEL y LLAMO son el centro del relato: Dios llama, y el joven tiene que aprender a reconocer su voz."],
 })
 
 _agregar("C0N2-CO01", "A02", {
@@ -1721,7 +1721,7 @@ _agregar("C0N2-CO01", "A02", {
     "incluir": ["SAMUEL", "ESCUCHAR"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: ELI, VOZ y TRES.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N2-CO01", "A03", {
@@ -1904,21 +1904,21 @@ _agregar("C0N2-CO01", "A10", {
 # --- C0N2-CO02 — Habla, Señor: escuchar antes de responder ----------------
 _agregar("C0N2-CO02", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: habla, Señor",
+    "titulo": "Crucigrama bíblico: 1 Sm 3,7-10",
     "items": [
-        {"texto": "Frase con la que Samuel responde a Dios: «Habla, Señor, que tu siervo...»", "respuesta": "ESCUCHA"},
-        {"texto": "Proceso de reconocer con calma lo que Dios pide en una decisión.", "respuesta": "DISCERNIMIENTO"},
-        {"texto": "Ausencia de ruido que ayuda a escuchar mejor.", "respuesta": "SILENCIO"},
-        {"texto": "Cualidad de estar receptivo a algo nuevo, sin cerrarse de antemano.", "respuesta": "APERTURA"},
-        {"texto": "Palabra que describe a quien está listo para servir y obedecer.", "respuesta": "SIERVO"},
-        {"texto": "Lo contrario de responder de forma impulsiva y apresurada.", "respuesta": "CALMA"},
-        {"texto": "Acción de detenerse a pensar antes de actuar o responder.", "respuesta": "REFLEXIONAR"},
-        {"texto": "Palabra que describe el tiempo dedicado a hablar con Dios.", "respuesta": "ORACION"},
+        {"texto": "1 Sm 3,9 — Primera palabra de la respuesta que Eli enseña a Samuel: le pide al Señor que le dirija la palabra (5 letras).", "respuesta": "HABLA"},
+        {"texto": "1 Sm 3,9 — Samuel debe presentarse ante Dios como su ______ (el que sirve y escucha).", "respuesta": "SIERVO"},
+        {"texto": "1 Sm 3,10 — Samuel asegura al Señor que su siervo lo ______ (presta atención a su voz) (7 letras).", "respuesta": "ESCUCHA"},
+        {"texto": "1 Sm 3,7 — Samuel no conocía aún al Señor, ni se le había comunicado su ______ (7 letras).", "respuesta": "PALABRA"},
+        {"texto": "1 Sm 3,9 — Título que Eli enseña a Samuel a dar a Dios cuando lo llame.", "respuesta": "SEÑOR"},
+        {"texto": "1 Sm 3,10 — Nombre que el Señor repite dos veces al llamar por última vez.", "respuesta": "SAMUEL"},
+        {"texto": "1 Sm 3,8 — Número de veces que el Señor llamó antes de que Eli comprendiera (la ______ vez).", "respuesta": "TERCERA"},
+        {"texto": "1 Sm 3,6 — Eli dice que no fue él quien pronunció el nombre de Samuel: fue el Señor quien ______ (5 letras).", "respuesta": "LLAMO"},
     ],
-    "incluir": ["ESCUCHA", "DISCERNIMIENTO"],
+    "incluir": ["HABLA", "SIERVO"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con escuchar antes de responder.",
-               "ESCUCHA y DISCERNIMIENTO son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de 1 Sm 3,7-10: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "HABLA y SIERVO son la clave: primero se escucha con disponibilidad, y luego se responde."],
 })
 
 _agregar("C0N2-CO02", "A02", {
@@ -1928,7 +1928,7 @@ _agregar("C0N2-CO02", "A02", {
     "incluir": ["ESCUCHA", "DISCERNIMIENTO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: CALMA y SIERVO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N2-CO02", "A03", {
@@ -2110,21 +2110,21 @@ _agregar("C0N2-CO02", "A10", {
 # --- C0N2-CO03 — María: una joven que responde con fe ---------------------
 _agregar("C0N2-CO03", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: el sí de María",
+    "titulo": "Crucigrama bíblico: Lc 1,26-38",
     "items": [
-        {"texto": "Nombre de la joven a quien el ángel Gabriel anuncia que será madre del Salvador.", "respuesta": "MARIA"},
-        {"texto": "Ángel que lleva el mensaje de Dios a María en Nazaret.", "respuesta": "GABRIEL"},
-        {"texto": "Título con el que el ángel saluda a María: «llena de...»", "respuesta": "GRACIA"},
-        {"texto": "Palabra final del sí de María: «hágase en mí según tu...»", "respuesta": "PALABRA"},
-        {"texto": "Nombre del niño que María concebirá, según el anuncio del ángel.", "respuesta": "JESUS"},
-        {"texto": "Título que María se da a sí misma al responder: «la esclava del...»", "respuesta": "SEÑOR"},
-        {"texto": "Ciudad donde vivía María cuando recibió el anuncio del ángel.", "respuesta": "NAZARET"},
-        {"texto": "Palabra que describe la respuesta de María: libre, sin ser obligada.", "respuesta": "LIBRE"},
+        {"texto": "Lc 1,27 — Nombre de la virgen desposada con José, de la casa de David.", "respuesta": "MARIA"},
+        {"texto": "Lc 1,26 — Nombre del ángel que Dios envió a una ciudad del norte de Israel.", "respuesta": "GABRIEL"},
+        {"texto": "Lc 1,26 — Pueblo del norte de Israel adonde fue enviado el ángel.", "respuesta": "NAZARET"},
+        {"texto": "Lc 1,27 — Así se describe a la joven María antes de que el ángel le hable.", "respuesta": "VIRGEN"},
+        {"texto": "Lc 1,38 — María se llama a sí misma sierva (o esclava) de este: el ______ (5 letras).", "respuesta": "SEÑOR"},
+        {"texto": "Lc 1,37 — El ángel dice que para Dios nada es ______ (que no se pueda hacer).", "respuesta": "IMPOSIBLE"},
+        {"texto": "Lc 1,26 — Mensajero que Dios envió a Nazaret (5 letras).", "respuesta": "ANGEL"},
+        {"texto": "Lc 1,26 — Región del norte de Israel donde está Nazaret (7 letras).", "respuesta": "GALILEA"},
     ],
-    "incluir": ["MARIA", "PALABRA"],
+    "incluir": ["MARIA", "SEÑOR"],
     "requisito": 6,
-    "pistas": ["Todas las palabras aparecen en el relato de la Anunciación, Lucas 1,26-38.",
-               "MARIA y PALABRA son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Lc 1,26-38: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "MARIA y SEÑOR resumen su fe: una joven sencilla que dice «sí» al Señor."],
 })
 
 _agregar("C0N2-CO03", "A02", {
@@ -2134,7 +2134,7 @@ _agregar("C0N2-CO03", "A02", {
     "incluir": ["MARIA", "PALABRA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: MARIA y LIBRE.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N2-CO03", "A03", {
@@ -2316,21 +2316,21 @@ _agregar("C0N2-CO03", "A10", {
 # --- C0N2-CO04 — El miedo y la confianza -----------------------------------
 _agregar("C0N2-CO04", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: no temas",
+    "titulo": "Crucigrama bíblico: Lc 1,28-38",
     "items": [
-        {"texto": "Palabra que dice el ángel a María para calmar su turbación: «No...»", "respuesta": "TEMAS"},
-        {"texto": "Sentimiento natural ante algo desconocido o inesperado.", "respuesta": "MIEDO"},
-        {"texto": "Lo contrario de la duda: creer firmemente que Dios acompaña.", "respuesta": "CONFIANZA"},
-        {"texto": "Palabra que describe algo que no se puede prever ni anticipar.", "respuesta": "INESPERADO"},
-        {"texto": "Cualidad de quien actúa a pesar del miedo, no en ausencia de él.", "respuesta": "VALENTIA"},
-        {"texto": "Lo que sintió María al escuchar el saludo del ángel: se...", "respuesta": "TURBO"},
-        {"texto": "Palabra que describe la seguridad interior que da la fe.", "respuesta": "PAZ"},
-        {"texto": "Lo que Dios promete a quien confía, según muchos pasajes bíblicos: su...", "respuesta": "PRESENCIA"},
+        {"texto": "Lc 1,28 — El ángel asegura a María que el Señor está con ella: «está ______».", "respuesta": "CONTIGO"},
+        {"texto": "Lc 1,35 — El poder del Altísimo la cubrirá como una ______ (protección).", "respuesta": "SOMBRA"},
+        {"texto": "Lc 1,32 — Título de Dios: Jesús será llamado Hijo del ______ (el más alto).", "respuesta": "ALTISIMO"},
+        {"texto": "Lc 1,35 — El ______ Santo vendrá sobre María.", "respuesta": "ESPIRITU"},
+        {"texto": "Lc 1,37 — Para Dios ninguna cosa es ______.", "respuesta": "IMPOSIBLE"},
+        {"texto": "Lc 1,31 — Nombre que María pondrá a su hijo: ______ (5 letras).", "respuesta": "JESUS"},
+        {"texto": "Lc 1,33 — Del hijo de María se dice que su ______ no tendrá fin (el dominio de un rey).", "respuesta": "REINO"},
+        {"texto": "Lc 1,32 — El Señor le dará el ______ de su antepasado David (asiento de un rey).", "respuesta": "TRONO"},
     ],
-    "incluir": ["MIEDO", "CONFIANZA"],
+    "incluir": ["CONTIGO", "SOMBRA"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con el miedo y la confianza en la fe.",
-               "MIEDO y CONFIANZA son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Lc 1,28-38: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "CONTIGO y SOMBRA son el contraste del pasaje: ante la turbación, Dios promete su presencia y su protección."],
 })
 
 _agregar("C0N2-CO04", "A02", {
@@ -2340,7 +2340,7 @@ _agregar("C0N2-CO04", "A02", {
     "incluir": ["MIEDO", "CONFIANZA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: PAZ y TEMAS.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N2-CO04", "A03", {
@@ -2522,21 +2522,21 @@ _agregar("C0N2-CO04", "A10", {
 # --- C0N2-CO05 — Mi historia también puede ser llamada ---------------------
 _agregar("C0N2-CO05", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: mi propia historia",
+    "titulo": "Crucigrama bíblico: Lc 1,26-36",
     "items": [
-        {"texto": "Conjunto de experiencias, dones y circunstancias que forman la vida de una persona.", "respuesta": "HISTORIA"},
-        {"texto": "Palabra que describe el llamado que Dios hace a cada persona en su propia vida.", "respuesta": "VOCACION"},
-        {"texto": "Lo que hace única e irrepetible a cada persona.", "respuesta": "PROPIA"},
-        {"texto": "Palabra que describe las capacidades y talentos recibidos de Dios.", "respuesta": "DONES"},
-        {"texto": "Situaciones concretas (familia, lugar, momento) en las que vive cada persona.", "respuesta": "CIRCUNSTANCIAS"},
-        {"texto": "Acto de darse cuenta de algo que antes no se veía con claridad.", "respuesta": "DESCUBRIR"},
-        {"texto": "Palabra que describe una pregunta abierta sobre el propio camino de vida.", "respuesta": "INTERROGANTE"},
-        {"texto": "Lo que se necesita para reconocer una llamada personal: atención a la propia vida.", "respuesta": "ATENCION"},
+        {"texto": "Lc 1,35 — El hijo de María será ______ Hijo de Dios (se le dará ese título) (7 letras).", "respuesta": "LLAMADO"},
+        {"texto": "Lc 1,31 — Antes de que nazca, el ángel indica a María cuál será el ______ que debe darle a su hijo: Jesús.", "respuesta": "NOMBRE"},
+        {"texto": "Lc 1,27 — José era de la casa de este rey de Israel.", "respuesta": "DAVID"},
+        {"texto": "Lc 1,27 — Hombre con quien estaba comprometida María.", "respuesta": "JOSE"},
+        {"texto": "Lc 1,26 — Mensajero que Dios envió a Nazaret, a una joven llamada María.", "respuesta": "ANGEL"},
+        {"texto": "Lc 1,26 — Región de Palestina donde está el pueblo de Nazaret.", "respuesta": "GALILEA"},
+        {"texto": "Lc 1,33 — El hijo de María reinará, y de su ______ no habrá fin (dominio de un rey).", "respuesta": "REINO"},
+        {"texto": "Lc 1,36 — Parienta de María que también esperaba un hijo.", "respuesta": "ISABEL"},
     ],
-    "incluir": ["HISTORIA", "VOCACION"],
+    "incluir": ["LLAMADO", "NOMBRE"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con descubrir la propia vocación en la propia historia.",
-               "HISTORIA y VOCACION son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Lc 1,26-36: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "Dios llama dentro de una historia concreta: con nombre, familia y lugar. LLAMADO y NOMBRE son las centrales."],
 })
 
 _agregar("C0N2-CO05", "A02", {
@@ -2546,7 +2546,7 @@ _agregar("C0N2-CO05", "A02", {
     "incluir": ["HISTORIA", "VOCACION"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: DONES y PROPIA.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N2-CO05", "A03", {
@@ -2728,21 +2728,21 @@ _agregar("C0N2-CO05", "A10", {
 # --- C0N2-CO06 — Discernir acompañados --------------------------------------
 _agregar("C0N2-CO06", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: discernir con otros",
+    "titulo": "Crucigrama bíblico: 1 Sm 3,8-9 / Lc 1,36",
     "items": [
-        {"texto": "Acción de pensar y decidir con calma un asunto importante.", "respuesta": "DISCERNIR"},
-        {"texto": "Persona que camina junto a otra, ayudándola en su proceso de fe.", "respuesta": "ACOMPAÑANTE"},
-        {"texto": "Sacerdote que ayudó a Samuel a reconocer la voz de Dios.", "respuesta": "ELI"},
-        {"texto": "Familiar de María que confirmó, con su propio embarazo, el anuncio del ángel.", "respuesta": "ISABEL"},
-        {"texto": "Lugar donde un joven encuentra apoyo para su proceso de fe.", "respuesta": "IGLESIA"},
-        {"texto": "Cualidad de confiar en el consejo de alguien con más experiencia.", "respuesta": "HUMILDAD"},
-        {"texto": "Palabra que describe a las personas de confianza que rodean a un joven.", "respuesta": "COMUNIDAD"},
-        {"texto": "Lo que se recibe cuando alguien ayuda a ver con más claridad una situación.", "respuesta": "CONSEJO"},
+        {"texto": "Lc 1,36 — Parienta de María; su historia confirma lo que el ángel anuncia.", "respuesta": "ISABEL"},
+        {"texto": "Lc 1,36 — El ángel le recuerda a María que Isabel es su familiar: su ______ (mujer de la misma familia).", "respuesta": "PARIENTA"},
+        {"texto": "Lc 1,36 — Isabel concibió siendo anciana: lo hizo en su ______ (edad avanzada).", "respuesta": "VEJEZ"},
+        {"texto": "Lc 1,36 — Isabel ha concebido un ______ a pesar de su edad.", "respuesta": "HIJO"},
+        {"texto": "1 Sm 3,9 — Joven a quien Eli aconseja cómo responder al Señor.", "respuesta": "SAMUEL"},
+        {"texto": "1 Sm 3,9 — Samuel debe asegurar al Señor que su siervo lo ______ (presta atención a su voz).", "respuesta": "ESCUCHA"},
+        {"texto": "1 Sm 3,8 — Eli comprende que el Señor llama al ______ (muchacho).", "respuesta": "JOVEN"},
+        {"texto": "1 Sm 3,9 — Primera palabra que Eli enseña a Samuel a decir al Señor: le pide que le dirija la palabra (5 letras).", "respuesta": "HABLA"},
     ],
-    "incluir": ["DISCERNIR", "COMUNIDAD"],
+    "incluir": ["ISABEL", "ESCUCHA"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con discernir con la ayuda de otros.",
-               "DISCERNIR y COMUNIDAD son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de 1 Sm 3,8-9 y Lc 1,36: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "ISABEL y ESCUCHA: Eli ayuda a Samuel a discernir, y la parienta Isabel confirma el signo a María: no discernimos solos."],
 })
 
 _agregar("C0N2-CO06", "A02", {
@@ -2752,7 +2752,7 @@ _agregar("C0N2-CO06", "A02", {
     "incluir": ["DISCERNIR", "COMUNIDAD"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: ELI e ISABEL.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N2-CO06", "A03", {
@@ -2937,21 +2937,21 @@ _agregar("C0N2-CO06", "A10", {
 # --- C0N3-CO01 — La duda puede abrir preguntas -----------------------------
 _agregar("C0N3-CO01", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: preguntas honestas",
+    "titulo": "Crucigrama bíblico: Hch 17,16-21",
     "items": [
-        {"texto": "Ciudad griega llena de ídolos que Pablo recorre antes de hablar en el Areópago.", "respuesta": "ATENAS"},
-        {"texto": "Sentimiento de incertidumbre que puede abrir preguntas honestas o cerrar la fe.", "respuesta": "DUDA"},
-        {"texto": "Lo que hace quien busca comprender mejor algo que no le queda claro.", "respuesta": "PREGUNTAR"},
-        {"texto": "Lugar de Atenas donde Pablo fue invitado a explicar su enseñanza.", "respuesta": "AREOPAGO"},
-        {"texto": "Palabra que describe rechazar algo de plano, sin siquiera considerarlo.", "respuesta": "NEGACION"},
-        {"texto": "Cualidad de una pregunta que busca de verdad entender, no solo criticar.", "respuesta": "HONESTA"},
-        {"texto": "Lo que sintió Pablo al ver la ciudad llena de ídolos: se llenó de...", "respuesta": "INDIGNACION"},
-        {"texto": "Palabra que describe el proceso de buscar comprender algo con la razón.", "respuesta": "COMPRENDER"},
+        {"texto": "Hch 17,16 — Pablo esperaba a sus compañeros en esta famosa ciudad griega, de gran fama intelectual: ______ (6 letras).", "respuesta": "ATENAS"},
+        {"texto": "Hch 17,16 — A Pablo le dolía ver la ciudad llena de imágenes de falsos dioses, de ______ (6 letras).", "respuesta": "IDOLOS"},
+        {"texto": "Hch 17,18 — Pablo conversó con estos pensadores de profesión, de escuelas distintas: los ______ (9 letras).", "respuesta": "FILOSOFOS"},
+        {"texto": "Hch 17,18 — Una de las dos escuelas de pensadores que discutían con Pablo, la del placer sereno (la otra era la de los estoicos): los ______ (9 letras).", "respuesta": "EPICUREOS"},
+        {"texto": "Hch 17,19 — Llevaron a Pablo a esta colina-tribunal de Atenas para que explicara su mensaje: el ______ (8 letras).", "respuesta": "AREOPAGO"},
+        {"texto": "Hch 17,19 — Querían saber qué era esa enseñanza ______ (lo contrario de antigua, 5 letras) que Pablo anunciaba.", "respuesta": "NUEVA"},
+        {"texto": "Hch 17,20 — Lo que Pablo decía les sonaba desconcertante; querían saber qué significaban esas cosas ______ (inusuales, 8 letras).", "respuesta": "EXTRAÑAS"},
+        {"texto": "Hch 17,21 — Además de los atenienses, vivían allí personas venidas de otros países: los ______ residentes (10 letras).", "respuesta": "EXTRANJEROS"},
     ],
-    "incluir": ["DUDA", "PREGUNTAR"],
+    "incluir": ["AREOPAGO", "NUEVA"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con el relato de Pablo en Atenas, Hechos 17,16-23.",
-               "DUDA y PREGUNTAR son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Hch 17,16-21: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "AREOPAGO y NUEVA son las palabras centrales: ante el tribunal de Atenas, Pablo presenta una enseñanza que a ellos les sonaba a novedad. Empieza por ahí."],
 })
 
 _agregar("C0N3-CO01", "A02", {
@@ -2961,7 +2961,7 @@ _agregar("C0N3-CO01", "A02", {
     "incluir": ["DUDA", "PREGUNTAR"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: DUDA y ATENAS.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N3-CO01", "A03", {
@@ -3143,21 +3143,21 @@ _agregar("C0N3-CO01", "A10", {
 # --- C0N3-CO02 — Pablo dialoga con la cultura -------------------------------
 _agregar("C0N3-CO02", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: Pablo dialoga en Atenas",
+    "titulo": "Crucigrama bíblico: Hch 17,16-23",
     "items": [
-        {"texto": "Lo que Pablo hace antes de hablar: observar con atención la ciudad y su cultura.", "respuesta": "OBSERVAR"},
-        {"texto": "Inscripción que Pablo encontró en un altar de Atenas: «Al Dios no...»", "respuesta": "CONOCIDO"},
-        {"texto": "Acción de intercambiar ideas con respeto entre personas que piensan distinto.", "respuesta": "DIALOGAR"},
-        {"texto": "Grupo de filósofos griegos que escuchó a Pablo en el Areópago.", "respuesta": "ESTOICOS"},
-        {"texto": "Lugar público donde Pablo debatía cada día con quien pasaba por ahí.", "respuesta": "AGORA"},
-        {"texto": "Actitud de Pablo antes de anunciar: partir de lo que la gente ya conoce o cree.", "respuesta": "PUNTODEPARTIDA"},
-        {"texto": "Palabra que describe anunciar el Evangelio con palabras y gestos.", "respuesta": "ANUNCIAR"},
-        {"texto": "Cualidad de un mensaje que se adapta al lenguaje de quien escucha, sin perder su verdad.", "respuesta": "RESPETUOSO"},
+        {"texto": "Hch 17,16 — Pablo esperaba a sus compañeros en esta ciudad de Grecia, famosa por su filosofía: ______ (6 letras).", "respuesta": "ATENAS"},
+        {"texto": "Hch 17,16 — Se sintió muy molesto al ver la ciudad llena de imágenes de falsos dioses: de ______ (6 letras).", "respuesta": "IDOLOS"},
+        {"texto": "Hch 17,17 — Pablo dialogaba con los creyentes en el edificio donde se reúnen a orar y leer la Escritura: la ______ (8 letras).", "respuesta": "SINAGOGA"},
+        {"texto": "Hch 17,17 — Allí conversaba con los miembros del pueblo de Israel: los ______ (6 letras).", "respuesta": "JUDIOS"},
+        {"texto": "Hch 17,18 — Entre los pensadores que discutían con Pablo había seguidores de esta escuela que valoraba la serenidad ante el destino: los ______ (8 letras).", "respuesta": "ESTOICOS"},
+        {"texto": "Hch 17,22 — Pablo se dirigió a los habitantes de aquella ciudad griega llamándolos por su gentilicio: ______ (10 letras).", "respuesta": "ATENIENSES"},
+        {"texto": "Hch 17,23 — Paseando por la ciudad, Pablo encontró esta mesa de ofrendas dedicada a una divinidad sin nombre: un ______ (5 letras).", "respuesta": "ALTAR"},
+        {"texto": "Hch 17,23 — La dedicatoria hablaba de un dios cuya identidad nadie sabía: el dios ______ (11 letras).", "respuesta": "DESCONOCIDO"},
     ],
-    "incluir": ["OBSERVAR", "DIALOGAR"],
+    "incluir": ["ALTAR", "DESCONOCIDO"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con cómo Pablo se acerca a la cultura ateniense.",
-               "OBSERVAR y DIALOGAR son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Hch 17,16-23: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "ALTAR y DESCONOCIDO son el punto de partida de Pablo: parte de algo que ellos ya tenían. Empieza por esas."],
 })
 
 _agregar("C0N3-CO02", "A02", {
@@ -3167,7 +3167,7 @@ _agregar("C0N3-CO02", "A02", {
     "incluir": ["OBSERVAR", "DIALOGAR"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: AGORA y CULTURA.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad, salvo una que se cambió por CULTURA para que quepa mejor en la sopa."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N3-CO02", "A03", {
@@ -3349,21 +3349,21 @@ _agregar("C0N3-CO02", "A10", {
 # --- C0N3-CO03 — Fe y razón no son enemigas ---------------------------------
 _agregar("C0N3-CO03", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: fe y razón",
+    "titulo": "Crucigrama bíblico: Hch 17,29-34",
     "items": [
-        {"texto": "Capacidad de pensar, argumentar y buscar la verdad con la mente.", "respuesta": "RAZON"},
-        {"texto": "Confianza y adhesión a Dios que va más allá de lo que se puede demostrar del todo.", "respuesta": "FE"},
-        {"texto": "Palabra que describe algo que se puede pensar y sostener con argumentos.", "respuesta": "ARGUMENTO"},
-        {"texto": "Lo que buscan tanto la fe como la razón, cada una a su manera.", "respuesta": "VERDAD"},
-        {"texto": "Palabra que describe cuando dos cosas pueden coexistir sin oponerse.", "respuesta": "COMPLEMENTAR"},
-        {"texto": "Idea de que la fe y la ciencia son enemigas irreconciliables (lo que este contenido cuestiona).", "respuesta": "OPOSICION"},
-        {"texto": "Grupo de filósofos griegos (junto a los estoicos) que escuchó a Pablo.", "respuesta": "EPICUREOS"},
-        {"texto": "Palabra que describe pensar con cuidado antes de aceptar o rechazar una idea.", "respuesta": "REFLEXIONAR"},
+        {"texto": "Hch 17,29 — Pablo advierte que no hay que imaginar la ______ (lo propio del Creador, 9 letras) como algo hecho de metal o roca.", "respuesta": "DIVINIDAD"},
+        {"texto": "Hch 17,29 — Entre los materiales con que se hacen ídolos está el oro y este otro metal precioso, blanco y brillante: ______ (5 letras).", "respuesta": "PLATA"},
+        {"texto": "Hch 17,29 — Las estatuas pueden tallarse en este material duro que se saca de las canteras: ______ (6 letras).", "respuesta": "PIEDRA"},
+        {"texto": "Hch 17,30 — Dios pasó por alto aquella época en que la gente no lo conocía: los tiempos de la ______ (10 letras).", "respuesta": "IGNORANCIA"},
+        {"texto": "Hch 17,31 — Dios ha fijado un día para pedir cuentas a toda la humanidad con rectitud e imparcialidad: con ______ (8 letras).", "respuesta": "JUSTICIA"},
+        {"texto": "Hch 17,32 — Lo que provocó burlas en algunos fue oír que personas ya fallecidas volverían a vivir: los ______ (7 letras).", "respuesta": "MUERTOS"},
+        {"texto": "Hch 17,34 — A pesar de las burlas, algunos aceptaron el anuncio con fe: ______ (verbo en pasado, 8 letras).", "respuesta": "CREYERON"},
+        {"texto": "Hch 17,29 — Pablo recuerda que somos hijos de este Creador, por eso no podemos imaginarlo como una estatua: ______ (4 letras).", "respuesta": "DIOS"},
     ],
-    "incluir": ["FE", "RAZON"],
+    "incluir": ["DIVINIDAD", "CREYERON"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con la relación entre la fe y el pensamiento razonado.",
-               "FE y RAZON son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Hch 17,29-34: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "DIVINIDAD y CREYERON resumen este tema: la razón purifica la imagen de Dios y la fe responde. Empieza por ahí."],
 })
 
 _agregar("C0N3-CO03", "A02", {
@@ -3373,7 +3373,7 @@ _agregar("C0N3-CO03", "A02", {
     "incluir": ["FE", "RAZON"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: FE y RAZON.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N3-CO03", "A03", {
@@ -3554,21 +3554,21 @@ _agregar("C0N3-CO03", "A10", {
 # --- C0N3-CO04 — Dios cercano al ser humano ---------------------------------
 _agregar("C0N3-CO04", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: un Dios cercano",
+    "titulo": "Crucigrama bíblico: Hch 17,24-28",
     "items": [
-        {"texto": "Título que Pablo da a Dios: quien hizo el mundo y todo lo que hay en él.", "respuesta": "CREADOR"},
-        {"texto": "Cualidad de Dios que Pablo destaca: no está lejos de cada uno de nosotros.", "respuesta": "CERCANIA"},
-        {"texto": "Lo que Dios da a todos, junto con la vida y todas las cosas.", "respuesta": "ALIENTO"},
-        {"texto": "Acción de intentar encontrar algo, como cuando se palpa en la oscuridad.", "respuesta": "BUSCAR"},
-        {"texto": "Lo que hacemos cuando tratamos de tocar o alcanzar algo sin verlo del todo.", "respuesta": "PALPAR"},
-        {"texto": "Relación de necesitar de otro para vivir, como toda la humanidad depende de Dios.", "respuesta": "DEPENDENCIA"},
-        {"texto": "Palabra que describe a toda la familia humana, de un mismo origen según Pablo.", "respuesta": "HUMANIDAD"},
-        {"texto": "Tipo de templo que Dios no necesita, según Pablo, porque no vive en edificios.", "respuesta": "HECHOPORMANOS"},
+        {"texto": "Hch 17,24 — El Creador es el autor de todo lo que existe en este ______ habitado (5 letras).", "respuesta": "MUNDO"},
+        {"texto": "Hch 17,24 — Dios es dueño de lo alto, donde están las nubes y las estrellas: el ______ (5 letras).", "respuesta": "CIELO"},
+        {"texto": "Hch 17,24 — Dios gobierna lo de arriba y también este suelo que pisamos: la ______ (6 letras).", "respuesta": "TIERRA"},
+        {"texto": "Hch 17,24 — Dios es dueño y soberano de todo lo creado: el ______ (título que significa «dueño», 5 letras).", "respuesta": "SEÑOR"},
+        {"texto": "Hch 17,24 — Pablo dice que Dios no habita en estos edificios sagrados construidos por manos humanas: en ______ (7 letras).", "respuesta": "TEMPLOS"},
+        {"texto": "Hch 17,27 — Todo está dispuesto para que los pueblos vayan tras Dios, aunque sea a tientas: ______ (verbo en infinitivo, 6 letras).", "respuesta": "BUSCAR"},
+        {"texto": "Hch 17,28 — En Dios nos movemos, existimos y ______ (verbo «estar con vida», 1.ª persona del plural, 7 letras).", "respuesta": "VIVIMOS"},
+        {"texto": "Hch 17,28 — Pablo apoya su idea citando a algunos de los ______ de ellos, los que escriben versos (6 letras).", "respuesta": "POETAS"},
     ],
-    "incluir": ["CREADOR", "CERCANIA"],
+    "incluir": ["BUSCAR", "VIVIMOS"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con el discurso de Pablo sobre Dios en Hechos 17,24-28.",
-               "CREADOR y CERCANIA son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Hch 17,24-28: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "BUSCAR y VIVIMOS dicen cómo Dios está cerca: nos da la vida y nos invita a ir tras él. Empieza por esas."],
 })
 
 _agregar("C0N3-CO04", "A02", {
@@ -3578,7 +3578,7 @@ _agregar("C0N3-CO04", "A02", {
     "incluir": ["CREADOR", "CERCANIA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: ALIENTO y BUSCAR.",
-               "Las ocho palabras son casi las mismas del crucigrama, salvo una que se cambió por TRASCENDENTE."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N3-CO04", "A03", {
@@ -3760,21 +3760,21 @@ _agregar("C0N3-CO04", "A10", {
 # --- C0N3-CO05 — Responder a preguntas difíciles ----------------------------
 _agregar("C0N3-CO05", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: preguntas difíciles",
+    "titulo": "Crucigrama bíblico: Hch 17,30-34",
     "items": [
-        {"texto": "Reacción de burla que algunos atenienses tuvieron al escuchar sobre la resurrección.", "respuesta": "BURLA"},
-        {"texto": "Actitud de mantener la calma frente a una reacción negativa o una burla.", "respuesta": "PACIENCIA"},
-        {"texto": "Enseñanza de Pablo que causó más sorpresa entre los griegos: la vida después de la muerte.", "respuesta": "RESURRECCION"},
-        {"texto": "Palabra con la que algunos atenienses llamaron a Pablo, con cierto desprecio, antes de escucharlo.", "respuesta": "PALABRERO"},
-        {"texto": "Acción de sostener una idea con razones claras y ordenadas.", "respuesta": "ARGUMENTAR"},
-        {"texto": "Tema difícil de responder que muchas personas jóvenes se preguntan: por qué existe el dolor.", "respuesta": "SUFRIMIENTO"},
-        {"texto": "Lo que muchas preguntas difíciles buscan encontrar en la vida: un propósito, un para qué.", "respuesta": "SENTIDO"},
-        {"texto": "Actitud de tomar en serio al otro aunque piense distinto, sin burlarse de él.", "respuesta": "RESPETO"},
+        {"texto": "Hch 17,32 — Lo que a unos les causó burla fue oír que alguien vuelve a la vida después de morir; a eso se le llama ______ (12 letras).", "respuesta": "RESURRECCION"},
+        {"texto": "Hch 17,32 — Al oír hablar de volver a la vida, unos se tomaban a Pablo a risa con desprecio: se ______ (imperfecto, 8 letras).", "respuesta": "BURLABAN"},
+        {"texto": "Hch 17,32 — Otros fueron corteses: «Sobre esto, ya te ______ en otra ocasión» (verbo del sentido del oído, futuro, 7 letras).", "respuesta": "OIREMOS"},
+        {"texto": "Hch 17,31 — Dios ofreció una prueba a todos al levantar a Jesús de entre quienes ya habían fallecido: los ______ (7 letras).", "respuesta": "MUERTOS"},
+        {"texto": "Hch 17,33 — Tras el diálogo, el apóstol se alejó de en medio de ellos: ______ (5 letras).", "respuesta": "PABLO"},
+        {"texto": "Hch 17,34 — Entre quienes aceptaron el mensaje no solo hubo varones, sino también una ______ (5 letras).", "respuesta": "MUJER"},
+        {"texto": "Hch 17,31 — Dios tiene un día señalado para emitir su veredicto sobre el mundo: ______ (verbo en infinitivo, 6 letras).", "respuesta": "JUZGAR"},
+        {"texto": "Hch 17,30 — Quien pasó por alto los tiempos de ignorancia y ahora llama a todos a cambiar de vida es ______ (4 letras).", "respuesta": "DIOS"},
     ],
-    "incluir": ["BURLA", "PACIENCIA"],
+    "incluir": ["RESURRECCION", "BURLABAN"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con cómo Pablo enfrenta las reacciones difíciles en Atenas.",
-               "BURLA y PACIENCIA son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Hch 17,30-34: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "RESURRECCION y BURLABAN muestran la pregunta difícil y la reacción de la burla: empieza por esas."],
 })
 
 _agregar("C0N3-CO05", "A02", {
@@ -3784,7 +3784,7 @@ _agregar("C0N3-CO05", "A02", {
     "incluir": ["BURLA", "PACIENCIA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: BURLA y SENTIDO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N3-CO05", "A03", {
@@ -3967,21 +3967,21 @@ _agregar("C0N3-CO05", "A10", {
 # --- C0N3-CO06 — Dar razón de la esperanza ----------------------------------
 _agregar("C0N3-CO06", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: dar razón de la esperanza",
+    "titulo": "Crucigrama bíblico: Hch 17,30-34",
     "items": [
-        {"texto": "Confianza firme en que Dios cumple sus promesas, aun sin verlas del todo cumplidas.", "respuesta": "ESPERANZA"},
-        {"texto": "Actitud con la que, según 1 Pedro 3,15, hay que responder sobre la propia fe.", "respuesta": "MANSEDUMBRE"},
-        {"texto": "Mostrar con la propia vida y palabras aquello en lo que se cree.", "respuesta": "TESTIMONIO"},
-        {"texto": "Cambio de vida al que Pablo invita a los atenienses en Hechos 17,30.", "respuesta": "CONVERSION"},
-        {"texto": "Nombre de uno de los que creyeron a Pablo en Atenas: Dionisio el...", "respuesta": "AREOPAGITA"},
-        {"texto": "Resultado bueno que se espera de una conversación de fe, aunque no dependa solo de nosotros.", "respuesta": "FRUTO"},
-        {"texto": "Cualidad de vivir de acuerdo con lo que se cree y se anuncia.", "respuesta": "COHERENCIA"},
-        {"texto": "Tarea de anunciar la fe a los demás, con palabras y con la vida.", "respuesta": "MISION"},
+        {"texto": "Hch 17,34 — Un miembro del tribunal de Atenas aceptó el mensaje; su nombre empieza por D y tiene 8 letras: ______.", "respuesta": "DIONISIO"},
+        {"texto": "Hch 17,34 — Una señora de la ciudad también aceptó la fe; su nombre empieza por D y tiene 7 letras: ______.", "respuesta": "DAMARIS"},
+        {"texto": "Hch 17,34 — Algunos aceptaron el anuncio con fe: ______ (verbo en pasado, 8 letras).", "respuesta": "CREYERON"},
+        {"texto": "Hch 17,31 — Dios pedirá cuentas a todos de manera recta e imparcial: con ______ (8 letras).", "respuesta": "JUSTICIA"},
+        {"texto": "Hch 17,31 — Un día fijado por Dios servirá para dar su veredicto sobre el mundo: ______ (verbo en infinitivo, 6 letras).", "respuesta": "JUZGAR"},
+        {"texto": "Hch 17,33 — Terminado el diálogo, el apóstol se retiró de entre ellos: ______ (5 letras).", "respuesta": "PABLO"},
+        {"texto": "Hch 17,30 — Dios dejó pasar los tiempos de falta de conocimiento: los tiempos de la ______ (10 letras).", "respuesta": "IGNORANCIA"},
+        {"texto": "Hch 17,34 — Entre quienes creyeron había una ______ (persona de sexo femenino, 5 letras).", "respuesta": "MUJER"},
     ],
-    "incluir": ["ESPERANZA", "MANSEDUMBRE"],
+    "incluir": ["CREYERON", "JUSTICIA"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con dar testimonio de la fe, según Hechos 17,30-34 y 1 Pedro 3,15.",
-               "ESPERANZA y MANSEDUMBRE son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Hch 17,30-34: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "CREYERON y JUSTICIA son las claves de la esperanza que Pablo anuncia: empieza por esas."],
 })
 
 _agregar("C0N3-CO06", "A02", {
@@ -3991,7 +3991,7 @@ _agregar("C0N3-CO06", "A02", {
     "incluir": ["ESPERANZA", "MANSEDUMBRE"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: FRUTO y MISION.",
-               "Las ocho palabras son casi las mismas del crucigrama, salvo una que se cambió por DAMARIS."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N3-CO06", "A03", {
@@ -4225,21 +4225,21 @@ def anterior_contenido_de(contenido_id):
 
 _agregar("C0N04-CO01", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: alguien se acerca en el camino",
+    "titulo": "Crucigrama bíblico: Lc 10,30-34",
     "items": [
-        {"texto": "Palabra que describe la actitud del samaritano frente al herido: lo contrario de pasar de largo.", "respuesta": "CERCANIA"},
-        {"texto": "Viajero despreciado por los judíos de su tiempo que termina siendo el verdadero prójimo del herido.", "respuesta": "SAMARITANO"},
-        {"texto": "Lo que el hombre tirado en el camino necesitaba con urgencia.", "respuesta": "SOCORRO"},
-        {"texto": "Lo que hacen el sacerdote y el levita para no acercarse al herido.", "respuesta": "RODEO"},
-        {"texto": "Primer personaje religioso que pasa junto al herido y sigue su camino.", "respuesta": "SACERDOTE"},
-        {"texto": "Segundo personaje religioso que, como el anterior, también pasa de largo.", "respuesta": "LEVITA"},
-        {"texto": "Lugar entre Jerusalén y Jericó donde ocurre todo el relato.", "respuesta": "CAMINO"},
-        {"texto": "Acción que hace el samaritano sobre las heridas del hombre, usando aceite y vino.", "respuesta": "VENDAR"},
+        {"texto": "Lc 10,33 — El único que se detuvo era un viajero natural de una región despreciada por los judíos: un ______ (10 letras).", "respuesta": "SAMARITANO"},
+        {"texto": "Lc 10,31 — El primero en pasar, un ministro del templo dedicado a los sacrificios, se desvió: el ______ (9 letras).", "respuesta": "SACERDOTE"},
+        {"texto": "Lc 10,32 — El segundo en pasar, un ayudante del culto, miró y siguió de largo: el ______ (6 letras).", "respuesta": "LEVITA"},
+        {"texto": "Lc 10,30 — Jesús empieza su relato con un ______ que bajaba de Jerusalén a Jericó (6 letras).", "respuesta": "HOMBRE"},
+        {"texto": "Lc 10,31 — Un ministro del templo bajaba por esta ruta entre las dos ciudades: el ______ (6 letras).", "respuesta": "CAMINO"},
+        {"texto": "Lc 10,30 — Los asaltantes se fueron dejando al viajero casi sin vida: medio ______ (6 letras).", "respuesta": "MUERTO"},
+        {"texto": "Lc 10,33 — Al verlo caído, el extranjero sintió esto: pena y ternura ante el dolor ajeno, se compadeció; la palabra es ______ (9 letras).", "respuesta": "COMPASION"},
+        {"texto": "Lc 10,34 — El extranjero vendó las lesiones que los asaltantes habían causado: las ______ (7 letras).", "respuesta": "HERIDAS"},
     ],
-    "incluir": ["CERCANIA", "SAMARITANO"],
+    "incluir": ["SAMARITANO", "CAMINO"],
     "requisito": 6,
-    "pistas": ["SACERDOTE y LEVITA nombran a quienes no se acercaron al herido.",
-               "CERCANIA y SAMARITANO son las palabras centrales de este tema: resuélvelas primero."],
+    "pistas": ["Todas las palabras salen de Lc 10,30-34: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "SAMARITANO y CAMINO son las palabras centrales: quien se acerca de verdad al que sufre. Empieza por ellas."],
 })
 
 _agregar("C0N04-CO01", "A02", {
@@ -4249,7 +4249,7 @@ _agregar("C0N04-CO01", "A02", {
     "incluir": ["CERCANIA", "SAMARITANO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: RODEO y CAMINO.",
-               "Las ocho palabras son las mismas que las del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N04-CO01", "A03", {
@@ -4440,21 +4440,21 @@ _agregar("C0N04-CO01", "A10", {
 
 _agregar("C0N04-CO02", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: una misericordia que actúa",
+    "titulo": "Crucigrama bíblico: Lc 10,27.33-34",
     "items": [
-        {"texto": "Virtud que mueve al samaritano a detenerse y cuidar al herido.", "respuesta": "MISERICORDIA"},
-        {"texto": "Junto con el vino, lo que el samaritano usa para curar las heridas.", "respuesta": "ACEITE"},
-        {"texto": "Líquido que, junto al aceite, sirve para aliviar y desinfectar al herido.", "respuesta": "VINO"},
-        {"texto": "Lo que hace el samaritano al atender personalmente al hombre asaltado en el camino.", "respuesta": "CURAR"},
-        {"texto": "Sentimiento profundo que lleva a actuar, y no solo a sentir pena por dentro.", "respuesta": "COMPASION"},
-        {"texto": "Modo delicado con que el samaritano trata al herido, como se cuida a alguien querido.", "respuesta": "TERNURA"},
-        {"texto": "Una acción concreta de ayuda, no solo una buena intención.", "respuesta": "GESTO"},
-        {"texto": "Lo que mueve al samaritano a actuar: no fue solo la razón, sino algo que sintió aquí.", "respuesta": "CORAZON"},
+        {"texto": "Lc 10,33 — Al ver al viajero caído, aquel extranjero se compadeció: sintió ______ (pena y ternura ante el dolor ajeno, 9 letras).", "respuesta": "COMPASION"},
+        {"texto": "Lc 10,34 — Para aliviar las lesiones, vertió sobre ellas este líquido dorado que se extrae de los olivos: ______ (6 letras).", "respuesta": "ACEITE"},
+        {"texto": "Lc 10,34 — Junto con el otro líquido, echó esta bebida hecha de uva para desinfectar: ______ (4 letras).", "respuesta": "VINO"},
+        {"texto": "Lc 10,34 — Se acercó y cubrió con una tela las lesiones del caído: las ______ (7 letras).", "respuesta": "HERIDAS"},
+        {"texto": "Lc 10,34 — En la posada no se limitó a dejarlo allí: se encargó de ______ de él (atenderlo con esmero, 6 letras).", "respuesta": "CUIDAR"},
+        {"texto": "Lc 10,27 — El primer mandamiento pide amar a Dios con todo este centro de los afectos de la persona: el ______ (7 letras).", "respuesta": "CORAZON"},
+        {"texto": "Lc 10,33 — Jesús presenta como modelo a este viajero natural de una región despreciada por los judíos: el ______ (10 letras).", "respuesta": "SAMARITANO"},
+        {"texto": "Lc 10,27 — El mandamiento pide amar a Dios con todo el ser, incluida la capacidad de pensar: con toda la ______ (5 letras).", "respuesta": "MENTE"},
     ],
-    "incluir": ["MISERICORDIA", "COMPASION"],
+    "incluir": ["COMPASION", "ACEITE"],
     "requisito": 6,
-    "pistas": ["ACEITE y VINO son los dos elementos que usa el samaritano para curar.",
-               "MISERICORDIA y COMPASION son las palabras centrales de este tema: resuélvelas primero."],
+    "pistas": ["Todas las palabras salen de Lc 10,27.33-34: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "COMPASION y ACEITE son los gestos del extranjero que se detuvo: se conmueve y cura. Empieza por esas."],
 })
 
 _agregar("C0N04-CO02", "A02", {
@@ -4464,7 +4464,7 @@ _agregar("C0N04-CO02", "A02", {
     "incluir": ["MISERICORDIA", "COMPASION"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: VINO y GESTO.",
-               "Las ocho palabras son las mismas que las del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N04-CO02", "A03", {
@@ -4655,21 +4655,21 @@ _agregar("C0N04-CO02", "A10", {
 
 _agregar("C0N04-CO03", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: un prójimo sin fronteras",
+    "titulo": "Crucigrama bíblico: Lc 10,25-29",
     "items": [
-        {"texto": "Pregunta del doctor de la ley a Jesús: ¿Quién es mi ______?", "respuesta": "PROJIMO"},
-        {"texto": "Lo que el samaritano cruza al detenerse a ayudar a alguien de otro pueblo.", "respuesta": "FRONTERA"},
-        {"texto": "Así veían los judíos de la época a los samaritanos.", "respuesta": "EXTRANJERO"},
-        {"texto": "Así podían considerar algunos judíos a los samaritanos, por la enemistad entre ambos pueblos.", "respuesta": "ENEMIGO"},
-        {"texto": "Experto en la Ley que le hace la pregunta inicial a Jesús.", "respuesta": "DOCTOR"},
-        {"texto": "Conjunto de mandamientos que el doctor cita al inicio del diálogo con Jesús.", "respuesta": "LEY"},
-        {"texto": "Lo que hace el doctor de la ley para poner a prueba a Jesús.", "respuesta": "PREGUNTA"},
-        {"texto": "Lo que el samaritano se vuelve para el herido, aunque antes eran de pueblos distintos.", "respuesta": "CERCANO"},
+        {"texto": "Lc 10,29 — Para saber a quién debía amar como a sí mismo, el experto preguntó: ¿quién es mi ______ (el que está cerca, 7 letras)?", "respuesta": "PROJIMO"},
+        {"texto": "Lc 10,25 — Un experto en la ley llamó a Jesús con este título respetuoso de quien enseña, parecido a «rabí»: ______ (7 letras).", "respuesta": "MAESTRO"},
+        {"texto": "Lc 10,25 — El experto preguntó cómo heredar la vida que no termina nunca; esa vida se califica de ______ (6 letras).", "respuesta": "ETERNA"},
+        {"texto": "Lc 10,29 — Para quedar bien, el experto quería ______ a sí mismo (hacer ver que obraba bien, 10 letras).", "respuesta": "JUSTIFICAR"},
+        {"texto": "Lc 10,27 — El mandamiento pide amar a Dios con todo el ser, incluida la energía del cuerpo: con todas tus ______ (7 letras).", "respuesta": "FUERZAS"},
+        {"texto": "Lc 10,27 — El mandamiento menciona también la parte espiritual y profunda de la persona: con toda el ______ (4 letras).", "respuesta": "ALMA"},
+        {"texto": "Lc 10,27 — El mandamiento empieza pidiendo amar al Señor, que es tu ______ (el Creador, 4 letras).", "respuesta": "DIOS"},
+        {"texto": "Lc 10,25 — Lo que el experto quería recibir en herencia para siempre: no la riqueza, sino la ______ (4 letras).", "respuesta": "VIDA"},
     ],
-    "incluir": ["PROJIMO", "FRONTERA"],
+    "incluir": ["PROJIMO", "JUSTIFICAR"],
     "requisito": 6,
-    "pistas": ["DOCTOR y LEY recuerdan quién inicia la conversación con Jesús y sobre qué tema.",
-               "PROJIMO y FRONTERA son las palabras centrales de este tema: resuélvelas primero."],
+    "pistas": ["Todas las palabras salen de Lc 10,25-29: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "PROJIMO y JUSTIFICAR son las claves: la pregunta de quien quiere poner límites al amor. Empieza por ellas."],
 })
 
 _agregar("C0N04-CO03", "A02", {
@@ -4679,7 +4679,7 @@ _agregar("C0N04-CO03", "A02", {
     "incluir": ["PROJIMO", "FRONTERA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: LEY y DOCTOR.",
-               "Las ocho palabras son las mismas que las del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N04-CO03", "A03", {
@@ -4870,21 +4870,21 @@ _agregar("C0N04-CO03", "A10", {
 
 _agregar("C0N04-CO04", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: una ayuda que continúa",
+    "titulo": "Crucigrama bíblico: Lc 10,30-36",
     "items": [
-        {"texto": "Persona a quien el samaritano encarga el cuidado del herido.", "respuesta": "POSADERO"},
-        {"texto": "Monedas que el samaritano entrega para pagar el cuidado del herido.", "respuesta": "DENARIOS"},
-        {"texto": "Lo que el samaritano le deja hecho al posadero antes de seguir su camino.", "respuesta": "ENCARGO"},
-        {"texto": "Verbo que resume la tarea que el samaritano pide seguir haciendo después de irse.", "respuesta": "CUIDAR"},
-        {"texto": "Hacerse cargo de alguien más allá del primer auxilio: así actúa el samaritano.", "respuesta": "RESPONSABILIDAD"},
-        {"texto": "Lo que el samaritano hace al decir que pagará lo que falte cuando regrese.", "respuesta": "PROMESA"},
-        {"texto": "Lo que el samaritano promete hacer para revisar cómo sigue el herido.", "respuesta": "REGRESAR"},
-        {"texto": "Lugar donde el samaritano lleva al herido para que lo sigan atendiendo.", "respuesta": "POSADA"},
+        {"texto": "Lc 10,35 — Al partir, pidió a quien lo hospedaba que se dedicara a ______ al enfermo (atenderlo con esmero, 6 letras).", "respuesta": "CUIDAR"},
+        {"texto": "Lc 10,34 — Lo llevó a este lugar de descanso para viajeros, donde se paga por quedarse: una ______ (6 letras).", "respuesta": "POSADA"},
+        {"texto": "Lc 10,35 — Prometió reembolsar al encargado: «lo que ______ de más te lo pagaré a mi regreso» (verbo que significa emplear dinero, 2.ª persona, 6 letras).", "respuesta": "GASTES"},
+        {"texto": "Lc 10,36 — Jesús pregunta cuál se hizo cercano del asaltado, entre estos viajeros: un sacerdote, un levita y un extranjero; son ______ (número, 4 letras).", "respuesta": "TRES"},
+        {"texto": "Lc 10,36 — Jesús pregunta cuál de los viajeros se portó como el ______ del asaltado (el que está cerca, 7 letras).", "respuesta": "PROJIMO"},
+        {"texto": "Lc 10,33 — El extranjero que se hizo cargo de todo era natural de una región despreciada por los judíos: un ______ (10 letras).", "respuesta": "SAMARITANO"},
+        {"texto": "Lc 10,30 — El relato empieza con un ______ que bajaba camino de Jericó y fue asaltado (6 letras).", "respuesta": "HOMBRE"},
+        {"texto": "Lc 10,30 — Los asaltantes lo dejaron en estado tan grave que parecía casi sin vida: medio ______ (6 letras).", "respuesta": "MUERTO"},
     ],
-    "incluir": ["RESPONSABILIDAD", "CUIDAR"],
+    "incluir": ["CUIDAR", "GASTES"],
     "requisito": 6,
-    "pistas": ["POSADERO y POSADA están muy relacionadas: una nombra el lugar y otra a la persona.",
-               "RESPONSABILIDAD y CUIDAR son las palabras centrales de este tema: resuélvelas primero."],
+    "pistas": ["Todas las palabras salen de Lc 10,30-36: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "CUIDAR y GASTES muestran que el extranjero se hace responsable hasta el final: empieza por ahí."],
 })
 
 _agregar("C0N04-CO04", "A02", {
@@ -4894,7 +4894,7 @@ _agregar("C0N04-CO04", "A02", {
     "incluir": ["RESPONSABILIDAD", "CUIDAR"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: CUIDAR y POSADA.",
-               "Las ocho palabras son las mismas que las del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N04-CO04", "A03", {
@@ -5085,21 +5085,21 @@ _agregar("C0N04-CO04", "A10", {
 
 _agregar("C0N04-CO05", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: cuando un camino se vuelve encuentro",
+    "titulo": "Crucigrama bíblico: Lc 10,30-34",
     "items": [
-        {"texto": "Palabra que nombra lo que sucede cuando el samaritano se detiene frente al herido.", "respuesta": "ENCUENTRO"},
-        {"texto": "Lo que ni el sacerdote ni el levita hicieron, pero el samaritano sí.", "respuesta": "DETENERSE"},
-        {"texto": "Antes de actuar, el samaritano hace esto: ve realmente al herido, no solo lo nota.", "respuesta": "MIRAR"},
-        {"texto": "Lo que el samaritano deja de lado al ayudar a alguien de un pueblo distinto al suyo.", "respuesta": "PREJUICIO"},
-        {"texto": "Ruta entre dos ciudades donde ocurre el encuentro central de la parábola.", "respuesta": "CAMINO"},
-        {"texto": "Ciudad hacia donde bajaba el hombre que fue asaltado.", "respuesta": "JERICO"},
-        {"texto": "Ciudad desde donde bajaba el hombre antes de ser asaltado.", "respuesta": "JERUSALEN"},
-        {"texto": "Así era el samaritano respecto al hombre herido, y aun así se hizo su prójimo.", "respuesta": "DIFERENTE"},
+        {"texto": "Lc 10,30 — Era el destino del viaje: una ciudad en el valle, en un descenso desde la capital; su nombre empieza por J (6 letras).", "respuesta": "JERICO"},
+        {"texto": "Lc 10,30 — Era el punto de partida del viaje: la ciudad santa de la que el hombre bajaba (9 letras).", "respuesta": "JERUSALEN"},
+        {"texto": "Lc 10,31 — Un ministro del templo iba por esta ruta cuando vio al caído y se desvió: el ______ (6 letras).", "respuesta": "CAMINO"},
+        {"texto": "Lc 10,31 — El primero que pasó, dedicado a ofrecer los sacrificios en el templo, se desvió: el ______ (9 letras).", "respuesta": "SACERDOTE"},
+        {"texto": "Lc 10,32 — Otro ayudante del culto en el templo llegó al lugar, lo miró y siguió su ruta: el ______ (6 letras).", "respuesta": "LEVITA"},
+        {"texto": "Lc 10,34 — Lo llevó a este lugar donde se hospeda a los viajeros: una ______ (6 letras).", "respuesta": "POSADA"},
+        {"texto": "Lc 10,34 — Una de las dos sustancias vertidas sobre las lesiones es esta bebida hecha de uva: ______ (4 letras).", "respuesta": "VINO"},
+        {"texto": "Lc 10,34 — La otra sustancia vertida sobre las lesiones es este líquido dorado que se extrae de los olivos: ______ (6 letras).", "respuesta": "ACEITE"},
     ],
-    "incluir": ["ENCUENTRO", "DETENERSE"],
+    "incluir": ["CAMINO", "JERICO"],
     "requisito": 6,
-    "pistas": ["JERUSALEN y JERICO son las dos ciudades que marcan el camino del relato.",
-               "ENCUENTRO y DETENERSE son las palabras centrales de este tema: resuélvelas primero."],
+    "pistas": ["Todas las palabras salen de Lc 10,30-34: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "CAMINO y JERICO son las palabras centrales: el encuentro sucede en la ruta de la ciudad santa a Jericó. Empieza por ahí."],
 })
 
 _agregar("C0N04-CO05", "A02", {
@@ -5109,7 +5109,7 @@ _agregar("C0N04-CO05", "A02", {
     "incluir": ["ENCUENTRO", "DETENERSE"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: MIRAR y JERICO.",
-               "Las ocho palabras son las mismas que las del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N04-CO05", "A03", {
@@ -5300,21 +5300,21 @@ _agregar("C0N04-CO05", "A10", {
 
 _agregar("C0N04-CO06", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: ve y haz tú lo mismo",
+    "titulo": "Crucigrama bíblico: Lc 10,27-28.37",
     "items": [
-        {"texto": "Verbo que resume la última orden de Jesús al final de la parábola: ve y haz esto.", "respuesta": "SERVIR"},
-        {"texto": "Quien sigue a Jesús y por eso también actúa como el samaritano.", "respuesta": "DISCIPULO"},
-        {"texto": "Lo que Jesús ofrece al doctor de la ley al contar la historia del samaritano.", "respuesta": "EJEMPLO"},
-        {"texto": "Lo que Jesús pide hacer cuando dice: ve y haz tú lo mismo.", "respuesta": "IMITAR"},
-        {"texto": "Una acción concreta de servicio, no solo una buena intención.", "respuesta": "GESTO"},
-        {"texto": "Tarea que todo discípulo recibe de Jesús: cuidar a quien lo necesita.", "respuesta": "MISION"},
-        {"texto": "Lo que mueve al verdadero servicio cristiano, más que la obligación.", "respuesta": "AMOR"},
-        {"texto": "Palabra que indica que la fe cristiana se demuestra en acciones concretas.", "respuesta": "OBRAS"},
+        {"texto": "Lc 10,37 — A la pregunta de Jesús, el experto respondió: quien lo trató con esta actitud de ternura ante el dolor ajeno, la ______ (9 letras).", "respuesta": "COMPASION"},
+        {"texto": "Lc 10,28 — Jesús le promete que, si lo cumple, tendrá vida: «haz esto y ______» (verbo «tener vida», futuro, 2.ª persona, 7 letras).", "respuesta": "VIVIRAS"},
+        {"texto": "Lc 10,27 — Se debe amar a Dios con todo este centro de los afectos y decisiones: el ______ (7 letras).", "respuesta": "CORAZON"},
+        {"texto": "Lc 10,27 — Se debe amar a Dios con toda la ______ (el pensamiento, 5 letras).", "respuesta": "MENTE"},
+        {"texto": "Lc 10,27 — El mandamiento empieza pidiendo amar al ______ tu Dios (título de soberano, 5 letras).", "respuesta": "SEÑOR"},
+        {"texto": "Lc 10,27 — El mandamiento menciona también la parte espiritual y profunda del ser humano: toda el ______ (4 letras).", "respuesta": "ALMA"},
+        {"texto": "Lc 10,27 — Se debe amar a Dios con todas tus ______ (la energía del cuerpo, 7 letras).", "respuesta": "FUERZAS"},
+        {"texto": "Lc 10,27 — El mismo mandamiento pide amar a esta otra persona, la que está a tu lado, como a ti mismo: tu ______ (7 letras).", "respuesta": "PROJIMO"},
     ],
-    "incluir": ["SERVIR", "DISCIPULO"],
+    "incluir": ["COMPASION", "VIVIRAS"],
     "requisito": 6,
-    "pistas": ["EJEMPLO e IMITAR están muy relacionadas: Jesús da uno para que hagamos el otro.",
-               "SERVIR y DISCIPULO son las palabras centrales de este tema: resuélvelas primero."],
+    "pistas": ["Todas las palabras salen de Lc 10,27-28.37: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "COMPASION y VIVIRAS son el camino del discípulo: «Ve y haz tú lo mismo». Empieza por esas."],
 })
 
 _agregar("C0N04-CO06", "A02", {
@@ -5324,7 +5324,7 @@ _agregar("C0N04-CO06", "A02", {
     "incluir": ["SERVIR", "DISCIPULO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: AMOR y GESTO.",
-               "Las ocho palabras son las mismas que las del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N04-CO06", "A03", {
@@ -5520,21 +5520,21 @@ _agregar("C0N04-CO06", "A10", {
 
 _agregar("C0N05-CO01", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: una comunidad que se ama",
+    "titulo": "Crucigrama bíblico: Hch 2,44-47",
     "items": [
-        {"texto": "Palabra que nombra el grupo de creyentes unidos en torno a los apóstoles después de Pentecostés.", "respuesta": "COMUNIDAD"},
-        {"texto": "Los Doce que enseñaban y guiaban a los primeros cristianos.", "respuesta": "APOSTOLES"},
-        {"texto": "Lazo que unía a los primeros cristianos como hermanos, más allá de la sangre.", "respuesta": "FRATERNIDAD"},
-        {"texto": "Lo contrario de la división: estar unidos en un mismo espíritu y un mismo corazón.", "respuesta": "UNIDAD"},
-        {"texto": "Ciudad donde nació la primera comunidad cristiana después de Pentecostés.", "respuesta": "JERUSALEN"},
-        {"texto": "Acción de poner los bienes al servicio de todos, según la necesidad de cada uno.", "respuesta": "COMPARTIR"},
-        {"texto": "Sentimiento que marcaba las comidas de los primeros cristianos, junto a la sencillez de corazón.", "respuesta": "ALEGRIA"},
-        {"texto": "Actitud humilde y sin aparentar, con la que los primeros cristianos compartían la mesa.", "respuesta": "SENCILLEZ"},
+        {"texto": "Hch 2,44 — Los que habían abrazado la fe se mantenían ______, formando un solo grupo sin dividirse.", "respuesta": "JUNTOS"},
+        {"texto": "Hch 2,44 — Nada era solo de uno: lo tenían todo en ______.", "respuesta": "COMUN"},
+        {"texto": "Hch 2,44 — Así se llama a quienes habían aceptado el mensaje de Jesús y formaban la comunidad.", "respuesta": "CREYENTES"},
+        {"texto": "Hch 2,44 — La unidad abarcaba a la totalidad de los que creían: ______ ellos, sin excepción.", "respuesta": "TODOS"},
+        {"texto": "Hch 2,46 — Sus comidas comunitarias se vivían con gran ______: un clima de fiesta y gozo.", "respuesta": "ALEGRIA"},
+        {"texto": "Hch 2,46 — Compartían el alimento sin dobleces ni pretensiones: con ______ (cualidad de lo simple y humilde).", "respuesta": "SENCILLEZ"},
+        {"texto": "Hch 2,46 — Su gozo brotaba de lo más hondo de la persona, de lo que la Biblia llama el ______.", "respuesta": "CORAZON"},
+        {"texto": "Hch 2,47 — La comunidad era bien vista por la gente de toda la ciudad, por todo el ______.", "respuesta": "PUEBLO"},
     ],
-    "incluir": ["COMUNIDAD", "APOSTOLES"],
+    "incluir": ["JUNTOS", "COMUN"],
     "requisito": 6,
-    "pistas": ["Piensa en lo que vivía el grupo reunido en Jerusalén después de Pentecostés.",
-               "Varias palabras nombran actitudes del corazón: alegría, sencillez, unidad."],
+    "pistas": ["Todas las palabras salen de Hch 2,44-47: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "JUNTOS y COMUN describen cómo vivía la primera comunidad: empieza por esas."],
 })
 
 _agregar("C0N05-CO01", "A02", {
@@ -5544,7 +5544,7 @@ _agregar("C0N05-CO01", "A02", {
     "incluir": ["COMUNIDAD", "APOSTOLES"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: UNIDAD y ALEGRIA.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N05-CO01", "A03", {
@@ -5734,21 +5734,21 @@ _agregar("C0N05-CO01", "A10", {
 
 _agregar("C0N05-CO02", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: la Palabra que une",
+    "titulo": "Crucigrama bíblico: Hch 2,42-44",
     "items": [
-        {"texto": "Lo que Dios comunica a su pueblo y que los primeros cristianos escuchaban con fidelidad.", "respuesta": "PALABRA"},
-        {"texto": "Transmisión fiel de lo que Jesús dijo e hizo, dada por los apóstoles a la comunidad.", "respuesta": "ENSEÑANZA"},
-        {"texto": "Los Doce que anunciaban la Palabra a los primeros cristianos.", "respuesta": "APOSTOLES"},
-        {"texto": "Actitud necesaria para recibir la Palabra: prestar atención con el corazón abierto.", "respuesta": "ESCUCHAR"},
-        {"texto": "Conjunto de verdades transmitidas sobre la fe; otro nombre para la enseñanza apostólica.", "respuesta": "DOCTRINA"},
-        {"texto": "Anuncio central del Evangelio: que Jesús murió y resucitó por nosotros.", "respuesta": "KERIGMA"},
-        {"texto": "Libro sagrado donde se conserva por escrito la Palabra de Dios.", "respuesta": "ESCRITURA"},
-        {"texto": "Acción de dar a conocer la Palabra a los demás.", "respuesta": "ANUNCIO"},
+        {"texto": "Hch 2,42 — Los doce enviados por Jesús eran los encargados de guiar a la comunidad: los ______.", "respuesta": "APOSTOLES"},
+        {"texto": "Hch 2,42 — Lo primero a lo que se dedicaban era a escuchar lo que ellos les transmitían: su ______.", "respuesta": "ENSEÑANZA"},
+        {"texto": "Hch 2,42 — Vivían como una sola familia de hermanos: la ______ fraterna, otro pilar de la comunidad.", "respuesta": "COMUNION"},
+        {"texto": "Hch 2,42 — Los creyentes no solo escuchaban: también hablaban con Dios en grupo, en la ______.", "respuesta": "ORACION"},
+        {"texto": "Hch 2,43 — Por medio de los apóstoles, Dios daba muchos signos extraordinarios, ______ que apuntaban a Él (empieza por S).", "respuesta": "SEÑALES"},
+        {"texto": "Hch 2,43 — Ante lo que Dios hacía, un respeto profundo y reverente, casi un ______, llenaba a la gente.", "respuesta": "TEMOR"},
+        {"texto": "Hch 2,44 — Los que habían creído se mantenían ______, sin separarse unos de otros.", "respuesta": "JUNTOS"},
+        {"texto": "Hch 2,44 — Compartían lo que poseían: las ______ materiales que tenían eran de todos.", "respuesta": "COSAS"},
     ],
-    "incluir": ["PALABRA", "ENSEÑANZA"],
+    "incluir": ["ENSEÑANZA", "APOSTOLES"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con cómo la Palabra de Dios llega a la comunidad.",
-               "PALABRA y ENSEÑANZA son el centro: empieza por esas dos."],
+    "pistas": ["Todas las palabras salen de Hch 2,42-44: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "ENSEÑANZA y APOSTOLES son las palabras centrales: la comunidad se reúne en torno a lo que transmiten los enviados de Jesús."],
 })
 
 _agregar("C0N05-CO02", "A02", {
@@ -5758,7 +5758,7 @@ _agregar("C0N05-CO02", "A02", {
     "incluir": ["PALABRA", "ENSEÑANZA"],
     "requisito": 6,
     "pistas": ["Busca primero PALABRA y ANUNCIO, son las más cortas.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N05-CO02", "A03", {
@@ -5948,21 +5948,21 @@ _agregar("C0N05-CO02", "A10", {
 
 _agregar("C0N05-CO03", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: el pan que nos une",
+    "titulo": "Crucigrama bíblico: Hch 2,42.46",
     "items": [
-        {"texto": "Sacramento en el que Jesús se hace presente bajo la apariencia de pan y vino.", "respuesta": "EUCARISTIA"},
-        {"texto": "Alimento que Jesús compartió en la Última Cena y que los primeros cristianos partían juntos.", "respuesta": "PAN"},
-        {"texto": "Unión profunda entre los cristianos y con Dios que la Eucaristía alimenta y expresa.", "respuesta": "COMUNION"},
-        {"texto": "Última ______ del Señor, momento en que Jesús instituyó la Eucaristía.", "respuesta": "CENA"},
-        {"texto": "La Eucaristía hace presente, de forma viva, lo que Jesús hizo por nosotros: es un ______ de su entrega.", "respuesta": "MEMORIAL"},
-        {"texto": "Lo que recibimos al comulgar: el ______ de Cristo.", "respuesta": "CUERPO"},
-        {"texto": "Mueble donde se celebra el sacrificio eucarístico en la misa.", "respuesta": "ALTAR"},
-        {"texto": "Entrega total de Jesús por amor, que la misa actualiza cada vez que se celebra.", "respuesta": "SACRIFICIO"},
+        {"texto": "Hch 2,42 — Entre los pilares de la comunidad estaba vivir como una sola familia: la ______.", "respuesta": "COMUNION"},
+        {"texto": "Hch 2,46 — Tras el gesto del pan, compartían la mesa: ______ en un ambiente de fiesta (verbo en pasado, tercera persona plural).", "respuesta": "COMIAN"},
+        {"texto": "Hch 2,46 — Fuera del templo, compartían el pan de hogar en hogar, en sus ______.", "respuesta": "CASAS"},
+        {"texto": "Hch 2,46 — Los hermanos compartían la comida todos ______, en torno a una misma mesa.", "respuesta": "JUNTOS"},
+        {"texto": "Hch 2,46 — Cada día acudían al edificio sagrado de Jerusalén para orar: el ______.", "respuesta": "TEMPLO"},
+        {"texto": "Hch 2,42 — Al pan compartido se sumaba el diálogo con Dios: la ______ en común.", "respuesta": "ORACION"},
+        {"texto": "Hch 2,46 — Esas comidas se vivían con mucho gozo: con ______.", "respuesta": "ALEGRIA"},
+        {"texto": "Hch 2,46 — Comían con corazón limpio, sin doblez ni aparato: con ______.", "respuesta": "SENCILLEZ"},
     ],
-    "incluir": ["EUCARISTIA", "PAN"],
+    "incluir": ["COMUNION", "COMIAN"],
     "requisito": 6,
-    "pistas": ["Todas las palabras giran alrededor de lo que se celebra en la misa.",
-               "EUCARISTIA y PAN son las palabras centrales: empieza por esas dos."],
+    "pistas": ["Todas las palabras salen de Hch 2,42 y 2,46: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "COMUNION y COMIAN son las palabras centrales: la vida de la comunidad gira en torno a la mesa compartida."],
 })
 
 _agregar("C0N05-CO03", "A02", {
@@ -5972,7 +5972,7 @@ _agregar("C0N05-CO03", "A02", {
     "incluir": ["EUCARISTIA", "PAN"],
     "requisito": 6,
     "pistas": ["Busca primero PAN y CENA, son las más cortas.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N05-CO03", "A03", {
@@ -6162,21 +6162,21 @@ _agregar("C0N05-CO03", "A10", {
 
 _agregar("C0N05-CO04", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: una comunidad que ora",
+    "titulo": "Crucigrama bíblico: Hch 2,42.46-47",
     "items": [
-        {"texto": "Diálogo con Dios que los primeros cristianos vivían juntos cada día.", "respuesta": "ORACION"},
-        {"texto": "Expresión de reconocimiento y gozo a Dios por quien es y lo que hace.", "respuesta": "ALABANZA"},
-        {"texto": "Lugar donde los primeros cristianos se reunían diariamente para orar.", "respuesta": "TEMPLO"},
-        {"texto": "Petición que se hace a Dios por una necesidad propia o de otros.", "respuesta": "SUPLICA"},
-        {"texto": "Oración que agradece a Dios los bienes recibidos.", "respuesta": "GRACIAS"},
-        {"texto": "Actitud de mantenerse constante en la oración, sin abandonarla.", "respuesta": "PERSEVERAR"},
-        {"texto": "Tercera persona de la Trinidad que nos ayuda a orar, incluso cuando no sabemos qué decir.", "respuesta": "ESPIRITU"},
-        {"texto": "Actitud del corazón necesaria para orar bien: creer que Dios escucha.", "respuesta": "CONFIANZA"},
+        {"texto": "Hch 2,42 — Los creyentes perseveraban en hablar con Dios en comunidad: la ______.", "respuesta": "ORACION"},
+        {"texto": "Hch 2,47 — La comunidad vivía bendiciendo y dando gloria a Dios; el gerundio (termina en -ANDO) que resume ese canto es ______.", "respuesta": "ALABANDO"},
+        {"texto": "Hch 2,46 — Cada día acudían juntos al lugar sagrado de Jerusalén para orar: el ______.", "respuesta": "TEMPLO"},
+        {"texto": "Hch 2,47 — ¿A quién dirigían su alabanza? Al Creador, a ______.", "respuesta": "DIOS"},
+        {"texto": "Hch 2,46 — Su alegría nacía de lo más íntimo de la persona, de lo que la Biblia llama el ______.", "respuesta": "CORAZON"},
+        {"texto": "Hch 2,46 — Compartían la mesa en medio de un clima de fiesta y gozo: la ______.", "respuesta": "ALEGRIA"},
+        {"texto": "Hch 2,47 — Cada día se sumaban nuevas personas al grupo, y el Señor las ______ (verbo en pasado; empieza por A y lleva Ñ).", "respuesta": "AÑADIA"},
+        {"texto": "Hch 2,46 — Esa vida de oración no era ocasional: se repetía todos los ______.", "respuesta": "DIAS"},
     ],
-    "incluir": ["ORACION", "ALABANZA"],
+    "incluir": ["ORACION", "ALABANDO"],
     "requisito": 6,
-    "pistas": ["Todas las palabras describen distintas formas de hablar con Dios.",
-               "ORACION y ALABANZA son las palabras centrales de este tema."],
+    "pistas": ["Todas las palabras salen de Hch 2,42 y 2,46-47: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "ORACION y ALABANDO son las palabras centrales: la comunidad habla con Dios y lo alaba."],
 })
 
 _agregar("C0N05-CO04", "A02", {
@@ -6186,7 +6186,7 @@ _agregar("C0N05-CO04", "A02", {
     "incluir": ["ORACION", "ALABANZA"],
     "requisito": 6,
     "pistas": ["Busca primero TEMPLO y GRACIAS, son más fáciles de ubicar.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N05-CO04", "A03", {
@@ -6376,21 +6376,21 @@ _agregar("C0N05-CO04", "A10", {
 
 _agregar("C0N05-CO05", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: servir como ellos servían",
+    "titulo": "Crucigrama bíblico: Hch 2,44-46",
     "items": [
-        {"texto": "Entrega generosa de tiempo o esfuerzo para ayudar a otro sin esperar nada a cambio.", "respuesta": "SERVICIO"},
-        {"texto": "Virtud que mueve a amar y ayudar al otro como Dios nos ama, sin condiciones.", "respuesta": "CARIDAD"},
-        {"texto": "Carencia concreta de alguien que la comunidad cristiana busca cubrir.", "respuesta": "NECESIDAD"},
-        {"texto": "Vivir unidos y atentos unos a otros, apoyándose en lo que haga falta.", "respuesta": "SOLIDARIDAD"},
-        {"texto": "Acción de los primeros cristianos de poner sus bienes al alcance de todos.", "respuesta": "COMPARTIR"},
-        {"texto": "Actitud de dar sin medir ni calcular, propia del amor cristiano.", "respuesta": "GENEROSIDAD"},
-        {"texto": "Darse uno mismo por el bien de otro, como hizo Jesús.", "respuesta": "ENTREGA"},
-        {"texto": "Servicio concreto que se da a los más necesitados en nombre de la fe.", "respuesta": "DIACONIA"},
+        {"texto": "Hch 2,45 — Vendían aquello que les pertenecía para ayudar: sus ______.", "respuesta": "POSESIONES"},
+        {"texto": "Hch 2,45 — Con lo obtenido de las ventas, ______ el dinero entre todos (verbo en pasado).", "respuesta": "REPARTIAN"},
+        {"texto": "Hch 2,45 — Para ayudar a los demás, ______ lo que tenían a cambio de dinero (verbo en pasado).", "respuesta": "VENDIAN"},
+        {"texto": "Hch 2,44 — Nada era solo de uno: lo tenían todo en ______.", "respuesta": "COMUN"},
+        {"texto": "Hch 2,45 — Cada quien recibía según lo que le hacía falta: la ______ de cada uno.", "respuesta": "NECESIDAD"},
+        {"texto": "Hch 2,46 — Daban sin presumir, con una actitud humilde y sin dobleces: con ______.", "respuesta": "SENCILLEZ"},
+        {"texto": "Hch 2,44 — Compartían lo que poseían: las ______ materiales eran de todos.", "respuesta": "COSAS"},
+        {"texto": "Hch 2,45 — El reparto no excluía a nadie: llegaba a ______, sin dejar a ninguno fuera.", "respuesta": "TODOS"},
     ],
-    "incluir": ["SERVICIO", "CARIDAD"],
+    "incluir": ["REPARTIAN", "POSESIONES"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con ayudar al que lo necesita.",
-               "SERVICIO y CARIDAD son las palabras centrales: empieza por esas dos."],
+    "pistas": ["Todas las palabras salen de Hch 2,44-46: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "REPARTIAN y POSESIONES muestran el servicio concreto: poner lo propio al servicio de los demás."],
 })
 
 _agregar("C0N05-CO05", "A02", {
@@ -6400,7 +6400,7 @@ _agregar("C0N05-CO05", "A02", {
     "incluir": ["SERVICIO", "CARIDAD"],
     "requisito": 6,
     "pistas": ["Busca primero SERVICIO y ENTREGA para orientarte.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N05-CO05", "A03", {
@@ -6590,21 +6590,21 @@ _agregar("C0N05-CO05", "A10", {
 
 _agregar("C0N05-CO06", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: jóvenes que construyen Iglesia",
+    "titulo": "Crucigrama bíblico: Hch 2,43.47",
     "items": [
-        {"texto": "Quien no se queda al margen, sino que participa activamente en la vida de la Iglesia.", "respuesta": "PROTAGONISTA"},
-        {"texto": "Tarea que Jesús confía a sus discípulos: anunciar el Evangelio al mundo.", "respuesta": "MISION"},
-        {"texto": "Quienes, según Aparecida, son llamados a ser agentes activos y no solo receptores en la Iglesia.", "respuesta": "JOVENES"},
-        {"texto": "Lo que un joven da con su vida y sus actos cuando muestra su fe sin esconderla.", "respuesta": "TESTIMONIO"},
-        {"texto": "Decisión firme de vivir y defender la fe en la vida diaria.", "respuesta": "COMPROMISO"},
-        {"texto": "Comunidad de creyentes a la que los jóvenes pertenecen y en la que pueden aportar, no solo recibir.", "respuesta": "IGLESIA"},
-        {"texto": "Llamado personal que Dios hace a cada joven para una tarea o un camino concreto.", "respuesta": "VOCACION"},
-        {"texto": "Quienes son mandados a anunciar algo; así se describe a los discípulos que llevan el Evangelio.", "respuesta": "ENVIADOS"},
+        {"texto": "Hch 2,43 — Los doce enviados por Jesús realizaban signos entre la gente: los ______.", "respuesta": "APOSTOLES"},
+        {"texto": "Hch 2,43 — Por medio de ellos, Dios daba muchos signos extraordinarios, ______ que apuntaban a Él (empieza por S).", "respuesta": "SEÑALES"},
+        {"texto": "Hch 2,43 — Ante lo que Dios hacía, un respeto profundo, casi un ______ reverente, llenaba a la gente.", "respuesta": "TEMOR"},
+        {"texto": "Hch 2,43 — Un sentimiento de reverencia alcanzaba a ______ los presentes, sin excepción.", "respuesta": "TODOS"},
+        {"texto": "Hch 2,47 — La comunidad era bien vista por la gente de toda la ciudad, por todo el ______.", "respuesta": "PUEBLO"},
+        {"texto": "Hch 2,47 — La alabanza de la comunidad se dirigía al Creador, a ______.", "respuesta": "DIOS"},
+        {"texto": "Hch 2,47 — Cada día se sumaban nuevos creyentes: el Señor los ______ al grupo (verbo en pasado; empieza por A y lleva Ñ).", "respuesta": "AÑADIA"},
+        {"texto": "Hch 2,47 — La comunidad vivía bendiciendo y dando gloria a Dios, ______ (gerundio).", "respuesta": "ALABANDO"},
     ],
-    "incluir": ["PROTAGONISTA", "MISION"],
+    "incluir": ["AÑADIA", "PUEBLO"],
     "requisito": 6,
-    "pistas": ["Todas las palabras hablan del papel activo de los jóvenes en la Iglesia.",
-               "PROTAGONISTA y MISION son las palabras centrales de este tema."],
+    "pistas": ["Todas las palabras salen de Hch 2,43 y 2,47: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "AÑADIA y PUEBLO son las palabras centrales: Dios hace crecer a la comunidad y cuenta con cada uno de nosotros."],
 })
 
 _agregar("C0N05-CO06", "A02", {
@@ -6614,7 +6614,7 @@ _agregar("C0N05-CO06", "A02", {
     "incluir": ["PROTAGONISTA", "MISION"],
     "requisito": 6,
     "pistas": ["Busca primero MISION e IGLESIA para orientarte.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N05-CO06", "A03", {
@@ -6809,21 +6809,21 @@ _agregar("C0N05-CO06", "A10", {
 
 _agregar("C0N06-CO01", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: la misión llega a tu pantalla",
+    "titulo": "Crucigrama bíblico: 1 Co 9,19-23",
     "items": [
-        {"texto": "Tarea de anunciar a Jesús que la Iglesia encomienda a cada bautizado.", "respuesta": "MISION"},
-        {"texto": "Ambiente de pantallas, redes sociales e internet donde también se vive la fe.", "respuesta": "DIGITAL"},
-        {"texto": "Nombre que el Papa dio al mundo de las comunicaciones: un nuevo ______ para la misión.", "respuesta": "AREOPAGO"},
-        {"texto": "Red global que conecta personas de todo el mundo, hoy también campo de misión.", "respuesta": "INTERNET"},
-        {"texto": "Verbo que describe anunciar el Evangelio con la propia vida y palabra.", "respuesta": "EVANGELIZAR"},
-        {"texto": "Plataformas como Instagram, TikTok o WhatsApp, donde se comparte la vida y la fe.", "respuesta": "REDES"},
-        {"texto": "Lo que Jesús envió a sus discípulos a recorrer con la Buena Noticia.", "respuesta": "MUNDO"},
-        {"texto": "Acción de dar a conocer a otros una noticia buena, en este caso la de Jesús.", "respuesta": "ANUNCIO"},
+        {"texto": "1 Co 9,23 — Pablo actúa así por la Buena Noticia de Jesús, el ______.", "respuesta": "EVANGELIO"},
+        {"texto": "1 Co 9,19 — Pablo se ha puesto al servicio de ______, sin excluir a nadie.", "respuesta": "TODOS"},
+        {"texto": "1 Co 9,21 — La ley que guía su vida es la del Mesías, la de ______.", "respuesta": "CRISTO"},
+        {"texto": "1 Co 9,22 — Su fin último es que algunos se puedan ______ (verbo en infinitivo).", "respuesta": "SALVAR"},
+        {"texto": "1 Co 9,22 — Pablo quiere llegar al menos a ______, aunque no sea a todos.", "respuesta": "ALGUNOS"},
+        {"texto": "1 Co 9,23 — Pablo quiere tomar parte en la Buena Noticia: ______ de ella (verbo en infinitivo).", "respuesta": "PARTICIPAR"},
+        {"texto": "1 Co 9,19 — Su plan es atraer a más personas hacia Cristo: ______ a más gente (verbo en infinitivo).", "respuesta": "GANAR"},
+        {"texto": "1 Co 9,19 — Pablo no depende de nadie: es ______, y aun así se hace servidor.", "respuesta": "LIBRE"},
     ],
-    "incluir": ["MISION", "DIGITAL"],
+    "incluir": ["EVANGELIO", "TODOS"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con llevar la fe también al mundo de las pantallas.",
-               "MISION y DIGITAL son las palabras centrales del tema: empieza por esas."],
+    "pistas": ["Todas las palabras salen de 1 Co 9,19-23: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "EVANGELIO y TODOS son las palabras centrales: la Buena Noticia es para todos y se lleva a todos los lugares, también a los digitales."],
 })
 
 _agregar("C0N06-CO01", "A02", {
@@ -6833,7 +6833,7 @@ _agregar("C0N06-CO01", "A02", {
     "incluir": ["MISION", "DIGITAL"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: MISION y REDES.",
-               "Las ocho palabras son las mismas ideas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N06-CO01", "A03", {
@@ -7023,21 +7023,21 @@ _agregar("C0N06-CO01", "A10", {
 
 _agregar("C0N06-CO02", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: hablar para que te entiendan",
+    "titulo": "Crucigrama bíblico: 1 Co 9,19-22",
     "items": [
-        {"texto": "Conjunto de palabras y símbolos que usamos para comunicarnos; debe adaptarse a quien escucha.", "respuesta": "LENGUAJE"},
-        {"texto": "Cualidad de un mensaje que se entiende fácilmente, sin tecnicismos.", "respuesta": "COMPRENSIBLE"},
-        {"texto": "Cualidad de explicar las cosas de forma simple, sin complicarlas.", "respuesta": "SENCILLEZ"},
-        {"texto": "Formas propias de hablar y comunicarse de cada generación o grupo (memes, emojis, slang).", "respuesta": "CODIGOS"},
-        {"texto": "Etapa de la vida con su propio modo de hablar, a la que Pablo buscó llegar con el Evangelio.", "respuesta": "JUVENTUD"},
-        {"texto": "Verbo que describe pasar un mensaje de un modo de hablar a otro más entendible.", "respuesta": "TRADUCIR"},
-        {"texto": "Lo que se quiere comunicar: en este caso, la Buena Noticia de Jesús.", "respuesta": "MENSAJE"},
-        {"texto": "Actitud de acercarse a alguien hablando a su nivel, sin distancia ni superioridad.", "respuesta": "CERCANIA"},
+        {"texto": "1 Co 9,20 — Con el pueblo de Abraham, Pablo se hace como uno de ellos para acercarse a su cultura: los ______.", "respuesta": "JUDIOS"},
+        {"texto": "1 Co 9,22 — Con los de poca fuerza, Pablo se hace uno de ellos: los ______.", "respuesta": "DEBILES"},
+        {"texto": "1 Co 9,22 — Pablo dice que se ha ______ como ellos para llegar a todos (participio del verbo 'hacer').", "respuesta": "HECHO"},
+        {"texto": "1 Co 9,22 — Pablo se adapta a cada uno: se ha hecho de ______ para todos, es decir, 'de cada cosa un poco'.", "respuesta": "TODO"},
+        {"texto": "1 Co 9,20 — Quienes viven ______ la ley: Pablo se pone a su altura, aunque él ya no esté sujeto a ella (preposición).", "respuesta": "BAJO"},
+        {"texto": "1 Co 9,21 — Pablo aclara que no vive al margen de la ley del Creador, de ______.", "respuesta": "DIOS"},
+        {"texto": "1 Co 9,22 — Pablo quiere llegar al menos a ______, aunque no sea a todos.", "respuesta": "ALGUNOS"},
+        {"texto": "1 Co 9,19 — Su propósito en cada adaptación es ______ a más personas para la fe (verbo en infinitivo).", "respuesta": "GANAR"},
     ],
-    "incluir": ["LENGUAJE", "COMPRENSIBLE"],
+    "incluir": ["JUDIOS", "HECHO"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con hacer que un mensaje se entienda mejor.",
-               "LENGUAJE y COMPRENSIBLE son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de 1 Co 9,19-22: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "JUDIOS y HECHO resumen el método de Pablo: se hizo como el otro para que lo entendiera."],
 })
 
 _agregar("C0N06-CO02", "A02", {
@@ -7047,7 +7047,7 @@ _agregar("C0N06-CO02", "A02", {
     "incluir": ["LENGUAJE", "COMPRENSIBLE"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: CODIGOS y MENSAJE.",
-               "Las ocho palabras están relacionadas con el crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N06-CO02", "A03", {
@@ -7237,21 +7237,21 @@ _agregar("C0N06-CO02", "A10", {
 
 _agregar("C0N06-CO03", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: lo que dice mi perfil",
+    "titulo": "Crucigrama bíblico: 1 Co 9,19-23",
     "items": [
-        {"texto": "Lo que muestra con su vida alguien que sigue a Jesús, más allá de lo que dice.", "respuesta": "TESTIMONIO"},
-        {"texto": "Armonía entre lo que se cree, se dice y se hace; lo opuesto a la doble vida.", "respuesta": "COHERENCIA"},
-        {"texto": "Cualidad de ser uno mismo, sin máscaras, también en lo digital.", "respuesta": "AUTENTICO"},
-        {"texto": "Actitud de aparentar una fe que no se vive de verdad; lo contrario de la coherencia.", "respuesta": "HIPOCRESIA"},
-        {"texto": "Manera de comportarse, dentro y fuera de las redes sociales.", "respuesta": "CONDUCTA"},
-        {"texto": "Página personal en una red social donde cada uno muestra quién es, o quién aparenta ser.", "respuesta": "PERFIL"},
-        {"texto": "Lo que da un cristiano cuando su vida online refleja lo que cree.", "respuesta": "EJEMPLO"},
-        {"texto": "Lo que Jesús pide vivir siempre, también cuando nadie parece estar mirando la pantalla.", "respuesta": "VERDAD"},
+        {"texto": "1 Co 9,21 — El criterio que guía la conducta de Pablo es la ley del Mesías, de ______.", "respuesta": "CRISTO"},
+        {"texto": "1 Co 9,21 — Aunque se adapta, aclara que no está al margen de la ley del Creador: la de ______.", "respuesta": "DIOS"},
+        {"texto": "1 Co 9,19 — Pablo no depende de nadie: es ______, y aun así se pone a servir.", "respuesta": "LIBRE"},
+        {"texto": "1 Co 9,20 — Con quienes viven sometidos a la ley, Pablo se hace como ellos: se pone ______ la ley (preposición).", "respuesta": "BAJO"},
+        {"texto": "1 Co 9,20 — Con un miembro del pueblo de Israel, Pablo se hace como un ______ (singular).", "respuesta": "JUDIO"},
+        {"texto": "1 Co 9,22 — Con quien carece de fuerza, Pablo se hace como él: se ha vuelto ______ (singular).", "respuesta": "DEBIL"},
+        {"texto": "1 Co 9,23 — Pablo afirma que todo esto lo ______ por el evangelio (verbo en primera persona).", "respuesta": "HAGO"},
+        {"texto": "1 Co 9,19 — Pablo se hace cercano a la totalidad de las personas: a ______.", "respuesta": "TODOS"},
     ],
-    "incluir": ["TESTIMONIO", "COHERENCIA"],
+    "incluir": ["CRISTO", "LIBRE"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con que la vida online refleje la vida real.",
-               "TESTIMONIO y COHERENCIA son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de 1 Co 9,19-23: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "CRISTO y LIBRE son las palabras centrales: Pablo es libre y coherente porque su vida está en la ley de Cristo."],
 })
 
 _agregar("C0N06-CO03", "A02", {
@@ -7261,7 +7261,7 @@ _agregar("C0N06-CO03", "A02", {
     "incluir": ["TESTIMONIO", "COHERENCIA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: PERFIL y VERDAD.",
-               "Las ocho palabras están relacionadas con el crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N06-CO03", "A03", {
@@ -7451,21 +7451,21 @@ _agregar("C0N06-CO03", "A10", {
 
 _agregar("C0N06-CO04", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: pensar antes de creer",
+    "titulo": "Crucigrama bíblico: 1 Co 9,19-23",
     "items": [
-        {"texto": "Capacidad de distinguir lo que edifica de lo que daña antes de ver o compartir algo.", "respuesta": "DISCERNIMIENTO"},
-        {"texto": "Video, imagen, texto o publicación que circula en redes sociales.", "respuesta": "CONTENIDO"},
-        {"texto": "Acción de comprobar si una información es cierta antes de creerla o compartirla.", "respuesta": "VERIFICAR"},
-        {"texto": "Lugar u origen de donde proviene una información; hay que revisarlo siempre.", "respuesta": "FUENTE"},
-        {"texto": "Palabra para una información sobre hechos recientes; conviene verificarla antes de creerla.", "respuesta": "NOTICIA"},
-        {"texto": "Nombre que se le da a un contenido que busca manipular o hacer creer algo falso.", "respuesta": "ENGAÑO"},
-        {"texto": "Conjunto de ideas con las que un cristiano decide qué ver, leer o compartir.", "respuesta": "CRITERIO"},
-        {"texto": "Lo que aplicamos para dejar pasar solo contenido bueno y sano, como un colador.", "respuesta": "FILTRO"},
+        {"texto": "1 Co 9,19 — Pablo reconoce que es ______ y por eso puede elegir cómo actuar.", "respuesta": "LIBRE"},
+        {"texto": "1 Co 9,21 — Su guía de conducta es la ley del Mesías, de ______.", "respuesta": "CRISTO"},
+        {"texto": "1 Co 9,22 — Pablo se adapta a cada uno: se ha hecho de ______ para todos, es decir, 'de cada cosa un poco'.", "respuesta": "TODO"},
+        {"texto": "1 Co 9,20 — Con alguien del pueblo de Israel, Pablo se hace como un ______ (singular).", "respuesta": "JUDIO"},
+        {"texto": "1 Co 9,22 — Con las personas de poca fuerza, Pablo se hace como ellas: los ______.", "respuesta": "DEBILES"},
+        {"texto": "1 Co 9,22 — Pablo se adapta para llegar al menos a ______.", "respuesta": "ALGUNOS"},
+        {"texto": "1 Co 9,23 — Pablo dice que todo lo ______ (primera persona) por causa de la Buena Noticia.", "respuesta": "HAGO"},
+        {"texto": "1 Co 9,21 — Pablo cuida de no vivir al margen de la ley del Creador, de ______.", "respuesta": "DIOS"},
     ],
-    "incluir": ["DISCERNIMIENTO", "CONTENIDO"],
+    "incluir": ["LIBRE", "CRISTO"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con pensar antes de creer o compartir algo.",
-               "DISCERNIMIENTO y CONTENIDO son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de 1 Co 9,19-23: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "LIBRE y CRISTO son las claves: Pablo elige con libertad, con Cristo como criterio."],
 })
 
 _agregar("C0N06-CO04", "A02", {
@@ -7475,7 +7475,7 @@ _agregar("C0N06-CO04", "A02", {
     "incluir": ["DISCERNIMIENTO", "CONTENIDO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: FUENTE y DUDA.",
-               "Las ocho palabras están relacionadas con el crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N06-CO04", "A03", {
@@ -7665,21 +7665,21 @@ _agregar("C0N06-CO04", "A10", {
 
 _agregar("C0N06-CO05", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: palabras que construyen",
+    "titulo": "Crucigrama bíblico: 1 Co 9,19-23",
     "items": [
-        {"texto": "Actitud de asumir las consecuencias de lo que se publica o comparte en redes.", "respuesta": "RESPONSABILIDAD"},
-        {"texto": "Trato considerado hacia la dignidad del otro, también detrás de una pantalla.", "respuesta": "RESPETO"},
-        {"texto": "Virtud de pensar antes de publicar, evitando daños innecesarios.", "respuesta": "PRUDENCIA"},
-        {"texto": "Información sin confirmar que se difunde y puede dañar la fama de alguien.", "respuesta": "RUMOR"},
-        {"texto": "Lo que escribimos en un chat o comentario; tiene el poder de construir o de hacer daño.", "respuesta": "PALABRA"},
-        {"texto": "Actitud de tratar con delicadeza la intimidad y los sentimientos de los demás en línea.", "respuesta": "CUIDADO"},
-        {"texto": "Virtud que debe guiar toda comunicación cristiana, incluso al corregir o discrepar.", "respuesta": "CARIDAD"},
-        {"texto": "Modo en que se dirige a otra persona en un chat o comentario; puede ser amable o agresivo.", "respuesta": "TRATO"},
+        {"texto": "1 Co 9,23 — Pablo quiere tomar parte, junto con otros, en la Buena Noticia: ______ de ella (verbo en infinitivo).", "respuesta": "PARTICIPAR"},
+        {"texto": "1 Co 9,19 — Su servicio se extiende a toda persona, sin excluir a nadie: a ______.", "respuesta": "TODOS"},
+        {"texto": "1 Co 9,22 — Para llegar a cada uno, Pablo se ha ______ como él (participio del verbo 'hacer').", "respuesta": "HECHO"},
+        {"texto": "1 Co 9,22 — Con quien carece de fuerza, Pablo se hace como él: se vuelve ______ (singular).", "respuesta": "DEBIL"},
+        {"texto": "1 Co 9,19 — Aunque no depende de nadie, es ______, y por amor se hace servidor.", "respuesta": "LIBRE"},
+        {"texto": "1 Co 9,19 — Su meta al servir es atraer a otros hacia Cristo: ______ a más personas (verbo en infinitivo).", "respuesta": "GANAR"},
+        {"texto": "1 Co 9,23 — Lo que Pablo hace, lo hace por la Buena Noticia, por el ______.", "respuesta": "EVANGELIO"},
+        {"texto": "1 Co 9,20 — Con quienes viven sometidos a la ley, Pablo se pone ______ ella (preposición).", "respuesta": "BAJO"},
     ],
-    "incluir": ["RESPONSABILIDAD", "RESPETO"],
+    "incluir": ["PARTICIPAR", "TODOS"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con cómo tratamos a los demás al comunicarnos.",
-               "RESPONSABILIDAD y RESPETO son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de 1 Co 9,19-23: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "PARTICIPAR y TODOS resumen la actitud de Pablo: servir a todos y caminar con otros."],
 })
 
 _agregar("C0N06-CO05", "A02", {
@@ -7689,7 +7689,7 @@ _agregar("C0N06-CO05", "A02", {
     "incluir": ["RESPONSABILIDAD", "RESPETO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: RUMOR y TRATO.",
-               "Las ocho palabras están relacionadas con el crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N06-CO05", "A03", {
@@ -7879,21 +7879,21 @@ _agregar("C0N06-CO05", "A10", {
 
 _agregar("C0N06-CO06", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: un proyecto para anunciar a Jesús",
+    "titulo": "Crucigrama bíblico: 1 Co 9,19-23",
     "items": [
-        {"texto": "Plan concreto con pasos y objetivo para anunciar el Evangelio por medios digitales.", "respuesta": "PROYECTO"},
-        {"texto": "Capacidad de imaginar formas nuevas y atractivas de comunicar la fe.", "respuesta": "CREATIVIDAD"},
-        {"texto": "Material (video, imagen, texto) que se produce para compartir un mensaje.", "respuesta": "CONTENIDO"},
-        {"texto": "Grupo de personas al que se quiere llegar con un mensaje evangelizador.", "respuesta": "PUBLICO"},
-        {"texto": "Verbo que describe pensar y organizar los pasos de un proyecto antes de lanzarlo.", "respuesta": "PLANIFICAR"},
-        {"texto": "Número de personas a las que efectivamente llega una publicación.", "respuesta": "ALCANCE"},
-        {"texto": "Acción de difundir un contenido para que otros también lo vean.", "respuesta": "COMPARTIR"},
-        {"texto": "Grupo de personas que trabaja unido para llevar adelante un proyecto.", "respuesta": "EQUIPO"},
+        {"texto": "1 Co 9,23 — El proyecto de Pablo es llevar la Buena Noticia, el ______, a todos.", "respuesta": "EVANGELIO"},
+        {"texto": "1 Co 9,19 — Su plan es atraer a más personas hacia Cristo: ______ a más gente (verbo en infinitivo).", "respuesta": "GANAR"},
+        {"texto": "1 Co 9,22 — Todo lo que hace busca que algunos se puedan ______ (verbo en infinitivo).", "respuesta": "SALVAR"},
+        {"texto": "1 Co 9,22 — Para llegar a cada uno, se ha hecho de ______ para todos, es decir, 'de cada cosa un poco'.", "respuesta": "TODO"},
+        {"texto": "1 Co 9,23 — Pablo dice que todo esto lo ______ (primera persona) por causa de la Buena Noticia.", "respuesta": "HAGO"},
+        {"texto": "1 Co 9,23 — Pablo quiere tomar parte en la Buena Noticia: ______ de ella (verbo en infinitivo).", "respuesta": "PARTICIPAR"},
+        {"texto": "1 Co 9,22 — Pablo quiere llegar al menos a ______, aunque no sea a todos.", "respuesta": "ALGUNOS"},
+        {"texto": "1 Co 9,21 — El Señor a quien sirve Pablo y cuya ley guía su vida es ______.", "respuesta": "CRISTO"},
     ],
-    "incluir": ["PROYECTO", "CREATIVIDAD"],
+    "incluir": ["EVANGELIO", "GANAR"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con pensar, organizar y lanzar un proyecto de fe.",
-               "PROYECTO y CREATIVIDAD son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de 1 Co 9,19-23: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "EVANGELIO y GANAR son el corazón de un proyecto digital evangelizador: llevar la Buena Noticia a más personas."],
 })
 
 _agregar("C0N06-CO06", "A02", {
@@ -7903,7 +7903,7 @@ _agregar("C0N06-CO06", "A02", {
     "incluir": ["PROYECTO", "CREATIVIDAD"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: EQUIPO y PUBLICO.",
-               "Las ocho palabras están relacionadas con el crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N06-CO06", "A03", {
@@ -8097,21 +8097,21 @@ _agregar("C0N06-CO06", "A10", {
 # -- C0N07-CO01: El Espíritu Santo da fuerza --
 _agregar("C0N07-CO01", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: una fuerza que viene de arriba",
+    "titulo": "Crucigrama bíblico: Hch 1,7-8",
     "items": [
-        {"texto": "Tercera persona de la Trinidad, quien da fuerza a los discípulos de Jesús.", "respuesta": "ESPIRITU"},
-        {"texto": "Lo que Jesús promete enviar sobre sus discípulos antes de que sean sus testigos (Hch 1,8).", "respuesta": "FUERZA"},
-        {"texto": "Capacidad de mantenerse firme en la fe aunque sea difícil.", "respuesta": "FORTALEZA"},
-        {"texto": "Actitud de actuar según la fe aunque exista temor o vergüenza.", "respuesta": "VALENTIA"},
-        {"texto": "Ánimo necesario para enfrentar una situación que da miedo, actuando con fe.", "respuesta": "CORAJE"},
-        {"texto": "Lo contrario de la fortaleza; lo que sentían los apóstoles antes de Pentecostés.", "respuesta": "DEBILIDAD"},
-        {"texto": "Discípulos de Jesús que recibieron la fuerza del Espíritu Santo para su misión.", "respuesta": "APOSTOLES"},
-        {"texto": "Actitud de apoyarse en Dios en lugar de dejarse vencer por el miedo.", "respuesta": "CONFIANZA"},
+        {"texto": "Hch 1,8 — Jesús promete que sobre los discípulos vendrá el ______ Santo, que los capacitará para la misión.", "respuesta": "ESPIRITU"},
+        {"texto": "Hch 1,8 — Adjetivo que acompaña al nombre del Espíritu prometido y dice que pertenece a Dios.", "respuesta": "SANTO"},
+        {"texto": "Hch 1,8 — El don no se fabrica ni se gana: los discípulos van a ______ lo que Dios les regala.", "respuesta": "RECIBIR"},
+        {"texto": "Hch 1,8 — La misión llega hasta el extremo más lejano de la ______, es decir, a todo el mundo.", "respuesta": "TIERRA"},
+        {"texto": "Hch 1,7 — Las fechas del plan de Dios las reserva aquel a quien Jesús llama con este nombre de cercanía: el ______.", "respuesta": "PADRE"},
+        {"texto": "Hch 1,7 — Jesús dice que a los discípulos no les toca conocer el día ni el ______ (instante preciso) que Dios ha fijado.", "respuesta": "MOMENTO"},
+        {"texto": "Hch 1,8 — Ciudad santa de los judíos, primer lugar que Jesús nombra como punto de partida de la misión.", "respuesta": "JERUSALEN"},
+        {"texto": "Hch 1,8 — Provincia del sur de Palestina que rodea a la capital, segundo escenario de la misión que Jesús enumera.", "respuesta": "JUDEA"},
     ],
-    "incluir": ["ESPIRITU", "FUERZA"],
+    "incluir": ["ESPIRITU", "RECIBIR"],
     "requisito": 6,
-    "pistas": ["ESPIRITU y FUERZA son el corazón de este tema: empieza por ellas.",
-               "Piensa en lo que les pasó a los apóstoles antes y después de Pentecostés."],
+    "pistas": ["Todas las palabras salen de Hch 1,7-8: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "ESPIRITU y RECIBIR son las palabras centrales: la fuerza para la misión es un don de Dios que se recibe."],
 })
 
 _agregar("C0N07-CO01", "A02", {
@@ -8121,7 +8121,7 @@ _agregar("C0N07-CO01", "A02", {
     "incluir": ["ESPIRITU", "FUERZA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: FUERZA y CORAJE.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N07-CO01", "A03", {
@@ -8310,21 +8310,21 @@ _agregar("C0N07-CO01", "A10", {
 # -- C0N07-CO02: Pentecostés y misión --
 _agregar("C0N07-CO02", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: el día en que todo comenzó",
+    "titulo": "Crucigrama bíblico: Hch 1,6-8",
     "items": [
-        {"texto": "Día en que el Espíritu Santo descendió sobre los apóstoles, cincuenta días después de Pascua.", "respuesta": "PENTECOSTES"},
-        {"texto": "Lugar donde estaban reunidos los apóstoles cuando llegó el Espíritu Santo.", "respuesta": "CENACULO"},
-        {"texto": "Forma en que se manifestó el Espíritu Santo sobre los apóstoles, «de fuego».", "respuesta": "LENGUAS"},
-        {"texto": "Elemento que simboliza la fuerza y el ardor del Espíritu Santo en Pentecostés.", "respuesta": "FUEGO"},
-        {"texto": "Madre de Jesús que estaba presente, junto a los apóstoles, en el Cenáculo.", "respuesta": "MARIA"},
-        {"texto": "Quienes recibieron al Espíritu Santo y salieron a anunciar a Jesús sin miedo.", "respuesta": "APOSTOLES"},
-        {"texto": "Tarea de anunciar a Jesús que recibe la Iglesia a partir de Pentecostés.", "respuesta": "MISION"},
-        {"texto": "Verbo que describe lo que hicieron los apóstoles después de recibir al Espíritu Santo.", "respuesta": "ANUNCIAR"},
+        {"texto": "Hch 1,8 — Ciudad santa de los judíos y capital del país: es el punto de partida de la misión.", "respuesta": "JERUSALEN"},
+        {"texto": "Hch 1,8 — Provincia que rodea a esa capital en el sur de Palestina: segundo escenario de la misión.", "respuesta": "JUDEA"},
+        {"texto": "Hch 1,8 — Región al norte de Judea, cuyos habitantes eran mal vistos por los judíos: tercer lugar de la lista de Jesús.", "respuesta": "SAMARIA"},
+        {"texto": "Hch 1,8 — Quien desciende sobre los discípulos para lanzarlos a la misión es el ______ Santo.", "respuesta": "ESPIRITU"},
+        {"texto": "Hch 1,8 — La lista termina abarcando todo el mundo: hasta el extremo más lejano de la ______.", "respuesta": "TIERRA"},
+        {"texto": "Hch 1,6 — Los discípulos todavía piensan en el pueblo de las doce tribus, cuyo gobierno quieren ver restaurado.", "respuesta": "ISRAEL"},
+        {"texto": "Hch 1,6 — Lo que los discípulos esperan que Jesús vuelva a poner en marcha para su pueblo: el ______ (un gobierno).", "respuesta": "REINO"},
+        {"texto": "Hch 1,6 — Con este título de respeto los discípulos se dirigen a Jesús al hacerle su pregunta: «______».", "respuesta": "SEÑOR"},
     ],
-    "incluir": ["PENTECOSTES", "MISION"],
+    "incluir": ["JERUSALEN", "ESPIRITU"],
     "requisito": 6,
-    "pistas": ["PENTECOSTES y MISION son las palabras centrales de este tema: empieza por esas.",
-               "Piensa en lo que ocurrió en el Cenáculo y lo que eso provocó después."],
+    "pistas": ["Todas las palabras salen de Hch 1,6-8: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "Pentecostés es la venida del ESPIRITU, y de JERUSALEN parte la misión: empieza por esas dos palabras."],
 })
 
 _agregar("C0N07-CO02", "A02", {
@@ -8334,7 +8334,7 @@ _agregar("C0N07-CO02", "A02", {
     "incluir": ["PENTECOSTES", "MISION"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: FUEGO y MARIA.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N07-CO02", "A03", {
@@ -8523,21 +8523,21 @@ _agregar("C0N07-CO02", "A10", {
 # -- C0N07-CO03: Los dones del Espíritu --
 _agregar("C0N07-CO03", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: regalos para vivir la fe",
+    "titulo": "Crucigrama bíblico: Hch 1,6-8",
     "items": [
-        {"texto": "Regalos que el Espíritu Santo entrega para vivir mejor la fe.", "respuesta": "DONES"},
-        {"texto": "Don que ayuda a valorar las cosas según el plan de Dios.", "respuesta": "SABIDURIA"},
-        {"texto": "Don que ayuda a comprender más a fondo las verdades de la fe.", "respuesta": "ENTENDIMIENTO"},
-        {"texto": "Don que ayuda a tomar buenas decisiones según la voluntad de Dios.", "respuesta": "CONSEJO"},
-        {"texto": "Don que da valentía para vivir la fe aunque sea difícil.", "respuesta": "FORTALEZA"},
-        {"texto": "Don que ayuda a descubrir a Dios a través de las cosas creadas.", "respuesta": "CIENCIA"},
-        {"texto": "Don que inspira un trato cercano, filial y confiado con Dios.", "respuesta": "PIEDAD"},
-        {"texto": "Don que inspira respeto y amor profundo hacia Dios, no miedo.", "respuesta": "TEMOR"},
+        {"texto": "Hch 1,8 — El gran don que Jesús promete a sus discípulos es el ______ Santo.", "respuesta": "ESPIRITU"},
+        {"texto": "Hch 1,8 — Con este adjetivo, que significa «consagrado a Dios», se nombra al Espíritu prometido.", "respuesta": "SANTO"},
+        {"texto": "Hch 1,8 — Los dones no se compran ni se merecen: los discípulos van a ______ al Espíritu como regalo.", "respuesta": "RECIBIR"},
+        {"texto": "Hch 1,7 — Quien guarda las fechas del plan de salvación y las decide libremente es Dios, a quien Jesús llama con este nombre familiar.", "respuesta": "PADRE"},
+        {"texto": "Hch 1,6 — La pregunta de los discípulos gira en torno a un ______ (gobierno de Dios) que esperan ver instaurado.", "respuesta": "REINO"},
+        {"texto": "Hch 1,6 — Pueblo de las doce tribus por el que los discípulos preguntan a Jesús.", "respuesta": "ISRAEL"},
+        {"texto": "Hch 1,6 — Los discípulos quieren saber si Jesús va a ______ (poner de nuevo en vigor) el gobierno de Dios para su pueblo.", "respuesta": "RESTABLECER"},
+        {"texto": "Hch 1,6 — Los discípulos se atrevieron a ______ a Jesús (hacerle una consulta) sobre lo que esperaban.", "respuesta": "PREGUNTAR"},
     ],
-    "incluir": ["DONES", "SABIDURIA"],
+    "incluir": ["ESPIRITU", "RECIBIR"],
     "requisito": 6,
-    "pistas": ["DONES y SABIDURIA son centrales en este tema: empieza por esas.",
-               "Son siete regalos del Espíritu Santo; intenta reconocer varios de ellos."],
+    "pistas": ["Todas las palabras salen de Hch 1,6-8: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "Los dones son regalo: ESPIRITU y RECIBIR resumen este tema."],
 })
 
 _agregar("C0N07-CO03", "A02", {
@@ -8547,7 +8547,7 @@ _agregar("C0N07-CO03", "A02", {
     "incluir": ["DONES", "SABIDURIA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: DONES, PIEDAD y TEMOR.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N07-CO03", "A03", {
@@ -8736,21 +8736,21 @@ _agregar("C0N07-CO03", "A10", {
 # -- C0N07-CO04: Testimoniar a Cristo --
 _agregar("C0N07-CO04", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: mostrar con la vida",
+    "titulo": "Crucigrama bíblico: Hch 1,6-8",
     "items": [
-        {"texto": "Persona que muestra con su vida lo que ha visto y creído de Jesús.", "respuesta": "TESTIGO"},
-        {"texto": "Forma de anunciar la fe mostrando coherencia entre lo que se cree y se vive.", "respuesta": "TESTIMONIO"},
-        {"texto": "Verbo que describe la tarea de dar a conocer a Jesús a los demás.", "respuesta": "ANUNCIAR"},
-        {"texto": "Ánimo necesario para mostrar la fe aunque otros no entiendan o se incomoden.", "respuesta": "CORAJE"},
-        {"texto": "Medio, junto con los gestos, para anunciar a Cristo a los demás.", "respuesta": "PALABRA"},
-        {"texto": "Lo que, según el testimonio cristiano, debe reflejar lo que creemos.", "respuesta": "VIDA"},
-        {"texto": "Relación correcta entre lo que decimos creer y cómo actuamos.", "respuesta": "COHERENCIA"},
-        {"texto": "Persona a quien el cristiano está llamado a testimoniar con su vida.", "respuesta": "CRISTO"},
+        {"texto": "Hch 1,8 — Ciudad donde comienza el envío: primer nombre de la lista de lugares que da Jesús.", "respuesta": "JERUSALEN"},
+        {"texto": "Hch 1,8 — Territorio del centro de Palestina, cuyos habitantes eran despreciados por los judíos; Jesús los incluye en el envío.", "respuesta": "SAMARIA"},
+        {"texto": "Hch 1,8 — Segundo nombre de la lista de Jesús: la provincia que rodea a la capital religiosa.", "respuesta": "JUDEA"},
+        {"texto": "Hch 1,8 — Al final, el envío se abre a todo el mundo: hasta el extremo de la ______.", "respuesta": "TIERRA"},
+        {"texto": "Hch 1,6 — Antes de recibir su tarea, los discípulos quisieron ______ a Jesús (consultarle) sobre el futuro.", "respuesta": "PREGUNTAR"},
+        {"texto": "Hch 1,6 — Así llaman los discípulos a Jesús cuando le hacen su pregunta sobre el futuro: «______».", "respuesta": "SEÑOR"},
+        {"texto": "Hch 1,7 — Jesús dice que no les toca conocer el día ni el ______ (instante preciso) que Dios ha fijado.", "respuesta": "MOMENTO"},
+        {"texto": "Hch 1,6 — Los discípulos preguntan si Jesús va a ______ (volver a poner en vigor) el gobierno de Dios para su pueblo.", "respuesta": "RESTABLECER"},
     ],
-    "incluir": ["TESTIGO", "TESTIMONIO"],
+    "incluir": ["JERUSALEN", "SAMARIA"],
     "requisito": 6,
-    "pistas": ["TESTIGO y TESTIMONIO son las palabras centrales de este tema: empieza por esas.",
-               "Piensa en lo que significa mostrar la fe con hechos y no solo con palabras."],
+    "pistas": ["Todas las palabras salen de Hch 1,6-8: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "JERUSALEN y SAMARIA: el envío parte de la ciudad santa y llega también a los más alejados y mal vistos."],
 })
 
 _agregar("C0N07-CO04", "A02", {
@@ -8760,7 +8760,7 @@ _agregar("C0N07-CO04", "A02", {
     "incluir": ["TESTIGO", "TESTIMONIO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: VIDA y CRISTO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N07-CO04", "A03", {
@@ -8949,21 +8949,21 @@ _agregar("C0N07-CO04", "A10", {
 # -- C0N07-CO05: Espíritu, comunidad y misión --
 _agregar("C0N07-CO05", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: unidos para la misión",
+    "titulo": "Crucigrama bíblico: Hch 1,6-8",
     "items": [
-        {"texto": "Grupo de personas unidas por la fe, que el Espíritu Santo mantiene unido.", "respuesta": "COMUNIDAD"},
-        {"texto": "Comunidad de todos los bautizados, guiada y animada por el Espíritu Santo.", "respuesta": "IGLESIA"},
-        {"texto": "Lo que el Espíritu Santo construye entre personas distintas que comparten la fe.", "respuesta": "UNIDAD"},
-        {"texto": "Trato de hermanos que se vive dentro de la comunidad cristiana.", "respuesta": "FRATERNIDAD"},
-        {"texto": "Tarea de anunciar a Cristo, que se vive junto a otros, no en solitario.", "respuesta": "MISION"},
-        {"texto": "Forma concreta de ayudar a los demás dentro de la comunidad.", "respuesta": "SERVICIO"},
-        {"texto": "Vida compartida entre los miembros de la Iglesia, animada por el Espíritu.", "respuesta": "COMUNION"},
-        {"texto": "Como se llama a quienes la Iglesia manda a anunciar a Cristo.", "respuesta": "ENVIADOS"},
+        {"texto": "Hch 1,8 — Quien une y fortalece a la comunidad para la misión es el ______ Santo.", "respuesta": "ESPIRITU"},
+        {"texto": "Hch 1,6 — Todos, juntos, se dirigen a Jesús con este título de respeto: «______».", "respuesta": "SEÑOR"},
+        {"texto": "Hch 1,6 — En comunidad, los discípulos se atrevieron a ______ a Jesús (consultarle) lo que esperaban.", "respuesta": "PREGUNTAR"},
+        {"texto": "Hch 1,7 — La comunidad no decide el día ni el ______ (instante preciso) de los planes de Dios.", "respuesta": "MOMENTO"},
+        {"texto": "Hch 1,8 — Región del centro de Palestina que Jesús incluye en el envío: un ambiente distinto al de los discípulos.", "respuesta": "SAMARIA"},
+        {"texto": "Hch 1,8 — La comunidad no produce su propia fuerza: va a ______ lo que viene de Dios.", "respuesta": "RECIBIR"},
+        {"texto": "Hch 1,8 — La comunidad vive del Espíritu que es ______, es decir, consagrado a Dios.", "respuesta": "SANTO"},
+        {"texto": "Hch 1,6 — Pueblo de las doce tribus, cuyo futuro preocupaba a los discípulos que estaban juntos con Jesús.", "respuesta": "ISRAEL"},
     ],
-    "incluir": ["COMUNIDAD", "MISION"],
+    "incluir": ["ESPIRITU", "SEÑOR"],
     "requisito": 6,
-    "pistas": ["COMUNIDAD y MISION son centrales en este tema: empieza por esas.",
-               "Piensa en que la misión cristiana nunca se vive completamente solo."],
+    "pistas": ["Todas las palabras salen de Hch 1,6-8: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "ESPIRITU y SEÑOR: una comunidad que consulta al Señor y se deja conducir por el Espíritu."],
 })
 
 _agregar("C0N07-CO05", "A02", {
@@ -8973,7 +8973,7 @@ _agregar("C0N07-CO05", "A02", {
     "incluir": ["COMUNIDAD", "MISION"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: UNIDAD y MISION.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N07-CO05", "A03", {
@@ -9162,21 +9162,21 @@ _agregar("C0N07-CO05", "A10", {
 # -- C0N07-CO06: Mi respuesta a la misión --
 _agregar("C0N07-CO06", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: decir sí a la misión",
+    "titulo": "Crucigrama bíblico: Hch 1,6-8",
     "items": [
-        {"texto": "Lo que cada persona da cuando decide decir sí a lo que Dios le pide.", "respuesta": "RESPUESTA"},
-        {"texto": "Actitud de cumplir con constancia lo que se decide vivir por la fe.", "respuesta": "COMPROMISO"},
-        {"texto": "Paso concreto que se toma para responder a la misión del Espíritu Santo.", "respuesta": "DECISION"},
-        {"texto": "Invitación de Dios a vivir la fe con responsabilidad y entrega.", "respuesta": "LLAMADA"},
-        {"texto": "Quien sigue a Jesús y responde con su vida a su llamada.", "respuesta": "DISCIPULO"},
-        {"texto": "Actitud necesaria para comprometerse con la misión, aunque cueste.", "respuesta": "VALENTIA"},
-        {"texto": "Forma concreta de responder a la misión ayudando a los demás.", "respuesta": "SERVICIO"},
-        {"texto": "Como se llama a quien recibe una misión y la asume con responsabilidad.", "respuesta": "ENVIADO"},
+        {"texto": "Hch 1,8 — Mi primer paso es abrirme a ______ (acoger) lo que Dios quiere regalarme.", "respuesta": "RECIBIR"},
+        {"texto": "Hch 1,7 — No me toca conocer todos los planes de Dios; los guarda aquel a quien Jesús llama con el nombre familiar de ______.", "respuesta": "PADRE"},
+        {"texto": "Hch 1,6 — Los discípulos soñaban con un ______ (gobierno) nacional; Jesús los orienta a una misión más amplia.", "respuesta": "REINO"},
+        {"texto": "Hch 1,8 — Provincia vecina de la capital: mi misión empieza en lo cercano y se va ampliando.", "respuesta": "JUDEA"},
+        {"texto": "Hch 1,8 — Territorio de un pueblo mal visto por los judíos: la misión me saca de mi zona cómoda.", "respuesta": "SAMARIA"},
+        {"texto": "Hch 1,7 — Dios decide el día y el ______ (instante preciso); yo respondo en el mío.", "respuesta": "MOMENTO"},
+        {"texto": "Hch 1,6 — Los discípulos pensaban en ______ (devolver su antiguo esplendor a) su nación, pero Jesús amplía su horizonte.", "respuesta": "RESTABLECER"},
+        {"texto": "Hch 1,8 — El Espíritu que Jesús promete es ______, es decir, de Dios y no de mis fuerzas.", "respuesta": "SANTO"},
     ],
-    "incluir": ["RESPUESTA", "COMPROMISO"],
+    "incluir": ["RECIBIR", "PADRE"],
     "requisito": 6,
-    "pistas": ["RESPUESTA y COMPROMISO son centrales en este tema: empieza por esas.",
-               "Piensa en lo que significa pasar de escuchar la misión a actuar según ella."],
+    "pistas": ["Todas las palabras salen de Hch 1,6-8: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "RECIBIR y PADRE: respondo acogiendo el don y confiando mis tiempos al Padre."],
 })
 
 _agregar("C0N07-CO06", "A02", {
@@ -9186,7 +9186,7 @@ _agregar("C0N07-CO06", "A02", {
     "incluir": ["RESPUESTA", "COMPROMISO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: LLAMADA y ENVIADO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N07-CO06", "A03", {
@@ -9380,21 +9380,21 @@ _agregar("C0N07-CO06", "A10", {
 # -- C0N08-CO01: Las Bienaventuranzas --
 _agregar("C0N08-CO01", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: dichosos los que...",
+    "titulo": "Crucigrama bíblico: Mt 5,1-12",
     "items": [
-        {"texto": "Monte donde Jesús se sienta a enseñar las Bienaventuranzas a la multitud.", "respuesta": "MONTE"},
-        {"texto": "Palabra con la que empieza cada Bienaventuranza: '______ los que...'.", "respuesta": "DICHOSOS"},
-        {"texto": "Nombre que se da al conjunto de las ocho frases que Jesús pronuncia en Mateo 5.", "respuesta": "BIENAVENTURANZAS"},
-        {"texto": "Actitud de quien no se impone ni busca la violencia; una Bienaventuranza los llama felices.", "respuesta": "MANSOS"},
-        {"texto": "Lo que reciben, según Jesús, los que sufren y son consolados por Dios.", "respuesta": "CONSUELO"},
-        {"texto": "Lo que Jesús promete a los pobres de espíritu y a los perseguidos por la justicia.", "respuesta": "REINO"},
-        {"texto": "Actitud sencilla, sin orgullo ni soberbia, que Jesús bendice.", "respuesta": "HUMILDES"},
-        {"texto": "Lo que sufren quienes son tratados mal por vivir según el Evangelio, según la última Bienaventuranza.", "respuesta": "PERSEGUIDOS"},
+        {"texto": "Mt 5,1 — Al ver a la gente, Jesús subió a un lugar elevado, un ______ (más grande que una colina), y allí se puso a hablarles.", "respuesta": "MONTE"},
+        {"texto": "Mt 5,1 — Como hacían los maestros, Jesús se ______ antes de hablar.", "respuesta": "SENTO"},
+        {"texto": "Mt 5,1 — Sus discípulos se le ______ (se pusieron a su lado) para escucharlo.", "respuesta": "ACERCARON"},
+        {"texto": "Mt 5,1 — Los que se pusieron junto a Jesús en lo alto eran sus ______: los seguidores que aprenden de él.", "respuesta": "DISCIPULOS"},
+        {"texto": "Mt 5,2 — Jesús empezó a ______ (instruir como maestro) a los que estaban junto a él.", "respuesta": "ENSEÑAR"},
+        {"texto": "Mt 5,3 — Jesús promete a los sencillos de corazón que suyo es el ______ de los cielos.", "respuesta": "REINO"},
+        {"texto": "Mt 5,6 — Jesús promete satisfacción a quienes anhelan con todas sus fuerzas que se haga lo recto: la ______.", "respuesta": "JUSTICIA"},
+        {"texto": "Mt 5,12 — Hombres de Dios que ya fueron perseguidos antes que los discípulos: los ______.", "respuesta": "PROFETAS"},
     ],
-    "incluir": ["DICHOSOS", "BIENAVENTURANZAS"],
+    "incluir": ["MONTE", "REINO"],
     "requisito": 6,
-    "pistas": ["Todas las palabras aparecen en Mateo 5,1-12.",
-               "DICHOSOS y BIENAVENTURANZAS son el corazón del tema: empieza por ahí."],
+    "pistas": ["Todas las palabras salen de Mt 5,1-12: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "MONTE (donde Jesús enseña) y REINO (la primera promesa) abren las Bienaventuranzas."],
 })
 
 _agregar("C0N08-CO01", "A02", {
@@ -9404,7 +9404,7 @@ _agregar("C0N08-CO01", "A02", {
     "incluir": ["DICHOSOS", "BIENAVENTURANZAS"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras cortas: MONTE y REINO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N08-CO01", "A03", {
@@ -9593,21 +9593,21 @@ _agregar("C0N08-CO01", "A10", {
 # -- C0N08-CO02: Pobreza de espíritu --
 _agregar("C0N08-CO02", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: pobres de espíritu",
+    "titulo": "Crucigrama bíblico: Mt 5,1-5",
     "items": [
-        {"texto": "Primera Bienaventuranza: 'Dichosos los ______ de espíritu'.", "respuesta": "POBRES"},
-        {"texto": "Lo que se tiene cuando el corazón no está atado a las cosas materiales.", "respuesta": "DESAPEGO"},
-        {"texto": "Actitud de quien reconoce que todo lo bueno viene de Dios y no solo de sus propios méritos.", "respuesta": "HUMILDAD"},
-        {"texto": "Lo contrario de la soberbia: vivir sin aparentar ni presumir.", "respuesta": "SENCILLEZ"},
-        {"texto": "Lo que se pone en Dios, y no en el dinero ni en las posesiones, según esta Bienaventuranza.", "respuesta": "CONFIANZA"},
-        {"texto": "Verbo que describe la actitud de quien necesita a Dios y a los demás, en vez de creerse autosuficiente.", "respuesta": "DEPENDER"},
-        {"texto": "Bienes materiales a los que Jesús invita a no aferrarse como si fueran lo más importante.", "respuesta": "TESOROS"},
-        {"texto": "Parte de la persona que esta Bienaventuranza llama a ser 'pobre', es decir, libre de apegos.", "respuesta": "ESPIRITU"},
+        {"texto": "Mt 5,3 — La primera bienaventuranza habla de ser sencillo, no solo de bolsillo, sino de ______ (la dimensión interior que nos une a Dios).", "respuesta": "ESPIRITU"},
+        {"texto": "Mt 5,3 — La primera promesa de Jesús a los sencillos es suya: el ______ de los cielos.", "respuesta": "REINO"},
+        {"texto": "Mt 5,3 — El Reino que Jesús promete es el de los ______ (la morada de Dios).", "respuesta": "CIELOS"},
+        {"texto": "Mt 5,5 — Los humildes recibirán como herencia esta realidad que es hogar de todos: la ______.", "respuesta": "TIERRA"},
+        {"texto": "Mt 5,4 — A quienes sufren, Dios les asegura que él mismo va a ______ (secar sus lágrimas con cariño).", "respuesta": "CONSOLAR"},
+        {"texto": "Mt 5,1 — Los seguidores de Jesús que se le pusieron cerca para escucharlo: sus ______.", "respuesta": "DISCIPULOS"},
+        {"texto": "Mt 5,1 — Lugar elevado al que subió Jesús al ver a la gente, antes de empezar a hablar.", "respuesta": "MONTE"},
+        {"texto": "Mt 5,2 — Jesús abrió la boca para ______ (instruir) el camino de la felicidad.", "respuesta": "ENSEÑAR"},
     ],
-    "incluir": ["POBRES", "ESPIRITU"],
+    "incluir": ["ESPIRITU", "REINO"],
     "requisito": 6,
-    "pistas": ["La Bienaventuranza completa es 'Dichosos los pobres de espíritu'.",
-               "Varias palabras describen actitudes: humildad, sencillez, confianza, depender."],
+    "pistas": ["Todas las palabras salen de Mt 5,1-5: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "ESPIRITU y REINO: la primera bienaventuranza une la sencillez interior con la promesa del Reino."],
 })
 
 _agregar("C0N08-CO02", "A02", {
@@ -9617,7 +9617,7 @@ _agregar("C0N08-CO02", "A02", {
     "incluir": ["POBRES", "ESPIRITU"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras cortas: POBRES y TESOROS.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N08-CO02", "A03", {
@@ -9806,21 +9806,21 @@ _agregar("C0N08-CO02", "A10", {
 # -- C0N08-CO03: Misericordia y justicia --
 _agregar("C0N08-CO03", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: misericordiosos y hambrientos de justicia",
+    "titulo": "Crucigrama bíblico: Mt 5,6-12",
     "items": [
-        {"texto": "Bienaventuranza que premia a quienes tratan a otros con compasión y perdón.", "respuesta": "MISERICORDIA"},
-        {"texto": "Lo que Jesús llama a 'tener hambre y sed de' en otra Bienaventuranza: dar a cada uno lo que le corresponde.", "respuesta": "JUSTICIA"},
-        {"texto": "Acto de dejar de lado una ofensa en vez de guardar rencor.", "respuesta": "PERDON"},
-        {"texto": "Sentimiento de cercanía y ternura ante el que sufre.", "respuesta": "COMPASION"},
-        {"texto": "Necesidad física que Jesús usa como imagen para describir el deseo profundo de justicia.", "respuesta": "HAMBRE"},
-        {"texto": "Otra necesidad física usada como imagen del deseo de justicia, junto con el hambre.", "respuesta": "SED"},
-        {"texto": "Actitud de hacer el bien de forma gratuita, sin esperar nada a cambio.", "respuesta": "BONDAD"},
-        {"texto": "Actitud de unirse a quienes sufren una injusticia para acompañarlos y ayudarlos.", "respuesta": "SOLIDARIDAD"},
+        {"texto": "Mt 5,6 — Quienes anhelan que se haga lo recto, con la intensidad de quien tiene hambre y sed, buscan la ______.", "respuesta": "JUSTICIA"},
+        {"texto": "Mt 5,11 — Jesús anuncia que a sus seguidores otros llegarán a ______ (acosarlos, hacerles la vida difícil).", "respuesta": "PERSEGUIR"},
+        {"texto": "Mt 5,11 — Los seguidores de Jesús recibirán palabras hirientes: la gente llegará a ______ (ofenderlos con palabras).", "respuesta": "INSULTAR"},
+        {"texto": "Mt 5,12 — Jesús invita a ______se (llenarse de gozo) aun cuando sus seguidores sufran.", "respuesta": "ALEGRAR"},
+        {"texto": "Mt 5,12 — Hombres que hablaron de parte de Dios y también sufrieron antes que los discípulos: los ______.", "respuesta": "PROFETAS"},
+        {"texto": "Mt 5,10 — Quienes sufren por hacer lo justo reciben como promesa el ______ de Dios, igual que en la primera bienaventuranza.", "respuesta": "REINO"},
+        {"texto": "Mt 5,10 — Ese Reino es el de los ______ (el lugar donde Dios habita).", "respuesta": "CIELOS"},
+        {"texto": "Mt 5,8 — Jesús bendice a quienes se mantienen ______ por dentro, sin doblez ni mancha (adjetivo contrario a sucio).", "respuesta": "LIMPIO"},
     ],
-    "incluir": ["MISERICORDIA", "JUSTICIA"],
+    "incluir": ["JUSTICIA", "PERSEGUIR"],
     "requisito": 6,
-    "pistas": ["Las dos palabras centrales son las que nombran directamente dos Bienaventuranzas.",
-               "SED es la palabra más corta: empieza por ahí."],
+    "pistas": ["Todas las palabras salen de Mt 5,6-12: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "JUSTICIA y PERSEGUIR: defender lo justo tiene un costo, pero Jesús promete su Reino."],
 })
 
 _agregar("C0N08-CO03", "A02", {
@@ -9830,7 +9830,7 @@ _agregar("C0N08-CO03", "A02", {
     "incluir": ["MISERICORDIA", "JUSTICIA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras cortas: SED y PERDON.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N08-CO03", "A03", {
@@ -10019,21 +10019,21 @@ _agregar("C0N08-CO03", "A10", {
 # -- C0N08-CO04: Pureza de corazón --
 _agregar("C0N08-CO04", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: limpios de corazón",
+    "titulo": "Crucigrama bíblico: Mt 5,4-9",
     "items": [
-        {"texto": "Nombre de esta Bienaventuranza: ______ de corazón.", "respuesta": "PUREZA"},
-        {"texto": "Parte de la persona que, según esta Bienaventuranza, debe estar libre de doblez.", "respuesta": "CORAZON"},
-        {"texto": "Adjetivo que usa Jesús para describir el corazón que podrá ver a Dios.", "respuesta": "LIMPIO"},
-        {"texto": "Cualidad de quien no finge ser lo que no es.", "respuesta": "SINCERIDAD"},
-        {"texto": "Cualidad de quien no esconde intenciones ni dobles caras.", "respuesta": "TRANSPARENCIA"},
-        {"texto": "Virtud de vivir de forma coherente entre lo que se piensa, se dice y se hace.", "respuesta": "INTEGRIDAD"},
-        {"texto": "Lo contrario de la mentira; vivir y hablar conforme a lo que es real.", "respuesta": "VERDAD"},
-        {"texto": "Lo que lograrán tener sobre Dios los puros de corazón, según la Bienaventuranza: una ______ limpia para contemplarlo.", "respuesta": "MIRADA"},
+        {"texto": "Mt 5,8 — Jesús bendice a quienes mantienen una vida interior sin mancha: ______ (lo contrario de sucio).", "respuesta": "LIMPIO"},
+        {"texto": "Mt 5,8 — Promesa para los de vida transparente: ellos ______ (futuro del verbo «ver») al Creador.", "respuesta": "VERAN"},
+        {"texto": "Mt 5,8 — Los de vida transparente contemplarán a aquel que es el Creador y centro de todo: ______.", "respuesta": "DIOS"},
+        {"texto": "Mt 5,9 — Quienes construyen la paz recibirán un título de familia: serán ______ (descendientes queridos) del Padre de todos.", "respuesta": "HIJOS"},
+        {"texto": "Mt 5,9 — Quienes trabajan por la paz serán ______ (participio plural del verbo con que se da un nombre a alguien) con un título de familia.", "respuesta": "LLAMADOS"},
+        {"texto": "Mt 5,5 — Los humildes heredarán esta porción del mundo, que es hogar de todos: la ______.", "respuesta": "TIERRA"},
+        {"texto": "Mt 5,4 — Los afligidos reciben una promesa de ternura: Dios mismo los va a ______ (secar sus lágrimas con cariño).", "respuesta": "CONSOLAR"},
+        {"texto": "Mt 5,6 — Quienes sienten un hambre profunda de que se respeten los derechos de todos buscan la ______.", "respuesta": "JUSTICIA"},
     ],
-    "incluir": ["PUREZA", "CORAZON"],
+    "incluir": ["LIMPIO", "VERAN"],
     "requisito": 6,
-    "pistas": ["Las dos palabras centrales forman juntas el nombre completo de esta Bienaventuranza.",
-               "VERDAD y LIMPIO son palabras cortas: empieza por ahí."],
+    "pistas": ["Todas las palabras salen de Mt 5,4-9: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "LIMPIO y VERAN: quien se mantiene transparente por dentro recibe la promesa de contemplar a Dios."],
 })
 
 _agregar("C0N08-CO04", "A02", {
@@ -10043,7 +10043,7 @@ _agregar("C0N08-CO04", "A02", {
     "incluir": ["PUREZA", "CORAZON"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras cortas: LIMPIO y VERDAD.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N08-CO04", "A03", {
@@ -10232,21 +10232,21 @@ _agregar("C0N08-CO04", "A10", {
 # -- C0N08-CO05: Consumismo e individualismo --
 _agregar("C0N08-CO05", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: antivalores de hoy",
+    "titulo": "Crucigrama bíblico: Mt 5,3-12",
     "items": [
-        {"texto": "Antivalor que mide la felicidad por cuánto se compra o se posee.", "respuesta": "CONSUMISMO"},
-        {"texto": "Antivalor que pone el 'yo' por encima de los demás y del bien común.", "respuesta": "INDIVIDUALISMO"},
-        {"texto": "Actitud de valorar las cosas materiales por encima de las personas.", "respuesta": "MATERIALISMO"},
-        {"texto": "Antivalor de pensar solo en uno mismo sin importarle el bienestar de otros.", "respuesta": "EGOISMO"},
-        {"texto": "Lo que muchos buscan en redes sociales para sentirse aceptados, aunque no sea lo que en verdad son.", "respuesta": "APARIENCIA"},
-        {"texto": "Sensación que queda cuando se busca llenar la vida solo con cosas materiales.", "respuesta": "VACIO"},
-        {"texto": "Actitud de medirse constantemente contra otros para sentirse mejor o peor.", "respuesta": "COMPETENCIA"},
-        {"texto": "Lo que experimenta quien vive encerrado en sí mismo, sin comunidad ni relaciones verdaderas.", "respuesta": "SOLEDAD"},
+        {"texto": "Mt 5,12 — Aun en la dificultad, Jesús invita a ______se (llenarse de gozo): su felicidad no depende de lo que se posee.", "respuesta": "ALEGRAR"},
+        {"texto": "Mt 5,5 — Frente a quienes quieren apoderarse de todo, Jesús promete a los humildes la herencia de esta realidad: la ______.", "respuesta": "TIERRA"},
+        {"texto": "Mt 5,3 — La felicidad de Jesús empieza por la sencillez interior: ser sencillo de ______ (la dimensión interior).", "respuesta": "ESPIRITU"},
+        {"texto": "Mt 5,12 — Quienes ya fueron rechazados por decir la verdad de parte de Dios: los ______.", "respuesta": "PROFETAS"},
+        {"texto": "Mt 5,12 — El premio grande de los perseguidos está donde Dios habita: en los ______.", "respuesta": "CIELOS"},
+        {"texto": "Mt 5,8 — La promesa más grande de las bienaventuranzas: poder contemplar al Creador, ______.", "respuesta": "DIOS"},
+        {"texto": "Mt 5,9 — Quienes construyen la paz reciben un título de familia: serán ______ (descendientes queridos) del Padre de todos.", "respuesta": "HIJOS"},
+        {"texto": "Mt 5,9 — La dicha de los pacificadores consiste en que serán ______ (participio plural del verbo con que se da un nombre a alguien) con ese título de familia.", "respuesta": "LLAMADOS"},
     ],
-    "incluir": ["CONSUMISMO", "INDIVIDUALISMO"],
+    "incluir": ["ALEGRAR", "TIERRA"],
     "requisito": 6,
-    "pistas": ["Las dos palabras centrales nombran los dos antivalores de este tema.",
-               "EGOISMO y VACIO son palabras más cortas: empieza por ahí."],
+    "pistas": ["Todas las palabras salen de Mt 5,3-12: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "ALEGRAR y TIERRA: Jesús propone una alegría distinta a poseer y competir."],
 })
 
 _agregar("C0N08-CO05", "A02", {
@@ -10256,7 +10256,7 @@ _agregar("C0N08-CO05", "A02", {
     "incluir": ["CONSUMISMO", "INDIVIDUALISMO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras cortas: EGOISMO y VACIO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N08-CO05", "A03", {
@@ -10445,21 +10445,21 @@ _agregar("C0N08-CO05", "A10", {
 # -- C0N08-CO06: Elegir valores del Evangelio --
 _agregar("C0N08-CO06", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: una decisión que marca el rumbo",
+    "titulo": "Crucigrama bíblico: Mt 5,1-12",
     "items": [
-        {"texto": "Proceso de pensar y orar antes de decidir qué valores vivir.", "respuesta": "DISCERNIMIENTO"},
-        {"texto": "Buena Noticia de Jesús que propone valores distintos a los del mundo.", "respuesta": "EVANGELIO"},
-        {"texto": "Cualidad de vivir de acuerdo a lo que se cree, sin contradicciones.", "respuesta": "COHERENCIA"},
-        {"texto": "Acto de optar por un camino concreto entre varias opciones posibles.", "respuesta": "DECISION"},
-        {"texto": "Mostrar con la propia vida lo que se cree, de forma visible para otros.", "respuesta": "TESTIMONIO"},
-        {"texto": "Capacidad de elegir el bien, no solo de hacer lo que uno quiera.", "respuesta": "LIBERTAD"},
-        {"texto": "Imagen que usa la Biblia para describir la vida como un recorrido con un rumbo y una meta.", "respuesta": "CAMINO"},
-        {"texto": "Verbo central de este tema: optar de forma libre y consciente por los valores de Jesús.", "respuesta": "ELEGIR"},
+        {"texto": "Mt 5,1 — Elegir los valores de Jesús es cosa de quienes se le acercan para seguirlo: sus ______.", "respuesta": "DISCIPULOS"},
+        {"texto": "Mt 5,1 — Jesús, como un maestro, se ______ y esperó a los que querían escucharlo.", "respuesta": "SENTO"},
+        {"texto": "Mt 5,6 — Elijo desear con todas mis fuerzas que se respete lo recto y los derechos de todos: la ______.", "respuesta": "JUSTICIA"},
+        {"texto": "Mt 5,10 — Quien elige los valores de Jesús recibe como promesa el ______ de los cielos.", "respuesta": "REINO"},
+        {"texto": "Mt 5,8 — Elijo mantener transparente mi vida interior, ______ (adjetivo contrario a sucio), de donde nacen mis decisiones.", "respuesta": "LIMPIO"},
+        {"texto": "Mt 5,8 — Elegir el bien tiene premio: ellos ______ (futuro del verbo «ver») a quien da sentido a la vida.", "respuesta": "VERAN"},
+        {"texto": "Mt 5,11 — Elegir a Jesús puede costar: algunos intentarán ______ (acosar) a quien lo sigue.", "respuesta": "PERSEGUIR"},
+        {"texto": "Mt 5,9 — Quien elige construir la paz será reconocido como hijo de ______ (el Creador).", "respuesta": "DIOS"},
     ],
-    "incluir": ["DISCERNIMIENTO", "EVANGELIO"],
+    "incluir": ["REINO", "JUSTICIA"],
     "requisito": 6,
-    "pistas": ["Las dos palabras centrales son las más largas del crucigrama.",
-               "CAMINO y ELEGIR son palabras más cortas: empieza por ahí."],
+    "pistas": ["Todas las palabras salen de Mt 5,1-12: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "REINO y JUSTICIA: elegir los valores del Evangelio es buscar el Reino y su justicia."],
 })
 
 _agregar("C0N08-CO06", "A02", {
@@ -10469,7 +10469,7 @@ _agregar("C0N08-CO06", "A02", {
     "incluir": ["DISCERNIMIENTO", "EVANGELIO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras cortas: CAMINO y ELEGIR.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N08-CO06", "A03", {
@@ -10663,21 +10663,21 @@ _agregar("C0N08-CO06", "A10", {
 # -- C0N09-CO01: La creación es don --
 _agregar("C0N09-CO01", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: un regalo llamado creación",
+    "titulo": "Crucigrama bíblico: Gn 2,15; Sal 24,1-2",
     "items": [
-        {"texto": "Palabra que resume la actitud correcta ante algo que no nos hemos ganado por mérito propio.", "respuesta": "GRATITUD"},
-        {"texto": "Así es el don de Dios: no se compra ni se merece, se recibe de manera ______.", "respuesta": "GRATUITO"},
-        {"texto": "Lugar donde el Génesis sitúa la primera morada del ser humano.", "respuesta": "JARDIN"},
-        {"texto": "Nombre del jardín donde Dios puso al primer ser humano.", "respuesta": "EDEN"},
-        {"texto": "Palabra que usa la fe para nombrar todo lo que existe, hecho por Dios.", "respuesta": "CREACION"},
-        {"texto": "Un regalo que se recibe sin haberlo pedido ni merecido.", "respuesta": "DON"},
-        {"texto": "Sinónimo de «don»: algo que se entrega sin esperar nada a cambio.", "respuesta": "REGALO"},
-        {"texto": "Verbo que describe la tarea del ser humano frente al jardín: no solo usarlo, sino ______lo.", "respuesta": "CUIDAR"},
+        {"texto": "Sal 24,1 — El salmo proclama que del Señor es la ______ y todo lo que contiene (el suelo que pisamos).", "respuesta": "TIERRA"},
+        {"texto": "Sal 24,1 — Del Señor son también el ______ entero y todos los seres que viven en él.", "respuesta": "MUNDO"},
+        {"texto": "Sal 24,1 — Pertenecen al Señor todas las personas que ______ (viven) en el mundo.", "respuesta": "HABITAN"},
+        {"texto": "Sal 24,2 — El salmista dice que Dios afirmó la tierra sobre los ______, las grandes extensiones de agua salada.", "respuesta": "MARES"},
+        {"texto": "Sal 24,1 — La tierra y cuanto hay en ella pertenecen al ______, el título con que Israel nombra a Dios.", "respuesta": "SEÑOR"},
+        {"texto": "Gn 2,15 — Dios colocó al ser humano en un jardín situado en una región llamada ______.", "respuesta": "EDEN"},
+        {"texto": "Gn 2,15 — Dios puso al ser humano en un ______, un lugar con árboles que era regalo suyo.", "respuesta": "JARDIN"},
+        {"texto": "Gn 2,15 — Dios tomó al ______ (ser humano, en masculino) y le encomendó una tarea.", "respuesta": "HOMBRE"},
     ],
-    "incluir": ["CREACION", "DON"],
+    "incluir": ["TIERRA", "MUNDO"],
     "requisito": 6,
-    "pistas": ["Busca primero las palabras más cortas: DON y EDEN.",
-               "CREACION y DON resumen el tema central de este encuentro: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Gn 2,15 y Sal 24,1-2: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "TIERRA y MUNDO son las palabras centrales: toda la creación es un regalo de Dios y no nos pertenece a nosotros."],
 })
 
 _agregar("C0N09-CO01", "A02", {
@@ -10687,7 +10687,7 @@ _agregar("C0N09-CO01", "A02", {
     "incluir": ["CREACION", "DON"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras cortas: DON y EDEN.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N09-CO01", "A03", {
@@ -10875,21 +10875,21 @@ _agregar("C0N09-CO01", "A10", {
 # -- C0N09-CO02: El ser humano como cuidador --
 _agregar("C0N09-CO02", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: llamados a cuidar",
+    "titulo": "Crucigrama bíblico: Gn 2,15; Sal 24,3-4",
     "items": [
-        {"texto": "Palabra que nombra a quien recibe la tarea de proteger y atender algo que no es suyo.", "respuesta": "CUIDADOR"},
-        {"texto": "Figura bíblica y cotidiana de quien administra los bienes de su señor con responsabilidad.", "respuesta": "MAYORDOMO"},
-        {"texto": "Palabra que nombra el llamado de Dios a cuidar la creación, no un trabajo cualquiera.", "respuesta": "VOCACION"},
-        {"texto": "Sinónimo de cuidado atento y responsable de algo valioso.", "respuesta": "CUSTODIA"},
-        {"texto": "Verbo que describe gestionar con responsabilidad lo que Dios ha confiado al ser humano.", "respuesta": "ADMINISTRAR"},
-        {"texto": "Verbo que usa Dios cuando confía al ser humano el cuidado del jardín.", "respuesta": "ENCOMENDAR"},
-        {"texto": "Palabra que describe poner los propios dones al ______ de los demás y de la creación.", "respuesta": "SERVICIO"},
-        {"texto": "Actitud que el cuidador debe tener hacia lo que cuida: no abuso, sino ______.", "respuesta": "RESPETO"},
+        {"texto": "Gn 2,15 — Dios tomó al ______ (ser humano, en masculino) y le encomendó una tarea.", "respuesta": "HOMBRE"},
+        {"texto": "Gn 2,15 — Dios colocó al ser humano en un jardín situado en una región llamada ______.", "respuesta": "EDEN"},
+        {"texto": "Gn 2,15 — Dios puso al ser humano en un ______, un lugar con árboles que era regalo suyo.", "respuesta": "JARDIN"},
+        {"texto": "Gn 2,15 — El Señor ______ tomó al hombre y lo puso en el jardín.", "respuesta": "DIOS"},
+        {"texto": "Sal 24,3 — El salmista pregunta quién podrá subir al ______ del Señor, la altura donde se le encuentra.", "respuesta": "MONTE"},
+        {"texto": "Sal 24,3 — El salmista se pregunta quién ______ (ascenderá) hasta el monte del Señor.", "respuesta": "SUBIRA"},
+        {"texto": "Sal 24,4 — Puede acercarse a Dios quien tiene limpias las ______, con las que trabaja y obra.", "respuesta": "MANOS"},
+        {"texto": "Sal 24,4 — Dios pide un ______ puro, es decir, un interior sincero y sin doblez.", "respuesta": "CORAZON"},
     ],
-    "incluir": ["CUIDADOR", "MAYORDOMO"],
+    "incluir": ["HOMBRE", "JARDIN"],
     "requisito": 6,
-    "pistas": ["Busca primero las palabras más cortas: CUSTODIA y RESPETO.",
-               "CUIDADOR y MAYORDOMO resumen el tema central de este CO: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Gn 2,15 y Sal 24,3-4: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "HOMBRE y JARDIN son las palabras centrales: Dios confía el jardín al ser humano para que lo trabaje y lo cuide."],
 })
 
 _agregar("C0N09-CO02", "A02", {
@@ -10899,7 +10899,7 @@ _agregar("C0N09-CO02", "A02", {
     "incluir": ["CUIDADOR", "MAYORDOMO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras cortas: CUSTODIA y RESPETO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N09-CO02", "A03", {
@@ -11087,21 +11087,21 @@ _agregar("C0N09-CO02", "A10", {
 # -- C0N09-CO03: Ecología y dignidad humana --
 _agregar("C0N09-CO03", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: cuidar la tierra, respetar a las personas",
+    "titulo": "Crucigrama bíblico: Gn 2,15; Sal 24,1.4.6",
     "items": [
-        {"texto": "Valor que tiene toda persona por el solo hecho de ser creada por Dios.", "respuesta": "DIGNIDAD"},
-        {"texto": "Quienes sufren con más fuerza las consecuencias del daño ambiental.", "respuesta": "POBRES"},
-        {"texto": "Palabra que nombra dar a cada uno lo que le corresponde, con equidad.", "respuesta": "JUSTICIA"},
-        {"texto": "Tema que estudia la relación entre los seres vivos y su entorno.", "respuesta": "ECOLOGIA"},
-        {"texto": "Palabra que nombra a cada ser humano, único e irrepetible.", "respuesta": "PERSONA"},
-        {"texto": "Así se describe a una comunidad que tiene menos recursos para enfrentar un desastre ambiental.", "respuesta": "VULNERABLE"},
-        {"texto": "Palabra que busca que todos tengan las mismas oportunidades, más allá de sus diferencias.", "respuesta": "EQUIDAD"},
-        {"texto": "Palabra que nombra el entorno natural donde vive una comunidad.", "respuesta": "AMBIENTE"},
+        {"texto": "Sal 24,1 — Pertenecen al Señor todas las personas que ______ (viven) en el mundo.", "respuesta": "HABITAN"},
+        {"texto": "Sal 24,1 — El salmo proclama que del Señor es la ______ y todo lo que contiene (el suelo que pisamos).", "respuesta": "TIERRA"},
+        {"texto": "Sal 24,4 — Dios pide un ______ puro, es decir, un interior sincero y sin doblez.", "respuesta": "CORAZON"},
+        {"texto": "Sal 24,4 — Quien sube al monte santo tiene el corazón ______ (4 letras), sin mezcla de malas intenciones.", "respuesta": "PURO"},
+        {"texto": "Sal 24,6 — Así son los que ______ (andan tras) la presencia del Dios de Jacob.", "respuesta": "BUSCAN"},
+        {"texto": "Sal 24,6 — El versículo termina llamando a Dios «Dios de ______», el patriarca al que también se llamó Israel.", "respuesta": "JACOB"},
+        {"texto": "Sal 24,1 — La tierra y cuanto hay en ella pertenecen al ______, el título con que Israel nombra a Dios.", "respuesta": "SEÑOR"},
+        {"texto": "Gn 2,15 — Dios tomó al ______ (ser humano, en masculino) y le encomendó una tarea.", "respuesta": "HOMBRE"},
     ],
-    "incluir": ["DIGNIDAD", "ECOLOGIA"],
+    "incluir": ["HABITAN", "CORAZON"],
     "requisito": 6,
-    "pistas": ["Busca primero las palabras más cortas: POBRES y PERSONA.",
-               "DIGNIDAD y ECOLOGIA resumen el tema central de este CO: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Gn 2,15 y Sal 24,1.4.6: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "HABITAN y CORAZON son las palabras centrales: la tierra es de Dios y todos los que la habitan merecen respeto, empezando por un corazón recto."],
 })
 
 _agregar("C0N09-CO03", "A02", {
@@ -11111,7 +11111,7 @@ _agregar("C0N09-CO03", "A02", {
     "incluir": ["DIGNIDAD", "ECOLOGIA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras cortas: POBRES y PERSONA.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N09-CO03", "A03", {
@@ -11299,21 +11299,21 @@ _agregar("C0N09-CO03", "A10", {
 # -- C0N09-CO04: Consumo responsable --
 _agregar("C0N09-CO04", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: consumir con conciencia",
+    "titulo": "Crucigrama bíblico: Gn 2,15; Sal 24,1.3-4",
     "items": [
-        {"texto": "Palabra que nombra el acto de usar bienes y servicios para satisfacer necesidades.", "respuesta": "CONSUMO"},
-        {"texto": "Palabra que nombra lo que se pierde cuando algo útil se tira sin necesidad.", "respuesta": "DESPERDICIO"},
-        {"texto": "Verbo que describe transformar algo usado en algo nuevamente útil.", "respuesta": "RECICLAR"},
-        {"texto": "Palabra que nombra guardar o no gastar de más lo que se tiene.", "respuesta": "AHORRO"},
-        {"texto": "Palabra que nombra la cultura de tirar rápido lo que ya no se quiere, aunque sirva.", "respuesta": "DESCARTE"},
-        {"texto": "Actitud de vivir con lo necesario, sin excesos ni lujos innecesarios.", "respuesta": "SOBRIEDAD"},
-        {"texto": "Palabra que describe actuar con medida, sin excederse en lo que se compra o se usa.", "respuesta": "MODERACION"},
-        {"texto": "Palabra que nombra las costumbres que repetimos cada día, buenas o malas.", "respuesta": "HABITOS"},
+        {"texto": "Sal 24,4 — Puede acercarse a Dios quien tiene limpias las ______, con las que trabaja y obra.", "respuesta": "MANOS"},
+        {"texto": "Sal 24,4 — Quien sube al monte santo tiene el corazón ______ (4 letras), sin mezcla de malas intenciones.", "respuesta": "PURO"},
+        {"texto": "Sal 24,4 — Dios pide un ______ puro, es decir, un interior sincero y sin doblez.", "respuesta": "CORAZON"},
+        {"texto": "Sal 24,3 — El salmista pregunta quién podrá subir al ______ del Señor, la altura donde se le encuentra.", "respuesta": "MONTE"},
+        {"texto": "Sal 24,1 — El salmo proclama que del Señor es la ______ y todo lo que contiene (el suelo que pisamos).", "respuesta": "TIERRA"},
+        {"texto": "Sal 24,1 — La tierra y cuanto hay en ella pertenecen al ______, el título con que Israel nombra a Dios.", "respuesta": "SEÑOR"},
+        {"texto": "Sal 24,1 — Pertenecen al Señor todas las personas que ______ (viven) en el mundo.", "respuesta": "HABITAN"},
+        {"texto": "Gn 2,15 — El Señor ______ tomó al hombre y lo puso en el jardín.", "respuesta": "DIOS"},
     ],
-    "incluir": ["CONSUMO", "DESCARTE"],
+    "incluir": ["MANOS", "PURO"],
     "requisito": 6,
-    "pistas": ["Busca primero las palabras más cortas: AHORRO y HABITOS.",
-               "CONSUMO y DESCARTE resumen el tema central de este CO: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Gn 2,15 y Sal 24,1.3-4: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "MANOS y PURO son las palabras centrales: usar lo que Dios nos da con manos limpias y sin intereses ocultos."],
 })
 
 _agregar("C0N09-CO04", "A02", {
@@ -11323,7 +11323,7 @@ _agregar("C0N09-CO04", "A02", {
     "incluir": ["CONSUMO", "DESCARTE"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras cortas: AHORRO y HABITOS.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N09-CO04", "A03", {
@@ -11511,21 +11511,21 @@ _agregar("C0N09-CO04", "A10", {
 # -- C0N09-CO05: Compromiso ecológico comunitario --
 _agregar("C0N09-CO05", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: cuidar la creación juntos",
+    "titulo": "Crucigrama bíblico: Sal 24,3-7",
     "items": [
-        {"texto": "Palabra que nombra a un grupo de personas que comparten fe y objetivos.", "respuesta": "COMUNIDAD"},
-        {"texto": "Palabra que nombra la decisión firme de actuar a favor de algo, sostenida en el tiempo.", "respuesta": "COMPROMISO"},
-        {"texto": "Comunidad local de fe donde se puede organizar una acción ecológica.", "respuesta": "PARROQUIA"},
-        {"texto": "Verbo que describe planificar en conjunto una acción o actividad.", "respuesta": "ORGANIZAR"},
-        {"texto": "Palabra que nombra a un grupo de personas que trabajan juntas por un mismo fin.", "respuesta": "EQUIPO"},
-        {"texto": "Palabra que nombra el entorno cercano donde vive una comunidad.", "respuesta": "BARRIO"},
-        {"texto": "Adjetivo que describe una acción hecha por muchos y no solo por una persona.", "respuesta": "COLECTIVO"},
-        {"texto": "Verbo que describe tomar parte activa en una actividad comunitaria.", "respuesta": "PARTICIPAR"},
+        {"texto": "Sal 24,6 — Así son los que ______ (andan tras) la presencia del Dios de Jacob.", "respuesta": "BUSCAN"},
+        {"texto": "Sal 24,6 — El versículo termina llamando a Dios «Dios de ______», el patriarca al que también se llamó Israel.", "respuesta": "JACOB"},
+        {"texto": "Sal 24,3 — El salmista pregunta quién podrá subir al ______ del Señor, la altura donde se le encuentra.", "respuesta": "MONTE"},
+        {"texto": "Sal 24,3 — El salmista se pregunta quién ______ (ascenderá) hasta el monte del Señor.", "respuesta": "SUBIRA"},
+        {"texto": "Sal 24,7 — Se pide que se abran de par en par las ______, las entradas de una ciudad o templo, para que pase el Rey.", "respuesta": "PUERTAS"},
+        {"texto": "Sal 24,7 — Las puertas que deben abrirse son antiguas y duran para siempre: son las puertas ______.", "respuesta": "ETERNAS"},
+        {"texto": "Sal 24,4 — Dios pide un ______ puro, es decir, un interior sincero y sin doblez.", "respuesta": "CORAZON"},
+        {"texto": "Sal 24,7 — Se abre paso al Rey de la ______, es decir, de la majestad y el esplendor.", "respuesta": "GLORIA"},
     ],
-    "incluir": ["COMUNIDAD", "COMPROMISO"],
+    "incluir": ["BUSCAN", "MONTE"],
     "requisito": 6,
-    "pistas": ["Busca primero las palabras más cortas: BARRIO y EQUIPO.",
-               "COMUNIDAD y COMPROMISO resumen el tema central de este CO: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Sal 24,3-7: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "BUSCAN y MONTE son las palabras centrales: es el pueblo que busca a Dios el que sube junto a su monte."],
 })
 
 _agregar("C0N09-CO05", "A02", {
@@ -11535,7 +11535,7 @@ _agregar("C0N09-CO05", "A02", {
     "incluir": ["COMUNIDAD", "COMPROMISO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras cortas: BARRIO y EQUIPO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N09-CO05", "A03", {
@@ -11723,21 +11723,21 @@ _agregar("C0N09-CO05", "A10", {
 # -- C0N09-CO06: Ecología integral --
 _agregar("C0N09-CO06", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: todo está conectado",
+    "titulo": "Crucigrama bíblico: Gn 2,15; Sal 24,1-2.7-8",
     "items": [
-        {"texto": "Palabra que describe una ecología que cuida a la vez la naturaleza, a las personas y la vida espiritual.", "respuesta": "INTEGRAL"},
-        {"texto": "Palabra que nombra el vínculo que une todo lo creado entre sí.", "respuesta": "CONEXION"},
-        {"texto": "Palabra que nombra el buen equilibrio entre el ser humano, la sociedad y la naturaleza.", "respuesta": "ARMONIA"},
-        {"texto": "Palabra que nombra el punto justo entre dar y recibir, entre usar y cuidar.", "respuesta": "EQUILIBRIO"},
-        {"texto": "Palabra que nombra el lazo que existe entre dos realidades que se afectan mutuamente.", "respuesta": "RELACION"},
-        {"texto": "Palabra que nombra estar unidos en un mismo proyecto o sentido.", "respuesta": "UNIDAD"},
-        {"texto": "Palabra que nombra todo lo que rodea a una persona o comunidad.", "respuesta": "ENTORNO"},
-        {"texto": "Palabra que nombra la unión estrecha entre dos personas o realidades.", "respuesta": "VINCULO"},
+        {"texto": "Gn 2,15 — Dios tomó al ______ (ser humano, en masculino) y le encomendó una tarea.", "respuesta": "HOMBRE"},
+        {"texto": "Sal 24,1 — Del Señor son también el ______ entero y todos los seres que viven en él.", "respuesta": "MUNDO"},
+        {"texto": "Sal 24,2 — El salmista dice que Dios afirmó la tierra sobre los ______, las grandes extensiones de agua salada.", "respuesta": "MARES"},
+        {"texto": "Sal 24,1 — El salmo proclama que del Señor es la ______ y todo lo que contiene (el suelo que pisamos).", "respuesta": "TIERRA"},
+        {"texto": "Sal 24,7 — Se pide que se abran de par en par las ______, las entradas de una ciudad o templo, para que pase el Rey.", "respuesta": "PUERTAS"},
+        {"texto": "Sal 24,7 — Se abre paso al Rey de la ______, es decir, de la majestad y el esplendor.", "respuesta": "GLORIA"},
+        {"texto": "Sal 24,8 — Se responde que el Rey es el Señor, vencedor en batalla: es el ______ (adjetivo que indica vigor).", "respuesta": "FUERTE"},
+        {"texto": "Sal 24,7 — Las puertas que deben abrirse son antiguas y duran para siempre: son las puertas ______.", "respuesta": "ETERNAS"},
     ],
-    "incluir": ["INTEGRAL", "CONEXION"],
+    "incluir": ["HOMBRE", "MUNDO"],
     "requisito": 6,
-    "pistas": ["Busca primero las palabras más cortas: UNIDAD y VINCULO.",
-               "INTEGRAL y CONEXION resumen el tema central de este CO: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Gn 2,15 y Sal 24,1-2.7-8: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "HOMBRE y MUNDO son las palabras centrales: la persona forma parte de la creación, y toda ella canta la gloria de su Rey."],
 })
 
 _agregar("C0N09-CO06", "A02", {
@@ -11747,7 +11747,7 @@ _agregar("C0N09-CO06", "A02", {
     "incluir": ["INTEGRAL", "CONEXION"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras cortas: UNIDAD y VINCULO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N09-CO06", "A03", {
@@ -11941,21 +11941,21 @@ _agregar("C0N09-CO06", "A10", {
 
 _agregar("C0N10-CO01", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: ¿qué significa discernir?",
+    "titulo": "Crucigrama bíblico: Jn 16,12-15",
     "items": [
-        {"texto": "Palabra que nombra el proceso de buscar y reconocer la voluntad de Dios en una decisión.", "respuesta": "DISCERNIMIENTO"},
-        {"texto": "Persona de la Trinidad que actúa como guía interior en el discernimiento cristiano, según Jn 16,13.", "respuesta": "ESPIRITU"},
-        {"texto": "Voz interior que nos ayuda a distinguir el bien del mal.", "respuesta": "CONCIENCIA"},
-        {"texto": "Lo que buscamos descubrir cuando discernimos, más allá de lo que nos conviene: la ______.", "respuesta": "VERDAD"},
-        {"texto": "Texto sagrado que orienta el discernimiento cristiano.", "respuesta": "PALABRA"},
-        {"texto": "Diálogo con Dios que acompaña todo buen discernimiento.", "respuesta": "ORACION"},
-        {"texto": "Lo que al final toda persona debe tomar después de discernir.", "respuesta": "DECISION"},
-        {"texto": "Lo que el discernimiento busca encender en medio de la confusión.", "respuesta": "LUZ"},
+        {"texto": "Jn 16,12 — Jesús dice que aún le quedan bastantes ______ (asuntos, enseñanzas) por comunicar a los suyos.", "respuesta": "COSAS"},
+        {"texto": "Jn 16,13 — Jesús anuncia la llegada del ______ de la verdad, el Paráclito, tercera persona de la Trinidad.", "respuesta": "ESPIRITU"},
+        {"texto": "Jn 16,13 — Jesús promete que el Espíritu os ______ (os conducirá) como buen compañero de camino.", "respuesta": "GUIARA"},
+        {"texto": "Jn 16,15 — Jesús afirma que todo lo que posee el ______, a quien llama así, también es suyo.", "respuesta": "PADRE"},
+        {"texto": "Jn 16,14 — El Espíritu ______ de lo que es de Jesús para dárnoslo a conocer (verbo contrario a 'dar').", "respuesta": "RECIBIRA"},
+        {"texto": "Jn 16,15 — Jesús afirma que cuanto el Padre ______ (posee) le pertenece también a él.", "respuesta": "TIENE"},
+        {"texto": "Jn 16,12 — Jesús aclara que ______ (aún, hasta este momento) tiene enseñanzas por compartir con los suyos.", "respuesta": "TODAVIA"},
+        {"texto": "Jn 16,13 — Jesús llama al Espíritu con el nombre de la ______, lo contrario a la mentira.", "respuesta": "VERDAD"},
     ],
-    "incluir": ["DISCERNIMIENTO", "ESPIRITU"],
+    "incluir": ["ESPIRITU", "VERDAD"],
     "requisito": 6,
-    "pistas": ["DISCERNIMIENTO y ESPIRITU son las palabras centrales del tema: empieza por esas.",
-               "Las demás palabras aparecen en Jn 16,13 o en el vocabulario propio del discernimiento cristiano."],
+    "pistas": ["Todas las palabras salen de Jn 16,12-15: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "ESPIRITU y VERDAD son las palabras centrales: discernir es dejarse guiar por el Espíritu hacia la verdad."],
 })
 
 _agregar("C0N10-CO01", "A02", {
@@ -11965,7 +11965,7 @@ _agregar("C0N10-CO01", "A02", {
     "incluir": ["DISCERNIMIENTO", "ESPIRITU"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: LUZ y VERDAD.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N10-CO01", "A03", {
@@ -12156,21 +12156,21 @@ _agregar("C0N10-CO01", "A10", {
 
 _agregar("C0N10-CO02", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: conciencia y verdad",
+    "titulo": "Crucigrama bíblico: Jn 16,12-15",
     "items": [
-        {"texto": "Según el Concilio Vaticano II, lugar íntimo donde el ser humano está solo con Dios y escucha su voz.", "respuesta": "SAGRARIO"},
-        {"texto": "Capacidad interior que permite juzgar si un acto es bueno o malo.", "respuesta": "CONCIENCIA"},
-        {"texto": "Lo que una conciencia bien formada busca siempre, y no el engaño: la ______.", "respuesta": "VERDAD"},
-        {"texto": "Acto de la razón por el cual distinguimos el bien del mal en una situación concreta.", "respuesta": "JUICIO"},
-        {"texto": "Don que Dios nos da para decidir con responsabilidad, no para hacer cualquier cosa.", "respuesta": "LIBERTAD"},
-        {"texto": "Facultad humana que, iluminada por la fe, nos ayuda a discernir.", "respuesta": "RAZON"},
-        {"texto": "Lo que escuchamos en lo más íntimo de la conciencia, según el Vaticano II.", "respuesta": "VOZ"},
-        {"texto": "Adjetivo que describe una conciencia bien formada y fiel a la verdad: conciencia ______.", "respuesta": "RECTA"},
+        {"texto": "Jn 16,13 — Jesús anuncia la llegada del ______ de la verdad, el Paráclito, tercera persona de la Trinidad.", "respuesta": "ESPIRITU"},
+        {"texto": "Jn 16,14 — Jesús dice del Espíritu: él me ______ (me dará honor y hará reconocer mi grandeza).", "respuesta": "GLORIFICARA"},
+        {"texto": "Jn 16,13 — El Espíritu no ______ por su cuenta: transmitirá lo que haya escuchado (verbo en futuro).", "respuesta": "HABLARA"},
+        {"texto": "Jn 16,12 — Las enseñanzas que a Jesús le quedan por transmitir son ______, es decir, numerosas (femenino plural).", "respuesta": "MUCHAS"},
+        {"texto": "Jn 16,14 — El Espíritu ______ de lo que es de Jesús para dárnoslo a conocer (verbo contrario a 'dar').", "respuesta": "RECIBIRA"},
+        {"texto": "Jn 16,15 — Jesús afirma que cuanto el Padre ______ (posee) le pertenece también a él.", "respuesta": "TIENE"},
+        {"texto": "Jn 16,13 — El Espíritu conduce hasta la verdad completa: a ______ la verdad, no solo a una parte.", "respuesta": "TODA"},
+        {"texto": "Jn 16,12 — Jesús aclara que ______ (aún, hasta este momento) tiene enseñanzas por compartir con los suyos.", "respuesta": "TODAVIA"},
     ],
-    "incluir": ["CONCIENCIA", "VERDAD"],
+    "incluir": ["ESPIRITU", "HABLARA"],
     "requisito": 6,
-    "pistas": ["CONCIENCIA y VERDAD son las palabras centrales del tema: empieza por esas.",
-               "Varias palabras están tomadas de la imagen de Gaudium et spes 16 sobre la conciencia."],
+    "pistas": ["Todas las palabras salen de Jn 16,12-15: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "ESPIRITU y HABLARA son las palabras centrales: la conciencia se forma escuchando al Espíritu que nos habla por dentro."],
 })
 
 _agregar("C0N10-CO02", "A02", {
@@ -12180,7 +12180,7 @@ _agregar("C0N10-CO02", "A02", {
     "incluir": ["CONCIENCIA", "VERDAD"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: VOZ y RECTA.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N10-CO02", "A03", {
@@ -12371,21 +12371,21 @@ _agregar("C0N10-CO02", "A10", {
 
 _agregar("C0N10-CO03", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: la Palabra que orienta",
+    "titulo": "Crucigrama bíblico: Jn 16,12-15",
     "items": [
-        {"texto": "Conjunto de libros inspirados por Dios que llamamos Sagrada ______.", "respuesta": "ESCRITURA"},
-        {"texto": "Libro que reúne la Palabra de Dios y que podemos leer y meditar.", "respuesta": "BIBLIA"},
-        {"texto": "Según el Salmo 119, la Palabra de Dios es esto para nuestros pies.", "respuesta": "LAMPARA"},
-        {"texto": "Según el Salmo 119, la Palabra de Dios es lumbrera para este recorrido de la vida.", "respuesta": "CAMINO"},
-        {"texto": "Lo que la Palabra de Dios nos da para no caminar a oscuras en nuestras decisiones.", "respuesta": "LUZ"},
-        {"texto": "Verbo que describe detenerse a pensar despacio en un texto bíblico, no solo leerlo rápido.", "respuesta": "MEDITAR"},
-        {"texto": "Lo que hace la Palabra de Dios en nuestro discernimiento: nos ______.", "respuesta": "ORIENTA"},
-        {"texto": "Nombre general de la Palabra de Dios escrita que leemos en la misa y en nuestra oración personal.", "respuesta": "PALABRA"},
+        {"texto": "Jn 16,13 — El Espíritu os ______ (os dará noticia de) lo que está por venir.", "respuesta": "ANUNCIARA"},
+        {"texto": "Jn 16,12 — Jesús dice que aún le quedan bastantes ______ (asuntos, enseñanzas) por comunicar a los suyos.", "respuesta": "COSAS"},
+        {"texto": "Jn 16,12 — Jesús tiene bastante que ______ a sus amigos (verbo de comunicar con palabras, en infinitivo).", "respuesta": "DECIR"},
+        {"texto": "Jn 16,13 — Jesús anuncia la llegada del ______ de la verdad, el Paráclito, tercera persona de la Trinidad.", "respuesta": "ESPIRITU"},
+        {"texto": "Jn 16,13 — Jesús promete que el Espíritu os ______ (os conducirá) como buen compañero de camino.", "respuesta": "GUIARA"},
+        {"texto": "Jn 16,13 — El Espíritu no ______ por su cuenta: transmitirá lo que haya escuchado (verbo en futuro).", "respuesta": "HABLARA"},
+        {"texto": "Jn 16,15 — Jesús afirma que todo lo que posee el ______, a quien llama así, también es suyo.", "respuesta": "PADRE"},
+        {"texto": "Jn 16,13 — El Espíritu conduce hasta la verdad completa: a ______ la verdad, no solo a una parte.", "respuesta": "TODA"},
     ],
-    "incluir": ["PALABRA", "LAMPARA"],
+    "incluir": ["GUIARA", "HABLARA"],
     "requisito": 6,
-    "pistas": ["PALABRA y LAMPARA son las palabras centrales del tema: empieza por esas.",
-               "Varias palabras están inspiradas en la imagen del Salmo 119 sobre la Palabra de Dios."],
+    "pistas": ["Todas las palabras salen de Jn 16,12-15: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "GUIARA y HABLARA son las palabras centrales: la Palabra de Dios, dada por el Espíritu, nos orienta paso a paso."],
 })
 
 _agregar("C0N10-CO03", "A02", {
@@ -12395,7 +12395,7 @@ _agregar("C0N10-CO03", "A02", {
     "incluir": ["PALABRA", "LAMPARA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: LUZ y BIBLIA.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N10-CO03", "A03", {
@@ -12586,21 +12586,21 @@ _agregar("C0N10-CO03", "A10", {
 
 _agregar("C0N10-CO04", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: orar para discernir",
+    "titulo": "Crucigrama bíblico: Jn 16,12-15",
     "items": [
-        {"texto": "Diálogo personal con Dios que es indispensable para discernir bien.", "respuesta": "ORACION"},
-        {"texto": "Condición interior necesaria para escuchar a Dios: hace falta hacer ______ en medio del ruido.", "respuesta": "SILENCIO"},
-        {"texto": "Acción que la oración nos permite hacer frente a Dios, más que solo hablar.", "respuesta": "ESCUCHAR"},
-        {"texto": "Persona de la Trinidad que nos ayuda a discernir, según Jn 16,13.", "respuesta": "ESPIRITU"},
-        {"texto": "La oración es un verdadero ______ entre la persona y Dios, no un monólogo.", "respuesta": "DIALOGO"},
-        {"texto": "Lugar donde ocurre el verdadero discernimiento, más allá de lo exterior: la vida ______.", "respuesta": "INTERIOR"},
-        {"texto": "Verbo que resume el proceso de buscar la voluntad de Dios con calma y oración.", "respuesta": "DISCERNIR"},
-        {"texto": "Estado de calma interior que ayuda a orar y discernir sin prisa.", "respuesta": "QUIETUD"},
+        {"texto": "Jn 16,12 — Jesús tiene bastante que ______ a sus amigos (verbo de comunicar con palabras, en infinitivo).", "respuesta": "DECIR"},
+        {"texto": "Jn 16,13 — Jesús anuncia la llegada del ______ de la verdad, el Paráclito, tercera persona de la Trinidad.", "respuesta": "ESPIRITU"},
+        {"texto": "Jn 16,14 — Jesús dice del Espíritu: él me ______ (me dará honor y hará reconocer mi grandeza).", "respuesta": "GLORIFICARA"},
+        {"texto": "Jn 16,13 — Jesús promete que el Espíritu os ______ (os conducirá) como buen compañero de camino.", "respuesta": "GUIARA"},
+        {"texto": "Jn 16,15 — Jesús afirma que todo lo que posee el ______, a quien llama así, también es suyo.", "respuesta": "PADRE"},
+        {"texto": "Jn 16,15 — Jesús afirma que cuanto el Padre ______ (posee) le pertenece también a él.", "respuesta": "TIENE"},
+        {"texto": "Jn 16,15 — Jesús dice que ______ lo que posee el Padre le pertenece a él (palabra de totalidad, en masculino).", "respuesta": "TODO"},
+        {"texto": "Jn 16,13 — Jesús llama al Espíritu con el nombre de la ______, lo contrario a la mentira.", "respuesta": "VERDAD"},
     ],
-    "incluir": ["ORACION", "ESPIRITU"],
+    "incluir": ["ESPIRITU", "PADRE"],
     "requisito": 6,
-    "pistas": ["ORACION y ESPIRITU son las palabras centrales del tema: empieza por esas.",
-               "Varias palabras describen las condiciones internas que ayudan a orar bien."],
+    "pistas": ["Todas las palabras salen de Jn 16,12-15: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "ESPIRITU y PADRE son las palabras centrales: en la oración dialogamos con el Padre y escuchamos al Espíritu."],
 })
 
 _agregar("C0N10-CO04", "A02", {
@@ -12610,7 +12610,7 @@ _agregar("C0N10-CO04", "A02", {
     "incluir": ["ORACION", "ESPIRITU"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: ORACION y QUIETUD.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N10-CO04", "A03", {
@@ -12801,21 +12801,21 @@ _agregar("C0N10-CO04", "A10", {
 
 _agregar("C0N10-CO05", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: caminar acompañados",
+    "titulo": "Crucigrama bíblico: Jn 16,12-15",
     "items": [
-        {"texto": "Proceso de caminar junto a alguien de confianza para discernir mejor las decisiones de la vida.", "respuesta": "ACOMPAÑAMIENTO"},
-        {"texto": "Persona que, con experiencia y fe, ayuda a otro a ver su camino con más claridad.", "respuesta": "GUIA"},
-        {"texto": "Lo que pedimos a personas prudentes cuando no sabemos bien qué hacer.", "respuesta": "CONSEJO"},
-        {"texto": "Actitud necesaria para abrirse con sinceridad a quien nos acompaña.", "respuesta": "CONFIANZA"},
-        {"texto": "Nombre que recibe, en la tradición espiritual, quien acompaña con regularidad el crecimiento de otra persona en la fe.", "respuesta": "DIRECTOR"},
-        {"texto": "Virtud que ayuda a aconsejar bien, sin prisa ni ligereza.", "respuesta": "PRUDENCIA"},
-        {"texto": "Lo que ocurre entre quien acompaña y quien es acompañado: un verdadero ______ sincero.", "respuesta": "DIALOGO"},
-        {"texto": "Verbo que describe lo que hace un buen acompañante: no decide por el otro, sino que ______ a su lado.", "respuesta": "CAMINAR"},
+        {"texto": "Jn 16,13 — El Espíritu os ______ (os dará noticia de) lo que está por venir.", "respuesta": "ANUNCIARA"},
+        {"texto": "Jn 16,12 — Jesús dice que aún le quedan bastantes ______ (asuntos, enseñanzas) por comunicar a los suyos.", "respuesta": "COSAS"},
+        {"texto": "Jn 16,14 — Jesús dice del Espíritu: él me ______ (me dará honor y hará reconocer mi grandeza).", "respuesta": "GLORIFICARA"},
+        {"texto": "Jn 16,13 — Jesús promete que el Espíritu os ______ (os conducirá) como buen compañero de camino.", "respuesta": "GUIARA"},
+        {"texto": "Jn 16,13 — El Espíritu no ______ por su cuenta: transmitirá lo que haya escuchado (verbo en futuro).", "respuesta": "HABLARA"},
+        {"texto": "Jn 16,12 — Las enseñanzas que a Jesús le quedan por transmitir son ______, es decir, numerosas (femenino plural).", "respuesta": "MUCHAS"},
+        {"texto": "Jn 16,12 — Jesús aclara que ______ (aún, hasta este momento) tiene enseñanzas por compartir con los suyos.", "respuesta": "TODAVIA"},
+        {"texto": "Jn 16,13 — El Espíritu conduce hasta la verdad completa: a ______ la verdad, no solo a una parte.", "respuesta": "TODA"},
     ],
-    "incluir": ["ACOMPAÑAMIENTO", "GUIA"],
+    "incluir": ["GUIARA", "TODAVIA"],
     "requisito": 6,
-    "pistas": ["ACOMPAÑAMIENTO y GUIA son las palabras centrales del tema: empieza por esas.",
-               "Varias palabras describen las actitudes necesarias para un buen acompañamiento."],
+    "pistas": ["Todas las palabras salen de Jn 16,12-15: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "GUIARA y TODAVIA son las palabras centrales: acompañar es guiar con paciencia, sin pretender que todo se entienda de golpe."],
 })
 
 _agregar("C0N10-CO05", "A02", {
@@ -12825,7 +12825,7 @@ _agregar("C0N10-CO05", "A02", {
     "incluir": ["ACOMPAÑAMIENTO", "GUIA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: GUIA y CAMINAR.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N10-CO05", "A03", {
@@ -13016,21 +13016,21 @@ _agregar("C0N10-CO05", "A10", {
 
 _agregar("C0N10-CO06", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: decidir con madurez",
+    "titulo": "Crucigrama bíblico: Jn 16,12-15",
     "items": [
-        {"texto": "Resultado de un buen proceso de discernimiento: tomar una ______ concreta.", "respuesta": "DECISION"},
-        {"texto": "Verbo que describe el acto de optar entre varias posibilidades.", "respuesta": "ELEGIR"},
-        {"texto": "Don que permite decidir, pero que pide también responsabilidad.", "respuesta": "LIBERTAD"},
-        {"texto": "Lo que toda decisión importante exige asumir: sus consecuencias, buenas o malas.", "respuesta": "RESPONSABILIDAD"},
-        {"texto": "Tiempo que se construye, en parte, con las decisiones de hoy: el ______.", "respuesta": "FUTURO"},
-        {"texto": "Principios que orientan lo que elegimos, más allá de la moda o el impulso.", "respuesta": "VALORES"},
-        {"texto": "Cualidad de quien decide pensando más allá de sí mismo y del momento presente.", "respuesta": "MADUREZ"},
-        {"texto": "Cualidad de quien vive lo que decide, sin contradecirse entre lo que dice y lo que hace.", "respuesta": "COHERENCIA"},
+        {"texto": "Jn 16,13 — El Espíritu os ______ (os dará noticia de) lo que está por venir.", "respuesta": "ANUNCIARA"},
+        {"texto": "Jn 16,12 — Jesús tiene bastante que ______ a sus amigos (verbo de comunicar con palabras, en infinitivo).", "respuesta": "DECIR"},
+        {"texto": "Jn 16,13 — El Espíritu no ______ por su cuenta: transmitirá lo que haya escuchado (verbo en futuro).", "respuesta": "HABLARA"},
+        {"texto": "Jn 16,12 — Las enseñanzas que a Jesús le quedan por transmitir son ______, es decir, numerosas (femenino plural).", "respuesta": "MUCHAS"},
+        {"texto": "Jn 16,14 — El Espíritu ______ de lo que es de Jesús para dárnoslo a conocer (verbo contrario a 'dar').", "respuesta": "RECIBIRA"},
+        {"texto": "Jn 16,15 — Jesús afirma que cuanto el Padre ______ (posee) le pertenece también a él.", "respuesta": "TIENE"},
+        {"texto": "Jn 16,13 — El Espíritu conduce hasta la verdad completa: a ______ la verdad, no solo a una parte.", "respuesta": "TODA"},
+        {"texto": "Jn 16,13 — Jesús llama al Espíritu con el nombre de la ______, lo contrario a la mentira.", "respuesta": "VERDAD"},
     ],
-    "incluir": ["DECISION", "ELEGIR"],
+    "incluir": ["VERDAD", "ANUNCIARA"],
     "requisito": 6,
-    "pistas": ["DECISION y ELEGIR son las palabras centrales del tema: empieza por esas.",
-               "Varias palabras describen lo que hace madura a una decisión juvenil."],
+    "pistas": ["Todas las palabras salen de Jn 16,12-15: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "VERDAD y ANUNCIARA son las palabras centrales: decidimos hoy mirando lo que ha de venir, guiados por la verdad."],
 })
 
 _agregar("C0N10-CO06", "A02", {
@@ -13040,7 +13040,7 @@ _agregar("C0N10-CO06", "A02", {
     "incluir": ["DECISION", "ELEGIR"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: ELEGIR y FUTURO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N10-CO06", "A03", {
@@ -13235,21 +13235,21 @@ _agregar("C0N10-CO06", "A10", {
 # -- C0N11-CO01: La vida como vocación --
 _agregar("C0N11-CO01", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: una vida llamada por Dios",
+    "titulo": "Crucigrama bíblico: Jr 1,4-9",
     "items": [
-        {"texto": "Palabra que significa que mi vida tiene un llamado de Dios, y no es pura casualidad.", "respuesta": "VOCACION"},
-        {"texto": "Es lo que Dios hace cuando invita a alguien a cumplir una misión concreta, como a Jeremías.", "respuesta": "LLAMADO"},
-        {"texto": "Nombre del profeta a quien Dios conoce y llama desde antes de nacer, en Jr 1,4-10.", "respuesta": "JEREMIAS"},
-        {"texto": "Oficio al que Dios destina a Jeremías: hablar en su nombre a las naciones.", "respuesta": "PROFETA"},
-        {"texto": "Aquello para lo que Dios nos formó de manera única, según su propio plan.", "respuesta": "DESTINO"},
-        {"texto": "Tarea o encargo concreto que alguien recibe de Dios para cumplir en la vida.", "respuesta": "MISION"},
-        {"texto": "Lo que descubre mi vida cuando entiendo que Dios me conoce y me llama.", "respuesta": "SENTIDO"},
-        {"texto": "Quien conoce a cada persona antes de que nazca, según Jeremías 1,5.", "respuesta": "DIOS"},
+        {"texto": "Jr 1,5 — Dios le comunica que lo había destinado a ser su portavoz ante los demás: un ______.", "respuesta": "PROFETA"},
+        {"texto": "Jr 1,5 — Su misión no se limita a su familia ni a su aldea: es para las ______ (los países del mundo).", "respuesta": "NACIONES"},
+        {"texto": "Jr 1,4 — Quien lo llama y se dirige a él es el ______, el Dios de Israel (título de respeto).", "respuesta": "SEÑOR"},
+        {"texto": "Jr 1,7 — Jeremías no elegirá su camino: Dios hará que cumpla lo que él le ______ (ordene, encargue).", "respuesta": "MANDAR"},
+        {"texto": "Jr 1,6 — Jeremías responde con miedo: dice que no es capaz de ______ en público (expresarse con la voz).", "respuesta": "HABLAR"},
+        {"texto": "Jr 1,6 — Se excusa diciendo que no tiene los conocimientos: no ______ cómo hacerlo (verbo de «conocer cómo hacer algo»).", "respuesta": "SABER"},
+        {"texto": "Jr 1,9 — Dios no le da un discurso propio, sino un mensaje suyo: sus ______, que Jeremías debe transmitir.", "respuesta": "PALABRAS"},
+        {"texto": "Jr 1,9 — Dios declara que va a ______ su mensaje dentro de él (colocar, depositar).", "respuesta": "PONER"},
     ],
-    "incluir": ["VOCACION", "LLAMADO"],
+    "incluir": ["PROFETA", "PALABRAS"],
     "requisito": 6,
-    "pistas": ["Todas las palabras giran alrededor del llamado que Dios hace a Jeremías desde antes de nacer.",
-               "VOCACION y LLAMADO son las palabras centrales: empieza por ellas."],
+    "pistas": ["Todas las palabras salen de Jr 1,4-9: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "La vocación nace de una llamada: PROFETA y PALABRAS (el mensaje que Dios confía) son las palabras centrales; empieza por esas."],
 })
 
 _agregar("C0N11-CO01", "A02", {
@@ -13259,7 +13259,7 @@ _agregar("C0N11-CO01", "A02", {
     "incluir": ["VOCACION", "LLAMADO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: DIOS y MISION.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N11-CO01", "A03", {
@@ -13448,21 +13448,21 @@ _agregar("C0N11-CO01", "A10", {
 # -- C0N11-CO02: Libertad responsable --
 _agregar("C0N11-CO02", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: libertad que se hace cargo",
+    "titulo": "Crucigrama bíblico: Jr 1,6-8",
     "items": [
-        {"texto": "Capacidad que Dios da a la persona para elegir el bien y actuar por sí misma.", "respuesta": "LIBERTAD"},
-        {"texto": "Lo que asumo cuando respondo por las consecuencias de mis propias decisiones.", "respuesta": "RESPONSABILIDAD"},
-        {"texto": "Acto de optar por un camino concreto entre varias posibilidades.", "respuesta": "DECISION"},
-        {"texto": "Voz interior que me ayuda a distinguir el bien del mal antes de actuar.", "respuesta": "CONCIENCIA"},
-        {"texto": "Lo que hago cada vez que escojo entre dos o más opciones posibles.", "respuesta": "ELECCION"},
-        {"texto": "Resultado que sigue, para bien o para mal, de una decisión tomada.", "respuesta": "CONSECUENCIA"},
-        {"texto": "Etapa de crecimiento en la que una persona empieza a decidir pensando también en los demás.", "respuesta": "MADUREZ"},
-        {"texto": "Capacidad de controlar los propios impulsos para actuar según lo que realmente quiero ser.", "respuesta": "DOMINIO"},
+        {"texto": "Jr 1,6 — Su primera excusa tiene que ver con la edad: dice que es demasiado ______ para esta misión.", "respuesta": "JOVEN"},
+        {"texto": "Jr 1,6 — Se excusa también diciendo que no tiene los conocimientos: no ______ cómo hacerlo (verbo de «conocer cómo hacer algo»).", "respuesta": "SABER"},
+        {"texto": "Jr 1,8 — Dios le pide que no se deje paralizar por este temor ante las personas: el ______ (emoción ante el peligro).", "respuesta": "MIEDO"},
+        {"texto": "Jr 1,8 — La razón para no temblar: «yo estoy ______», es decir, acompañándote (término de compañía).", "respuesta": "CONTIGO"},
+        {"texto": "Jr 1,6 — Jeremías se dirige a Dios con un título de respeto: «¡Ah, ______!».", "respuesta": "SEÑOR"},
+        {"texto": "Jr 1,7 — Dios rechaza la excusa: Jeremías hará lo que Dios le ______ (ordene, encargue).", "respuesta": "MANDAR"},
+        {"texto": "Jr 1,7 — Dios le promete: «a dondequiera que te envíe, ______» (verbo ir, segunda persona, futuro).", "respuesta": "IRAS"},
+        {"texto": "Jr 1,7 — Y que no hablará por cuenta propia: «______ todo lo que yo te encargue decir» (verbo decir, segunda persona, futuro).", "respuesta": "DIRAS"},
     ],
-    "incluir": ["LIBERTAD", "RESPONSABILIDAD"],
+    "incluir": ["JOVEN", "CONTIGO"],
     "requisito": 6,
-    "pistas": ["Todas las palabras giran alrededor de usar bien la libertad, haciéndose cargo de lo que se decide.",
-               "LIBERTAD y RESPONSABILIDAD son las palabras centrales: empieza por ellas."],
+    "pistas": ["Todas las palabras salen de Jr 1,6-8: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "Jeremías pone excusas (ser JOVEN) y Dios responde que no está solo: JOVEN y CONTIGO son las palabras centrales; empieza por ellas."],
 })
 
 _agregar("C0N11-CO02", "A02", {
@@ -13472,7 +13472,7 @@ _agregar("C0N11-CO02", "A02", {
     "incluir": ["LIBERTAD", "RESPONSABILIDAD"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: MADUREZ y DOMINIO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N11-CO02", "A03", {
@@ -13661,21 +13661,21 @@ _agregar("C0N11-CO02", "A10", {
 # -- C0N11-CO03: Talentos y dones --
 _agregar("C0N11-CO03", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: dones para compartir",
+    "titulo": "Crucigrama bíblico: Jr 1,6-9",
     "items": [
-        {"texto": "Capacidad o habilidad especial que una persona recibe para desarrollarla y compartirla.", "respuesta": "TALENTO"},
-        {"texto": "Regalo gratuito que Dios da a cada persona, distinto al de los demás.", "respuesta": "DON"},
-        {"texto": "Lo que tengo cuando puedo hacer algo bien, como cantar, dibujar o escuchar a otros.", "respuesta": "CAPACIDAD"},
-        {"texto": "Facultad de imaginar e inventar algo nuevo, útil para servir con los propios dones.", "respuesta": "CREATIVIDAD"},
-        {"texto": "Lo que hago cuando pongo mis talentos a disposición de otros.", "respuesta": "SERVICIO"},
-        {"texto": "Resultado bueno que se obtiene cuando se cultivan los talentos recibidos.", "respuesta": "FRUTO"},
-        {"texto": "Proceso de hacer crecer poco a poco una capacidad o don recibido.", "respuesta": "DESARROLLO"},
-        {"texto": "Actitud correcta frente a un don recibido: reconocer que no me lo gané yo solo.", "respuesta": "GRATITUD"},
+        {"texto": "Jr 1,9 — Dios hace un gesto de cercanía: va a ______ su brazo hacia Jeremías (alargar, estirar).", "respuesta": "EXTENDER"},
+        {"texto": "Jr 1,9 — Con ese gesto Dios lo va a ______ en señal de que lo consagra (rozar con el contacto).", "respuesta": "TOCAR"},
+        {"texto": "Jr 1,9 — El gesto lo hace con esta parte del cuerpo que tiene cinco dedos: la ______.", "respuesta": "MANO"},
+        {"texto": "Jr 1,9 — Lo que Dios entrega a Jeremías no es un discurso propio sino su mensaje: sus ______.", "respuesta": "PALABRAS"},
+        {"texto": "Jr 1,9 — Dios dice que va a ______ su mensaje dentro de él (colocar, depositar).", "respuesta": "PONER"},
+        {"texto": "Jr 1,6 — El don de Dios llega a quien se siente incapaz de ______ en público (expresarse).", "respuesta": "HABLAR"},
+        {"texto": "Jr 1,6 — Jeremías cree que no está preparado por su corta edad: se considera muy ______.", "respuesta": "JOVEN"},
+        {"texto": "Jr 1,8 — Dios le asegura que no recibirá el don en soledad: «yo estoy ______» (acompañándote).", "respuesta": "CONTIGO"},
     ],
-    "incluir": ["TALENTO", "DON"],
+    "incluir": ["MANO", "PALABRAS"],
     "requisito": 6,
-    "pistas": ["Todas las palabras giran alrededor de los dones que Dios da y de cómo cultivarlos.",
-               "TALENTO y DON son las palabras centrales: empieza por ellas."],
+    "pistas": ["Todas las palabras salen de Jr 1,6-9: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "El don de Dios llega con un gesto y con un mensaje: MANO y PALABRAS son las palabras centrales; empieza por ellas."],
 })
 
 _agregar("C0N11-CO03", "A02", {
@@ -13685,7 +13685,7 @@ _agregar("C0N11-CO03", "A02", {
     "incluir": ["TALENTO", "DON"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: DON y FRUTO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N11-CO03", "A03", {
@@ -13874,21 +13874,21 @@ _agregar("C0N11-CO03", "A10", {
 # -- C0N11-CO04: Proyecto y propósito --
 _agregar("C0N11-CO04", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: hacia dónde dirijo mi vida",
+    "titulo": "Crucigrama bíblico: Jr 1,9-10",
     "items": [
-        {"texto": "Conjunto de metas y pasos que una persona traza para dar dirección a su vida.", "respuesta": "PROYECTO"},
-        {"texto": "Razón profunda por la que alguien hace lo que hace; el 'para qué' de la vida.", "respuesta": "PROPOSITO"},
-        {"texto": "Punto concreto al que alguien quiere llegar después de esforzarse.", "respuesta": "META"},
-        {"texto": "Recorrido que una persona sigue, con decisiones, para llegar a donde quiere.", "respuesta": "CAMINO"},
-        {"texto": "Proceso de reflexionar y escuchar a Dios antes de tomar una decisión importante.", "respuesta": "DISCERNIMIENTO"},
-        {"texto": "Documento o idea donde se organizan pasos para alcanzar un objetivo.", "respuesta": "PLAN"},
-        {"texto": "Tiempo que todavía no ha llegado, pero para el que hoy me preparo.", "respuesta": "FUTURO"},
-        {"texto": "Capacidad de imaginar hacia dónde quiero dirigir mi vida.", "respuesta": "VISION"},
+        {"texto": "Jr 1,10 — Entre las tareas del profeta, quitar de raíz lo que hace daño, como una mala hierba: ______.", "respuesta": "ARRANCAR"},
+        {"texto": "Jr 1,10 — Otra tarea: acabar por completo con lo que es injusto o malo, aniquilarlo: ______.", "respuesta": "DESTRUIR"},
+        {"texto": "Jr 1,10 — La tarea más positiva: sembrar vida nueva, poner semillas o árboles en la tierra, es decir, ______.", "respuesta": "PLANTAR"},
+        {"texto": "Jr 1,10 — Dios lo pone sobre pueblos y sobre ______ (países gobernados por un rey).", "respuesta": "REINOS"},
+        {"texto": "Jr 1,10 — Su misión alcanza a muchos pueblos: está puesto sobre las ______ (los países del mundo).", "respuesta": "NACIONES"},
+        {"texto": "Jr 1,9 — Dios da el primer paso hacia Jeremías: va a ______ el brazo con un gesto de cercanía (alargar).", "respuesta": "EXTENDER"},
+        {"texto": "Jr 1,9 — Ese gesto lo hace con esta parte del cuerpo que tiene cinco dedos: la ______.", "respuesta": "MANO"},
+        {"texto": "Jr 1,9 — Y con ella lo va a ______ como señal de consagración (rozar con el contacto).", "respuesta": "TOCAR"},
     ],
-    "incluir": ["PROYECTO", "PROPOSITO"],
+    "incluir": ["PLANTAR", "ARRANCAR"],
     "requisito": 6,
-    "pistas": ["Todas las palabras giran alrededor de darle dirección y sentido a la propia vida.",
-               "PROYECTO y PROPOSITO son las palabras centrales: empieza por ellas."],
+    "pistas": ["Todas las palabras salen de Jr 1,9-10: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "Un proyecto con propósito arranca lo que daña y siembra lo nuevo: PLANTAR y ARRANCAR son las palabras centrales de este tema."],
 })
 
 _agregar("C0N11-CO04", "A02", {
@@ -13898,7 +13898,7 @@ _agregar("C0N11-CO04", "A02", {
     "incluir": ["PROYECTO", "PROPOSITO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: META y PLAN.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N11-CO04", "A03", {
@@ -14087,21 +14087,21 @@ _agregar("C0N11-CO04", "A10", {
 # -- C0N11-CO05: Vocación y servicio --
 _agregar("C0N11-CO05", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: una vocación que sirve",
+    "titulo": "Crucigrama bíblico: Jr 1,5-10",
     "items": [
-        {"texto": "Actitud de darse a los demás sin esperar nada a cambio.", "respuesta": "ENTREGA"},
-        {"texto": "Estar listo para responder cuando se necesita ayuda, aunque no sea cómodo.", "respuesta": "DISPONIBILIDAD"},
-        {"texto": "Nombre con el que la Biblia llama a la persona a la que debo amar y servir.", "respuesta": "PROJIMO"},
-        {"texto": "Grupo de personas con quienes comparto la fe y la vida, como la parroquia.", "respuesta": "COMUNIDAD"},
-        {"texto": "Actitud de dar más de lo necesario, sin medir cuánto recibo a cambio.", "respuesta": "GENEROSIDAD"},
-        {"texto": "Persona enviada a anunciar y a servir en nombre de Dios, como Jeremías.", "respuesta": "APOSTOL"},
-        {"texto": "Quien es enviado a otro lugar o a otra gente para llevar un mensaje o un servicio.", "respuesta": "MISIONERO"},
-        {"texto": "Decisión firme de cumplir con una tarea o responsabilidad hacia otros.", "respuesta": "COMPROMISO"},
+        {"texto": "Jr 1,7 — Dios le dice que irá donde él lo ______ en misión (verbo: enviar con una orden).", "respuesta": "MANDAR"},
+        {"texto": "Jr 1,7 — Y que transmitirá solo lo que Dios le encargue: «______ todo lo que te mande» (verbo decir, futuro).", "respuesta": "DIRAS"},
+        {"texto": "Jr 1,5 — Dios lo destinó a ser su portavoz ante los pueblos: un ______.", "respuesta": "PROFETA"},
+        {"texto": "Jr 1,8 — Quien sirve nunca va solo: Dios le dice «yo estoy ______» (acompañándote).", "respuesta": "CONTIGO"},
+        {"texto": "Jr 1,10 — Servir también es sembrar: poner semillas para que nazca algo bueno, es decir, ______.", "respuesta": "PLANTAR"},
+        {"texto": "Jr 1,10 — Servir es también quitar de raíz lo que hace daño, como una mala hierba: ______.", "respuesta": "ARRANCAR"},
+        {"texto": "Jr 1,10 — Y acabar por completo con lo que es injusto o malo, aniquilarlo: ______.", "respuesta": "DESTRUIR"},
+        {"texto": "Jr 1,6 — El servicio de Jeremías pasa por su voz: aunque se sienta incapaz, deberá ______ en nombre de Dios.", "respuesta": "HABLAR"},
     ],
-    "incluir": ["ENTREGA", "DISPONIBILIDAD"],
+    "incluir": ["MANDAR", "PROFETA"],
     "requisito": 6,
-    "pistas": ["Todas las palabras giran alrededor de servir a los demás con generosidad y compromiso.",
-               "ENTREGA y DISPONIBILIDAD son las palabras centrales: empieza por ellas."],
+    "pistas": ["Todas las palabras salen de Jr 1,5-10: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "La vocación se vive como servicio cuando alguien es enviado: MANDAR (enviar) y PROFETA son las palabras centrales; empieza por esas."],
 })
 
 _agregar("C0N11-CO05", "A02", {
@@ -14111,7 +14111,7 @@ _agregar("C0N11-CO05", "A02", {
     "incluir": ["ENTREGA", "DISPONIBILIDAD"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: ENTREGA y APOSTOL.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N11-CO05", "A03", {
@@ -14300,21 +14300,21 @@ _agregar("C0N11-CO05", "A10", {
 # -- C0N11-CO06: Mi proyecto de vida cristiano --
 _agregar("C0N11-CO06", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: un proyecto con coherencia",
+    "titulo": "Crucigrama bíblico: Jr 1,4-10",
     "items": [
-        {"texto": "Diálogo con Dios que sostiene y da luz a cualquier proyecto de vida.", "respuesta": "ORACION"},
-        {"texto": "Buen hábito, como la paciencia o la honestidad, que ayuda a vivir según el Evangelio.", "respuesta": "VIRTUD"},
-        {"texto": "Quien aprende de Jesús y organiza su vida siguiendo sus enseñanzas.", "respuesta": "DISCIPULO"},
-        {"texto": "Que lo que digo y lo que vivo estén de acuerdo, sin contradicciones.", "respuesta": "COHERENCIA"},
-        {"texto": "Lo que mi forma de vivir muestra a otros sobre mi fe, sin necesidad de palabras.", "respuesta": "TESTIMONIO"},
-        {"texto": "Proceso continuo de madurar como persona y como cristiano, poco a poco.", "respuesta": "CRECIMIENTO"},
-        {"texto": "Confianza en Dios que sostiene las decisiones de un proyecto de vida cristiano.", "respuesta": "FE"},
-        {"texto": "Horizonte último hacia el que se dirige la vida de quien sigue a Jesús.", "respuesta": "ETERNIDAD"},
+        {"texto": "Jr 1,4 — Mi proyecto parte de escuchar al ______, el Dios que le habló a Jeremías y me habla a mí (título de respeto).", "respuesta": "SEÑOR"},
+        {"texto": "Jr 1,8 — La seguridad de mi proyecto: Dios me acompaña, «yo estoy ______» (término de compañía).", "respuesta": "CONTIGO"},
+        {"texto": "Jr 1,8 — En cada decisión de vida, Dios me pide que no me paralice el ______ (emoción ante lo desconocido).", "respuesta": "MIEDO"},
+        {"texto": "Jr 1,9 — Mi proyecto se alimenta de lo que Dios me confía: su mensaje, sus ______.", "respuesta": "PALABRAS"},
+        {"texto": "Jr 1,9 — Dios quiere ______ su mensaje dentro de mí, para que yo lo transmita (colocar, depositar).", "respuesta": "PONER"},
+        {"texto": "Jr 1,10 — En mi proyecto hay cosas que sembrar para que den fruto: ______.", "respuesta": "PLANTAR"},
+        {"texto": "Jr 1,10 — Y hay cosas que eliminar del todo, aniquilarlas: ______.", "respuesta": "DESTRUIR"},
+        {"texto": "Jr 1,10 — Mi proyecto se abre al mundo, a pueblos y a ______ (países con rey).", "respuesta": "REINOS"},
     ],
-    "incluir": ["TESTIMONIO", "COHERENCIA"],
+    "incluir": ["CONTIGO", "PLANTAR"],
     "requisito": 6,
-    "pistas": ["Todas las palabras giran alrededor de vivir con coherencia el seguimiento de Jesús.",
-               "TESTIMONIO y COHERENCIA son las palabras centrales: empieza por ellas."],
+    "pistas": ["Todas las palabras salen de Jr 1,4-10: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "Un proyecto de vida se vive sabiendo que Dios está CONTIGO y que me invita a PLANTAR algo bueno: empieza por esas dos."],
 })
 
 _agregar("C0N11-CO06", "A02", {
@@ -14324,7 +14324,7 @@ _agregar("C0N11-CO06", "A02", {
     "incluir": ["TESTIMONIO", "COHERENCIA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: FE y VIRTUD.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N11-CO06", "A03", {
@@ -14518,21 +14518,21 @@ _agregar("C0N11-CO06", "A10", {
 # -- C0N12-CO01: El mandato misionero --
 _agregar("C0N12-CO01", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: el mandato misionero",
+    "titulo": "Crucigrama bíblico: Mt 28,18-20",
     "items": [
-        {"texto": "Palabra que nombra la orden final que Jesús da a sus discípulos antes de subir al cielo.", "respuesta": "MANDATO"},
-        {"texto": "Acción de ser mandado a cumplir una tarea; lo que Jesús hace con sus discípulos.", "respuesta": "ENVIO"},
-        {"texto": "Jesús pide hacer discípulos en todas las ______ (Mateo 28,19).", "respuesta": "NACIONES"},
-        {"texto": "Acción que Jesús manda hacer «en el nombre del Padre, del Hijo y del Espíritu Santo».", "respuesta": "BAUTIZAR"},
-        {"texto": "Lo que Jesús manda hacer con todo lo que él ha mandado a los discípulos: ______ a guardarlo.", "respuesta": "ENSEÑAR"},
-        {"texto": "Lo que Jesús promete a sus discípulos todos los días hasta el fin del mundo: su ______.", "respuesta": "PRESENCIA"},
-        {"texto": "Lugar donde, según Mateo 28, Jesús se encuentra con los discípulos para darles el mandato.", "respuesta": "MONTE"},
-        {"texto": "Lo que Jesús dice tener «en el cielo y en la tierra» antes de enviar a sus discípulos.", "respuesta": "AUTORIDAD"},
+        {"texto": "Mt 28,18 — Quien habla a los once es el Maestro resucitado, que se llama ______.", "respuesta": "JESUS"},
+        {"texto": "Mt 28,18 — Declara que le ha sido dada ______ autoridad (palabra de totalidad; femenino singular).", "respuesta": "TODA"},
+        {"texto": "Mt 28,18 — Su autoridad llega hasta la morada de Dios, en lo alto: el ______.", "respuesta": "CIELO"},
+        {"texto": "Mt 28,18 — Y llega también al mundo que pisamos, nuestro planeta: la ______.", "respuesta": "TIERRA"},
+        {"texto": "Mt 28,19 — El Maestro encarga formar seguidores: la orden es ______ discípulos de todos (verbo de «producir, formar»).", "respuesta": "HACER"},
+        {"texto": "Mt 28,19 — Una misión: sumergir en agua como signo de nueva vida, es decir, ______.", "respuesta": "BAUTIZAR"},
+        {"texto": "Mt 28,20 — Otra misión: transmitir lo que él dijo, como lo hace un maestro; verbo: ______.", "respuesta": "ENSEÑAR"},
+        {"texto": "Mt 28,20 — El Maestro deja un encargo claro: les pide transmitir todo lo que él les ha ______ (ordenado, encomendado).", "respuesta": "MANDAR"},
     ],
-    "incluir": ["MANDATO", "ENVIO"],
+    "incluir": ["MANDAR", "BAUTIZAR"],
     "requisito": 6,
-    "pistas": ["Todas las palabras están relacionadas con Mateo 28,19-20.",
-               "MANDATO y ENVIO son el corazón del tema: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Mt 28,18-20: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "MANDAR (el encargo de Jesús) y BAUTIZAR son las palabras centrales del mandato misionero: empieza por esas."],
 })
 
 _agregar("C0N12-CO01", "A02", {
@@ -14731,21 +14731,21 @@ _agregar("C0N12-CO01", "A10", {
 # -- C0N12-CO02: Anunciar y acompañar --
 _agregar("C0N12-CO02", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: anunciar y acompañar",
+    "titulo": "Crucigrama bíblico: Mt 28,19-20",
     "items": [
-        {"texto": "Acción de dar a conocer la Buena Noticia de Jesús con palabras claras.", "respuesta": "ANUNCIO"},
-        {"texto": "Caminar junto a otro, sin dejarlo solo en su proceso de fe.", "respuesta": "ACOMPAÑAR"},
-        {"texto": "Palabra que nombra el anuncio central: Jesús ha muerto y resucitado por amor.", "respuesta": "KERIGMA"},
-        {"texto": "Lo que da credibilidad a lo que se anuncia: una vida coherente, un buen ______.", "respuesta": "TESTIMONIO"},
-        {"texto": "Actitud necesaria para acompañar bien: saber ______ antes de hablar.", "respuesta": "ESCUCHA"},
-        {"texto": "Actitud de quien se acerca a otro sin juzgarlo de lejos.", "respuesta": "CERCANIA"},
-        {"texto": "Lo que se anuncia no son solo ideas, sino la ______ de Dios hecha vida.", "respuesta": "PALABRA"},
-        {"texto": "Lo que recorre junto a otro quien lo acompaña en su fe: su ______.", "respuesta": "CAMINO"},
+        {"texto": "Mt 28,20 — Jesús acompaña en cada jornada, en cada uno de los ______ de nuestra vida (24 horas).", "respuesta": "DIAS"},
+        {"texto": "Mt 28,20 — La promesa vale para ______ los que le siguen, sin dejar a nadie fuera (palabra de totalidad, masculino plural).", "respuesta": "TODOS"},
+        {"texto": "Mt 28,20 — Jesús promete estar presente al terminar este ______ (el planeta, la historia humana).", "respuesta": "MUNDO"},
+        {"texto": "Mt 28,20 — Preposición de límite en la promesa de Jesús de acompañar «______ el final de los tiempos».", "respuesta": "HASTA"},
+        {"texto": "Mt 28,20 — Anunciar es también educar en la fe: transmitir lo aprendido, como lo hace un maestro; verbo: ______.", "respuesta": "ENSEÑAR"},
+        {"texto": "Mt 28,19 — Tercera persona de la Trinidad, soplo y fuerza de Dios: el ______ (tercera Persona de la Trinidad).", "respuesta": "ESPIRITU"},
+        {"texto": "Mt 28,19 — Al pronunciar la fórmula se invoca el ______ de Dios (la identidad con que lo llamamos).", "respuesta": "NOMBRE"},
+        {"texto": "Mt 28,19 — Jesús envía a anunciar y a sumergir en agua como signo de nueva vida, es decir, a ______.", "respuesta": "BAUTIZAR"},
     ],
-    "incluir": ["ANUNCIO", "ACOMPAÑAR"],
+    "incluir": ["ENSEÑAR", "DIAS"],
     "requisito": 6,
-    "pistas": ["ANUNCIO y ACOMPAÑAR son las dos palabras centrales del tema.",
-               "Todas las palabras describen cómo se comparte la fe con otros."],
+    "pistas": ["Todas las palabras salen de Mt 28,19-20: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "Anunciar y acompañar: ENSEÑAR (lo que Jesús anuncia) y DIAS (los que él nos acompaña) son las palabras centrales; empieza por ellas."],
 })
 
 _agregar("C0N12-CO02", "A02", {
@@ -14944,21 +14944,21 @@ _agregar("C0N12-CO02", "A10", {
 # -- C0N12-CO03: Discípulo y misionero --
 _agregar("C0N12-CO03", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: discípulo y misionero",
+    "titulo": "Crucigrama bíblico: Mt 28,19",
     "items": [
-        {"texto": "Quien aprende de Jesús y camina detrás de él.", "respuesta": "DISCIPULO"},
-        {"texto": "Quien es enviado a anunciar lo que ha recibido de Jesús.", "respuesta": "MISIONERO"},
-        {"texto": "Palabra que describe que ser discípulo y ser misionero no se pueden separar: son ______.", "respuesta": "INSEPARABLE"},
-        {"texto": "Llamado particular que Dios hace a cada persona, incluido el llamado a la misión.", "respuesta": "VOCACION"},
-        {"texto": "Acción de caminar detrás de Jesús, aprendiendo de su vida.", "respuesta": "SEGUIMIENTO"},
-        {"texto": "Lo que se construye al vivir como discípulo-misionero: una nueva ______ cristiana.", "respuesta": "IDENTIDAD"},
-        {"texto": "Quien ha sido mandado por alguien a cumplir una tarea.", "respuesta": "ENVIADO"},
-        {"texto": "Unión profunda con Jesús y con la Iglesia de la que nace la misión.", "respuesta": "COMUNION"},
+        {"texto": "Mt 28,19 — Jesús pide formar seguidores suyos, aprendices del Maestro: ______.", "respuesta": "DISCIPULOS"},
+        {"texto": "Mt 28,19 — La orden es convertir a otros en seguidores: eso significa ______ seguidores suyos (verbo de «producir, formar»).", "respuesta": "HACER"},
+        {"texto": "Mt 28,19 — Una misión: sumergir en agua como signo de nueva vida, es decir, ______.", "respuesta": "BAUTIZAR"},
+        {"texto": "Mt 28,19 — La fórmula se pronuncia invocando el ______ de Dios (la identidad con que lo llamamos).", "respuesta": "NOMBRE"},
+        {"texto": "Mt 28,19 — La fórmula empieza invocando a Dios en su primera Persona, el ______.", "respuesta": "PADRE"},
+        {"texto": "Mt 28,19 — La fórmula menciona después a la segunda Persona, la del Maestro que habla: el ______.", "respuesta": "HIJO"},
+        {"texto": "Mt 28,19 — Tercera persona de la Trinidad, soplo y fuerza de Dios: el ______ (tercera Persona de la Trinidad).", "respuesta": "ESPIRITU"},
+        {"texto": "Mt 28,19 — Adjetivo que significa «consagrado a Dios» y califica a la tercera Persona de la fórmula.", "respuesta": "SANTO"},
     ],
-    "incluir": ["DISCIPULO", "MISIONERO"],
+    "incluir": ["DISCIPULOS", "BAUTIZAR"],
     "requisito": 6,
-    "pistas": ["DISCIPULO y MISIONERO son las dos palabras más centrales de este tema.",
-               "Piensa en cómo Aparecida une siempre estas dos palabras en una sola identidad."],
+    "pistas": ["Todas las palabras salen de Mt 28,19: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "DISCIPULOS y BAUTIZAR son las palabras centrales (se es discípulo para ser enviado): empieza por esas."],
 })
 
 _agregar("C0N12-CO03", "A02", {
@@ -15157,21 +15157,21 @@ _agregar("C0N12-CO03", "A10", {
 # -- C0N12-CO04: La misión en la vida cotidiana --
 _agregar("C0N12-CO04", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: la misión de todos los días",
+    "titulo": "Crucigrama bíblico: Mt 28,16-20",
     "items": [
-        {"texto": "Palabra que describe lo que se vive día a día, sin necesidad de grandes ocasiones.", "respuesta": "COTIDIANO"},
-        {"texto": "Pequeñas acciones concretas que anuncian el amor de Dios sin grandes discursos.", "respuesta": "GESTOS"},
-        {"texto": "Característica de una misión vivida con humildad y naturalidad, sin complicarse.", "respuesta": "SENCILLEZ"},
-        {"texto": "Primer lugar donde se vive la misión, antes que cualquier otro.", "respuesta": "FAMILIA"},
-        {"texto": "Lugar donde los jóvenes pasan gran parte de su día y pueden ser testigos.", "respuesta": "COLEGIO"},
-        {"texto": "Entorno concreto de personas y relaciones donde cada uno vive su misión.", "respuesta": "AMBIENTE"},
-        {"texto": "Lo que se necesita para no abandonar la misión apenas cuesta un poco.", "respuesta": "CONSTANCIA"},
-        {"texto": "Momento concreto que se presenta sin aviso para vivir la misión.", "respuesta": "OPORTUNIDAD"},
+        {"texto": "Mt 28,20 — La misión se vive en lo ordinario: Jesús acompaña en cada uno de los ______ de la semana (lunes a domingo).", "respuesta": "DIAS"},
+        {"texto": "Mt 28,18 — La misión se vive en nuestro suelo cotidiano: Jesús tiene autoridad en el cielo y en la ______.", "respuesta": "TIERRA"},
+        {"texto": "Mt 28,20 — Jesús acompaña hasta el fin del ______ (la realidad concreta en que vivimos).", "respuesta": "MUNDO"},
+        {"texto": "Mt 28,20 — La promesa vale para ______ los que lo siguen, sin excluir a nadie (palabra de totalidad, masculino plural).", "respuesta": "TODOS"},
+        {"texto": "Mt 28,18 — Jesús afirma tener ______ autoridad, sin excepción (palabra de totalidad, femenino singular).", "respuesta": "TODA"},
+        {"texto": "Mt 28,18 — Jesús no espera de lejos: se ______ a sus discípulos para hablarles (verbo: ir hacia alguien).", "respuesta": "ACERCAR"},
+        {"texto": "Mt 28,20 — Jesús enseña lo que él nos ha ______ (ordenado, encomendado).", "respuesta": "MANDAR"},
+        {"texto": "Mt 28,16 — Los once se encuentran con Jesús en una región del norte, donde ellos vivían a diario: ______.", "respuesta": "GALILEA"},
     ],
-    "incluir": ["COTIDIANO", "GESTOS"],
+    "incluir": ["DIAS", "TIERRA"],
     "requisito": 6,
-    "pistas": ["COTIDIANO y GESTOS son las dos palabras más centrales de este tema.",
-               "Piensa en lugares y momentos de todos los días: casa, colegio, amigos."],
+    "pistas": ["Todas las palabras salen de Mt 28,16-20: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "La misión de cada día: DIAS y TIERRA (el suelo concreto donde vivimos) son las palabras centrales de este tema; empieza por esas."],
 })
 
 _agregar("C0N12-CO04", "A02", {
@@ -15370,21 +15370,21 @@ _agregar("C0N12-CO04", "A10", {
 # -- C0N12-CO05: Misión y comunidad --
 _agregar("C0N12-CO05", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: enviados en comunidad",
+    "titulo": "Crucigrama bíblico: Mt 28,16-20",
     "items": [
-        {"texto": "Grupo de personas que comparten la fe y caminan juntas.", "respuesta": "COMUNIDAD"},
-        {"texto": "Palabra que describe a los discípulos mandados a cumplir una tarea, no en solitario sino en grupo.", "respuesta": "ENVIADOS"},
-        {"texto": "Cuerpo de Cristo formado por todos los bautizados, que es por naturaleza misionera.", "respuesta": "IGLESIA"},
-        {"texto": "Forma en que los discípulos reciben y viven la misión: no en solitario, sino ______.", "respuesta": "JUNTOS"},
-        {"texto": "Relación de hermanos que viven la fe entre sí.", "respuesta": "FRATERNIDAD"},
-        {"texto": "Lo que la comunidad ofrece a quien se siente débil o cansado en la misión.", "respuesta": "APOYO"},
-        {"texto": "Sentimiento de formar parte real de un grupo, no de estar solo de paso.", "respuesta": "PERTENENCIA"},
-        {"texto": "Imagen que usa San Pablo para describir a la Iglesia: el ______ de Cristo.", "respuesta": "CUERPO"},
+        {"texto": "Mt 28,16 — La comunidad que reúne el Maestro es un grupo concreto: los ______ seguidores (número, uno más que diez).", "respuesta": "ONCE"},
+        {"texto": "Mt 28,16 — Esos hombres son los ______ del Maestro: quienes lo siguen y aprenden de él.", "respuesta": "DISCIPULOS"},
+        {"texto": "Mt 28,17 — Al ver al Maestro, la comunidad reacciona con un gesto de respeto: lo va a ______ (rendirle culto).", "respuesta": "ADORAR"},
+        {"texto": "Mt 28,17 — En la comunidad hay también quienes tienen incertidumbre: algunos llegaron a ______ (no estar seguros).", "respuesta": "DUDAR"},
+        {"texto": "Mt 28,18 — La comunidad se reúne en torno al Maestro resucitado, que se llama ______.", "respuesta": "JESUS"},
+        {"texto": "Mt 28,19 — La comunidad nace del bautismo en el nombre de Dios como ______ (el que nos cuida como familia).", "respuesta": "PADRE"},
+        {"texto": "Mt 28,19 — En la fórmula bautismal se nombra después a su ______ (la segunda Persona).", "respuesta": "HIJO"},
+        {"texto": "Mt 28,20 — La promesa abarca a toda la comunidad: el Maestro promete acompañar ______ los días, sin excluir ninguno (palabra de totalidad, masculino plural).", "respuesta": "TODOS"},
     ],
-    "incluir": ["COMUNIDAD", "IGLESIA"],
+    "incluir": ["TODOS", "ONCE"],
     "requisito": 6,
-    "pistas": ["COMUNIDAD e IGLESIA son las palabras más centrales de este tema.",
-               "Piensa en que nadie recibe el mandato de Jesús completamente solo."],
+    "pistas": ["Todas las palabras salen de Mt 28,16-20: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "La misión no es solitaria: TODOS y ONCE (el grupo de discípulos) son las palabras centrales de este tema; empieza por ellas."],
 })
 
 _agregar("C0N12-CO05", "A02", {
@@ -15583,21 +15583,21 @@ _agregar("C0N12-CO05", "A10", {
 # -- C0N12-CO06: Mi compromiso misionero --
 _agregar("C0N12-CO06", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: mi compromiso misionero",
+    "titulo": "Crucigrama bíblico: Mt 28,17-20",
     "items": [
-        {"texto": "Palabra que nombra la decisión estable de vivir y anunciar la fe, no solo por un momento.", "respuesta": "COMPROMISO"},
-        {"texto": "Acto personal y libre de elegir seguir y anunciar a Jesús.", "respuesta": "DECISION"},
-        {"texto": "Capacidad de mantener una decisión en el tiempo, sin abandonarla a la primera dificultad.", "respuesta": "CONSTANCIA"},
-        {"texto": "Actitud necesaria para anunciar la fe aunque cueste o incomode a otros.", "respuesta": "VALENTIA"},
-        {"texto": "Quien da cuenta de su fe con su propia vida, no solo con palabras.", "respuesta": "TESTIGO"},
-        {"texto": "Lo que asume quien decide vivir su misión: una ______ concreta.", "respuesta": "RESPONSABILIDAD"},
-        {"texto": "Momento en que se vive realmente el compromiso misionero: no «algún día», sino ______.", "respuesta": "HOY"},
-        {"texto": "Cualidad de quien se mantiene firme en su compromiso con Dios y con la misión.", "respuesta": "FIDELIDAD"},
+        {"texto": "Mt 28,17 — Mi compromiso empieza por un gesto de reverencia ante Jesús: ______ (rendirle culto).", "respuesta": "ADORAR"},
+        {"texto": "Mt 28,18 — Jesús no me deja solo: se ______ a mí y me habla (verbo: ir hacia alguien).", "respuesta": "ACERCAR"},
+        {"texto": "Mt 28,18 — Mi compromiso se apoya en quien tiene toda la autoridad en el ______ y en la tierra (lugar en lo alto).", "respuesta": "CIELO"},
+        {"texto": "Mt 28,19 — Me comprometo en el ______ de la Trinidad, la identidad con que invocamos a Dios.", "respuesta": "NOMBRE"},
+        {"texto": "Mt 28,19 — La fórmula bautismal termina con el Espíritu ______ (adjetivo que significa «consagrado a Dios»).", "respuesta": "SANTO"},
+        {"texto": "Mt 28,20 — Mi compromiso incluye transmitir lo que he aprendido de él, como lo hace un maestro; verbo: ______.", "respuesta": "ENSEÑAR"},
+        {"texto": "Mt 28,20 — Mi compromiso responde al encargo recibido: transmitir lo que Jesús me ha ______ (ordenado).", "respuesta": "MANDAR"},
+        {"texto": "Mt 28,20 — Mi fuerza para cumplirlo: Jesús promete acompañarme «______ el fin de los tiempos» (preposición).", "respuesta": "HASTA"},
     ],
-    "incluir": ["COMPROMISO", "DECISION"],
+    "incluir": ["MANDAR", "ADORAR"],
     "requisito": 6,
-    "pistas": ["COMPROMISO y DECISION son las dos palabras más centrales de este tema.",
-               "Piensa en lo que necesitas para que tu compromiso no se quede solo en una buena intención."],
+    "pistas": ["Todas las palabras salen de Mt 28,17-20: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "El compromiso nace del encuentro con Jesús: MANDAR (su encargo) y ADORAR son las palabras centrales; empieza por esas."],
 })
 
 _agregar("C0N12-CO06", "A02", {
@@ -15802,21 +15802,21 @@ _agregar("C0N12-CO06", "A10", {
 
 _agregar("C0N13-CO01", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: crecer como persona",
+    "titulo": "Crucigrama bíblico: Lc 2,40.51-52",
     "items": [
-        {"texto": "Palabra que resume el proceso de ir siendo más persona cada día, como pide este tema.", "respuesta": "CRECIMIENTO"},
-        {"texto": "Lo que cada uno de nosotros es: único, irrepetible y llamado a desarrollarse plenamente.", "respuesta": "PERSONA"},
-        {"texto": "Meta a la que apunta crecer como persona: no solo tener más años, sino vivir con mayor conciencia.", "respuesta": "MADUREZ"},
-        {"texto": "Lo que vas descubriendo sobre quién eres, tus valores y lo que te hace único.", "respuesta": "IDENTIDAD"},
-        {"texto": "Lo que experimenta quien crece de verdad: nada queda exactamente igual.", "respuesta": "CAMBIO"},
-        {"texto": "Lo que debes tomar cada vez que eliges qué tipo de persona quieres ser.", "respuesta": "DECISION"},
-        {"texto": "Cada tramo del camino de crecimiento, como la niñez, la adolescencia o la juventud.", "respuesta": "ETAPA"},
-        {"texto": "Palabra que indica que crecer como persona no sucede de un día para otro, sino poco a poco.", "respuesta": "PROCESO"},
+        {"texto": "Lc 2,40 — El niño se llenaba de ______: iba aprendiendo a vivir con buen juicio.", "respuesta": "SABIDURIA"},
+        {"texto": "Lc 2,40 — Lucas resume la infancia de Jesús con un verbo de desarrollo: el niño ______ día a día (pasado, él).", "respuesta": "CRECIA"},
+        {"texto": "Lc 2,40 — Así llama Lucas a Jesús en sus primeros años, antes de ser adulto.", "respuesta": "NIÑO"},
+        {"texto": "Lc 2,52 — Jesús se ganaba el aprecio de la gente y también el del Creador de todo: ______.", "respuesta": "DIOS"},
+        {"texto": "Lc 2,52 — Jesús era apreciado por el Creador y por los ______, es decir, por la gente.", "respuesta": "HOMBRES"},
+        {"texto": "Lc 2,51 — Después de la fiesta, Jesús volvió con sus padres a este pueblo de Galilea.", "respuesta": "NAZARET"},
+        {"texto": "Lc 2,51 — Quien conservaba con cariño todos esos recuerdos de Jesús era María, su ______.", "respuesta": "MADRE"},
+        {"texto": "Lc 2,51 — María meditaba cada recuerdo en lo más íntimo de su ser, en su ______.", "respuesta": "CORAZON"},
     ],
-    "incluir": ["CRECIMIENTO", "PERSONA"],
+    "incluir": ["SABIDURIA", "CRECIA"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con el proceso de ir madurando poco a poco.",
-               "CRECIMIENTO y PERSONA son las palabras centrales del tema: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Lc 2,40.51-52: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "SABIDURIA y CRECIA son las palabras centrales: Lucas describe el crecimiento de Jesús como persona."],
 })
 
 _agregar("C0N13-CO01", "A02", {
@@ -15826,7 +15826,7 @@ _agregar("C0N13-CO01", "A02", {
     "incluir": ["CRECIMIENTO", "PERSONA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: ETAPA y CAMBIO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N13-CO01", "A03", {
@@ -16015,21 +16015,21 @@ _agregar("C0N13-CO01", "A10", {
 
 _agregar("C0N13-CO02", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: virtudes y hábitos",
+    "titulo": "Crucigrama bíblico: Lc 2,41-42.51",
     "items": [
-        {"texto": "Disposición estable para obrar el bien, que se adquiere practicándola una y otra vez.", "respuesta": "VIRTUD"},
-        {"texto": "Lo que se forma cuando repetimos una y otra vez una misma acción, buena o mala.", "respuesta": "HABITO"},
-        {"texto": "Lo que se necesita para que una virtud se vuelva parte de nuestra forma de ser.", "respuesta": "CONSTANCIA"},
-        {"texto": "Virtud que ayuda a pensar bien antes de actuar y elegir lo que realmente conviene.", "respuesta": "PRUDENCIA"},
-        {"texto": "Virtud que da firmeza para hacer el bien aunque cueste o dé miedo.", "respuesta": "FORTALEZA"},
-        {"texto": "Virtud que ayuda a moderar los gustos y no dejarse llevar por todo lo que apetece.", "respuesta": "TEMPLANZA"},
-        {"texto": "Virtud que inclina a dar a cada uno lo que le corresponde.", "respuesta": "JUSTICIA"},
-        {"texto": "Forma estable de ser y de actuar que se va formando con las virtudes que practicamos.", "respuesta": "CARACTER"},
+        {"texto": "Lc 2,42 — Subir a la fiesta era para la familia algo repetido cada año: una ______.", "respuesta": "COSTUMBRE"},
+        {"texto": "Lc 2,41 — Cada año la familia viajaba a Jerusalén para celebrar esta ______ religiosa.", "respuesta": "FIESTA"},
+        {"texto": "Lc 2,41 — Nombre de la celebración anual judía que recuerda la liberación de Egipto.", "respuesta": "PASCUA"},
+        {"texto": "Lc 2,41 — José y María, quienes criaban a Jesús, son llamados sus ______.", "respuesta": "PADRES"},
+        {"texto": "Lc 2,41 — La ciudad santa a la que subía la familia cada año.", "respuesta": "JERUSALEN"},
+        {"texto": "Lc 2,42 — Número de años que tenía Jesús cuando hizo este viaje.", "respuesta": "DOCE"},
+        {"texto": "Lc 2,51 — Lugar íntimo donde María conservaba, con amor, cada uno de esos recuerdos.", "respuesta": "CORAZON"},
+        {"texto": "Lc 2,51 — Pueblo de Galilea al que Jesús regresó con sus padres tras el viaje.", "respuesta": "NAZARET"},
     ],
-    "incluir": ["VIRTUD", "HABITO"],
+    "incluir": ["COSTUMBRE", "FIESTA"],
     "requisito": 6,
-    "pistas": ["Cuatro de estas palabras son las virtudes cardinales clásicas: búscalas primero.",
-               "VIRTUD y HABITO son las palabras centrales del tema: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Lc 2,41-42.51: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "COSTUMBRE y FIESTA son las palabras centrales: los buenos hábitos se construyen año tras año."],
 })
 
 _agregar("C0N13-CO02", "A02", {
@@ -16039,7 +16039,7 @@ _agregar("C0N13-CO02", "A02", {
     "incluir": ["VIRTUD", "HABITO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: VIRTUD y HABITO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N13-CO02", "A03", {
@@ -16228,21 +16228,21 @@ _agregar("C0N13-CO02", "A10", {
 
 _agregar("C0N13-CO03", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: madurez espiritual",
+    "titulo": "Crucigrama bíblico: Lc 2,46-50",
     "items": [
-        {"texto": "Diálogo personal con Dios que ayuda a crecer por dentro.", "respuesta": "ORACION"},
-        {"texto": "Confianza y entrega a Dios que se fortalece con el trato diario con él.", "respuesta": "FE"},
-        {"texto": "Capacidad de distinguir, con ayuda de Dios, qué camino conviene seguir.", "respuesta": "DISCERNIMIENTO"},
-        {"texto": "Vida interior: lo que pasa dentro de ti cuando te detienes a escuchar a Dios y a ti mismo.", "respuesta": "INTERIORIDAD"},
-        {"texto": "Don gratuito de Dios que acompaña y sostiene el crecimiento espiritual.", "respuesta": "GRACIA"},
-        {"texto": "Dimensión de la persona que se alimenta de oración, fe y silencio.", "respuesta": "ESPIRITU"},
-        {"texto": "Espacio necesario para escuchar a Dios sin tanto ruido alrededor.", "respuesta": "SILENCIO"},
-        {"texto": "Actitud de quien se entrega a Dios aun sin entender todo lo que vive.", "respuesta": "CONFIANZA"},
+        {"texto": "Lc 2,46 — Edificio sagrado de Jerusalén donde por fin dieron con Jesús.", "respuesta": "TEMPLO"},
+        {"texto": "Lc 2,49 — Jesús dice que debe ocuparse de las cosas de aquel a quien llama así, el de arriba.", "respuesta": "PADRE"},
+        {"texto": "Lc 2,46 — Lo vieron en medio de los maestros, no de pie sino ______.", "respuesta": "SENTADO"},
+        {"texto": "Lc 2,46 — Cuántas jornadas pasaron antes del reencuentro: un número entre dos y cuatro.", "respuesta": "TRES"},
+        {"texto": "Lc 2,47 — Quienes lo escuchaban quedaban admirados de su inteligencia y de lo que contestaba: sus ______.", "respuesta": "RESPUESTAS"},
+        {"texto": "Lc 2,50 — Sus padres no ______ el sentido de lo que él acababa de afirmar sobre su misión.", "respuesta": "ENTENDIERON"},
+        {"texto": "Lc 2,48 — María se queja de la angustia vivida por este ______ suyo que se quedó en el templo.", "respuesta": "HIJO"},
+        {"texto": "Lc 2,48 — María, la que le pregunta por qué los hizo sufrir, es su ______.", "respuesta": "MADRE"},
     ],
-    "incluir": ["FE", "ORACION"],
+    "incluir": ["TEMPLO", "PADRE"],
     "requisito": 6,
-    "pistas": ["FE y ORACION son las palabras más cortas y las más centrales del tema.",
-               "Las demás palabras describen actitudes o espacios que ayudan a crecer espiritualmente."],
+    "pistas": ["Todas las palabras salen de Lc 2,46-50: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "TEMPLO y PADRE son las palabras centrales: la madurez espiritual nace de buscar lo que es de Dios."],
 })
 
 _agregar("C0N13-CO03", "A02", {
@@ -16252,7 +16252,7 @@ _agregar("C0N13-CO03", "A02", {
     "incluir": ["FE", "ORACION"],
     "requisito": 6,
     "pistas": ["Busca primero FE: es la palabra más corta de toda la lista.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N13-CO03", "A03", {
@@ -16441,21 +16441,21 @@ _agregar("C0N13-CO03", "A10", {
 
 _agregar("C0N13-CO04", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: responsabilidad personal",
+    "titulo": "Crucigrama bíblico: Lc 2,43-49",
     "items": [
-        {"texto": "Capacidad de responder por tus propias decisiones y actos.", "respuesta": "RESPONSABILIDAD"},
-        {"texto": "Lo que asumes cuando prometes hacer algo y decides sostenerlo en el tiempo.", "respuesta": "COMPROMISO"},
-        {"texto": "Lo que corresponde hacer según tu papel: como hijo, estudiante o amigo.", "respuesta": "DEBER"},
-        {"texto": "Resultado, bueno o malo, que sigue a cada una de tus decisiones.", "respuesta": "CONSECUENCIA"},
-        {"texto": "Capacidad de elegir, que va siempre unida a la responsabilidad de asumir lo que eliges.", "respuesta": "LIBERTAD"},
-        {"texto": "Elección que tomas y por la cual debes responder.", "respuesta": "DECISION"},
-        {"texto": "Lo que das cuando prometes algo; una persona responsable la cumple.", "respuesta": "PALABRA"},
-        {"texto": "Lo que hace una persona responsable con lo que promete o se le encarga.", "respuesta": "CUMPLIR"},
+        {"texto": "Lc 2,49 — Jesús les pregunta por qué lo ______ ellos, en pasado continuo, si debían saber dónde estaría.", "respuesta": "BUSCABAN"},
+        {"texto": "Lc 2,44 — Lo buscaron entre los ______, es decir, entre los miembros de su familia extensa.", "respuesta": "PARIENTES"},
+        {"texto": "Lc 2,44 — También lo buscaron entre los ______, personas de confianza que no eran de la familia.", "respuesta": "CONOCIDOS"},
+        {"texto": "Lc 2,44 — Creyendo que iba en el grupo, avanzaron un día de ______ antes de buscarlo.", "respuesta": "CAMINO"},
+        {"texto": "Lc 2,48 — Al encontrarlo, quien le habló con reproche cariñoso fue María, su ______.", "respuesta": "MADRE"},
+        {"texto": "Lc 2,48 — Relación de Jesús con María y José: él es el ______ que los preocupó.", "respuesta": "HIJO"},
+        {"texto": "Lc 2,43 — Mientras sus padres emprendían el regreso, Jesús, aún un ______, se quedó atrás en la ciudad.", "respuesta": "NIÑO"},
+        {"texto": "Lc 2,43 — Terminada la fiesta, que había durado varios ______, la familia emprendió el regreso.", "respuesta": "DIAS"},
     ],
-    "incluir": ["RESPONSABILIDAD", "COMPROMISO"],
+    "incluir": ["BUSCABAN", "CAMINO"],
     "requisito": 6,
-    "pistas": ["RESPONSABILIDAD y COMPROMISO son las palabras más largas y centrales del tema.",
-               "Las demás palabras describen cómo se vive la responsabilidad en la vida diaria."],
+    "pistas": ["Todas las palabras salen de Lc 2,43-49: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "BUSCABAN y CAMINO son las palabras centrales: ser responsable es hacerse cargo y no dejar de buscar."],
 })
 
 _agregar("C0N13-CO04", "A02", {
@@ -16465,7 +16465,7 @@ _agregar("C0N13-CO04", "A02", {
     "incluir": ["RESPONSABILIDAD", "COMPROMISO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: DEBER y CUMPLIR.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N13-CO04", "A03", {
@@ -16654,21 +16654,21 @@ _agregar("C0N13-CO04", "A10", {
 
 _agregar("C0N13-CO05", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: aprender de los errores",
+    "titulo": "Crucigrama bíblico: Lc 2,43-51",
     "items": [
-        {"texto": "Equivocación que, bien aprovechada, puede convertirse en una oportunidad para crecer.", "respuesta": "ERROR"},
-        {"texto": "Lo que ganas cuando reflexionas sobre un error en vez de solo lamentarlo.", "respuesta": "APRENDIZAJE"},
-        {"texto": "Virtud que permite reconocer que te equivocaste, sin excusas ni orgullo.", "respuesta": "HUMILDAD"},
-        {"texto": "Lo que necesitas pedir, y a veces darte a ti mismo, después de un error.", "respuesta": "PERDON"},
-        {"texto": "Imagen que usamos para describir un error o un tropiezo en el camino.", "respuesta": "CAIDA"},
-        {"texto": "Lo que hace quien, después de una caída, decide seguir adelante.", "respuesta": "LEVANTARSE"},
-        {"texto": "Ayuda que recibes de otros para ver lo que no notabas de tu error.", "respuesta": "CORRECCION"},
-        {"texto": "Lo que se va formando cuando aprendes de los errores vividos.", "respuesta": "EXPERIENCIA"},
+        {"texto": "Lc 2,45 — Al no dar con él, dieron marcha atrás y ______ a Jerusalén (ellos, pasado).", "respuesta": "VOLVIERON"},
+        {"texto": "Lc 2,50 — Aunque Jesús habló con claridad, sus padres no ______ el sentido de sus palabras.", "respuesta": "ENTENDIERON"},
+        {"texto": "Lc 2,51 — María no olvidó la lección: la fue meditando en su ______.", "respuesta": "CORAZON"},
+        {"texto": "Lc 2,51 — Terminado el susto, la familia regresó a su hogar en este pueblo.", "respuesta": "NAZARET"},
+        {"texto": "Lc 2,45 — Ciudad a la que tuvieron que regresar para rectificar y encontrar a su hijo.", "respuesta": "JERUSALEN"},
+        {"texto": "Lc 2,51 — Quien meditaba lo ocurrido para aprender de ello era María, su ______.", "respuesta": "MADRE"},
+        {"texto": "Lc 2,44 — Recorrieron por error una jornada entera de ______ antes de notar su ausencia.", "respuesta": "CAMINO"},
+        {"texto": "Lc 2,46 — Pasó este tiempo, contado en jornadas, hasta que lo encontraron: tres ______.", "respuesta": "DIAS"},
     ],
-    "incluir": ["ERROR", "APRENDIZAJE"],
+    "incluir": ["VOLVIERON", "ENTENDIERON"],
     "requisito": 6,
-    "pistas": ["ERROR y APRENDIZAJE son las palabras centrales de este tema: empieza por esas.",
-               "Las demás palabras describen actitudes que ayudan a convertir un error en crecimiento."],
+    "pistas": ["Todas las palabras salen de Lc 2,43-51: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "VOLVIERON y ENTENDIERON son las palabras centrales: de un descuido se aprende volviendo atrás y meditando lo vivido."],
 })
 
 _agregar("C0N13-CO05", "A02", {
@@ -16678,7 +16678,7 @@ _agregar("C0N13-CO05", "A02", {
     "incluir": ["ERROR", "APRENDIZAJE"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: ERROR, PERDON y CAIDA.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N13-CO05", "A03", {
@@ -16867,21 +16867,21 @@ _agregar("C0N13-CO05", "A10", {
 
 _agregar("C0N13-CO06", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: mi próximo paso",
+    "titulo": "Crucigrama bíblico: Lc 2,42.48-52",
     "items": [
-        {"texto": "Pequeño avance concreto que te acerca a la meta que quieres alcanzar.", "respuesta": "PASO"},
-        {"texto": "Imagen que usamos para describir el proceso de ir creciendo y avanzando en la vida.", "respuesta": "CAMINO"},
-        {"texto": "Lo que te propones alcanzar después de dar varios pasos concretos.", "respuesta": "META"},
-        {"texto": "Plan de vida que vas armando con tus metas, decisiones y sueños.", "respuesta": "PROYECTO"},
-        {"texto": "Tiempo que todavía no llega, pero que empiezas a construir con tus decisiones de hoy.", "respuesta": "FUTURO"},
-        {"texto": "Detenerse a pensar y pedir luz a Dios antes de tomar una decisión importante.", "respuesta": "DISCERNIR"},
-        {"texto": "Elección concreta que marca el siguiente paso de tu camino.", "respuesta": "DECISION"},
-        {"texto": "Llamado particular de Dios para cada persona, que se va descubriendo poco a poco.", "respuesta": "VOCACION"},
+        {"texto": "Lc 2,51 — Jesús bajó con ellos a este pueblo, donde siguió creciendo en obediencia.", "respuesta": "NAZARET"},
+        {"texto": "Lc 2,42 — Edad de Jesús en ese viaje: el mismo número que los apóstoles que luego elegiría.", "respuesta": "DOCE"},
+        {"texto": "Lc 2,49 — Jesús tiene claro quién es el centro de su vida: no es José, sino su ______ del cielo.", "respuesta": "PADRE"},
+        {"texto": "Lc 2,48 — Con esta palabra afectuosa se dirige María a Jesús al encontrarlo.", "respuesta": "HIJO"},
+        {"texto": "Lc 2,52 — Jesús iba adelantando en este don del buen juicio, que se aprende con los años.", "respuesta": "SABIDURIA"},
+        {"texto": "Lc 2,52 — Jesús gozaba del favor de los hombres y también del favor de ______, el Creador.", "respuesta": "DIOS"},
+        {"texto": "Lc 2,42 — Celebración anual a la que subió la familia: fue la ocasión de este episodio.", "respuesta": "FIESTA"},
+        {"texto": "Lc 2,50 — El misterio de la respuesta de Jesús los superó: ellos no lo ______.", "respuesta": "ENTENDIERON"},
     ],
-    "incluir": ["PASO", "CAMINO"],
+    "incluir": ["NAZARET", "DOCE"],
     "requisito": 6,
-    "pistas": ["PASO y CAMINO son las palabras más cortas y centrales de este tema.",
-               "Las demás palabras describen hacia dónde y cómo se da ese paso."],
+    "pistas": ["Todas las palabras salen de Lc 2,42.48-52: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "NAZARET y DOCE son las palabras centrales: cada etapa abre un nuevo paso en el camino."],
 })
 
 _agregar("C0N13-CO06", "A02", {
@@ -16891,7 +16891,7 @@ _agregar("C0N13-CO06", "A02", {
     "incluir": ["PASO", "CAMINO"],
     "requisito": 6,
     "pistas": ["Busca primero PASO y META: son las palabras más cortas.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N13-CO06", "A03", {
@@ -17084,21 +17084,21 @@ _agregar("C0N13-CO06", "A10", {
 # -- C0N14-CO01: Dignidad de toda persona --
 _agregar("C0N14-CO01", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: la dignidad de toda persona",
+    "titulo": "Crucigrama bíblico: Sal 139,13-18",
     "items": [
-        {"texto": "Valor inmenso e inviolable que tiene cada ser humano solo por existir.", "respuesta": "DIGNIDAD"},
-        {"texto": "Palabra que nombra a cada ser humano, único e irrepetible, con nombre propio.", "respuesta": "PERSONA"},
-        {"texto": "Según el Génesis, cada persona es creada a ______ de Dios.", "respuesta": "IMAGEN"},
-        {"texto": "Junto con «imagen», palabra que usa el Génesis para decir que nos parecemos a Dios.", "respuesta": "SEMEJANZA"},
-        {"texto": "Lo que tiene cada persona, sin importar su edad, salud o condición económica.", "respuesta": "VALOR"},
-        {"texto": "Actitud que se debe a toda persona por el solo hecho de ser persona.", "respuesta": "RESPETO"},
-        {"texto": "Adjetivo que describe la vida humana por venir de Dios y pertenecerle.", "respuesta": "SAGRADA"},
-        {"texto": "Nadie más en el mundo es igual a ti: cada persona es irrepetible y ______.", "respuesta": "UNICO"},
+        {"texto": "Sal 139,14 — Lo que Dios realiza, y entre ello la persona misma, el salmista lo llama «tus ______» (plural).", "respuesta": "OBRAS"},
+        {"texto": "Sal 139,14 — Adjetivo (femenino plural) con que el salmista califica lo que hace Dios: digno de asombro.", "respuesta": "MARAVILLOSAS"},
+        {"texto": "Sal 139,14 — Respuesta del salmista al saberse tan admirablemente hecho: dar ______ a Dios.", "respuesta": "GRACIAS"},
+        {"texto": "Sal 139,17 — El salmista se asombra de lo que Dios tiene en mente sobre él: ¡cuán preciosos son sus ______!", "respuesta": "PENSAMIENTOS"},
+        {"texto": "Sal 139,18 — Imagen de lo incontable: lo de Dios supera los granos de ______ de la orilla del mar.", "respuesta": "ARENA"},
+        {"texto": "Sal 139,13 — Lugar interior donde empieza cada vida antes de nacer: allí Dios ya está obrando.", "respuesta": "VIENTRE"},
+        {"texto": "Sal 139,13 — La mujer que me llevó dentro de sí antes de nacer, mientras Dios me formaba: mi ______.", "respuesta": "MADRE"},
+        {"texto": "Sal 139,15 — Dios no me dejó al azar: participio con el que el salmista dice que fue moldeado, «fui ______».", "respuesta": "FORMADO"},
     ],
-    "incluir": ["DIGNIDAD", "PERSONA"],
+    "incluir": ["OBRAS", "MARAVILLOSAS"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con la dignidad de toda persona, según el Catecismo y el Concilio Vaticano II.",
-               "DIGNIDAD y PERSONA son las palabras centrales de este tema: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Sal 139,13-18: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "OBRAS y MARAVILLOSAS son las palabras centrales: toda persona es una obra admirable de Dios."],
 })
 
 _agregar("C0N14-CO01", "A02", {
@@ -17108,7 +17108,7 @@ _agregar("C0N14-CO01", "A02", {
     "incluir": ["DIGNIDAD", "PERSONA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: VALOR y UNICO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N14-CO01", "A03", {
@@ -17297,21 +17297,21 @@ _agregar("C0N14-CO01", "A10", {
 # -- C0N14-CO02: Identidad personal --
 _agregar("C0N14-CO02", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: descubrir quién eres",
+    "titulo": "Crucigrama bíblico: Sal 139,1-4.16",
     "items": [
-        {"texto": "Todo lo que te hace ser tú mismo: tu historia, tus gustos, tus valores.", "respuesta": "IDENTIDAD"},
-        {"texto": "Palabra con la que te llaman desde que naciste y que forma parte de quién eres.", "respuesta": "NOMBRE"},
-        {"texto": "Conjunto de experiencias vividas que han ido formando tu manera de ser.", "respuesta": "HISTORIA"},
-        {"texto": "Forma particular de reaccionar y comportarte que te distingue de los demás.", "respuesta": "CARACTER"},
-        {"texto": "Capacidades y talentos que Dios te dio y que nadie más tiene exactamente igual.", "respuesta": "DONES"},
-        {"texto": "Llamado particular que Dios tiene para tu vida, distinto al de cualquier otra persona.", "respuesta": "VOCACION"},
-        {"texto": "Lo que eres cuando vives según lo que realmente piensas y sientes, sin copiar a otros.", "respuesta": "AUTENTICO"},
-        {"texto": "Sentido o «para qué» que vas descubriendo poco a poco en tu propia vida.", "respuesta": "PROPOSITO"},
+        {"texto": "Sal 139,1 — Al empezar el salmo, el poeta le dice a Dios: tú me examinas y me ______ (tú).", "respuesta": "CONOCES"},
+        {"texto": "Sal 139,3 — Dios está al tanto de por dónde voy: todas mis rutas de vida, mis ______, le son familiares.", "respuesta": "CAMINOS"},
+        {"texto": "Sal 139,4 — Órgano de la boca donde todavía está lo que voy a decir, y Dios ya lo sabe.", "respuesta": "LENGUA"},
+        {"texto": "Sal 139,4 — Lo que expresamos al hablar; Dios la sabe de antemano, antes de que salga de mi boca.", "respuesta": "PALABRA"},
+        {"texto": "Sal 139,16 — Con estos órganos de la vista Dios me vio antes de que yo existiera.", "respuesta": "OJOS"},
+        {"texto": "Sal 139,16 — Objeto de páginas donde Dios tiene apuntada toda mi historia, desde antes de existir.", "respuesta": "LIBRO"},
+        {"texto": "Sal 139,16 — Unidades de tiempo de mi vida, que Dios tenía previstas desde el principio: mis ______.", "respuesta": "DIAS"},
+        {"texto": "Sal 139,16 — Mis momentos de vida estaban ya puestos con tinta, de antemano (plural masculino, participio).", "respuesta": "ESCRITOS"},
     ],
-    "incluir": ["IDENTIDAD", "AUTENTICO"],
+    "incluir": ["CONOCES", "LIBRO"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con descubrir quién eres de verdad, más allá de las apariencias.",
-               "IDENTIDAD y AUTENTICO son las palabras centrales de este tema: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Sal 139,1-4.16: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "CONOCES y LIBRO son las palabras centrales: Dios me conoce y mi historia está en su libro."],
 })
 
 _agregar("C0N14-CO02", "A02", {
@@ -17321,7 +17321,7 @@ _agregar("C0N14-CO02", "A02", {
     "incluir": ["IDENTIDAD", "AUTENTICO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: NOMBRE y DONES.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N14-CO02", "A03", {
@@ -17510,21 +17510,21 @@ _agregar("C0N14-CO02", "A10", {
 # -- C0N14-CO03: Creado y amado por Dios --
 _agregar("C0N14-CO03", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: creado y amado por Dios",
+    "titulo": "Crucigrama bíblico: Sal 139,5.7.13-15",
     "items": [
-        {"texto": "Obra de Dios que incluye el universo entero y a cada persona en particular.", "respuesta": "CREACION"},
-        {"texto": "Lo que eres para Dios desde antes de nacer, según el Salmo 139.", "respuesta": "AMADO"},
-        {"texto": "Nombre con el que Jesús nos enseña a llamar a Dios, mostrando su cercanía.", "respuesta": "PADRE"},
-        {"texto": "Forma cariñosa y delicada con la que Dios te mira y te cuida.", "respuesta": "TERNURA"},
-        {"texto": "Lo que Dios tiene de ti en cada etapa de tu vida, aunque no lo notes.", "respuesta": "CUIDADO"},
-        {"texto": "Adjetivo que describe el amor de Dios: no tiene principio ni fin.", "respuesta": "ETERNO"},
-        {"texto": "Plan único que Dios tiene para tu vida desde que te formó.", "respuesta": "PROYECTO"},
-        {"texto": "Actitud que nace en el corazón al saber que Dios te ama sin condiciones.", "respuesta": "CONFIANZA"},
+        {"texto": "Sal 139,13 — Lugar interior donde se gesta cada persona; allí el salmista siente que Dios ya lo cuidaba.", "respuesta": "VIENTRE"},
+        {"texto": "Sal 139,13 — La que me llevó dentro antes de nacer: Dios me formó en el seno de mi ______.", "respuesta": "MADRE"},
+        {"texto": "Sal 139,15 — Partes duras de mi cuerpo que Dios ya conocía antes de que yo naciera: mis ______.", "respuesta": "HUESOS"},
+        {"texto": "Sal 139,15 — Cuando nadie me veía y solo Dios sabía, él me hacía: yo estaba en ______.", "respuesta": "SECRETO"},
+        {"texto": "Sal 139,15 — Imagen poética de lo más hondo y escondido: el salmista se siente formado en lo profundo de la ______.", "respuesta": "TIERRA"},
+        {"texto": "Sal 139,5 — Dios me rodea y pone su ______ sobre mí, gesto de protección y cercanía.", "respuesta": "MANO"},
+        {"texto": "Sal 139,7 — ¿Adónde iría para alejarme de tu ______ (el soplo vital de Dios)?", "respuesta": "ESPIRITU"},
+        {"texto": "Sal 139,15 — Participio con el que el salmista describe cómo Dios fue moldeándolo con cuidado: «yo fui ______».", "respuesta": "FORMADO"},
     ],
-    "incluir": ["CREACION", "AMADO"],
+    "incluir": ["VIENTRE", "MANO"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con saberte creado y amado por Dios, según el Salmo 139.",
-               "CREACION y AMADO son las palabras centrales de este tema: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Sal 139,5.7.13-15: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "VIENTRE y MANO son las palabras centrales: Dios me cuidó y me sostiene desde antes de nacer."],
 })
 
 _agregar("C0N14-CO03", "A02", {
@@ -17534,7 +17534,7 @@ _agregar("C0N14-CO03", "A02", {
     "incluir": ["CREACION", "AMADO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: PADRE y AMADO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N14-CO03", "A03", {
@@ -17723,21 +17723,21 @@ _agregar("C0N14-CO03", "A10", {
 # -- C0N14-CO04: Libertad responsable --
 _agregar("C0N14-CO04", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: la libertad responsable",
+    "titulo": "Crucigrama bíblico: Sal 139,3-16",
     "items": [
-        {"texto": "Capacidad que Dios te dio para elegir el bien, no solo para hacer lo que quieras.", "respuesta": "LIBERTAD"},
-        {"texto": "Hacerte cargo de las consecuencias de lo que decides.", "respuesta": "RESPONSABILIDAD"},
-        {"texto": "Voz interior que te ayuda a distinguir el bien del mal antes de decidir.", "respuesta": "CONCIENCIA"},
-        {"texto": "Lo que tomas cada vez que optas entre varias opciones posibles.", "respuesta": "DECISION"},
-        {"texto": "Resultado, bueno o malo, que sigue a una decisión libre.", "respuesta": "CONSECUENCIA"},
-        {"texto": "Verbo que describe el acto de optar por una cosa y no otra, usando la libertad.", "respuesta": "ELEGIR"},
-        {"texto": "Capacidad de usar la libertad pensando en el bien propio y el de los demás.", "respuesta": "MADUREZ"},
-        {"texto": "Lo que asumes cuando decides algo y decides sostenerlo en el tiempo.", "respuesta": "COMPROMISO"},
+        {"texto": "Sal 139,14 — Primera reacción del salmista ante tanta bondad: expresar agradecimiento. Le da ______ a Dios.", "respuesta": "GRACIAS"},
+        {"texto": "Sal 139,16 — Mi vida se mide en estas jornadas, y cada una de las mías está en el plan de Dios: mis ______.", "respuesta": "DIAS"},
+        {"texto": "Sal 139,3 — Las rutas que elijo en la vida no le son ajenas a Dios: está al tanto de todos mis ______.", "respuesta": "CAMINOS"},
+        {"texto": "Sal 139,10 — Aun si me alejara, allí me guiaría su ______ derecha, gesto de Dios que sostiene.", "respuesta": "MANO"},
+        {"texto": "Sal 139,8 — Si el salmista subiera a lo más alto, hasta el ______, allí también estaría Dios.", "respuesta": "CIELO"},
+        {"texto": "Sal 139,12 — Momento sin luz natural: aun la ______ es clara para Dios.", "respuesta": "NOCHE"},
+        {"texto": "Sal 139,7 — El salmista pregunta si podría escapar de Dios: ¿adónde podría ______ de su presencia?", "respuesta": "HUIR"},
+        {"texto": "Sal 139,16 — Mis días ya estaban puestos con tinta, de antemano, en el plan de Dios (plural masculino, participio).", "respuesta": "ESCRITOS"},
     ],
-    "incluir": ["LIBERTAD", "RESPONSABILIDAD"],
+    "incluir": ["GRACIAS", "DIAS"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con usar la libertad de forma madura y responsable.",
-               "LIBERTAD y RESPONSABILIDAD son las palabras centrales de este tema: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Sal 139,3-16: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "GRACIAS y DIAS son las palabras centrales: la vida recibida pide una respuesta consciente y agradecida."],
 })
 
 _agregar("C0N14-CO04", "A02", {
@@ -17747,7 +17747,7 @@ _agregar("C0N14-CO04", "A02", {
     "incluir": ["LIBERTAD", "RESPONSABILIDAD"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: ELEGIR y DECISION.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N14-CO04", "A03", {
@@ -17936,21 +17936,21 @@ _agregar("C0N14-CO04", "A10", {
 # -- C0N14-CO05: Autoestima y comparación --
 _agregar("C0N14-CO05", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: autoestima sin comparaciones",
+    "titulo": "Crucigrama bíblico: Sal 139,12-18",
     "items": [
-        {"texto": "Forma en que te valoras y te sientes contigo mismo.", "respuesta": "AUTOESTIMA"},
-        {"texto": "Acto de medirte constantemente con la vida o el cuerpo de otra persona.", "respuesta": "COMPARACION"},
-        {"texto": "Sentimiento de tristeza o molestia por lo que otro tiene y tú no.", "respuesta": "ENVIDIA"},
-        {"texto": "Actitud de reconocer y recibir tu propio cuerpo e historia tal como son.", "respuesta": "ACEPTACION"},
-        {"texto": "Confianza interior que no depende de la opinión de los demás.", "respuesta": "SEGURIDAD"},
-        {"texto": "Plataformas donde muchos jóvenes comparan su vida con una versión editada de otros.", "respuesta": "REDES"},
-        {"texto": "Lo que se ve por fuera; no define tu verdadero valor como persona.", "respuesta": "APARIENCIA"},
-        {"texto": "Verbo que describe reconocer tu propia dignidad sin depender de «likes».", "respuesta": "VALORARSE"},
+        {"texto": "Sal 139,14 — No soy producto de segunda: el salmista llama a las personas y a la creación «tus ______» (de Dios).", "respuesta": "OBRAS"},
+        {"texto": "Sal 139,14 — No hace falta compararme: lo que Dios hace es siempre asombroso, y el salmista lo califica así (femenino plural).", "respuesta": "MARAVILLOSAS"},
+        {"texto": "Sal 139,16 — Dios me miró con ellos desde el comienzo; son los órganos con los que él ve mi valor.", "respuesta": "OJOS"},
+        {"texto": "Sal 139,15 — Nadie me comparaba con otros cuando fui hecho: Dios me formó lejos de miradas, en ______.", "respuesta": "SECRETO"},
+        {"texto": "Sal 139,15 — Ni la estructura más escondida de mi cuerpo le era desconocida a Dios: mis ______.", "respuesta": "HUESOS"},
+        {"texto": "Sal 139,18 — Los pensamientos de Dios sobre mí son tan numerosos que superan los granos de ______.", "respuesta": "ARENA"},
+        {"texto": "Sal 139,12 — Aun cuando todo parece oscuro y me siento inseguro, para Dios la ______ brilla como el día.", "respuesta": "NOCHE"},
+        {"texto": "Sal 139,16 — Objeto donde Dios ya tenía anotado quién soy yo, sin necesidad de compararme: su ______.", "respuesta": "LIBRO"},
     ],
-    "incluir": ["AUTOESTIMA", "COMPARACION"],
+    "incluir": ["OBRAS", "MARAVILLOSAS"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con la autoestima y el riesgo de compararte con otros.",
-               "AUTOESTIMA y COMPARACION son las palabras centrales de este tema: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Sal 139,12-18: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "OBRAS y MARAVILLOSAS son las palabras centrales: no necesito compararme, soy obra admirable de Dios."],
 })
 
 _agregar("C0N14-CO05", "A02", {
@@ -17960,7 +17960,7 @@ _agregar("C0N14-CO05", "A02", {
     "incluir": ["AUTOESTIMA", "COMPARACION"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: REDES y ENVIDIA.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N14-CO05", "A03", {
@@ -18149,21 +18149,21 @@ _agregar("C0N14-CO05", "A10", {
 # -- C0N14-CO06: Identidad en Cristo --
 _agregar("C0N14-CO06", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: tu identidad en Cristo",
+    "titulo": "Crucigrama bíblico: Sal 139,7-8.15-17",
     "items": [
-        {"texto": "En quien el cristiano descubre su identidad más profunda: hijo amado de Dios.", "respuesta": "CRISTO"},
-        {"texto": "Sacramento por el cual te conviertes en hijo de Dios e hijo de la Iglesia.", "respuesta": "BAUTISMO"},
-        {"texto": "Lo que eres para Dios Padre gracias a Cristo, no solo una creación cualquiera.", "respuesta": "HIJO"},
-        {"texto": "Don gratuito de Dios que transforma tu identidad desde dentro.", "respuesta": "GRACIA"},
-        {"texto": "Adjetivo que describe la identidad que recibes en Cristo: una ______ creación.", "respuesta": "NUEVA"},
-        {"texto": "Quien sigue a Jesús y va formando su identidad a partir de él.", "respuesta": "DISCIPULO"},
-        {"texto": "Don que Cristo ofrece a toda persona, revelando su verdadera dignidad.", "respuesta": "SALVACION"},
-        {"texto": "Adjetivo que describe la vida que Cristo promete a quien cree en él.", "respuesta": "ETERNA"},
+        {"texto": "Sal 139,16 — Mis días ya estaban puestos con tinta desde antes de existir (plural masculino, participio).", "respuesta": "ESCRITOS"},
+        {"texto": "Sal 139,16 — Donde Dios tiene registrada mi historia desde antes de nacer: es de páginas y de tinta.", "respuesta": "LIBRO"},
+        {"texto": "Sal 139,7 — Soplo vital de Dios del que el salmista no puede alejarse: su ______.", "respuesta": "ESPIRITU"},
+        {"texto": "Sal 139,8 — Si subiera a las alturas donde habita Dios, hasta el ______, allí lo encontraría.", "respuesta": "CIELO"},
+        {"texto": "Sal 139,15 — El salmista describe con imagen poética su origen oculto como el fondo de la ______.", "respuesta": "TIERRA"},
+        {"texto": "Sal 139,17 — Lo que Dios tiene en mente para cada persona es incontable: ¡qué valiosos son sus ______!", "respuesta": "PENSAMIENTOS"},
+        {"texto": "Sal 139,7 — No hay lugar adonde pueda escapar de Dios; el salmista pregunta adónde podría ______.", "respuesta": "HUIR"},
+        {"texto": "Sal 139,15 — Participio del verbo con el que el salmista dice que Dios lo plasmó con cuidado: «fui ______».", "respuesta": "FORMADO"},
     ],
-    "incluir": ["CRISTO", "BAUTISMO"],
+    "incluir": ["LIBRO", "ESCRITOS"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con descubrir tu identidad a partir de Cristo.",
-               "CRISTO y BAUTISMO son las palabras centrales de este tema: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Sal 139,7-8.15-17: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "LIBRO y ESCRITOS son las palabras centrales: pertenezco a Dios y mi historia empieza en él."],
 })
 
 _agregar("C0N14-CO06", "A02", {
@@ -18173,7 +18173,7 @@ _agregar("C0N14-CO06", "A02", {
     "incluir": ["CRISTO", "BAUTISMO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: HIJO y NUEVA.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N14-CO06", "A03", {
@@ -18368,21 +18368,21 @@ _agregar("C0N14-CO06", "A10", {
 
 _agregar("C0N15-CO01", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: el amor que no se cansa",
+    "titulo": "Crucigrama bíblico: 1 Co 13,4-7",
     "items": [
-        {"texto": "Nombre griego del amor de entrega total que describe San Pablo en 1 Corintios 13.", "respuesta": "AGAPE"},
-        {"texto": "Nombre griego del amor de atracción y deseo, que Deus caritas est no rechaza sino que purifica.", "respuesta": "EROS"},
-        {"texto": "Palabra que usa San Pablo para describir lo que 'nunca deja de ser'.", "respuesta": "AMOR"},
-        {"texto": "Virtud que acompaña siempre al amor verdadero: «el amor es ______, es bondadoso».", "respuesta": "PACIENTE"},
-        {"texto": "Así es el amor de Dios: no se gana, se recibe sin mérito, de manera...", "respuesta": "GRATUITO"},
-        {"texto": "Otro nombre del amor cristiano, la mayor de las virtudes teologales.", "respuesta": "CARIDAD"},
-        {"texto": "Cualidad buena, lo opuesto a la maldad; el amor está lleno de...", "respuesta": "BONDAD"},
-        {"texto": "Lo que recibimos de Dios sin haberlo merecido: su amor es un ______ gratuito.", "respuesta": "DON"},
+        {"texto": "1 Co 13,4 — Según Pablo, el amor mantiene la calma y no tiene prisa con los demás: es ______.", "respuesta": "PACIENTE"},
+        {"texto": "1 Co 13,4 — El amor no siente ______: no le duele que a otro le vaya mejor que a uno.", "respuesta": "ENVIDIA"},
+        {"texto": "1 Co 13,6 — El amor se pone de parte de lo sincero y auténtico, contrario a la mentira: la ______.", "respuesta": "VERDAD"},
+        {"texto": "1 Co 13,6 — Ante el mal que sufren otros, el amor no se ______: no le produce contento.", "respuesta": "ALEGRA"},
+        {"texto": "1 Co 13,6 — El amor jamás se complace cuando alguien es tratado de modo injusto; Pablo lo llama ______.", "respuesta": "INJUSTICIA"},
+        {"texto": "1 Co 13,7 — Quien ama confía en la persona amada y da crédito a lo que ella dice: ______ en ella.", "respuesta": "CREE"},
+        {"texto": "1 Co 13,7 — Quien ama mantiene viva la ilusión de que el otro puede mejorar y no se rinde: ______ siempre.", "respuesta": "ESPERA"},
+        {"texto": "1 Co 13,7 — Quien ama carga con las dificultades y defectos del otro sin abandonarlo: lo ______.", "respuesta": "SOPORTA"},
     ],
-    "incluir": ["AMOR", "CARIDAD"],
+    "incluir": ["ENVIDIA", "VERDAD"],
     "requisito": 6,
-    "pistas": ["Repasa 1 Corintios 13,4-7: ahí aparecen varias de estas palabras.",
-               "AGAPE y EROS son los dos nombres griegos del amor que explica Deus caritas est."],
+    "pistas": ["Todas las palabras salen de 1 Co 13,4-7: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "ENVIDIA y VERDAD son dos palabras centrales de este tema: lo que el amor rechaza y aquello en lo que se apoya."],
 })
 
 _agregar("C0N15-CO01", "A02", {
@@ -18581,21 +18581,21 @@ _agregar("C0N15-CO01", "A10", {
 
 _agregar("C0N15-CO02", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: amigos de verdad",
+    "titulo": "Crucigrama bíblico: 1 Co 13,2-8",
     "items": [
-        {"texto": "Vínculo libre y gratuito entre personas que se quieren bien, como el de David y Jonatán en la Biblia.", "respuesta": "AMISTAD"},
-        {"texto": "Actitud de valorar al otro tal como es, sin humillarlo ni rebajarlo.", "respuesta": "RESPETO"},
-        {"texto": "Cualidad de quien no traiciona ni abandona a su amigo en los momentos difíciles.", "respuesta": "LEALTAD"},
-        {"texto": "Seguridad que se construye con el tiempo entre dos personas que se conocen bien.", "respuesta": "CONFIANZA"},
-        {"texto": "Capacidad de prestar atención real a lo que el otro siente y dice.", "respuesta": "ESCUCHA"},
-        {"texto": "Decir la verdad con delicadeza, sin fingir ni engañar al amigo.", "respuesta": "SINCERIDAD"},
-        {"texto": "Reconocer que el amigo vale lo mismo que uno, sin sentirse superior.", "respuesta": "IGUALDAD"},
-        {"texto": "Sentimiento de valorar y estimar genuinamente a alguien.", "respuesta": "APRECIO"},
+        {"texto": "1 Co 13,4 — Un buen amigo celebra tus triunfos sin sentir ______, ese dolor por el bien ajeno.", "respuesta": "ENVIDIA"},
+        {"texto": "1 Co 13,6 — La amistad sana se apoya en lo sincero y auténtico, lo contrario de la mentira: la ______.", "respuesta": "VERDAD"},
+        {"texto": "1 Co 13,7 — Pablo repite cuatro veces en este versículo la palabra que significa «sin excepción»: ______.", "respuesta": "TODO"},
+        {"texto": "1 Co 13,7 — Entre amigos, el amor aguanta con paciencia los defectos ajenos y los ______ sin rendirse.", "respuesta": "SOPORTA"},
+        {"texto": "1 Co 13,7 — Entre amigos, el amor da crédito al otro y no sospecha de él: ______ en su buena fe.", "respuesta": "CREE"},
+        {"texto": "1 Co 13,8 — Los mensajes inspirados que anuncian la voluntad de Dios terminarán un día; el amor no. Son las ______.", "respuesta": "PROFECIAS"},
+        {"texto": "1 Co 13,8 — También cesará el don de hablar idiomas especiales por el Espíritu, llamado don de ______.", "respuesta": "LENGUAS"},
+        {"texto": "1 Co 13,2 — Aun con grandes dones y mucha fe, sin amor Pablo concluye que uno no es ______.", "respuesta": "NADA"},
     ],
-    "incluir": ["AMISTAD", "RESPETO"],
+    "incluir": ["SOPORTA", "TODO"],
     "requisito": 6,
-    "pistas": ["Piensa en una amistad real o bíblica que conozcas: ahí aparecen varias de estas cualidades.",
-               "AMISTAD y RESPETO son las palabras centrales de este tema."],
+    "pistas": ["Todas las palabras salen de 1 Co 13,2-8: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "SOPORTA y TODO son las palabras centrales de este tema: la amistad que aguanta y acompaña sin excepciones."],
 })
 
 _agregar("C0N15-CO02", "A02", {
@@ -18605,7 +18605,7 @@ _agregar("C0N15-CO02", "A02", {
     "incluir": ["AMISTAD", "RESPETO"],
     "requisito": 6,
     "pistas": ["Busca primero ESCUCHA y APRECIO, son más cortas.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N15-CO02", "A03", {
@@ -18794,21 +18794,21 @@ _agregar("C0N15-CO02", "A10", {
 
 _agregar("C0N15-CO03", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: noviazgo con los pies en la tierra",
+    "titulo": "Crucigrama bíblico: 1 Co 13,1-7",
     "items": [
-        {"texto": "Etapa en la que dos personas se conocen para discernir si pueden formar un proyecto de vida juntos.", "respuesta": "NOVIAZGO"},
-        {"texto": "Capacidad de responder por las propias decisiones y sus consecuencias en la relación.", "respuesta": "RESPONSABILIDAD"},
-        {"texto": "Decisión de sostener la palabra dada al otro en el tiempo.", "respuesta": "COMPROMISO"},
-        {"texto": "Cualidad de quien actúa pensando en las consecuencias y no solo en el impulso del momento.", "respuesta": "MADUREZ"},
-        {"texto": "Lo que se construye paso a paso, pensando en el camino que se quiere recorrer juntos.", "respuesta": "PROYECTO"},
-        {"texto": "Mantenerse fiel a la palabra dada, sin dobles intenciones.", "respuesta": "FIDELIDAD"},
-        {"texto": "Acto de elegir con libertad y conciencia, no por presión del momento.", "respuesta": "DECISION"},
-        {"texto": "Tiempo que aún no ha llegado, pero que el noviazgo ayuda a discernir y preparar.", "respuesta": "FUTURO"},
+        {"texto": "1 Co 13,1 — Pablo habla de las lenguas humanas y de las de los ______, seres celestiales, mensajeros de Dios.", "respuesta": "ANGELES"},
+        {"texto": "1 Co 13,2 — Aun con fe capaz de mover cualquier obstáculo, sin amor Pablo concluye que uno no es ______.", "respuesta": "NADA"},
+        {"texto": "1 Co 13,3 — Aunque llegara a ______ cuanto posee entre otros, sin amor eso no le sirve.", "respuesta": "REPARTIR"},
+        {"texto": "1 Co 13,3 — Aunque llegara a ______ su propia persona hasta el sacrificio, sin amor no le aprovecha.", "respuesta": "ENTREGAR"},
+        {"texto": "1 Co 13,3 — Aunque ofreciera su propio ______ para ser quemado, sin amor sería inútil.", "respuesta": "CUERPO"},
+        {"texto": "1 Co 13,7 — El amor de novios maduro carga con las dificultades de la pareja sin huir: lo ______.", "respuesta": "SOPORTA"},
+        {"texto": "1 Co 13,7 — El amor que se compromete mantiene viva la ilusión de un futuro juntos: ______ con confianza.", "respuesta": "ESPERA"},
+        {"texto": "1 Co 13,7 — Pablo repite cuatro veces en este versículo la palabra que significa «sin excepción»: ______.", "respuesta": "TODO"},
     ],
-    "incluir": ["NOVIAZGO", "RESPONSABILIDAD"],
+    "incluir": ["ENTREGAR", "ESPERA"],
     "requisito": 6,
-    "pistas": ["Piensa en el noviazgo como un tiempo de conocerse, no solo de sentir.",
-               "NOVIAZGO y RESPONSABILIDAD son las palabras centrales de este tema."],
+    "pistas": ["Todas las palabras salen de 1 Co 13,1-7: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "ENTREGAR y ESPERA son las palabras centrales de este tema: el amor que se da por completo y mira al futuro."],
 })
 
 _agregar("C0N15-CO03", "A02", {
@@ -18818,7 +18818,7 @@ _agregar("C0N15-CO03", "A02", {
     "incluir": ["NOVIAZGO", "RESPONSABILIDAD"],
     "requisito": 6,
     "pistas": ["Busca primero MADUREZ y FUTURO, son más cortas.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N15-CO03", "A03", {
@@ -19007,21 +19007,21 @@ _agregar("C0N15-CO03", "A10", {
 
 _agregar("C0N15-CO04", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: mi dignidad no se negocia",
+    "titulo": "Crucigrama bíblico: 1 Co 13,3-7",
     "items": [
-        {"texto": "Línea que protege el respeto propio y ajeno en cualquier relación.", "respuesta": "LIMITE"},
-        {"texto": "Valor inmenso que tiene toda persona por el solo hecho de ser creada por Dios.", "respuesta": "DIGNIDAD"},
-        {"texto": "Parte de la persona que también merece respeto y cuidado, no es un objeto.", "respuesta": "CUERPO"},
-        {"texto": "Valoración sana que una persona tiene de sí misma.", "respuesta": "AUTOESTIMA"},
-        {"texto": "Fuerza externa que empuja a hacer algo que no se quiere o no se está listo para hacer.", "respuesta": "PRESION"},
-        {"texto": "Capacidad de decidir por uno mismo, sin que nadie imponga su voluntad.", "respuesta": "LIBERTAD"},
-        {"texto": "Acuerdo libre y claro antes de cualquier decisión importante en una relación.", "respuesta": "CONSENTIMIENTO"},
-        {"texto": "Acción de reconocer el propio valor y no dejar que otros lo pisoteen.", "respuesta": "VALORARSE"},
+        {"texto": "1 Co 13,3 — Tu ______ tiene dignidad: no es un objeto para sacrificar ni para usar sin amor.", "respuesta": "CUERPO"},
+        {"texto": "1 Co 13,3 — Dar la propia persona hasta el sacrificio, sin amor, no vale; Pablo habla de llegar a ______ la vida.", "respuesta": "ENTREGAR"},
+        {"texto": "1 Co 13,3 — Pablo menciona a quien llega a ______ sus bienes entre otros, pero sin amor no basta.", "respuesta": "REPARTIR"},
+        {"texto": "1 Co 13,4 — Valorar a la persona es no sentir ______ por lo que otro tiene o logra.", "respuesta": "ENVIDIA"},
+        {"texto": "1 Co 13,6 — Respetar la dignidad es rechazar lo que atropella a otro: el amor no se complace con la ______.", "respuesta": "INJUSTICIA"},
+        {"texto": "1 Co 13,6 — Respetar al otro es valorar lo sincero y auténtico, lo contrario de la mentira: la ______.", "respuesta": "VERDAD"},
+        {"texto": "1 Co 13,6 — Cuando a alguien se le humilla, el amor no se ______ ni encuentra contento en ello.", "respuesta": "ALEGRA"},
+        {"texto": "1 Co 13,7 — Respetar a alguien es cargar con sus límites sin abandonarlo: el amor lo ______.", "respuesta": "SOPORTA"},
     ],
-    "incluir": ["LIMITE", "DIGNIDAD"],
+    "incluir": ["CUERPO", "ENTREGAR"],
     "requisito": 6,
-    "pistas": ["Piensa en lo que protege a una persona de ser tratada como un objeto.",
-               "LIMITE y DIGNIDAD son las palabras centrales de este tema."],
+    "pistas": ["Todas las palabras salen de 1 Co 13,3-7: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "CUERPO y ENTREGAR son las palabras centrales de este tema: tu persona no es un medio para el provecho de otro."],
 })
 
 _agregar("C0N15-CO04", "A02", {
@@ -19031,7 +19031,7 @@ _agregar("C0N15-CO04", "A02", {
     "incluir": ["LIMITE", "DIGNIDAD"],
     "requisito": 6,
     "pistas": ["Busca primero CUERPO y LIMITE, son más cortas.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N15-CO04", "A03", {
@@ -19220,21 +19220,21 @@ _agregar("C0N15-CO04", "A10", {
 
 _agregar("C0N15-CO05", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: hablemos de verdad",
+    "titulo": "Crucigrama bíblico: 1 Co 13,1-6",
     "items": [
-        {"texto": "Proceso de compartir lo que se piensa y se siente para entenderse mejor con otra persona.", "respuesta": "COMUNICACION"},
-        {"texto": "Conversación abierta en la que ambas partes hablan y escuchan por igual.", "respuesta": "DIALOGO"},
-        {"texto": "Capacidad de ponerse en el lugar del otro para entender lo que siente.", "respuesta": "EMPATIA"},
-        {"texto": "Acción de decir con palabras lo que se siente, en vez de guardarlo o explotar.", "respuesta": "EXPRESAR"},
-        {"texto": "Lo que una persona experimenta por dentro y que vale la pena poder nombrar.", "respuesta": "SENTIMIENTOS"},
-        {"texto": "Cualidad de un mensaje que se entiende bien, sin rodeos ni confusión.", "respuesta": "CLARIDAD"},
-        {"texto": "Forma en que se dicen las cosas, que puede sumar o restar aunque el contenido sea el mismo.", "respuesta": "TONO"},
-        {"texto": "Manera de comunicarse con firmeza y respeto, sin agredir ni callar lo que se piensa.", "respuesta": "ASERTIVIDAD"},
+        {"texto": "1 Co 13,1 — Pablo empieza hablando de los idiomas humanos y celestiales: las ______ de los hombres.", "respuesta": "LENGUAS"},
+        {"texto": "1 Co 13,1 — Pablo menciona también el idioma de los mensajeros celestiales: los ______.", "respuesta": "ANGELES"},
+        {"texto": "1 Co 13,1 — Sin amor, mi voz es como un metal que hace mucho eco: un metal que ______.", "respuesta": "RESUENA"},
+        {"texto": "1 Co 13,2 — El don de anunciar en nombre de Dios su mensaje: la ______; sin ella, el amor falta y todo queda vacío.", "respuesta": "PROFECIA"},
+        {"texto": "1 Co 13,2 — Sin amor, aunque uno tenga grandes dones, Pablo concluye que no es ______.", "respuesta": "NADA"},
+        {"texto": "1 Co 13,4 — Comunicar con amor excluye los celos por el bien del otro: no hay ______.", "respuesta": "ENVIDIA"},
+        {"texto": "1 Co 13,6 — Comunicar con amor es decir lo sincero y cierto, no lo falso: la ______.", "respuesta": "VERDAD"},
+        {"texto": "1 Co 13,6 — Comunicar con amor jamás festeja que se trate mal a alguien: no se goza con la ______.", "respuesta": "INJUSTICIA"},
     ],
-    "incluir": ["COMUNICACION", "DIALOGO"],
+    "incluir": ["LENGUAS", "VERDAD"],
     "requisito": 6,
-    "pistas": ["Piensa en cómo te gustaría que te hablaran cuando algo te molesta.",
-               "COMUNICACION y DIALOGO son las palabras centrales de este tema."],
+    "pistas": ["Todas las palabras salen de 1 Co 13,1-6: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "LENGUAS y VERDAD son las palabras centrales de este tema: hablar bien es hablar con amor y con verdad."],
 })
 
 _agregar("C0N15-CO05", "A02", {
@@ -19244,7 +19244,7 @@ _agregar("C0N15-CO05", "A02", {
     "incluir": ["COMUNICACION", "DIALOGO"],
     "requisito": 6,
     "pistas": ["Busca primero TONO y CLARIDAD, son más cortas.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N15-CO05", "A03", {
@@ -19433,21 +19433,21 @@ _agregar("C0N15-CO05", "A10", {
 
 _agregar("C0N15-CO06", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: relaciones que me hacen mejor",
+    "titulo": "Crucigrama bíblico: 1 Co 13,1-7",
     "items": [
-        {"texto": "Proceso de madurar y mejorar poco a poco, también gracias a las relaciones sanas.", "respuesta": "CRECIMIENTO"},
-        {"texto": "Lazo que une a dos o más personas en una relación significativa.", "respuesta": "VINCULO"},
-        {"texto": "Sostén que alguien ofrece a otra persona en los momentos difíciles.", "respuesta": "APOYO"},
-        {"texto": "Cualidad buena del carácter que se fortalece al vivir relaciones sanas, como la paciencia o la generosidad.", "respuesta": "VIRTUD"},
-        {"texto": "Proceso de salir adelante después de una dificultad, con la ayuda de otros.", "respuesta": "SUPERACION"},
-        {"texto": "Acción de estar junto a alguien en su camino, sin abandonarlo.", "respuesta": "ACOMPAÑAR"},
-        {"texto": "Resultado bueno y visible que da una relación sana con el tiempo.", "respuesta": "FRUTO"},
-        {"texto": "Confianza en que las cosas pueden mejorar, sostenida también por las personas que nos rodean.", "respuesta": "ESPERANZA"},
+        {"texto": "1 Co 13,4 — Crecer en una relación lleva tiempo: el amor es ______ y no exige resultados inmediatos.", "respuesta": "PACIENTE"},
+        {"texto": "1 Co 13,1 — Pablo dice que hablar idiomas distintos por inspiración divina, el don de ______, sin amor no hace crecer.", "respuesta": "LENGUAS"},
+        {"texto": "1 Co 13,2 — Aunque uno tenga el don de hablar en nombre de Dios, la ______, sin amor no crece nada.", "respuesta": "PROFECIA"},
+        {"texto": "1 Co 13,3 — Crecer es abrirse a quien tiene menos: aunque llegara a ______ lo suyo, sin amor no le sirve.", "respuesta": "REPARTIR"},
+        {"texto": "1 Co 13,3 — Aunque ofreciera su propio ______ para ser quemado, sin amor sería inútil.", "respuesta": "CUERPO"},
+        {"texto": "1 Co 13,7 — Una relación sana confía y apuesta por el otro: ______ en él.", "respuesta": "CREE"},
+        {"texto": "1 Co 13,7 — En la relación que crece, el amor mantiene viva la ilusión de un mañana mejor: ______.", "respuesta": "ESPERA"},
+        {"texto": "1 Co 13,7 — En la relación que crece, el amor aguanta las dificultades y las ______.", "respuesta": "SOPORTA"},
     ],
-    "incluir": ["CRECIMIENTO", "VINCULO"],
+    "incluir": ["CREE", "SOPORTA"],
     "requisito": 6,
-    "pistas": ["Piensa en una relación que te ha ayudado a ser mejor persona.",
-               "CRECIMIENTO y VINCULO son las palabras centrales de este tema."],
+    "pistas": ["Todas las palabras salen de 1 Co 13,1-7: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "CREE y SOPORTA son las palabras centrales de este tema: el amor que confía y aguanta hace crecer al otro."],
 })
 
 _agregar("C0N15-CO06", "A02", {
@@ -19457,7 +19457,7 @@ _agregar("C0N15-CO06", "A02", {
     "incluir": ["CRECIMIENTO", "VINCULO"],
     "requisito": 6,
     "pistas": ["Busca primero FRUTO y APOYO, son más cortas.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N15-CO06", "A03", {
@@ -19651,21 +19651,21 @@ _agregar("C0N15-CO06", "A10", {
 
 _agregar("C0N16-CO01", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: ¿qué es un sacramento?",
+    "titulo": "Crucigrama bíblico: Jn 6,51-55",
     "items": [
-        {"texto": "Signo sensible instituido por Cristo para darnos su gracia.", "respuesta": "SACRAMENTO"},
-        {"texto": "Realidad visible que apunta a algo invisible y espiritual.", "respuesta": "SIGNO"},
-        {"texto": "Don gratuito de Dios que los sacramentos comunican.", "respuesta": "GRACIA"},
-        {"texto": "Así se llama un signo que realmente produce lo que significa, no solo lo recuerda.", "respuesta": "EFICAZ"},
-        {"texto": "Palabra que describe que fue Cristo mismo quien creó cada sacramento.", "respuesta": "INSTITUIDO"},
-        {"texto": "Lo que se puede ver, tocar u oír en un sacramento: el agua, el aceite, el pan...", "respuesta": "VISIBLE"},
-        {"texto": "La realidad espiritual que el signo del sacramento no muestra a los ojos pero sí comunica.", "respuesta": "INVISIBLE"},
-        {"texto": "Lo que la gracia hace en quien recibe el sacramento con fe.", "respuesta": "SANTIFICAR"},
+        {"texto": "Jn 6,51 — El Maestro se presenta como el pan que baja de lo alto, de donde habita Dios: del ______.", "respuesta": "CIELO"},
+        {"texto": "Jn 6,51 — El pan que el Maestro dará es su entrega por la salvación de toda la humanidad: por el ______.", "respuesta": "MUNDO"},
+        {"texto": "Jn 6,53 — El Maestro pide comer a su propia persona hecha alimento; la palabra oculta es la contraria de «espíritu»: su ______.", "respuesta": "CARNE"},
+        {"texto": "Jn 6,53 — Además, el Maestro pide beber el líquido rojo que recorre las venas, signo de su entrega: su ______.", "respuesta": "SANGRE"},
+        {"texto": "Jn 6,53 — El que habla en esta escena, nacido en Belén y criado en Nazaret, se llama ______.", "respuesta": "JESUS"},
+        {"texto": "Jn 6,55 — El Maestro afirma que lo que ofrece sacia el hambre y no es apariencia: es auténtica ______.", "respuesta": "COMIDA"},
+        {"texto": "Jn 6,55 — El Maestro afirma que lo que ofrece también calma la sed del corazón: es auténtica ______.", "respuesta": "BEBIDA"},
+        {"texto": "Jn 6,55 — El Maestro insiste en que lo que ofrece no es fingido, sino genuino y real: una cualidad de nueve letras, ______.", "respuesta": "VERDADERA"},
     ],
-    "incluir": ["SACRAMENTO", "SIGNO"],
+    "incluir": ["COMIDA", "BEBIDA"],
     "requisito": 6,
-    "pistas": ["Un sacramento siempre tiene dos caras: algo que se ve y algo invisible que se comunica.",
-               "SACRAMENTO y SIGNO son las palabras centrales de este tema: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Jn 6,51-55: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "COMIDA y BEBIDA son las palabras centrales de este tema: los signos sencillos que Jesús escoge para darse."],
 })
 
 _agregar("C0N16-CO01", "A02", {
@@ -19675,7 +19675,7 @@ _agregar("C0N16-CO01", "A02", {
     "incluir": ["SACRAMENTO", "SIGNO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: SIGNO y GRACIA.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N16-CO01", "A03", {
@@ -19865,21 +19865,21 @@ _agregar("C0N16-CO01", "A10", {
 
 _agregar("C0N16-CO02", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: Cristo actúa en los sacramentos",
+    "titulo": "Crucigrama bíblico: Jn 6,53-57",
     "items": [
-        {"texto": "Quien actúa de verdad en cada sacramento, aunque lo veamos celebrado por un sacerdote.", "respuesta": "CRISTO"},
-        {"texto": "Verbo que describe lo que Cristo hace en cada sacramento: no solo acompaña, sino que ______ realmente.", "respuesta": "ACTUA"},
-        {"texto": "Quien preside la celebración de los sacramentos en nombre de Cristo.", "respuesta": "SACERDOTE"},
-        {"texto": "Nombre que se da a la celebración pública y oficial de los sacramentos de la Iglesia.", "respuesta": "LITURGIA"},
-        {"texto": "Lo que experimentamos de Cristo cuando participamos con fe en un sacramento, aunque no lo veamos con los ojos.", "respuesta": "PRESENCIA"},
-        {"texto": "Verbo que describe lo que la comunidad hace al reunirse para vivir un sacramento.", "respuesta": "CELEBRAR"},
-        {"texto": "Palabra que nombra a quien presta su voz y sus manos para que Cristo actúe en el sacramento.", "respuesta": "MINISTRO"},
-        {"texto": "La seguridad de que el sacramento da fruto por la acción de Cristo, no por los méritos del que lo celebra.", "respuesta": "EFICACIA"},
+        {"texto": "Jn 6,53 — Quien pronuncia esta enseñanza solemne, el Maestro y Señor, es ______.", "respuesta": "JESUS"},
+        {"texto": "Jn 6,53 — El Maestro se da el título «______ del hombre»; la palabra oculta nombra al varón engendrado por alguien.", "respuesta": "HIJO"},
+        {"texto": "Jn 6,54 — El Maestro pide beber el líquido que recorre las venas y simboliza su entrega en la cruz: su ______.", "respuesta": "SANGRE"},
+        {"texto": "Jn 6,54 — Quien lo recibe tiene la promesa de que el Maestro lo levantará de la muerte: lo hará ______.", "respuesta": "RESUCITAR"},
+        {"texto": "Jn 6,54 — La promesa se cumplirá en el día final, llamado con un ordinal de seis letras: el día ______.", "respuesta": "ULTIMO"},
+        {"texto": "Jn 6,57 — El Maestro llama así a Dios, de quien procede su misión: «el ______».", "respuesta": "PADRE"},
+        {"texto": "Jn 6,57 — El Maestro recuerda que fue mandado por Dios: Dios lo ______ con una misión.", "respuesta": "ENVIO"},
+        {"texto": "Jn 6,57 — Quien se alimenta del Maestro tendrá su existencia sostenida por Él: promete que esa persona ______ gracias a Él.", "respuesta": "VIVIRA"},
     ],
-    "incluir": ["CRISTO", "ACTUA"],
+    "incluir": ["JESUS", "PADRE"],
     "requisito": 6,
-    "pistas": ["Todas las palabras giran alrededor de una misma idea: quién actúa realmente en los sacramentos.",
-               "CRISTO y ACTUA son las palabras centrales de este tema: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Jn 6,53-57: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "JESUS y PADRE son las palabras centrales de este tema: Cristo actúa porque el Padre lo envió."],
 })
 
 _agregar("C0N16-CO02", "A02", {
@@ -19889,7 +19889,7 @@ _agregar("C0N16-CO02", "A02", {
     "incluir": ["CRISTO", "ACTUA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: CRISTO y ACTUA.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N16-CO02", "A03", {
@@ -20079,21 +20079,21 @@ _agregar("C0N16-CO02", "A10", {
 
 _agregar("C0N16-CO03", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: los siete sacramentos",
+    "titulo": "Crucigrama bíblico: Jn 6,51-54",
     "items": [
-        {"texto": "Sacramento por el que nacemos a la vida nueva en Cristo y somos liberados del pecado original.", "respuesta": "BAUTISMO"},
-        {"texto": "Sacramento que fortalece con el Espíritu Santo lo recibido en el Bautismo, el que tú recibirás pronto.", "respuesta": "CONFIRMACION"},
-        {"texto": "Sacramento en el que recibimos el verdadero Cuerpo y Sangre de Cristo como alimento.", "respuesta": "EUCARISTIA"},
-        {"texto": "Sacramento del perdón, también llamado confesión o reconciliación.", "respuesta": "PENITENCIA"},
-        {"texto": "Sacramento de los enfermos, celebrado con aceite bendecido para fortalecer a quien está grave o débil.", "respuesta": "UNCION"},
-        {"texto": "Sacramento por el que un hombre es consagrado para servir a la Iglesia como diácono, sacerdote u obispo.", "respuesta": "ORDEN"},
-        {"texto": "Sacramento por el que un hombre y una mujer se unen para toda la vida ante Dios y la Iglesia.", "respuesta": "MATRIMONIO"},
-        {"texto": "Número total de sacramentos que la Iglesia celebra.", "respuesta": "SIETE"},
+        {"texto": "Jn 6,51 — Jesús se llama «el pan ______»: un pan lleno de energía y no inerte.", "respuesta": "VIVO"},
+        {"texto": "Jn 6,51 — El pan que Jesús dará es su propia persona hecha alimento: su ______.", "respuesta": "CARNE"},
+        {"texto": "Jn 6,53 — Jesús habla de sí con un título misterioso: el ______ del hombre; la palabra oculta nombra al varón engendrado por alguien.", "respuesta": "HIJO"},
+        {"texto": "Jn 6,53 — Sin recibir este alimento, advierte Jesús, no habrá existencia plena en ustedes: no tendrán ______.", "respuesta": "VIDA"},
+        {"texto": "Jn 6,54 — Jesús pide tomar, junto al alimento sólido, el líquido que recorre las venas y simboliza su entrega en la cruz: su ______.", "respuesta": "SANGRE"},
+        {"texto": "Jn 6,54 — El gesto principal que Jesús pide, el que se hace con el pan en la mesa, es ______.", "respuesta": "COMER"},
+        {"texto": "Jn 6,54 — Junto al primer gesto, Jesús pide un segundo: tomar líquido por la boca, es decir, ______.", "respuesta": "BEBER"},
+        {"texto": "Jn 6,54 — Quien lo recibe tiene una existencia sin final; el adjetivo femenino de seis letras que lo dice es ______.", "respuesta": "ETERNA"},
     ],
-    "incluir": ["SIETE", "EUCARISTIA"],
+    "incluir": ["CARNE", "SANGRE"],
     "requisito": 6,
-    "pistas": ["Todas las palabras son nombres o datos de los siete sacramentos de la Iglesia.",
-               "SIETE y EUCARISTIA son las palabras centrales de este tema: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Jn 6,51-54: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "CARNE y SANGRE son las palabras centrales de este tema: la Eucaristía, a la que se orientan todos los sacramentos."],
 })
 
 _agregar("C0N16-CO03", "A02", {
@@ -20103,7 +20103,7 @@ _agregar("C0N16-CO03", "A02", {
     "incluir": ["SIETE", "EUCARISTIA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: SIETE, ORDEN y UNCION.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N16-CO03", "A03", {
@@ -20293,21 +20293,21 @@ _agregar("C0N16-CO03", "A10", {
 
 _agregar("C0N16-CO04", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: sacramentos e Iglesia",
+    "titulo": "Crucigrama bíblico: Jn 6,51-57",
     "items": [
-        {"texto": "Comunidad de los bautizados que celebra y custodia los sacramentos confiados por Cristo.", "respuesta": "IGLESIA"},
-        {"texto": "Grupo de creyentes que se reúne para celebrar los sacramentos juntos, no en soledad.", "respuesta": "COMUNIDAD"},
-        {"texto": "Imagen con la que San Pablo describe a la Iglesia: el ______ de Cristo, donde cada bautizado es un miembro.", "respuesta": "CUERPO"},
-        {"texto": "Verbo que describe lo que haces al recibir un sacramento: empiezas o creces en tu ______ a la Iglesia.", "respuesta": "PERTENECER"},
-        {"texto": "Palabra que nombra la unión profunda entre los miembros de la Iglesia, fortalecida por los sacramentos.", "respuesta": "COMUNION"},
-        {"texto": "Nombre que se da a los bautizados que forman parte activa de la Iglesia.", "respuesta": "FIELES"},
-        {"texto": "Verbo que describe lo que hacen los sacramentos en la Iglesia: la ______ como comunidad de fe.", "respuesta": "EDIFICAR"},
-        {"texto": "Nombre bíblico que describe a quienes Dios reúne y hace suyo a través de los sacramentos: el ______ de Dios.", "respuesta": "PUEBLO"},
+        {"texto": "Jn 6,51 — Jesús dice que el pan viene de las alturas, de donde habita Dios: baja del ______.", "respuesta": "CIELO"},
+        {"texto": "Jn 6,53 — Jesús se da un título misterioso, «el Hijo del ______», que destaca su humanidad.", "respuesta": "HOMBRE"},
+        {"texto": "Jn 6,51 — Jesús aclara que el pan que dará es su propia persona hecha alimento: su ______.", "respuesta": "CARNE"},
+        {"texto": "Jn 6,51 — Jesús entrega ese pan por la salvación de toda la humanidad: por el ______.", "respuesta": "MUNDO"},
+        {"texto": "Jn 6,52 — Los miembros del pueblo de Israel que discutían con asombro eran los ______.", "respuesta": "JUDIOS"},
+        {"texto": "Jn 6,52 — Los oyentes se preguntan cómo puede darles su persona para tomarla con la boca, darles a ______.", "respuesta": "COMER"},
+        {"texto": "Jn 6,57 — Se recuerda que fue mandado por Dios a esta tierra: Dios lo ______ con una misión.", "respuesta": "ENVIO"},
+        {"texto": "Jn 6,57 — Quien se alimenta de Jesús tendrá su existencia sostenida por Él: promete que ______ gracias a Él.", "respuesta": "VIVIRA"},
     ],
-    "incluir": ["IGLESIA", "COMUNION"],
+    "incluir": ["MUNDO", "ENVIO"],
     "requisito": 6,
-    "pistas": ["Todas las palabras hablan de cómo los sacramentos unen a las personas entre sí.",
-               "IGLESIA y COMUNION son las palabras centrales de este tema: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Jn 6,51-57: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "MUNDO y ENVIO son las palabras centrales de este tema: unidos a Cristo, la Iglesia es enviada para la salvación del mundo."],
 })
 
 _agregar("C0N16-CO04", "A02", {
@@ -20317,7 +20317,7 @@ _agregar("C0N16-CO04", "A02", {
     "incluir": ["IGLESIA", "COMUNION"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: CUERPO y FIELES.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N16-CO04", "A03", {
@@ -20507,21 +20507,21 @@ _agregar("C0N16-CO04", "A10", {
 
 _agregar("C0N16-CO05", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: gracia y vida cotidiana",
+    "titulo": "Crucigrama bíblico: Jn 6,51-57",
     "items": [
-        {"texto": "Don gratuito de Dios que recibimos en los sacramentos y que actúa en nuestra vida real.", "respuesta": "GRACIA"},
-        {"texto": "Palabra que describe la vida de todos los días: el trabajo, el estudio, la familia, los amigos.", "respuesta": "COTIDIANA"},
-        {"texto": "Lo que la gracia de un sacramento nos da para enfrentar dificultades concretas de la semana.", "respuesta": "FORTALEZA"},
-        {"texto": "Verbo que describe lo que la gracia hace poco a poco en nuestra manera de actuar y de amar.", "respuesta": "TRANSFORMAR"},
-        {"texto": "Palabra con la que Jesús se describe a sí mismo en Jn 6: su carne es verdadero ______.", "respuesta": "ALIMENTO"},
-        {"texto": "Verbo que usa Jesús en Jn 6,56 para describir la unión estable entre él y quien lo recibe: ______ en mí.", "respuesta": "PERMANECER"},
-        {"texto": "Palabra que resume aquello que la gracia de Dios quiere alimentar y sostener día a día.", "respuesta": "VIDA"},
-        {"texto": "Lo que se espera de una vida transformada por la gracia: buenas acciones y actitudes, como el ______ de un árbol bueno.", "respuesta": "FRUTO"},
+        {"texto": "Jn 6,51 — Jesús se llama «el pan ______»: un pan lleno de energía para cada día.", "respuesta": "VIVO"},
+        {"texto": "Jn 6,53 — Sin este alimento no hay en nosotros la existencia plena que Jesús da: no tendrán ______.", "respuesta": "VIDA"},
+        {"texto": "Jn 6,54 — La gracia inicia hoy una existencia sin final; el adjetivo femenino de seis letras que lo dice es ______.", "respuesta": "ETERNA"},
+        {"texto": "Jn 6,54 — Quien recibe a Jesús tiene la promesa de que Él lo levantará de la muerte: lo hará ______.", "respuesta": "RESUCITAR"},
+        {"texto": "Jn 6,54 — La promesa se cumplirá en el día final, llamado con un ordinal de seis letras: el día ______.", "respuesta": "ULTIMO"},
+        {"texto": "Jn 6,55 — Jesús ofrece algo que sacia el hambre de cada día: auténtica ______.", "respuesta": "COMIDA"},
+        {"texto": "Jn 6,55 — Jesús ofrece también algo que calma la sed del corazón: auténtica ______.", "respuesta": "BEBIDA"},
+        {"texto": "Jn 6,57 — Quien se alimenta de Jesús tendrá su existencia sostenida por Él, también en las dificultades: ______ gracias a Él.", "respuesta": "VIVIRA"},
     ],
-    "incluir": ["GRACIA", "VIDA"],
+    "incluir": ["VIDA", "COMIDA"],
     "requisito": 6,
-    "pistas": ["Todas las palabras hablan de cómo la gracia se nota en la vida diaria, no solo en la Misa.",
-               "GRACIA y VIDA son las palabras centrales de este tema: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Jn 6,51-57: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "VIDA y COMIDA son las palabras centrales de este tema: la gracia que alimenta y sostiene el día a día."],
 })
 
 _agregar("C0N16-CO05", "A02", {
@@ -20531,7 +20531,7 @@ _agregar("C0N16-CO05", "A02", {
     "incluir": ["GRACIA", "VIDA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: GRACIA, VIDA y FRUTO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N16-CO05", "A03", {
@@ -20721,21 +20721,21 @@ _agregar("C0N16-CO05", "A10", {
 
 _agregar("C0N16-CO06", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: celebrar la fe",
+    "titulo": "Crucigrama bíblico: Jn 6,53-57",
     "items": [
-        {"texto": "Verbo que describe lo que hace la Iglesia al vivir los sacramentos con gozo, no solo cumplirlos por obligación.", "respuesta": "CELEBRAR"},
-        {"texto": "Palabra que describe el clima de alegría y gratitud que debería tener toda celebración sacramental.", "respuesta": "FIESTA"},
-        {"texto": "Conjunto ordenado de palabras y gestos con que la Iglesia celebra un sacramento.", "respuesta": "RITO"},
-        {"texto": "Elementos sensibles, como el agua, el pan o el aceite, que se usan al celebrar los sacramentos.", "respuesta": "SIGNOS"},
-        {"texto": "Junto con las palabras, lo que el sacerdote y los fieles realizan con el cuerpo al celebrar: de pie, de rodillas, con las manos.", "respuesta": "GESTOS"},
-        {"texto": "Nombre que recibe la comunidad reunida para celebrar un sacramento.", "respuesta": "ASAMBLEA"},
-        {"texto": "Actitud de reconocimiento y gratitud a Dios que debe acompañar toda celebración de los sacramentos.", "respuesta": "ALABANZA"},
-        {"texto": "Lo que se expresa y se fortalece cada vez que la comunidad celebra un sacramento.", "respuesta": "FE"},
+        {"texto": "Jn 6,53 — El Maestro se da un título misterioso, «el Hijo del ______», que destaca su humanidad.", "respuesta": "HOMBRE"},
+        {"texto": "Jn 6,53 — El protagonista del discurso, el Maestro de Nazaret, se llama ______.", "respuesta": "JESUS"},
+        {"texto": "Jn 6,53 — Sin este alimento, advierte el Maestro, falta la existencia plena en ustedes: no hay ______.", "respuesta": "VIDA"},
+        {"texto": "Jn 6,54 — El gesto central de la celebración, el que se hace con el pan en la mesa, es ______.", "respuesta": "COMER"},
+        {"texto": "Jn 6,55 — Lo que el Maestro da sacia el hambre del alma: es auténtica ______.", "respuesta": "COMIDA"},
+        {"texto": "Jn 6,55 — Lo que el Maestro da calma la sed del corazón: es auténtica ______.", "respuesta": "BEBIDA"},
+        {"texto": "Jn 6,57 — El Maestro llama así a Dios, de quien procede su misión: «el ______».", "respuesta": "PADRE"},
+        {"texto": "Jn 6,57 — El Maestro recuerda que fue mandado por Dios: Dios lo ______ con una misión.", "respuesta": "ENVIO"},
     ],
-    "incluir": ["CELEBRAR", "FE"],
+    "incluir": ["COMER", "COMIDA"],
     "requisito": 6,
-    "pistas": ["Todas las palabras describen cómo se vive, con signos y actitudes, la celebración de la fe.",
-               "CELEBRAR y FE son las palabras centrales de este tema: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Jn 6,53-57: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "COMER y COMIDA son las palabras centrales de este tema: el gesto con que celebramos la fe en la mesa del Señor."],
 })
 
 _agregar("C0N16-CO06", "A02", {
@@ -20745,7 +20745,7 @@ _agregar("C0N16-CO06", "A02", {
     "incluir": ["CELEBRAR", "FE"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: RITO y FE.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N16-CO06", "A03", {
@@ -20939,21 +20939,21 @@ _agregar("C0N16-CO06", "A10", {
 # -- C0N17-CO01: La iniciación cristiana --
 _agregar("C0N17-CO01", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: un solo camino de iniciación",
+    "titulo": "Crucigrama bíblico: Mt 3,13-17; Hch 2,38",
     "items": [
-        {"texto": "Proceso por el cual una persona entra a formar parte plena de la vida cristiana a través de tres sacramentos.", "respuesta": "INICIACION"},
-        {"texto": "Primer sacramento de la iniciación cristiana; nos lava del pecado original y nos hace hijos de Dios.", "respuesta": "BAUTISMO"},
-        {"texto": "Sacramento que sella y fortalece con el Espíritu Santo lo recibido en el Bautismo.", "respuesta": "CONFIRMACION"},
-        {"texto": "Sacramento que culmina la iniciación cristiana; en él recibimos el Cuerpo y la Sangre de Cristo.", "respuesta": "EUCARISTIA"},
-        {"texto": "Comunidad de los bautizados a la que quedamos incorporados por los sacramentos de iniciación.", "respuesta": "IGLESIA"},
-        {"texto": "Don gratuito de Dios que recibimos en cada sacramento de la iniciación.", "respuesta": "GRACIA"},
-        {"texto": "Nombre que recibe quien ha sido iniciado en la fe por el Bautismo, la Confirmación y la Eucaristía.", "respuesta": "CRISTIANO"},
-        {"texto": "Palabra que describe cómo, por los sacramentos de iniciación, pasamos a formar parte del Cuerpo de Cristo.", "respuesta": "INCORPORACION"},
+        {"texto": "Hch 2,38 — Pedro invoca a Jesús junto a su título de Mesías, todo en una sola palabra de diez letras: ______.", "respuesta": "JESUCRISTO"},
+        {"texto": "Hch 2,38 — Pedro pide acoger el rito invocando el ______ de aquel Mesías: su persona y su autoridad.", "respuesta": "NOMBRE"},
+        {"texto": "Hch 2,38 — Pedro promete a quienes acogen su llamado el don de este ______ de Dios, su fuerza en nosotros.", "respuesta": "ESPIRITU"},
+        {"texto": "Hch 2,38 — Pedro anuncia que Dios borra las ______ de quien acoge su llamado: las faltas que nos alejan de Él (plural).", "respuesta": "PECADOS"},
+        {"texto": "Mt 3,13 — Jesús viene de Galilea hasta Juan con un propósito: ser ______ por él (participio).", "respuesta": "BAUTIZADO"},
+        {"texto": "Mt 3,16 — Elemento líquido del que emerge Jesús al terminar el rito.", "respuesta": "AGUA"},
+        {"texto": "Mt 3,13 — Río de Palestina al que Jesús bajó para recibir el rito.", "respuesta": "JORDAN"},
+        {"texto": "Mt 3,16 — Ave símbolo de paz, cuya forma tomó la presencia de Dios al venir sobre Jesús.", "respuesta": "PALOMA"},
     ],
-    "incluir": ["INICIACION", "IGLESIA"],
+    "incluir": ["BAUTIZADO", "ESPIRITU"],
     "requisito": 6,
-    "pistas": ["Las palabras BAUTISMO, CONFIRMACION y EUCARISTIA son los tres sacramentos de este camino.",
-               "INICIACION e IGLESIA son las palabras centrales de este tema: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Mt 3,13-17 y Hch 2,38: la referencia de cada pista te dice en qué versículo buscarla.",
+               "BAUTIZADO y ESPIRITU son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N17-CO01", "A02", {
@@ -20963,7 +20963,7 @@ _agregar("C0N17-CO01", "A02", {
     "incluir": ["INICIACION", "IGLESIA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más largas, como INCORPORACION y CONFIRMACION.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N17-CO01", "A03", {
@@ -21152,21 +21152,21 @@ _agregar("C0N17-CO01", "A10", {
 # -- C0N17-CO02: El Bautismo --
 _agregar("C0N17-CO02", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: nacer a la vida nueva",
+    "titulo": "Crucigrama bíblico: Mt 3,13-17; Hch 2,38",
     "items": [
-        {"texto": "Sacramento que nos lava del pecado original y nos hace nacer a la vida nueva en Cristo.", "respuesta": "BAUTISMO"},
-        {"texto": "Elemento con el que se derrama o sumerge al bautizado, signo de purificación y vida nueva.", "respuesta": "AGUA"},
-        {"texto": "Lo que el Bautismo borra, incluida la mancha original con la que nace toda persona.", "respuesta": "PECADO"},
-        {"texto": "Personas que acompañan al bautizado y se comprometen a ayudarlo a crecer en la fe.", "respuesta": "PADRINOS"},
-        {"texto": "Color de la vestidura que recibe el bautizado, signo de la nueva vida sin mancha.", "respuesta": "BLANCO"},
-        {"texto": "Objeto encendido del cirio pascual que se entrega en el Bautismo, signo de la luz de Cristo.", "respuesta": "VELA"},
-        {"texto": "En el nombre de esta Santísima realidad -Padre, Hijo y Espíritu Santo- se bautiza a la persona.", "respuesta": "TRINIDAD"},
-        {"texto": "Lo que llegamos a ser de Dios por medio del Bautismo.", "respuesta": "HIJOS"},
+        {"texto": "Mt 3,16 — Una vez que Jesús ha recibido el rito, se dice que ya ha sido ______ (participio).", "respuesta": "BAUTIZADO"},
+        {"texto": "Mt 3,13 — Río de Palestina al que Jesús bajó para recibir el rito.", "respuesta": "JORDAN"},
+        {"texto": "Mt 3,16 — Elemento líquido del que emerge Jesús al terminar el rito.", "respuesta": "AGUA"},
+        {"texto": "Mt 3,14 — Profeta que ofrecía el rito de conversión y que al principio quiso impedir que Jesús se acercara.", "respuesta": "JUAN"},
+        {"texto": "Mt 3,13 — Región del norte de Palestina, junto a un lago, de donde partió Jesús.", "respuesta": "GALILEA"},
+        {"texto": "Mt 3,17 — De este lugar, y no de la tierra, resonó una voz que habló de Jesús (plural).", "respuesta": "CIELOS"},
+        {"texto": "Mt 3,16 — Ave símbolo de paz, cuya forma tomó la presencia de Dios al venir sobre Jesús.", "respuesta": "PALOMA"},
+        {"texto": "Mt 3,16 — Terminado el rito, Jesús ______ de allí enseguida (verbo en pasado, tercera persona; empieza con S).", "respuesta": "SALIO"},
     ],
-    "incluir": ["BAUTISMO", "AGUA"],
+    "incluir": ["BAUTIZADO", "AGUA"],
     "requisito": 6,
-    "pistas": ["BAUTISMO y AGUA son las palabras centrales del tema: empieza por esas.",
-               "Piensa en lo que se entrega durante la ceremonia: ropa, luz y nombre."],
+    "pistas": ["Todas las palabras salen de Mt 3,13-17 y Hch 2,38: la referencia de cada pista te dice en qué versículo buscarla.",
+               "BAUTIZADO y AGUA son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N17-CO02", "A02", {
@@ -21176,7 +21176,7 @@ _agregar("C0N17-CO02", "A02", {
     "incluir": ["BAUTISMO", "AGUA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras cortas: AGUA, VELA e HIJOS.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N17-CO02", "A03", {
@@ -21365,21 +21365,21 @@ _agregar("C0N17-CO02", "A10", {
 # -- C0N17-CO03: La Confirmación --
 _agregar("C0N17-CO03", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: la fuerza del Espíritu",
+    "titulo": "Crucigrama bíblico: Mt 3,13-17; Hch 2,38",
     "items": [
-        {"texto": "Sacramento que sella y fortalece con el Espíritu Santo la gracia recibida en el Bautismo.", "respuesta": "CONFIRMACION"},
-        {"texto": "Tercera Persona de la Trinidad que se recibe de modo especial en este sacramento.", "respuesta": "ESPIRITU"},
-        {"texto": "Óleo perfumado con el que se unge al confirmado en la frente.", "respuesta": "CRISMA"},
-        {"texto": "Regalos espirituales (como sabiduría, fortaleza o consejo) que el Espíritu Santo concede al confirmado.", "respuesta": "DONES"},
-        {"texto": "Uno de los dones del Espíritu Santo; también lo que recibe el confirmado para vivir su fe sin miedo.", "respuesta": "FORTALEZA"},
-        {"texto": "Lo que se espera que sea el confirmado: alguien que muestra su fe con la vida.", "respuesta": "TESTIGO"},
-        {"texto": "Tarea que recibe el confirmado de anunciar y vivir el Evangelio en su entorno.", "respuesta": "MISION"},
-        {"texto": "Ministro ordinario que normalmente confiere este sacramento.", "respuesta": "OBISPO"},
+        {"texto": "Mt 3,16 — Al salir Jesús del agua, vio que el ______ de Dios bajaba sobre él.", "respuesta": "ESPIRITU"},
+        {"texto": "Hch 2,38 — Adjetivo que significa «consagrado a Dios» y califica al don que Pedro promete a quienes acogen su llamado.", "respuesta": "SANTO"},
+        {"texto": "Mt 3,16 — Ave símbolo de paz, cuya forma tomó la presencia de Dios al venir sobre Jesús.", "respuesta": "PALOMA"},
+        {"texto": "Mt 3,17 — Título familiar con que se presenta a Jesús en relación con el Padre: es el ______ de Dios.", "respuesta": "HIJO"},
+        {"texto": "Mt 3,17 — Adjetivo con que la voz celestial expresa el cariño del Padre por Jesús (participio, empieza con A).", "respuesta": "AMADO"},
+        {"texto": "Mt 3,17 — De este lugar, y no de la tierra, resonó una voz que habló de Jesús (plural).", "respuesta": "CIELOS"},
+        {"texto": "Hch 2,38 — Pedro invoca a Jesús junto a su título de Mesías, todo en una sola palabra de diez letras: ______.", "respuesta": "JESUCRISTO"},
+        {"texto": "Hch 2,38 — Pedro pide acoger el rito invocando el ______ de aquel Mesías: su persona y su autoridad.", "respuesta": "NOMBRE"},
     ],
-    "incluir": ["CONFIRMACION", "ESPIRITU"],
+    "incluir": ["ESPIRITU", "PALOMA"],
     "requisito": 6,
-    "pistas": ["CONFIRMACION y ESPIRITU son las palabras centrales del tema: empieza por esas.",
-               "Piensa en lo que recibes y en quién te lo entrega: un óleo y un ministro."],
+    "pistas": ["Todas las palabras salen de Mt 3,13-17 y Hch 2,38: la referencia de cada pista te dice en qué versículo buscarla.",
+               "ESPIRITU y PALOMA son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N17-CO03", "A02", {
@@ -21389,7 +21389,7 @@ _agregar("C0N17-CO03", "A02", {
     "incluir": ["CONFIRMACION", "ESPIRITU"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras cortas: CRISMA y DONES.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N17-CO03", "A03", {
@@ -21578,21 +21578,21 @@ _agregar("C0N17-CO03", "A10", {
 # -- C0N17-CO04: La Eucaristía --
 _agregar("C0N17-CO04", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: el alimento de la vida cristiana",
+    "titulo": "Crucigrama bíblico: Mt 3,13-17; Hch 2,38",
     "items": [
-        {"texto": "Sacramento que culmina la iniciación cristiana; en él Jesús se nos da como alimento.", "respuesta": "EUCARISTIA"},
-        {"texto": "Elemento que se convierte en el Cuerpo de Cristo en la consagración.", "respuesta": "PAN"},
-        {"texto": "Elemento que se convierte en la Sangre de Cristo en la consagración.", "respuesta": "VINO"},
-        {"texto": "Lo que recibimos al comulgar bajo la apariencia del pan consagrado.", "respuesta": "CUERPO"},
-        {"texto": "Lo que recibimos al comulgar bajo la apariencia del vino consagrado.", "respuesta": "SANGRE"},
-        {"texto": "Acto de recibir el Cuerpo y la Sangre de Cristo en la Misa.", "respuesta": "COMUNION"},
-        {"texto": "Celebración en la que la comunidad se reúne para hacer memoria de la última cena de Jesús.", "respuesta": "MISA"},
-        {"texto": "Palabra que describe cómo Jesús mismo, y no solo un símbolo, está realmente en la Eucaristía.", "respuesta": "PRESENCIA"},
+        {"texto": "Hch 2,38 — Pedro invoca a Jesús junto a su título de Mesías, todo en una sola palabra de diez letras: ______.", "respuesta": "JESUCRISTO"},
+        {"texto": "Hch 2,38 — Pedro anuncia que Dios borra las ______ de quien acoge su llamado: las faltas que nos alejan de Él (plural).", "respuesta": "PECADOS"},
+        {"texto": "Mt 3,15 — Jesús dice al Precursor que les conviene ______ todo lo que Dios quiere: llevarlo a término (infinitivo).", "respuesta": "CUMPLIR"},
+        {"texto": "Mt 3,15 — Jesús dice que se realiza «toda ______»: lo recto, lo que Dios quiere ver hecho.", "respuesta": "JUSTICIA"},
+        {"texto": "Mt 3,17 — Adjetivo con que la voz celestial expresa el cariño del Padre por Jesús (participio, empieza con A).", "respuesta": "AMADO"},
+        {"texto": "Mt 3,16 — Terminado el rito, Jesús ______ de allí enseguida (verbo en pasado, tercera persona; empieza con S).", "respuesta": "SALIO"},
+        {"texto": "Mt 3,15 — Jesús pide a este profeta que lo deje hacer las cosas como corresponde; al final él accede.", "respuesta": "JUAN"},
+        {"texto": "Mt 3,16 — Una vez que Jesús ha recibido el rito, se dice que ya ha sido ______ (participio).", "respuesta": "BAUTIZADO"},
     ],
-    "incluir": ["EUCARISTIA", "COMUNION"],
+    "incluir": ["JESUCRISTO", "AMADO"],
     "requisito": 6,
-    "pistas": ["EUCARISTIA y COMUNION son las palabras centrales del tema: empieza por esas.",
-               "Piensa en los dos elementos que se consagran en la Misa: PAN y VINO."],
+    "pistas": ["Todas las palabras salen de Mt 3,13-17 y Hch 2,38: la referencia de cada pista te dice en qué versículo buscarla.",
+               "JESUCRISTO y AMADO son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N17-CO04", "A02", {
@@ -21602,7 +21602,7 @@ _agregar("C0N17-CO04", "A02", {
     "incluir": ["EUCARISTIA", "COMUNION"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras cortas: PAN, VINO y MISA.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N17-CO04", "A03", {
@@ -21791,21 +21791,21 @@ _agregar("C0N17-CO04", "A10", {
 # -- C0N17-CO05: Unidad de los sacramentos --
 _agregar("C0N17-CO05", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: un solo camino, tres etapas",
+    "titulo": "Crucigrama bíblico: Mt 3,13-17; Hch 2,38",
     "items": [
-        {"texto": "Palabra que describe cómo el Bautismo, la Confirmación y la Eucaristía forman un solo camino de fe.", "respuesta": "UNIDAD"},
-        {"texto": "Lo que es el Bautismo respecto a los otros dos sacramentos de iniciación: la base sobre la que se construyen.", "respuesta": "FUNDAMENTO"},
-        {"texto": "Lo que la Confirmación da a la gracia bautismal: la hace más completa.", "respuesta": "PLENITUD"},
-        {"texto": "Palabra que describe a la Eucaristía como la cumbre de toda la vida cristiana.", "respuesta": "CULMEN"},
-        {"texto": "Palabra que describe la iniciación cristiana como algo que se vive en etapas, no de una sola vez.", "respuesta": "PROCESO"},
-        {"texto": "Lo que la Confirmación favorece en la fe recibida en el Bautismo.", "respuesta": "MADURACION"},
-        {"texto": "Sinónimo de culmen: el punto más alto al que llega la iniciación cristiana en la Eucaristía.", "respuesta": "CUMBRE"},
-        {"texto": "Palabra que describe la relación estrecha que existe entre los tres sacramentos de iniciación.", "respuesta": "VINCULO"},
+        {"texto": "Mt 3,16 — Una vez que Jesús ha recibido el rito, se dice que ya ha sido ______ (participio).", "respuesta": "BAUTIZADO"},
+        {"texto": "Hch 2,38 — Pedro promete a quienes acogen su llamado el don de este ______ de Dios, su fuerza en nosotros.", "respuesta": "ESPIRITU"},
+        {"texto": "Hch 2,38 — Adjetivo que significa «consagrado a Dios» y califica al don que Pedro promete a quienes acogen su llamado.", "respuesta": "SANTO"},
+        {"texto": "Hch 2,38 — Pedro pide acoger el rito invocando el ______ de aquel Mesías: su persona y su autoridad.", "respuesta": "NOMBRE"},
+        {"texto": "Mt 3,15 — Jesús dice que se realiza «toda ______»: lo recto, lo que Dios quiere ver hecho.", "respuesta": "JUSTICIA"},
+        {"texto": "Mt 3,17 — De este lugar, y no de la tierra, resonó una voz que habló de Jesús (plural).", "respuesta": "CIELOS"},
+        {"texto": "Mt 3,17 — Título familiar con que se presenta a Jesús en relación con el Padre: es el ______ de Dios.", "respuesta": "HIJO"},
+        {"texto": "Hch 2,38 — Pedro invoca a Jesús junto a su título de Mesías, todo en una sola palabra de diez letras: ______.", "respuesta": "JESUCRISTO"},
     ],
-    "incluir": ["UNIDAD", "CULMEN"],
+    "incluir": ["BAUTIZADO", "ESPIRITU"],
     "requisito": 6,
-    "pistas": ["UNIDAD y CULMEN son las palabras centrales del tema: empieza por esas.",
-               "Piensa en lo que es el Bautismo (base) y en lo que es la Eucaristía (punto más alto)."],
+    "pistas": ["Todas las palabras salen de Mt 3,13-17 y Hch 2,38: la referencia de cada pista te dice en qué versículo buscarla.",
+               "BAUTIZADO y ESPIRITU son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N17-CO05", "A02", {
@@ -21815,7 +21815,7 @@ _agregar("C0N17-CO05", "A02", {
     "incluir": ["UNIDAD", "CULMEN"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras cortas: UNIDAD, CULMEN y CUMBRE.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N17-CO05", "A03", {
@@ -22004,21 +22004,21 @@ _agregar("C0N17-CO05", "A10", {
 # -- C0N17-CO06: Mi compromiso bautismal y confirmatorio --
 _agregar("C0N17-CO06", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: hacer propia la promesa",
+    "titulo": "Crucigrama bíblico: Mt 3,13-17; Hch 2,38",
     "items": [
-        {"texto": "Palabra que describe la respuesta personal y libre que pide vivir lo recibido en el Bautismo y la Confirmación.", "respuesta": "COMPROMISO"},
-        {"texto": "Lo que se hace con las promesas bautismales en momentos como la Pascua o la propia Confirmación.", "respuesta": "RENOVAR"},
-        {"texto": "Lo que los padres y padrinos hicieron en nombre del bautizado, y que el confirmado asume ahora como propia.", "respuesta": "PROMESA"},
-        {"texto": "Forma de mostrar con la vida, y no solo con palabras, que se es cristiano.", "respuesta": "TESTIMONIO"},
-        {"texto": "Lo que falta cuando alguien dice ser cristiano pero vive de forma contraria a su fe.", "respuesta": "COHERENCIA"},
-        {"texto": "Llamado personal de Dios a cada bautizado y confirmado a vivir y anunciar el Evangelio.", "respuesta": "VOCACION"},
-        {"texto": "Virtud que permite sostener el compromiso bautismal y confirmatorio incluso cuando es difícil.", "respuesta": "FIDELIDAD"},
-        {"texto": "Lo que cada confirmado debe tomar personalmente respecto a las promesas que antes otros hicieron por él.", "respuesta": "DECISION"},
+        {"texto": "Mt 3,15 — Jesús dice al Precursor que les conviene ______ todo lo que Dios quiere: llevarlo a término (infinitivo).", "respuesta": "CUMPLIR"},
+        {"texto": "Mt 3,15 — Jesús dice que se realiza «toda ______»: lo recto, lo que Dios quiere ver hecho.", "respuesta": "JUSTICIA"},
+        {"texto": "Mt 3,13 — Río de Palestina al que Jesús bajó para recibir el rito.", "respuesta": "JORDAN"},
+        {"texto": "Mt 3,14 — Participio del verbo del rito que Juan creía necesitar de Jesús: «yo debería ser ______ por ti».", "respuesta": "BAUTIZADO"},
+        {"texto": "Mt 3,17 — Título familiar con que se presenta a Jesús en relación con el Padre: es el ______ de Dios.", "respuesta": "HIJO"},
+        {"texto": "Mt 3,17 — Adjetivo con que la voz celestial expresa el cariño del Padre por Jesús (participio, empieza con A).", "respuesta": "AMADO"},
+        {"texto": "Hch 2,38 — Pedro pide acoger el rito invocando el ______ de aquel Mesías: su persona y su autoridad.", "respuesta": "NOMBRE"},
+        {"texto": "Mt 3,13 — Región del norte de Palestina, junto a un lago, de donde partió Jesús.", "respuesta": "GALILEA"},
     ],
-    "incluir": ["COMPROMISO", "TESTIMONIO"],
+    "incluir": ["CUMPLIR", "JUSTICIA"],
     "requisito": 6,
-    "pistas": ["COMPROMISO y TESTIMONIO son las palabras centrales del tema: empieza por esas.",
-               "Piensa en lo que se hace con las promesas que antes hicieron tus padres y padrinos."],
+    "pistas": ["Todas las palabras salen de Mt 3,13-17 y Hch 2,38: la referencia de cada pista te dice en qué versículo buscarla.",
+               "CUMPLIR y JUSTICIA son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N17-CO06", "A02", {
@@ -22028,7 +22028,7 @@ _agregar("C0N17-CO06", "A02", {
     "incluir": ["COMPROMISO", "TESTIMONIO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras cortas: RENOVAR y PROMESA.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N17-CO06", "A03", {
@@ -22223,21 +22223,21 @@ _agregar("C0N17-CO06", "A10", {
 
 _agregar("C0N18-CO01", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: un amor que se inclina hacia nosotros",
+    "titulo": "Crucigrama bíblico: Jn 20,21-23; St 5,14-15",
     "items": [
-        {"texto": "Palabra que resume el amor de Dios que se inclina sobre quien sufre o se equivoca.", "respuesta": "MISERICORDIA"},
-        {"texto": "Quien es rico en misericordia y nunca se cansa de amar.", "respuesta": "DIOS"},
-        {"texto": "Sentimiento de cercanía con el que sufre, que mueve a ayudarlo.", "respuesta": "COMPASION"},
-        {"texto": "Gesto de cariño con el que el padre de la parábola recibe a su hijo que vuelve.", "respuesta": "ABRAZO"},
-        {"texto": "Cualidad de Dios que es bueno y generoso sin que nosotros lo merezcamos.", "respuesta": "BONDAD"},
-        {"texto": "Palabra que describe cómo Dios trata a quien se equivoca: con suavidad y cuidado.", "respuesta": "TERNURA"},
-        {"texto": "Lo que recibe el pecador cuando Dios lo mira con misericordia.", "respuesta": "PERDON"},
-        {"texto": "Actitud contraria a la dureza de corazón; lo que Dios tiene hacia nosotros.", "respuesta": "CLEMENCIA"},
+        {"texto": "Jn 20,21 — Jesús resucitado dice que fue mandado por este ______ y que ahora él manda a sus discípulos.", "respuesta": "PADRE"},
+        {"texto": "Jn 20,21 — Jesús confía su misión a los discípulos: «yo los ______» (primera persona, presente; empieza con E).", "respuesta": "ENVIO"},
+        {"texto": "St 5,15 — Título que Santiago da a Dios, de quien depende la recuperación de quien está postrado (lleva Ñ).", "respuesta": "SEÑOR"},
+        {"texto": "St 5,15 — Santiago asegura que Dios puede ______ a quien está caído, devolverlo a la vida activa (infinitivo).", "respuesta": "LEVANTAR"},
+        {"texto": "St 5,15 — Si quien está postrado ha cometido faltas, Dios puede ______ esas faltas (infinitivo).", "respuesta": "PERDONAR"},
+        {"texto": "St 5,15 — Estado de quien se ha apartado de Dios (plural) y que Santiago menciona al hablar de quien está postrado.", "respuesta": "PECADOS"},
+        {"texto": "St 5,14 — Persona de la comunidad que está postrada y a quien se acerca la comunidad.", "respuesta": "ENFERMO"},
+        {"texto": "St 5,14 — Si alguien cae postrado en cama, Santiago dice que debe ______ a los responsables de la comunidad (infinitivo).", "respuesta": "LLAMAR"},
     ],
-    "incluir": ["MISERICORDIA", "DIOS"],
+    "incluir": ["PADRE", "PERDONAR"],
     "requisito": 6,
-    "pistas": ["MISERICORDIA y DIOS son las palabras centrales del tema: empieza por esas.",
-               "Piensa en la parábola del padre que corre a recibir a su hijo que vuelve."],
+    "pistas": ["Todas las palabras salen de Jn 20,21-23 y St 5,14-15: la referencia de cada pista te dice en qué versículo buscarla.",
+               "PADRE y PERDONAR son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N18-CO01", "A02", {
@@ -22247,7 +22247,7 @@ _agregar("C0N18-CO01", "A02", {
     "incluir": ["MISERICORDIA", "DIOS"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: DIOS y PERDON.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N18-CO01", "A03", {
@@ -22437,21 +22437,21 @@ _agregar("C0N18-CO01", "A10", {
 
 _agregar("C0N18-CO02", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: el encuentro con el perdón de Dios",
+    "titulo": "Crucigrama bíblico: Jn 20,21-23; St 5,14-15",
     "items": [
-        {"texto": "Nombre del sacramento en el que el pecador recibe el perdón de Dios por medio del sacerdote.", "respuesta": "RECONCILIACION"},
-        {"texto": "Persona que, en nombre de Cristo, da la absolución en este sacramento.", "respuesta": "SACERDOTE"},
-        {"texto": "Palabra que indica el perdón sacramental que borra el pecado.", "respuesta": "ABSOLUCION"},
-        {"texto": "Lo que el penitente dice en voz alta al sacerdote: sus pecados.", "respuesta": "CONFESION"},
-        {"texto": "Paso previo en el que revisamos nuestra conciencia antes de confesarnos.", "respuesta": "EXAMEN"},
-        {"texto": "Acción reparadora que el sacerdote pide hacer después de la confesión.", "respuesta": "PENITENCIA"},
-        {"texto": "Falta contra Dios o contra el amor que reconocemos en la confesión.", "respuesta": "PECADO"},
-        {"texto": "Don que Dios da gratuitamente al alma que se reconcilia con él.", "respuesta": "GRACIA"},
+        {"texto": "Jn 20,23 — Jesús habla de las faltas de las personas que sus discípulos pueden liberar o dejar atadas: ______ (plural).", "respuesta": "PECADOS"},
+        {"texto": "Jn 20,23 — Jesús da a los discípulos el poder de ______ las culpas de las personas (infinitivo).", "respuesta": "PERDONAR"},
+        {"texto": "Jn 20,22 — Jesús dice a los discípulos: «Reciban el ______ Santo».", "respuesta": "ESPIRITU"},
+        {"texto": "Jn 20,22 — Gesto de Jesús sobre sus discípulos, como quien da un aliento nuevo: ______ (verbo en pasado).", "respuesta": "SOPLO"},
+        {"texto": "Jn 20,21 — Jesús confía su misión a los discípulos: «yo los ______» (primera persona, presente; empieza con E).", "respuesta": "ENVIO"},
+        {"texto": "Jn 20,21 — Jesús resucitado dice que fue mandado por este ______ y que ahora él manda a sus discípulos.", "respuesta": "PADRE"},
+        {"texto": "St 5,14 — Comunidad cristiana cuyos responsables acuden junto a quien está postrado.", "respuesta": "IGLESIA"},
+        {"texto": "St 5,15 — Santiago asegura que Dios puede ______ a quien está caído, devolverlo a la vida activa (infinitivo).", "respuesta": "LEVANTAR"},
     ],
-    "incluir": ["RECONCILIACION", "ABSOLUCION"],
+    "incluir": ["PECADOS", "PERDONAR"],
     "requisito": 6,
-    "pistas": ["RECONCILIACION y ABSOLUCION son las palabras centrales del tema: empieza por esas.",
-               "Piensa en los pasos que sigues cuando te confiesas."],
+    "pistas": ["Todas las palabras salen de Jn 20,21-23 y St 5,14-15: la referencia de cada pista te dice en qué versículo buscarla.",
+               "PECADOS y PERDONAR son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N18-CO02", "A02", {
@@ -22461,7 +22461,7 @@ _agregar("C0N18-CO02", "A02", {
     "incluir": ["RECONCILIACION", "ABSOLUCION"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: EXAMEN y GRACIA.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N18-CO02", "A03", {
@@ -22651,21 +22651,21 @@ _agregar("C0N18-CO02", "A10", {
 
 _agregar("C0N18-CO03", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: un corazón nuevo",
+    "titulo": "Crucigrama bíblico: Jn 20,21-23; St 5,14-15",
     "items": [
-        {"texto": "Cambio profundo de mente y de corazón que nos acerca más a Dios.", "respuesta": "CONVERSION"},
-        {"texto": "Lugar simbólico donde ocurre el cambio interior.", "respuesta": "CORAZON"},
-        {"texto": "Sentimiento sincero de pesar por haber hecho algo malo.", "respuesta": "ARREPENTIMIENTO"},
-        {"texto": "Acción de regresar al camino correcto después de haberse alejado.", "respuesta": "VOLVER"},
-        {"texto": "Palabra que describe un corazón que pasa de duro a sensible.", "respuesta": "NUEVO"},
-        {"texto": "Elección firme de empezar a vivir de otra manera.", "respuesta": "DECISION"},
-        {"texto": "Proceso por el cual algo, o alguien, se vuelve distinto y mejor.", "respuesta": "TRANSFORMACION"},
-        {"texto": "Lo contrario de quedarse igual: hacer un ______ real en la vida.", "respuesta": "CAMBIO"},
+        {"texto": "St 5,15 — Santiago asegura que Dios puede ______ a quien está caído, devolverlo a la vida activa (infinitivo).", "respuesta": "LEVANTAR"},
+        {"texto": "St 5,15 — Título que Santiago da a Dios, de quien depende la recuperación de quien está postrado (lleva Ñ).", "respuesta": "SEÑOR"},
+        {"texto": "St 5,14 — Si alguien cae postrado en cama, Santiago dice que debe ______ a los responsables de la comunidad (infinitivo).", "respuesta": "LLAMAR"},
+        {"texto": "St 5,14 — Lo que Santiago pide a los responsables de la comunidad que hagan por quien está postrado en cama: ______ (infinitivo).", "respuesta": "ORAR"},
+        {"texto": "St 5,15 — Estado de quien se ha apartado de Dios (plural) y que Santiago menciona al hablar de quien está postrado.", "respuesta": "PECADOS"},
+        {"texto": "St 5,15 — Si quien está postrado ha cometido faltas, Dios puede ______ esas faltas (infinitivo).", "respuesta": "PERDONAR"},
+        {"texto": "Jn 20,22 — Verbo con el que Jesús invita a los discípulos a acoger el don de su Espíritu (infinitivo).", "respuesta": "RECIBIR"},
+        {"texto": "Jn 20,22 — Adjetivo que significa «consagrado a Dios» y califica al don que Jesús resucitado da a los discípulos.", "respuesta": "SANTO"},
     ],
-    "incluir": ["CONVERSION", "CORAZON"],
+    "incluir": ["LEVANTAR", "PECADOS"],
     "requisito": 6,
-    "pistas": ["CONVERSION y CORAZON son las palabras centrales del tema: empieza por esas.",
-               "Piensa en lo que significa 'volver' después de haberse alejado de Dios."],
+    "pistas": ["Todas las palabras salen de Jn 20,21-23 y St 5,14-15: la referencia de cada pista te dice en qué versículo buscarla.",
+               "LEVANTAR y PECADOS son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N18-CO03", "A02", {
@@ -22675,7 +22675,7 @@ _agregar("C0N18-CO03", "A02", {
     "incluir": ["CONVERSION", "CORAZON"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: NUEVO y VOLVER.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N18-CO03", "A03", {
@@ -22865,21 +22865,21 @@ _agregar("C0N18-CO03", "A10", {
 
 _agregar("C0N18-CO04", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: dejar ir la ofensa",
+    "titulo": "Crucigrama bíblico: Jn 20,21-23; St 5,14-15",
     "items": [
-        {"texto": "Acción de dejar ir una ofensa sin buscar desquite.", "respuesta": "PERDON"},
-        {"texto": "Palabra que describe lo que sentimos cuando alguien nos hace daño con palabras o actitudes.", "respuesta": "OFENSA"},
-        {"texto": "Fruto del perdón: volver a tener una relación sana con alguien.", "respuesta": "RECONCILIAR"},
-        {"texto": "Lo que sentimos cuando dejamos ir el rencor: paz interior y ______.", "respuesta": "LIBERTAD"},
-        {"texto": "Sentimiento que se queda guardado en el corazón cuando no perdonamos de verdad.", "respuesta": "RENCOR"},
-        {"texto": "Fruto del perdón vivido entre personas: la ______ en la familia o el grupo.", "respuesta": "PAZ"},
-        {"texto": "Persona a la que, según la Biblia, estamos llamados a perdonar como a un ______.", "respuesta": "HERMANO"},
-        {"texto": "Lugar simbólico donde decidimos perdonar de verdad.", "respuesta": "CORAZON"},
+        {"texto": "Jn 20,23 — Jesús da a los discípulos el poder de ______ las culpas de las personas (infinitivo).", "respuesta": "PERDONAR"},
+        {"texto": "Jn 20,23 — Jesús habla de las faltas de las personas que sus discípulos pueden liberar o dejar atadas: ______ (plural).", "respuesta": "PECADOS"},
+        {"texto": "Jn 20,21 — Jesús resucitado dice que fue mandado por este ______ y que ahora él manda a sus discípulos.", "respuesta": "PADRE"},
+        {"texto": "St 5,15 — Título que Santiago da a Dios, de quien depende la recuperación de quien está postrado (lleva Ñ).", "respuesta": "SEÑOR"},
+        {"texto": "St 5,14 — Persona de la comunidad que está postrada y a quien se acerca la comunidad.", "respuesta": "ENFERMO"},
+        {"texto": "St 5,14 — Lo que Santiago pide a los responsables de la comunidad que hagan por quien está postrado en cama: ______ (infinitivo).", "respuesta": "ORAR"},
+        {"texto": "Jn 20,22 — Jesús dice a los discípulos: «Reciban el ______ Santo».", "respuesta": "ESPIRITU"},
+        {"texto": "Jn 20,22 — Gesto de Jesús sobre sus discípulos, como quien da un aliento nuevo: ______ (verbo en pasado).", "respuesta": "SOPLO"},
     ],
-    "incluir": ["PERDON", "RECONCILIAR"],
+    "incluir": ["PERDONAR", "PECADOS"],
     "requisito": 6,
-    "pistas": ["PERDON y RECONCILIAR son las palabras centrales del tema: empieza por esas.",
-               "Piensa en lo que se siente cuando finalmente se suelta un enojo guardado."],
+    "pistas": ["Todas las palabras salen de Jn 20,21-23 y St 5,14-15: la referencia de cada pista te dice en qué versículo buscarla.",
+               "PERDONAR y PECADOS son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N18-CO04", "A02", {
@@ -22889,7 +22889,7 @@ _agregar("C0N18-CO04", "A02", {
     "incluir": ["PERDON", "RECONCILIAR"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: PAZ y PERDON.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N18-CO04", "A03", {
@@ -23079,21 +23079,21 @@ _agregar("C0N18-CO04", "A10", {
 
 _agregar("C0N18-CO05", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: fortaleza en la enfermedad",
+    "titulo": "Crucigrama bíblico: Jn 20,21-23; St 5,14-15",
     "items": [
-        {"texto": "Nombre del sacramento que fortalece y consuela a quien está gravemente enfermo.", "respuesta": "UNCION"},
-        {"texto": "Persona que recibe este sacramento en su enfermedad grave o vejez.", "respuesta": "ENFERMO"},
-        {"texto": "Elemento con el que el sacerdote unge al enfermo: el santo ______.", "respuesta": "OLEO"},
-        {"texto": "Ministro que celebra este sacramento junto al enfermo.", "respuesta": "SACERDOTE"},
-        {"texto": "Efecto de este sacramento: dar ______ al cuerpo y al alma.", "respuesta": "FORTALEZA"},
-        {"texto": "Palabra que describe el consuelo profundo que Dios da a quien sufre.", "respuesta": "CONSUELO"},
-        {"texto": "Virtud que este sacramento alimenta frente a la enfermedad.", "respuesta": "ESPERANZA"},
-        {"texto": "Resultado que esperamos de este sacramento, según Santiago.", "respuesta": "SANACION"},
+        {"texto": "St 5,14 — Persona de la comunidad que está postrada y a quien se acerca la comunidad.", "respuesta": "ENFERMO"},
+        {"texto": "St 5,14 — Comunidad cristiana cuyos responsables acuden junto a quien está postrado.", "respuesta": "IGLESIA"},
+        {"texto": "St 5,14 — Producto de la oliva con el que se hace el gesto sagrado que menciona Santiago.", "respuesta": "ACEITE"},
+        {"texto": "St 5,14 — Gesto sagrado de frotar con un producto de la oliva, mientras se ora (infinitivo).", "respuesta": "UNGIR"},
+        {"texto": "St 5,14 — Todo se hace invocando este ______ de Dios, es decir, su persona y su autoridad.", "respuesta": "NOMBRE"},
+        {"texto": "St 5,14 — Título de respeto y autoridad con que se llama a Dios en este versículo (lleva Ñ).", "respuesta": "SEÑOR"},
+        {"texto": "St 5,15 — Santiago asegura que Dios puede ______ a quien está caído, devolverlo a la vida activa (infinitivo).", "respuesta": "LEVANTAR"},
+        {"texto": "St 5,14 — Lo que Santiago pide a los responsables de la comunidad que hagan por quien está postrado en cama: ______ (infinitivo).", "respuesta": "ORAR"},
     ],
-    "incluir": ["UNCION", "SANACION"],
+    "incluir": ["ACEITE", "ENFERMO"],
     "requisito": 6,
-    "pistas": ["UNCION y SANACION son las palabras centrales del tema: empieza por esas.",
-               "Piensa en el gesto físico que hace el sacerdote junto al enfermo."],
+    "pistas": ["Todas las palabras salen de Jn 20,21-23 y St 5,14-15: la referencia de cada pista te dice en qué versículo buscarla.",
+               "ACEITE y ENFERMO son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N18-CO05", "A02", {
@@ -23103,7 +23103,7 @@ _agregar("C0N18-CO05", "A02", {
     "incluir": ["UNCION", "SANACION"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: OLEO y UNCION.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N18-CO05", "A03", {
@@ -23293,21 +23293,21 @@ _agregar("C0N18-CO05", "A10", {
 
 _agregar("C0N18-CO06", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: sanar en comunidad",
+    "titulo": "Crucigrama bíblico: Jn 20,21-23; St 5,14-15",
     "items": [
-        {"texto": "Proceso de recuperar la salud del cuerpo, del alma o de una relación.", "respuesta": "SANACION"},
-        {"texto": "Grupo de personas unidas por la fe que acompaña a quien sufre.", "respuesta": "COMUNIDAD"},
-        {"texto": "Gesto de estar cerca de alguien en su dolor, caminando junto a él.", "respuesta": "ACOMPAÑAR"},
-        {"texto": "Palabra que describe ayudar a otro sin esperar nada a cambio.", "respuesta": "APOYO"},
-        {"texto": "Práctica que la comunidad hace por quien está enfermo o sufre.", "respuesta": "ORACION"},
-        {"texto": "Sentimiento de unidad entre hermanos de fe que se cuidan entre sí.", "respuesta": "FRATERNIDAD"},
-        {"texto": "Acción concreta de atender las necesidades de quien sufre.", "respuesta": "CUIDADO"},
-        {"texto": "Virtud que sostiene a la comunidad cuando alguien pasa por un momento difícil.", "respuesta": "ESPERANZA"},
+        {"texto": "St 5,14 — Comunidad cristiana cuyos responsables acuden junto a quien está postrado.", "respuesta": "IGLESIA"},
+        {"texto": "St 5,14 — Persona de la comunidad que está postrada y a quien se acerca la comunidad.", "respuesta": "ENFERMO"},
+        {"texto": "St 5,14 — Si alguien cae postrado en cama, Santiago dice que debe ______ a los responsables de la comunidad (infinitivo).", "respuesta": "LLAMAR"},
+        {"texto": "St 5,14 — Lo que Santiago pide a los responsables de la comunidad que hagan por quien está postrado en cama: ______ (infinitivo).", "respuesta": "ORAR"},
+        {"texto": "St 5,15 — Santiago asegura que Dios puede ______ a quien está caído, devolverlo a la vida activa (infinitivo).", "respuesta": "LEVANTAR"},
+        {"texto": "St 5,15 — Si quien está postrado ha cometido faltas, Dios puede ______ esas faltas (infinitivo).", "respuesta": "PERDONAR"},
+        {"texto": "Jn 20,21 — Jesús confía su misión a los discípulos: «yo los ______» (primera persona, presente; empieza con E).", "respuesta": "ENVIO"},
+        {"texto": "Jn 20,21 — Jesús resucitado dice que fue mandado por este ______ y que ahora él manda a sus discípulos.", "respuesta": "PADRE"},
     ],
-    "incluir": ["SANACION", "COMUNIDAD"],
+    "incluir": ["IGLESIA", "LEVANTAR"],
     "requisito": 6,
-    "pistas": ["SANACION y COMUNIDAD son las palabras centrales del tema: empieza por esas.",
-               "Piensa en lo que hace un grupo de fe cuando uno de sus miembros sufre."],
+    "pistas": ["Todas las palabras salen de Jn 20,21-23 y St 5,14-15: la referencia de cada pista te dice en qué versículo buscarla.",
+               "IGLESIA y LEVANTAR son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N18-CO06", "A02", {
@@ -23317,7 +23317,7 @@ _agregar("C0N18-CO06", "A02", {
     "incluir": ["SANACION", "COMUNIDAD"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: APOYO y ORACION.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N18-CO06", "A03", {
@@ -23512,21 +23512,21 @@ _agregar("C0N18-CO06", "A10", {
 
 _agregar("C0N19-CO01", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: llamados a servir",
+    "titulo": "Crucigrama bíblico: Ef 5,25.29; 2 Tm 1,6-7",
     "items": [
-        {"texto": "Palabra que nombra la llamada que Dios hace a cada persona para una misión concreta en la vida.", "respuesta": "VOCACION"},
-        {"texto": "Actitud de poner lo que tienes y lo que eres a disposición de los demás, no de ti mismo.", "respuesta": "SERVICIO"},
-        {"texto": "Lo que recibe cada bautizado de parte de Dios: una invitación personal a seguirlo de un modo concreto.", "respuesta": "LLAMADO"},
-        {"texto": "Capacidades y cualidades que Dios regala a cada persona para que las use en bien de los demás.", "respuesta": "DONES"},
-        {"texto": "Sacramento por el que toda persona entra a formar parte del Pueblo de Dios y recibe su primera vocación.", "respuesta": "BAUTISMO"},
-        {"texto": "Tarea o encargo que Dios confía a alguien para construir su Reino.", "respuesta": "MISION"},
-        {"texto": "Gesto de darse por completo a una causa, a una persona o a una tarea, sin guardarse nada.", "respuesta": "ENTREGA"},
-        {"texto": "Grupo de personas que viven unidas por la fe y se ayudan mutuamente a crecer.", "respuesta": "COMUNIDAD"},
+        {"texto": "Ef 5,25 — Por amor a su comunidad, Cristo se dio del todo y ______ a sí mismo hasta dar la vida (verbo en pasado: «él se ...»).", "respuesta": "ENTREGO"},
+        {"texto": "Ef 5,25 — Es el modelo del amor que se da: amó a su comunidad y dio la vida por ella. Es el ______, el Ungido.", "respuesta": "CRISTO"},
+        {"texto": "Ef 5,25 — La comunidad de los creyentes, que Jesús ama y por la que dio la vida, es la ______ (7 letras).", "respuesta": "IGLESIA"},
+        {"texto": "Ef 5,29 — Cada uno atiende y ______ su propio cuerpo con ternura, y así hace Cristo con los suyos (verbo «velar por», 5 letras).", "respuesta": "CUIDA"},
+        {"texto": "Ef 5,29 — Cada uno da de comer a su propio cuerpo y lo ______ (verbo «nutrir», tercera persona).", "respuesta": "ALIMENTA"},
+        {"texto": "2 Tm 1,6 — Pablo recuerda el gesto con que Timoteo recibió el don: cuando él le impuso las ______ (parte del cuerpo).", "respuesta": "MANOS"},
+        {"texto": "2 Tm 1,6 — El don que hay que reavivar lo da quien llama y capacita, no uno mismo: ______ (nombre de 4 letras).", "respuesta": "DIOS"},
+        {"texto": "2 Tm 1,7 — Entre lo que Dios nos da en lugar de miedo está lo que nos mueve a servir a los demás: el ______.", "respuesta": "AMOR"},
     ],
-    "incluir": ["VOCACION", "SERVICIO"],
+    "incluir": ["ENTREGO", "MANOS"],
     "requisito": 6,
-    "pistas": ["VOCACION y SERVICIO son el corazón de este tema: empieza por ellas.",
-               "Piensa en Efesios 5,25 y 2 Timoteo 1,6: ambas hablan de entregarse por amor."],
+    "pistas": ["Todas las palabras salen de Ef 5,25.29 y 2 Tm 1,6-7: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "ENTREGO y MANOS son las palabras centrales: servir es darse como Cristo y recibir el don con el gesto de otras manos."],
 })
 
 _agregar("C0N19-CO01", "A02", {
@@ -23536,7 +23536,7 @@ _agregar("C0N19-CO01", "A02", {
     "incluir": ["VOCACION", "SERVICIO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: DONES y MISION.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N19-CO01", "A03", {
@@ -23724,21 +23724,21 @@ _agregar("C0N19-CO01", "A10", {
 
 _agregar("C0N19-CO02", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: una alianza de amor",
+    "titulo": "Crucigrama bíblico: Ef 5,28-32",
     "items": [
-        {"texto": "Sacramento por el cual un hombre y una mujer se entregan mutuamente para toda la vida.", "respuesta": "MATRIMONIO"},
-        {"texto": "Palabra que nombra el pacto de amor y fidelidad que los esposos hacen ante Dios.", "respuesta": "ALIANZA"},
-        {"texto": "Virtud que lleva a los esposos a mantenerse fieles el uno al otro toda la vida.", "respuesta": "FIDELIDAD"},
-        {"texto": "Nombre que reciben el hombre y la mujer unidos en matrimonio.", "respuesta": "ESPOSOS"},
-        {"texto": "Sentimiento y decisión que sostiene la entrega total de los esposos.", "respuesta": "AMOR"},
-        {"texto": "Lo que forman el hombre y la mujer al casarse: ya no son dos, sino una sola realidad.", "respuesta": "UNION"},
-        {"texto": "Categoría a la que pertenece el Matrimonio dentro de los siete signos de la gracia de Dios.", "respuesta": "SACRAMENTO"},
-        {"texto": "Comunidad que nace del Matrimonio y que la Iglesia llama 'iglesia doméstica'.", "respuesta": "FAMILIA"},
+        {"texto": "Ef 5,32 — Pablo refiere sus palabras sobre el matrimonio a la unión de Aquel que se dio por los suyos, el Ungido: ______.", "respuesta": "CRISTO"},
+        {"texto": "Ef 5,28 — El amor conyugal se compara con el cariño que cada uno tiene por su propio ______ (la parte física de la persona).", "respuesta": "CUERPO"},
+        {"texto": "Ef 5,31 — El ______ (varón adulto) deja su casa al casarse para formar un nuevo hogar.", "respuesta": "HOMBRE"},
+        {"texto": "Ef 5,31 — Al casarse, el varón deja el hogar de su ______ (su papá) para formar una nueva familia.", "respuesta": "PADRE"},
+        {"texto": "Ef 5,31 — Al casarse, el varón deja también a quien lo dio a luz y lo crió: su ______ (su mamá).", "respuesta": "MADRE"},
+        {"texto": "Ef 5,31 — Tras dejar su casa, quien se casa se ______ a su pareja en un solo proyecto de vida (verbo en futuro: «él se ...»).", "respuesta": "UNIRA"},
+        {"texto": "Ef 5,32 — Pablo dice que esta unión es un ______ grande: algo oculto que Dios va revelando.", "respuesta": "MISTERIO"},
+        {"texto": "Ef 5,32 — Pablo ve el matrimonio como imagen de la unión de Cristo con la comunidad de los creyentes: la ______ (7 letras).", "respuesta": "IGLESIA"},
     ],
-    "incluir": ["MATRIMONIO", "ALIANZA"],
+    "incluir": ["MISTERIO", "UNIRA"],
     "requisito": 6,
-    "pistas": ["MATRIMONIO y ALIANZA son las palabras centrales: empieza por ellas.",
-               "Todas las palabras aparecen al describir el pacto de los esposos."],
+    "pistas": ["Todas las palabras salen de Ef 5,28-32: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "MISTERIO y UNIRA son centrales: el matrimonio cristiano es unión de dos y signo de algo más grande."],
 })
 
 _agregar("C0N19-CO02", "A02", {
@@ -23748,7 +23748,7 @@ _agregar("C0N19-CO02", "A02", {
     "incluir": ["MATRIMONIO", "ALIANZA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: AMOR y UNION.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N19-CO02", "A03", {
@@ -23934,21 +23934,21 @@ _agregar("C0N19-CO02", "A10", {
 
 _agregar("C0N19-CO03", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: consagrados para servir",
+    "titulo": "Crucigrama bíblico: Ef 5,23.26-27; 2 Tm 1,6-7",
     "items": [
-        {"texto": "Nombre del sacramento por el cual un hombre es consagrado para servir a la Iglesia como ministro.", "respuesta": "ORDEN"},
-        {"texto": "Palabra que nombra la misión de quienes son ordenados para servir al Pueblo de Dios.", "respuesta": "SACERDOCIO"},
-        {"texto": "Grado más alto del sacramento del Orden; sucesor de los apóstoles.", "respuesta": "OBISPO"},
-        {"texto": "Primer grado del sacramento del Orden, orientado especialmente al servicio de la caridad.", "respuesta": "DIACONO"},
-        {"texto": "Lo que sucede cuando el obispo impone las manos sobre quien va a ser ordenado.", "respuesta": "CONSAGRACION"},
-        {"texto": "Actitud central que define la vida de un sacerdote: ponerse a disposición de los demás.", "respuesta": "SERVICIO"},
-        {"texto": "Sacramento que el sacerdote celebra en nombre de Cristo para alimentar a la comunidad.", "respuesta": "EUCARISTIA"},
-        {"texto": "Palabra que nombra la llamada interior que alguien siente a ser sacerdote.", "respuesta": "VOCACION"},
+        {"texto": "2 Tm 1,6 — El don de Dios llegó a Timoteo por el gesto de ordenación: Pablo le colocó las ______ (parte del cuerpo).", "respuesta": "MANOS"},
+        {"texto": "2 Tm 1,7 — Dios nos dio un ______ (su aliento en nosotros) que no acobarda, sino que da fuerza para servir.", "respuesta": "ESPIRITU"},
+        {"texto": "Ef 5,26 — Cristo purifica a su comunidad con un baño de ______ (el elemento del bautismo).", "respuesta": "AGUA"},
+        {"texto": "Ef 5,26 — Junto con el agua, Cristo purifica a su comunidad con su ______ (el mensaje del Evangelio).", "respuesta": "PALABRA"},
+        {"texto": "Ef 5,27 — Cristo quiere presentar a su comunidad radiante y sin impureza: ______ (consagrada a Dios).", "respuesta": "SANTA"},
+        {"texto": "Ef 5,26 — La comunidad de los creyentes, a la que Cristo purifica, es la ______ (7 letras).", "respuesta": "IGLESIA"},
+        {"texto": "Ef 5,23 — Cristo es el que libra y da vida a su cuerpo, la comunidad: es su ______.", "respuesta": "SALVADOR"},
+        {"texto": "Ef 5,23 — Así como en una persona esta parte del cuerpo dirige a los miembros, Cristo guía a su comunidad: la ______.", "respuesta": "CABEZA"},
     ],
-    "incluir": ["ORDEN", "SACERDOCIO"],
+    "incluir": ["MANOS", "PALABRA"],
     "requisito": 6,
-    "pistas": ["ORDEN y SACERDOCIO son las palabras centrales de este tema.",
-               "Piensa en 2 Timoteo 1,6: reavivar el don recibido por la imposición de manos."],
+    "pistas": ["Todas las palabras salen de Ef 5,23.26-27 y 2 Tm 1,6-7: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "MANOS y PALABRA son centrales: el Orden se recibe con un gesto de manos y sirve para anunciar la Palabra."],
 })
 
 _agregar("C0N19-CO03", "A02", {
@@ -23958,7 +23958,7 @@ _agregar("C0N19-CO03", "A02", {
     "incluir": ["ORDEN", "SACERDOCIO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: ORDEN y OBISPO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N19-CO03", "A03", {
@@ -24144,21 +24144,21 @@ _agregar("C0N19-CO03", "A10", {
 
 _agregar("C0N19-CO04", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: iglesia doméstica",
+    "titulo": "Crucigrama bíblico: 2 Tm 1,5; Ef 5,22-23.29-30",
     "items": [
-        {"texto": "Comunidad de personas unidas por el matrimonio, la sangre o la adopción, que la Iglesia llama 'iglesia doméstica'.", "respuesta": "FAMILIA"},
-        {"texto": "Grupo más amplio de personas que comparten la fe y se apoyan mutuamente, como la parroquia.", "respuesta": "COMUNIDAD"},
-        {"texto": "Lugar donde una persona aprende por primera vez a amar, a perdonar y a compartir.", "respuesta": "HOGAR"},
-        {"texto": "Adjetivo que usa la Iglesia para describir a la familia como pequeña iglesia dentro de la casa.", "respuesta": "DOMESTICA"},
-        {"texto": "Valor que sostiene a la familia cuando todos buscan el bien común por encima de sus intereses.", "respuesta": "UNIDAD"},
-        {"texto": "Lo que da una familia que vive su fe con coherencia ante los demás.", "respuesta": "TESTIMONIO"},
-        {"texto": "Ayuda mutua que se dan los miembros de una familia o comunidad en los momentos difíciles.", "respuesta": "APOYO"},
-        {"texto": "Don que una familia transmite y alimenta cuando reza y participa junta de la vida de la Iglesia.", "respuesta": "FE"},
+        {"texto": "2 Tm 1,5 — La fe de Timoteo vivió primero en la mamá de su mamá: su ______.", "respuesta": "ABUELA"},
+        {"texto": "2 Tm 1,5 — Nombre propio de la mujer mayor de su familia en quien vivió primero esa fe (empieza con L).", "respuesta": "LOIDA"},
+        {"texto": "2 Tm 1,5 — Nombre propio de la mamá de Timoteo, también creyente (empieza con E).", "respuesta": "EUNICE"},
+        {"texto": "2 Tm 1,5 — La fe sincera de Timoteo vivió también en la mujer que lo dio a luz: su ______ (5 letras).", "respuesta": "MADRE"},
+        {"texto": "Ef 5,29 — Cristo atiende con cariño a su comunidad de creyentes: la ______ (7 letras).", "respuesta": "IGLESIA"},
+        {"texto": "Ef 5,30 — Pablo dice que los creyentes formamos parte del ______ de Cristo, como los brazos y las piernas forman parte de una persona.", "respuesta": "CUERPO"},
+        {"texto": "Ef 5,22 — La vida familiar se vive sirviendo al ______, título que damos a Jesús resucitado (6 letras).", "respuesta": "SEÑOR"},
+        {"texto": "Ef 5,23 — Cristo es el que libra y da vida a los suyos: su ______.", "respuesta": "SALVADOR"},
     ],
-    "incluir": ["FAMILIA", "COMUNIDAD"],
+    "incluir": ["ABUELA", "IGLESIA"],
     "requisito": 6,
-    "pistas": ["FAMILIA y COMUNIDAD son las palabras centrales de este tema.",
-               "Todas las palabras describen a la familia como pequeña iglesia doméstica."],
+    "pistas": ["Todas las palabras salen de 2 Tm 1,5 y Ef 5,22-23.29-30: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "ABUELA e IGLESIA son centrales: la fe se transmite en la familia y se vive en la gran familia de la comunidad."],
 })
 
 _agregar("C0N19-CO04", "A02", {
@@ -24168,7 +24168,7 @@ _agregar("C0N19-CO04", "A02", {
     "incluir": ["FAMILIA", "COMUNIDAD"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: HOGAR y FE.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N19-CO04", "A03", {
@@ -24354,21 +24354,21 @@ _agregar("C0N19-CO04", "A10", {
 
 _agregar("C0N19-CO05", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: dones que dan fruto",
+    "titulo": "Crucigrama bíblico: 2 Tm 1,5-7; Ef 5,27",
     "items": [
-        {"texto": "Capacidades que Dios regala a cada persona para el bien de toda la comunidad.", "respuesta": "DONES"},
-        {"texto": "Palabra técnica que usa la Iglesia para los dones especiales que el Espíritu Santo reparte para la misión.", "respuesta": "CARISMAS"},
-        {"texto": "Capacidad natural que una persona puede desarrollar y poner al servicio de los demás.", "respuesta": "TALENTO"},
-        {"texto": "Quien reparte los dones y carismas en la Iglesia, según la enseñanza de San Pablo.", "respuesta": "ESPIRITU"},
-        {"texto": "Verbo que resume para qué están destinados los dones recibidos de Dios.", "respuesta": "SERVIR"},
-        {"texto": "Actitud de compartir lo que se tiene sin esperar nada a cambio.", "respuesta": "GENEROSIDAD"},
-        {"texto": "Grupo de personas que se beneficia cuando alguien pone sus dones a disposición de los demás.", "respuesta": "COMUNIDAD"},
-        {"texto": "Resultado bueno y visible que produce en la vida de los demás el uso correcto de un don.", "respuesta": "FRUTO"},
+        {"texto": "2 Tm 1,7 — El ______ que Dios nos dio no nos acobarda: nos da ánimo y amor para servir.", "respuesta": "ESPIRITU"},
+        {"texto": "2 Tm 1,7 — Lo que Dios nos da en lugar de miedo incluye este don que nos mueve a entregarnos a los demás: el ______.", "respuesta": "AMOR"},
+        {"texto": "2 Tm 1,6 — Pablo recuerda a Timoteo que el don viene de quien lo llamó, no de sus méritos: ______ (4 letras).", "respuesta": "DIOS"},
+        {"texto": "2 Tm 1,6 — El don se recibió con el gesto de colocar las ______ sobre la cabeza.", "respuesta": "MANOS"},
+        {"texto": "2 Tm 1,5 — Timoteo heredó la fe en familia; la vivió primero la mamá de su mamá: su ______.", "respuesta": "ABUELA"},
+        {"texto": "2 Tm 1,5 — Nombre propio de la mujer mayor de la familia de Timoteo que transmitió la fe (empieza con L).", "respuesta": "LOIDA"},
+        {"texto": "2 Tm 1,5 — Nombre propio de la mamá de Timoteo, que también creyó (empieza con E).", "respuesta": "EUNICE"},
+        {"texto": "Ef 5,27 — Los dones sirven para que la comunidad de Cristo sea pura, ______ y sin defecto (consagrada a Dios).", "respuesta": "SANTA"},
     ],
-    "incluir": ["DONES", "CARISMAS"],
+    "incluir": ["ESPIRITU", "AMOR"],
     "requisito": 6,
-    "pistas": ["DONES y CARISMAS son las palabras centrales de este tema.",
-               "Piensa en 2 Timoteo 1,6: reavivar el don recibido por la imposición de manos."],
+    "pistas": ["Todas las palabras salen de 2 Tm 1,5-7 y Ef 5,27: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "ESPIRITU y AMOR son centrales: el don se vive en el Espíritu y se pone al servicio con amor, no con miedo."],
 })
 
 _agregar("C0N19-CO05", "A02", {
@@ -24378,7 +24378,7 @@ _agregar("C0N19-CO05", "A02", {
     "incluir": ["DONES", "CARISMAS"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: DONES y FRUTO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N19-CO05", "A03", {
@@ -24564,21 +24564,21 @@ _agregar("C0N19-CO05", "A10", {
 
 _agregar("C0N19-CO06", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: escuchar el llamado de Dios",
+    "titulo": "Crucigrama bíblico: Ef 5,22-23.26-27.31-32; 2 Tm 1,6-7",
     "items": [
-        {"texto": "Proceso de escuchar, reflexionar y pedir luz a Dios antes de tomar una decisión importante de vida.", "respuesta": "DISCERNIMIENTO"},
-        {"texto": "Palabra que nombra el llamado concreto que Dios hace a cada persona (matrimonio, sacerdocio, vida consagrada, etc.).", "respuesta": "VOCACION"},
-        {"texto": "Diálogo con Dios que ayuda a escuchar su voz en medio del discernimiento.", "respuesta": "ORACION"},
-        {"texto": "Ayuda de un catequista, sacerdote o guía espiritual para discernir con más claridad.", "respuesta": "ACOMPAÑAMIENTO"},
-        {"texto": "Condición necesaria para poder escuchar la voz de Dios sin tantas distracciones.", "respuesta": "SILENCIO"},
-        {"texto": "Paso final al que llega todo proceso de discernimiento vocacional.", "respuesta": "DECISION"},
-        {"texto": "Condición que Dios respeta siempre al llamar a una persona: nunca la obliga.", "respuesta": "LIBERTAD"},
-        {"texto": "Quien llama a cada persona a una vocación concreta y la acompaña en el camino.", "respuesta": "DIOS"},
+        {"texto": "Ef 5,32 — Pablo dice que la unión de Jesús con su comunidad es un ______ grande: algo que Dios revela poco a poco.", "respuesta": "MISTERIO"},
+        {"texto": "Ef 5,26 — Para discernir hay que escuchar el mensaje del Evangelio: la ______ con que Jesús purifica a su comunidad junto con el agua.", "respuesta": "PALABRA"},
+        {"texto": "Ef 5,22 — Quien discierne mira todo desde el ______, título de Jesús resucitado (6 letras).", "respuesta": "SEÑOR"},
+        {"texto": "Ef 5,23 — Toda decisión de vida se mira en aquel que guía a su comunidad como la cabeza al cuerpo: ______.", "respuesta": "CRISTO"},
+        {"texto": "2 Tm 1,6 — El don que hay que reavivar lo ha dado quien llama a cada uno; discernir es escucharlo: ______ (4 letras).", "respuesta": "DIOS"},
+        {"texto": "2 Tm 1,7 — Para discernir se pide el ______ (aliento divino) que no acobarda, sino que da fuerza.", "respuesta": "ESPIRITU"},
+        {"texto": "Ef 5,31 — Ejemplo de decisión de vida: el ______ (varón) deja a sus padres para unirse a su pareja.", "respuesta": "HOMBRE"},
+        {"texto": "Ef 5,27 — Jesús quiere una comunidad limpia, como un vestido sin una sola ______ (6 letras) ni arrugas.", "respuesta": "MANCHA"},
     ],
-    "incluir": ["DISCERNIMIENTO", "VOCACION"],
+    "incluir": ["MISTERIO", "PALABRA"],
     "requisito": 6,
-    "pistas": ["DISCERNIMIENTO y VOCACION son las palabras centrales de este tema.",
-               "Todas las palabras describen el camino para escuchar el llamado de Dios."],
+    "pistas": ["Todas las palabras salen de Ef 5,22-23.26-27.31-32 y 2 Tm 1,6-7: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "MISTERIO y PALABRA son centrales: discernir es escuchar la Palabra y acoger el misterio de lo que Dios quiere de ti."],
 })
 
 _agregar("C0N19-CO06", "A02", {
@@ -24588,7 +24588,7 @@ _agregar("C0N19-CO06", "A02", {
     "incluir": ["DISCERNIMIENTO", "VOCACION"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: DIOS y ORACION.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N19-CO06", "A03", {
@@ -24778,21 +24778,21 @@ _agregar("C0N19-CO06", "A10", {
 # -- C0N20-CO01: Dios escucha el clamor --
 _agregar("C0N20-CO01", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: un Dios que escucha",
+    "titulo": "Crucigrama bíblico: Ex 3,6-10",
     "items": [
-        {"texto": "Palabra que nombra el grito de dolor del pueblo que Dios escucha en el Éxodo.", "respuesta": "CLAMOR"},
-        {"texto": "Sufrimiento profundo que vive el pueblo esclavizado en Egipto.", "respuesta": "AFLICCION"},
-        {"texto": "Lo que hace Dios cuando presta atención al dolor de su pueblo.", "respuesta": "ESCUCHAR"},
-        {"texto": "Conjunto de personas que sufre la esclavitud en Egipto y clama a Dios.", "respuesta": "PUEBLO"},
-        {"texto": "Sensación de aprieto y angustia que Dios dice conocer en Éxodo 3.", "respuesta": "ANGUSTIA"},
-        {"texto": "Sonido fuerte con el que alguien pide ayuda con urgencia.", "respuesta": "GRITO"},
-        {"texto": "Órgano con el que se escucha; Dios no es sordo al clamor de nadie.", "respuesta": "OIDO"},
-        {"texto": "Lo que Dios promete hacer con su pueblo esclavizado: sacarlo de la opresión.", "respuesta": "LIBERAR"},
+        {"texto": "Ex 3,9 — Dios dice que el ______ (el grito de auxilio) de los hebreos esclavizados ha llegado hasta él.", "respuesta": "CLAMOR"},
+        {"texto": "Ex 3,7 — Dios dice que ha visto cómo sufre «mi ______»: la comunidad de los hebreos esclavizados.", "respuesta": "PUEBLO"},
+        {"texto": "Ex 3,7 — País a orillas del Nilo donde los hebreos vivían esclavizados: ______.", "respuesta": "EGIPTO"},
+        {"texto": "Ex 3,9 — Los habitantes de ese país, que maltrataban a los hebreos, eran los ______.", "respuesta": "EGIPCIOS"},
+        {"texto": "Ex 3,7 — Dios asegura que conoce bien lo que los hebreos padecen: sus ______ (dolores y penas, en plural).", "respuesta": "SUFRIMIENTOS"},
+        {"texto": "Ex 3,6 — Quien se presenta a Moisés como el de sus antepasados Abraham, Isaac y Jacob es ______ (4 letras).", "respuesta": "DIOS"},
+        {"texto": "Ex 3,8 — Dios promete conducir a su gente a una ______ buena y espaciosa (suelo, país).", "respuesta": "TIERRA"},
+        {"texto": "Ex 3,10 — Misión que Dios confía a Moisés: hacer salir de Egipto a su pueblo, es decir, ______ (verbo en infinitivo, 5 letras).", "respuesta": "SACAR"},
     ],
-    "incluir": ["CLAMOR", "ESCUCHAR"],
+    "incluir": ["CLAMOR", "SUFRIMIENTOS"],
     "requisito": 6,
-    "pistas": ["Todas las palabras aparecen o se relacionan con Éxodo 3,7-12.",
-               "CLAMOR y ESCUCHAR son las palabras centrales del contenido: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Ex 3,6-10: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "Dios ve, escucha y conoce: CLAMOR y SUFRIMIENTOS son las palabras con que el texto muestra que a Dios le importa su pueblo."],
 })
 
 _agregar("C0N20-CO01", "A02", {
@@ -24802,7 +24802,7 @@ _agregar("C0N20-CO01", "A02", {
     "incluir": ["CLAMOR", "ESCUCHAR"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: GRITO y OIDO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N20-CO01", "A03", {
@@ -24992,21 +24992,21 @@ _agregar("C0N20-CO01", "A10", {
 # -- C0N20-CO02: Dios llama por el nombre --
 _agregar("C0N20-CO02", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: llamado por mi nombre",
+    "titulo": "Crucigrama bíblico: Ex 3,2-6.13-15",
     "items": [
-        {"texto": "Palabra que nombra el hecho de que Dios se dirige a alguien en concreto, no a la multitud.", "respuesta": "LLAMADA"},
-        {"texto": "Lo que Dios usa para dirigirse a Moisés en Éxodo 3: no un título, sino su propio ______.", "respuesta": "NOMBRE"},
-        {"texto": "Pastor hebreo al que Dios llama desde la zarza ardiente.", "respuesta": "MOISES"},
-        {"texto": "Arbusto que ardía sin consumirse, desde donde Dios habla a Moisés.", "respuesta": "ZARZA"},
-        {"texto": "Lo que Moisés escucha salir del fuego: la ______ de Dios.", "respuesta": "VOZ"},
-        {"texto": "Palabra de Moisés al escuchar su nombre: «Aquí estoy» es su ______.", "respuesta": "RESPUESTA"},
-        {"texto": "Lo que significa decir «aquí estoy»: estar disponible y ______.", "respuesta": "PRESENTE"},
-        {"texto": "Lo que Dios reconoce y nombra en cada persona cuando la llama por su nombre.", "respuesta": "IDENTIDAD"},
+        {"texto": "Ex 3,4 — Dios llama dos veces por su nombre al pastor que se acerca a mirar el arbusto: ______.", "respuesta": "MOISES"},
+        {"texto": "Ex 3,15 — Dios le dice cómo debe presentarlo ante el pueblo: este es mi ______ para siempre (cómo se llama).", "respuesta": "NOMBRE"},
+        {"texto": "Ex 3,2 — El arbusto espinoso que ardía sin consumirse era una ______.", "respuesta": "ZARZA"},
+        {"texto": "Ex 3,2 — Un mensajero celestial se le apareció a Moisés en la zarza: un ______ del Señor.", "respuesta": "ANGEL"},
+        {"texto": "Ex 3,2 — La zarza ardía sin consumirse: estaba envuelta en ______ (lo que quema y da luz).", "respuesta": "FUEGO"},
+        {"texto": "Ex 3,5 — Dios le pide a Moisés que se quite el calzado ligero que lleva en los pies: las ______.", "respuesta": "SANDALIAS"},
+        {"texto": "Ex 3,5 — Dios declara que el suelo que pisa Moisés es ______, es decir, apartado y consagrado a él.", "respuesta": "SANTA"},
+        {"texto": "Ex 3,6 — Dios se presenta como el Dios de los antepasados de Moisés, como el primer patriarca: ______.", "respuesta": "ABRAHAM"},
     ],
-    "incluir": ["LLAMADA", "NOMBRE"],
+    "incluir": ["MOISES", "NOMBRE"],
     "requisito": 6,
-    "pistas": ["Todas las palabras aparecen o se relacionan con Éxodo 3,4.",
-               "LLAMADA y NOMBRE son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Ex 3,2-6.13-15: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "Dios llama a MOISES por su nombre y se da a conocer: busca MOISES y NOMBRE primero."],
 })
 
 _agregar("C0N20-CO02", "A02", {
@@ -25016,7 +25016,7 @@ _agregar("C0N20-CO02", "A02", {
     "incluir": ["LLAMADA", "NOMBRE"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: VOZ y ZARZA.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N20-CO02", "A03", {
@@ -25205,21 +25205,21 @@ _agregar("C0N20-CO02", "A10", {
 # -- C0N20-CO03: Providencia --
 _agregar("C0N20-CO03", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: la providencia de Dios",
+    "titulo": "Crucigrama bíblico: Ex 3,7-8.12; Mt 28,20",
     "items": [
-        {"texto": "Palabra que nombra el cuidado amoroso y constante de Dios sobre la historia y sobre cada persona.", "respuesta": "PROVIDENCIA"},
-        {"texto": "Atención amorosa que Dios tiene de todo lo que necesitamos, aunque no siempre lo notemos.", "respuesta": "CUIDADO"},
-        {"texto": "Proyecto bueno que Dios tiene para cada persona, aunque no siempre se vea entero.", "respuesta": "PLAN"},
-        {"texto": "Actitud de quien se apoya en Dios sabiendo que él cuida su vida.", "respuesta": "CONFIANZA"},
-        {"texto": "Apoyo firme que Dios da en los momentos de duda o debilidad.", "respuesta": "SOSTEN"},
-        {"texto": "Lo que Dios hace con quien se deja acompañar: lo ______ en su camino.", "respuesta": "GUIA"},
-        {"texto": "Tiempo que todavía no llegó, pero que también está en manos de la providencia de Dios.", "respuesta": "FUTURO"},
-        {"texto": "Don bueno que Dios derrama sobre quien confía en su providencia.", "respuesta": "BENDICION"},
+        {"texto": "Ex 3,8 — La tierra prometida es un lugar donde abunda esta bebida blanca, alimento de los niños pequeños: la ______.", "respuesta": "LECHE"},
+        {"texto": "Ex 3,8 — Y abunda también este dulce natural que fabrican las abejas: la ______.", "respuesta": "MIEL"},
+        {"texto": "Ex 3,8 — Dios promete conducir a su gente a una ______ buena y espaciosa, donde hay alimento (suelo, país).", "respuesta": "TIERRA"},
+        {"texto": "Ex 3,12 — Dios tranquiliza a Moisés prometiéndole que irá a su lado: «yo estaré ______» (una sola palabra, dicha a la persona con quien se habla).", "respuesta": "CONTIGO"},
+        {"texto": "Mt 28,20 — Jesús promete estar con los suyos cada una de las jornadas de 24 horas, sin faltar ninguna: todos los ______.", "respuesta": "DIAS"},
+        {"texto": "Ex 3,7 — Dios dice que ha visto cómo sufre «mi ______»: la comunidad de los hebreos esclavizados.", "respuesta": "PUEBLO"},
+        {"texto": "Mt 28,20 — La compañía de Jesús llega hasta el final de los tiempos: hasta el fin del ______ (la creación entera).", "respuesta": "MUNDO"},
+        {"texto": "Ex 3,12 — Quien promete acompañar a Moisés y recibir culto en el monte, el único, es ______ (4 letras).", "respuesta": "DIOS"},
     ],
-    "incluir": ["PROVIDENCIA", "CUIDADO"],
+    "incluir": ["TIERRA", "DIAS"],
     "requisito": 6,
-    "pistas": ["Todas las palabras se relacionan con el cuidado de Dios descrito en Éxodo 3,7-12.",
-               "PROVIDENCIA y CUIDADO son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Ex 3,7-8.12 y Mt 28,20: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "La providencia es el cuidado de Dios: una TIERRA buena que él prepara y su compañía todos los DIAS."],
 })
 
 _agregar("C0N20-CO03", "A02", {
@@ -25229,7 +25229,7 @@ _agregar("C0N20-CO03", "A02", {
     "incluir": ["PROVIDENCIA", "CUIDADO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: PLAN y GUIA.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N20-CO03", "A03", {
@@ -25418,21 +25418,21 @@ _agregar("C0N20-CO03", "A10", {
 # -- C0N20-CO04: Dios en la historia personal --
 _agregar("C0N20-CO04", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: Dios en mi historia",
+    "titulo": "Crucigrama bíblico: Ex 3,6.10-12",
     "items": [
-        {"texto": "Conjunto de hechos y etapas que forman la vida de una persona, donde también actúa Dios.", "respuesta": "HISTORIA"},
-        {"texto": "Capacidad de recordar momentos vividos, útil para reconocer a Dios en el pasado.", "respuesta": "MEMORIA"},
-        {"texto": "Marca o señal que deja el paso de Dios por la vida de alguien.", "respuesta": "HUELLA"},
-        {"texto": "Recorrido que cada persona hace, con tramos difíciles y otros de alegría.", "respuesta": "CAMINO"},
-        {"texto": "Periodo concreto dentro de la historia personal, como la niñez o la adolescencia.", "respuesta": "ETAPA"},
-        {"texto": "Tiempo ya vivido, donde a veces se descubre después el cuidado de Dios.", "respuesta": "PASADO"},
-        {"texto": "Significado profundo que una persona puede descubrir en lo que le ha tocado vivir.", "respuesta": "SENTIDO"},
-        {"texto": "Don recibido de Dios que se despliega a lo largo de toda una historia personal.", "respuesta": "VIDA"},
+        {"texto": "Ex 3,6 — Dios se une a la historia de una familia: se presenta como el Dios del primer patriarca, llamado «padre de los creyentes»: ______.", "respuesta": "ABRAHAM"},
+        {"texto": "Ex 3,6 — También como el Dios de este patriarca, hijo de Abraham: ______ (5 letras).", "respuesta": "ISAAC"},
+        {"texto": "Ex 3,6 — Y del patriarca llamado también Israel, nieto de Abraham: ______ (5 letras).", "respuesta": "JACOB"},
+        {"texto": "Ex 3,11 — El pastor al que Dios envía duda de sí mismo y pregunta «¿quién soy yo?»: ______.", "respuesta": "MOISES"},
+        {"texto": "Ex 3,10 — Dios manda a Moisés ante el soberano de los egipcios (título que se daba a sus reyes): el ______.", "respuesta": "FARAON"},
+        {"texto": "Ex 3,10 — País del Nilo, donde el pueblo hebreo vivía esclavizado y del que Moisés debe sacarlo: ______.", "respuesta": "EGIPTO"},
+        {"texto": "Ex 3,12 — Dios promete que, al salir, lo adorarán en esta elevación del terreno donde Moisés ya está: el ______.", "respuesta": "MONTE"},
+        {"texto": "Ex 3,12 — Dios da a Moisés un signo que confirme que fue él quien lo envió: una ______.", "respuesta": "SEÑAL"},
     ],
-    "incluir": ["HISTORIA", "HUELLA"],
+    "incluir": ["ABRAHAM", "MOISES"],
     "requisito": 6,
-    "pistas": ["Todas las palabras se relacionan con mirar la propia vida con fe.",
-               "HISTORIA y HUELLA son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Ex 3,6.10-12: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "Dios entra en la historia de una familia (ABRAHAM) y de una persona (MOISES): empieza por esos dos nombres."],
 })
 
 _agregar("C0N20-CO04", "A02", {
@@ -25442,7 +25442,7 @@ _agregar("C0N20-CO04", "A02", {
     "incluir": ["HISTORIA", "HUELLA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: VIDA y ETAPA.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N20-CO04", "A03", {
@@ -25631,21 +25631,21 @@ _agregar("C0N20-CO04", "A10", {
 # -- C0N20-CO05: Esperanza cristiana --
 _agregar("C0N20-CO05", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: la esperanza que no defrauda",
+    "titulo": "Crucigrama bíblico: Ex 3,6.8-10; Mt 28,20",
     "items": [
-        {"texto": "Virtud teologal por la que esperamos de Dios la vida eterna y su ayuda para alcanzarla.", "respuesta": "ESPERANZA"},
-        {"texto": "Palabra dada por Dios que sostiene la esperanza, como la de estar con nosotros siempre.", "respuesta": "PROMESA"},
-        {"texto": "Imagen bíblica que compara la esperanza con algo firme que sostiene a un barco en la tormenta.", "respuesta": "ANCLA"},
-        {"texto": "Fruto de una esperanza bien vivida, distinto de la simple diversión pasajera.", "respuesta": "ALEGRIA"},
-        {"texto": "Vida plena y sin fin junto a Dios que la esperanza cristiana espera.", "respuesta": "ETERNIDAD"},
-        {"texto": "Virtud necesaria para esperar sin desesperarse cuando las cosas tardan.", "respuesta": "PACIENCIA"},
-        {"texto": "Categoría a la que pertenece la esperanza junto a la fe y el amor.", "respuesta": "VIRTUD"},
-        {"texto": "Actitud de perseverar con fe y esperanza aunque el camino sea largo.", "respuesta": "CONSTANCIA"},
+        {"texto": "Mt 28,20 — La promesa de Jesús llega hasta el final de la historia: hasta el fin del ______ (el planeta y sus habitantes).", "respuesta": "MUNDO"},
+        {"texto": "Mt 28,20 — Esperar es saber que Jesús acompaña cada una de las jornadas de la vida, sin faltar ninguna: todos los ______.", "respuesta": "DIAS"},
+        {"texto": "Mt 28,20 — Jesús envía a sus discípulos a cumplir todo lo que él les ha ______ (participio de «ordenar», 7 letras).", "respuesta": "MANDADO"},
+        {"texto": "Ex 3,9 — Dios ve cómo oprimen a los hebreos los habitantes del país del Nilo: los ______.", "respuesta": "EGIPCIOS"},
+        {"texto": "Ex 3,8 — Dios promete a su gente un futuro: una ______ buena y espaciosa (suelo, país).", "respuesta": "TIERRA"},
+        {"texto": "Ex 3,6 — Dios es fiel a sus promesas: es el Dios del patriarca hijo de Abraham, ______ (5 letras).", "respuesta": "ISAAC"},
+        {"texto": "Ex 3,6 — También del patriarca llamado Israel, nieto de Abraham: ______ (5 letras).", "respuesta": "JACOB"},
+        {"texto": "Ex 3,10 — Dios envía a Moisés ante el soberano de Egipto, cuyo título era: ______.", "respuesta": "FARAON"},
     ],
-    "incluir": ["ESPERANZA", "PROMESA"],
+    "incluir": ["MUNDO", "DIAS"],
     "requisito": 6,
-    "pistas": ["Todas las palabras se relacionan con la promesa de Jesús en Mateo 28,20.",
-               "ESPERANZA y PROMESA son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Ex 3,6.8-10 y Mt 28,20: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "La esperanza se apoya en una promesa: Jesús está todos los DIAS hasta el fin del MUNDO."],
 })
 
 _agregar("C0N20-CO05", "A02", {
@@ -25655,7 +25655,7 @@ _agregar("C0N20-CO05", "A02", {
     "incluir": ["ESPERANZA", "PROMESA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: ANCLA y VIRTUD.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N20-CO05", "A03", {
@@ -25844,21 +25844,21 @@ _agregar("C0N20-CO05", "A10", {
 # -- C0N20-CO06: Caminar con Dios --
 _agregar("C0N20-CO06", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: caminar junto a Dios",
+    "titulo": "Crucigrama bíblico: Ex 3,1.10-12; Mt 28,20",
     "items": [
-        {"texto": "Verbo que describe avanzar junto a alguien, paso a paso, como hace Dios con su pueblo.", "respuesta": "CAMINAR"},
-        {"texto": "Lo contrario de la soledad: estar con alguien que te sostiene en el camino.", "respuesta": "COMPAÑIA"},
-        {"texto": "Palabra que nombra el hecho de que Dios está aquí, con nosotros, no lejos ni ausente.", "respuesta": "PRESENCIA"},
-        {"texto": "Cualidad de Dios que nunca cambia su promesa de estar con los suyos.", "respuesta": "FIEL"},
-        {"texto": "Lo que hace Dios con quien camina: ir a su lado, sosteniéndolo en cada etapa.", "respuesta": "ACOMPAÑAR"},
-        {"texto": "Marcas que deja quien avanza en un camino; también lo que Dios sostiene cuando flaquean.", "respuesta": "PASOS"},
-        {"texto": "Sensación de tener a Dios muy cerca, no como una idea lejana.", "respuesta": "CERCANIA"},
-        {"texto": "Vínculo firme entre Dios y su pueblo, que se renueva en cada encuentro con él.", "respuesta": "ALIANZA"},
+        {"texto": "Ex 3,12 — Dios promete caminar junto a Moisés: «yo estaré ______» (una sola palabra, dicha a la persona con quien se habla).", "respuesta": "CONTIGO"},
+        {"texto": "Ex 3,12 — Dios da a Moisés una prueba de su presencia: una ______ de que fue él quien lo envió.", "respuesta": "SEÑAL"},
+        {"texto": "Ex 3,12 — Dios promete que, tras salir, lo servirán en esta elevación donde Moisés ya habla con él: el ______.", "respuesta": "MONTE"},
+        {"texto": "Mt 28,20 — La compañía de Jesús no se acaba hasta el final de los tiempos: hasta el fin del ______.", "respuesta": "MUNDO"},
+        {"texto": "Mt 28,20 — Jesús camina con nosotros en cada jornada de la vida, sin faltar ninguna: todos los ______.", "respuesta": "DIAS"},
+        {"texto": "Ex 3,1 — El pastor que cuidaba el rebaño de su suegro y al que Dios invita a caminar con él: ______.", "respuesta": "MOISES"},
+        {"texto": "Ex 3,10 — Misión de Moisés: hacer salir de Egipto a su pueblo, es decir, ______ (verbo en infinitivo, 5 letras).", "respuesta": "SACAR"},
+        {"texto": "Ex 3,1 — Moisés guiaba el rebaño por esta región seca y árida hasta el lugar donde Dios se le apareció: el ______.", "respuesta": "DESIERTO"},
     ],
-    "incluir": ["CAMINAR", "PRESENCIA"],
+    "incluir": ["CONTIGO", "DIAS"],
     "requisito": 6,
-    "pistas": ["Todas las palabras se relacionan con la promesa de Dios en Éxodo 3,12.",
-               "CAMINAR y PRESENCIA son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Ex 3,1.10-12 y Mt 28,20: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "Caminar con Dios: él dice «yo estaré CONTIGO» y Jesús promete acompañar todos los DIAS."],
 })
 
 _agregar("C0N20-CO06", "A02", {
@@ -25868,7 +25868,7 @@ _agregar("C0N20-CO06", "A02", {
     "incluir": ["CAMINAR", "PRESENCIA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: FIEL y PASOS.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N20-CO06", "A03", {
@@ -26062,21 +26062,21 @@ _agregar("C0N20-CO06", "A10", {
 # -- C0N21-CO01: Jesús enseña a orar --
 _agregar("C0N21-CO01", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: un discípulo le pide a Jesús que le enseñe",
+    "titulo": "Crucigrama bíblico: Lc 11,1-2",
     "items": [
-        {"texto": "Diálogo con Dios que un discípulo le pide a Jesús que le enseñe.", "respuesta": "ORACION"},
-        {"texto": "Quien le pide a Jesús: «Señor, enséñanos a orar».", "respuesta": "DISCIPULO"},
-        {"texto": "A quien los discípulos reconocen como el mejor ejemplo de oración, capaz de enseñarles.", "respuesta": "MAESTRO"},
-        {"texto": "Lo que Jesús hace con sus discípulos cuando les muestra cómo orar.", "respuesta": "ENSEÑAR"},
-        {"texto": "Forma de relación con Dios que no es un monólogo, sino un ida y vuelta real.", "respuesta": "DIALOGO"},
-        {"texto": "Actitud necesaria para acercarse a Dios como a un Padre que escucha.", "respuesta": "CONFIANZA"},
-        {"texto": "Lo que el discípulo hace al acercarse a Jesús: solicitarle algo con humildad.", "respuesta": "PEDIR"},
-        {"texto": "Oración modelo que Jesús entrega como respuesta a quien le pide que le enseñe a orar.", "respuesta": "PADRENUESTRO"},
+        {"texto": "Lc 11,1 — Uno de los seguidores de Jesús le pide que les ______ a rezar, como hizo el Bautista con los suyos.", "respuesta": "ENSEÑAR"},
+        {"texto": "Lc 11,1 — Quienes acompañaban a Jesús; uno de ellos le hizo la petición tras verlo rezar.", "respuesta": "DISCIPULOS"},
+        {"texto": "Lc 11,1 — Jesús acababa de hacer esto en cierto sitio, y sus seguidores quisieron aprender a hacerlo: ______.", "respuesta": "ORAR"},
+        {"texto": "Lc 11,1 — Nombre propio (cuatro letras) del profeta del Jordán que también enseñó a rezar a sus seguidores.", "respuesta": "JUAN"},
+        {"texto": "Lc 11,1 — Título de respeto, el mismo que se da a Dios, con que el seguidor se dirige a Jesús.", "respuesta": "SEÑOR"},
+        {"texto": "Lc 11,1 — Jesús rezaba en cierto ______ cuando sus seguidores lo observaron.", "respuesta": "LUGAR"},
+        {"texto": "Lc 11,2 — Palabra cercana y familiar con la que Jesús enseña a comenzar la oración, dirigiéndose a Dios.", "respuesta": "PADRE"},
+        {"texto": "Lc 11,2 — En la oración pedimos que se reconozca como santo el ______ de Dios.", "respuesta": "NOMBRE"},
     ],
-    "incluir": ["ORACION", "PADRENUESTRO"],
+    "incluir": ["ENSEÑAR", "DISCIPULOS"],
     "requisito": 6,
-    "pistas": ["Todas las palabras se relacionan con el pasaje de Lucas 11,1-13.",
-               "ORACION y PADRENUESTRO son las palabras centrales de este contenido: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Lc 11,1-2: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "ENSEÑAR y DISCIPULOS son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N21-CO01", "A02", {
@@ -26086,7 +26086,7 @@ _agregar("C0N21-CO01", "A02", {
     "incluir": ["ORACION", "PADRENUESTRO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: PEDIR y ORACION.",
-               "Las ocho palabras son las mismas que las del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N21-CO01", "A03", {
@@ -26276,21 +26276,21 @@ _agregar("C0N21-CO01", "A10", {
 # -- C0N21-CO02: El Padre Nuestro --
 _agregar("C0N21-CO02", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: la oración que Jesús nos regaló",
+    "titulo": "Crucigrama bíblico: Lc 11,2-4",
     "items": [
-        {"texto": "Nombre de la oración que Jesús enseñó a sus discípulos como modelo de toda oración cristiana.", "respuesta": "PADRENUESTRO"},
-        {"texto": "Palabra con la que comienza la oración, mostrando que Dios es cercano como un progenitor amoroso.", "respuesta": "PADRE"},
-        {"texto": "Lo que pedimos que «venga», el proyecto de justicia y amor de Dios para el mundo.", "respuesta": "REINO"},
-        {"texto": "Lo que pedimos que se haga «en la tierra como en el cielo».", "respuesta": "VOLUNTAD"},
-        {"texto": "Alimento diario que pedimos, «nuestro de cada día».", "respuesta": "PAN"},
-        {"texto": "Lo que pedimos que se nos perdone, así como nosotros perdonamos a quienes nos las deben.", "respuesta": "DEUDAS"},
-        {"texto": "Prueba o situación de debilidad de la que pedimos no ser metidos.", "respuesta": "TENTACION"},
-        {"texto": "Acción de disculpar a quien nos ha ofendido, central en esta oración.", "respuesta": "PERDON"},
+        {"texto": "Lc 11,2 — Palabra con que Jesús nos enseña a dirigirnos a Dios al rezar: nombre de cercanía y confianza.", "respuesta": "PADRE"},
+        {"texto": "Lc 11,2 — Lo que pedimos que sea tratado como santo: el ______ de Dios.", "respuesta": "NOMBRE"},
+        {"texto": "Lc 11,2 — Pedimos que llegue su ______: el gobierno de Dios haciéndose presente entre nosotros.", "respuesta": "REINO"},
+        {"texto": "Lc 11,2 — Pedimos que el nombre de Dios sea reconocido como sagrado; la palabra buscada significa «hecho santo».", "respuesta": "SANTIFICADO"},
+        {"texto": "Lc 11,2 — Jesús indica qué decir cuando se hace esto: comunicarse con Dios en silencio o en voz alta.", "respuesta": "ORAR"},
+        {"texto": "Lc 11,4 — Pedimos a Dios que nos ______ las faltas, igual que nosotros lo hacemos con los demás.", "respuesta": "PERDONAR"},
+        {"texto": "Lc 11,4 — Pedimos a Dios que no nos deje caer en la ______, la prueba que nos aparta del bien.", "respuesta": "TENTACION"},
+        {"texto": "Lc 11,4 — Pronombre de primera persona plural: pedimos perdón porque también ______ perdonamos.", "respuesta": "NOSOTROS"},
     ],
-    "incluir": ["PADRENUESTRO", "PERDON"],
+    "incluir": ["PADRE", "REINO"],
     "requisito": 6,
-    "pistas": ["Todas las palabras aparecen o se relacionan con el Padrenuestro en Lucas 11,2-4.",
-               "PADRENUESTRO y PERDON son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Lc 11,2-4: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "PADRE y REINO son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N21-CO02", "A02", {
@@ -26300,7 +26300,7 @@ _agregar("C0N21-CO02", "A02", {
     "incluir": ["PADRENUESTRO", "PERDON"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: PAN y REINO.",
-               "Las ocho palabras son las mismas que las del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N21-CO02", "A03", {
@@ -26489,21 +26489,21 @@ _agregar("C0N21-CO02", "A10", {
 # -- C0N21-CO03: Oración de petición --
 _agregar("C0N21-CO03", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: pedid, buscad, llamad",
+    "titulo": "Crucigrama bíblico: Lc 11,9-13",
     "items": [
-        {"texto": "Tipo de oración en la que presentamos a Dios nuestras necesidades y deseos.", "respuesta": "PETICION"},
-        {"texto": "Verbo con el que Jesús invita a presentar nuestras necesidades a Dios: «______, y se os dará».", "respuesta": "PEDID"},
-        {"texto": "Verbo que sigue a «pedid» en la enseñanza de Jesús: «______, y hallaréis».", "respuesta": "BUSCAD"},
-        {"texto": "Verbo final de la serie: «______, y se os abrirá».", "respuesta": "LLAMAD"},
-        {"texto": "Actitud de seguir pidiendo sin rendirse, como el amigo de la parábola a medianoche.", "respuesta": "INSISTENCIA"},
-        {"texto": "Seguridad de que el Padre escucha, aunque la respuesta tarde o sea distinta a lo esperado.", "respuesta": "CONFIANZA"},
-        {"texto": "Persona a la que, en la parábola, otro le pide pan a medianoche.", "respuesta": "AMIGO"},
-        {"texto": "Don que, según Jesús, el Padre celestial da a quien se lo pide con fe.", "respuesta": "ESPIRITU"},
+        {"texto": "Lc 11,10 — Quien hace esto recibe; es el primer verbo de la petición confiada que enseña Jesús.", "respuesta": "PIDE"},
+        {"texto": "Lc 11,10 — Quien lo hace encuentra; es el segundo verbo que Jesús propone tras pedir.", "respuesta": "BUSCA"},
+        {"texto": "Lc 11,10 — Verbo de tocar a una puerta pidiendo entrada: a quien lo hace, le responden.", "respuesta": "LLAMA"},
+        {"texto": "Lc 11,12 — Alimento redondo que un hijo pide a su padre y que ningún padre reemplazaría por algo peligroso.", "respuesta": "HUEVO"},
+        {"texto": "Lc 11,11 — Objeto duro que ningún padre bueno daría a su hijo cuando este le pide pan.", "respuesta": "PIEDRA"},
+        {"texto": "Lc 11,11 — Alimento que viene del río o del mar, que el hijo pide y su padre no cambia por un animal dañino.", "respuesta": "PESCADO"},
+        {"texto": "Lc 11,13 — Lo mejor que el Padre del cielo da a quienes se lo piden: el ______ Santo.", "respuesta": "ESPIRITU"},
+        {"texto": "Lc 11,9 — Jesús promete que al que pide entrada, la puerta se le podrá ______.", "respuesta": "ABRIR"},
     ],
-    "incluir": ["PETICION", "INSISTENCIA"],
+    "incluir": ["PIDE", "ESPIRITU"],
     "requisito": 6,
-    "pistas": ["Todas las palabras aparecen en Lucas 11,5-13.",
-               "PETICION e INSISTENCIA son las palabras centrales de este contenido: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Lc 11,9-13: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "PIDE y ESPIRITU son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N21-CO03", "A02", {
@@ -26513,7 +26513,7 @@ _agregar("C0N21-CO03", "A02", {
     "incluir": ["PETICION", "INSISTENCIA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: PEDID y AMIGO.",
-               "Las ocho palabras son las mismas que las del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N21-CO03", "A03", {
@@ -26702,21 +26702,21 @@ _agregar("C0N21-CO03", "A10", {
 # -- C0N21-CO04: Adoración y liturgia --
 _agregar("C0N21-CO04", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: adorar y celebrar junto a la comunidad",
+    "titulo": "Crucigrama bíblico: Lc 11,1-2.13",
     "items": [
-        {"texto": "Actitud de reconocer a Dios como el único Señor, con todo el ser.", "respuesta": "ADORACION"},
-        {"texto": "Celebración oficial y pública de la Iglesia, especialmente la Misa, donde Cristo actúa entre su pueblo.", "respuesta": "LITURGIA"},
-        {"texto": "Sacramento central de la vida cristiana, memorial de la entrega de Jesús en la Cruz.", "respuesta": "EUCARISTIA"},
-        {"texto": "Oración de reconocimiento y agradecimiento espontáneo por la grandeza y bondad de Dios.", "respuesta": "ALABANZA"},
-        {"texto": "Lugar en el templo donde se reserva el pan consagrado para la adoración fuera de la Misa.", "respuesta": "SAGRARIO"},
-        {"texto": "Palabra para referirse a la Misa y otros ritos litúrgicos de la Iglesia.", "respuesta": "CELEBRACION"},
-        {"texto": "Forma en que Cristo está realmente presente en la Eucaristía, no solo de manera simbólica.", "respuesta": "PRESENCIA"},
-        {"texto": "Comunidad reunida que participa activamente en la liturgia, no simples espectadores.", "respuesta": "ASAMBLEA"},
+        {"texto": "Lc 11,2 — Al rezar pedimos que el nombre de Dios sea declarado sagrado; la palabra significa «hecho santo».", "respuesta": "SANTIFICADO"},
+        {"texto": "Lc 11,2 — Lo que pedimos que sea reconocido como santo en la oración: el ______ del Padre.", "respuesta": "NOMBRE"},
+        {"texto": "Lc 11,2 — Pedimos que venga su ______: el gobierno de Dios llegando a nuestro mundo.", "respuesta": "REINO"},
+        {"texto": "Lc 11,1 — Jesús estaba así, en actitud de oración, cuando sus seguidores lo observaron.", "respuesta": "ORANDO"},
+        {"texto": "Lc 11,1 — Sitio donde Jesús se detuvo a rezar, ejemplo de que la oración tiene su espacio.", "respuesta": "LUGAR"},
+        {"texto": "Lc 11,13 — Lo que el Padre regala a quienes se lo piden; es el ______ Santo.", "respuesta": "ESPIRITU"},
+        {"texto": "Lc 11,13 — Los padres humanos dan cosas buenas a sus ______; el Padre celestial, mucho más.", "respuesta": "HIJOS"},
+        {"texto": "Lc 11,13 — Quien es aún más bueno que cualquier progenitor humano y da el Espíritu a quienes se lo piden.", "respuesta": "PADRE"},
     ],
-    "incluir": ["ADORACION", "LITURGIA"],
+    "incluir": ["SANTIFICADO", "NOMBRE"],
     "requisito": 6,
-    "pistas": ["Todas las palabras se relacionan con la Misa y la adoración eucarística.",
-               "ADORACION y LITURGIA son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Lc 11,1-2.13: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "SANTIFICADO y NOMBRE son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N21-CO04", "A02", {
@@ -26726,7 +26726,7 @@ _agregar("C0N21-CO04", "A02", {
     "incluir": ["ADORACION", "LITURGIA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: ALABANZA y SAGRARIO.",
-               "Las ocho palabras son las mismas que las del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N21-CO04", "A03", {
@@ -26915,21 +26915,21 @@ _agregar("C0N21-CO04", "A10", {
 # -- C0N21-CO05: Perseverar en la oración --
 _agregar("C0N21-CO05", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: seguir orando sin rendirse",
+    "titulo": "Crucigrama bíblico: Lc 11,5-10",
     "items": [
-        {"texto": "Actitud de mantenerse orando aunque pasen los días y la respuesta no llegue.", "respuesta": "PERSEVERAR"},
-        {"texto": "Cualidad de quien ora con regularidad, no solo cuando le conviene o lo recuerda.", "respuesta": "CONSTANCIA"},
-        {"texto": "Virtud de mantenerse fiel a la relación con Dios a lo largo del tiempo.", "respuesta": "FIDELIDAD"},
-        {"texto": "Virtud necesaria para esperar la respuesta de Dios sin desesperar.", "respuesta": "PACIENCIA"},
-        {"texto": "Palabra que describe estar despierto y atento en oración, como Jesús pidió a sus discípulos.", "respuesta": "VIGILIA"},
-        {"texto": "Lo que da el Espíritu Santo a quien persevera, para no rendirse en la oración.", "respuesta": "FORTALEZA"},
-        {"texto": "Costumbre buena que se construye orando todos los días, poco a poco.", "respuesta": "HABITO"},
-        {"texto": "Sentimiento de querer abandonar la oración cuando no se ve resultado inmediato.", "respuesta": "DESANIMO"},
+        {"texto": "Lc 11,5 — Persona a la que alguien acude a medianoche para pedirle ayuda con un visitante.", "respuesta": "AMIGO"},
+        {"texto": "Lc 11,5 — Hora poco oportuna, en plena oscuridad, en que el hombre va a molestar a su amigo.", "respuesta": "MEDIANOCHE"},
+        {"texto": "Lc 11,5 — Lo que el hombre necesita pedir prestado: tres, para atender a quien ha llegado a su casa.", "respuesta": "PANES"},
+        {"texto": "Lc 11,7 — Lo que el vecino dice que ya está cerrado y por eso no quiere ir a abrirla.", "respuesta": "PUERTA"},
+        {"texto": "Lc 11,7 — Así está la entrada de la casa cuando el vecino ya se ha acostado con su familia.", "respuesta": "CERRADA"},
+        {"texto": "Lc 11,8 — Aunque no quiera ______ por amistad, lo hará por la insistencia del que pide.", "respuesta": "LEVANTAR"},
+        {"texto": "Lc 11,10 — Quien lo hace encuentra: segundo verbo de la petición insistente que propone Jesús.", "respuesta": "BUSCA"},
+        {"texto": "Lc 11,9 — Jesús promete que a quien llama a la puerta, esta se le podrá ______.", "respuesta": "ABRIR"},
     ],
-    "incluir": ["PERSEVERAR", "CONSTANCIA"],
+    "incluir": ["AMIGO", "MEDIANOCHE"],
     "requisito": 6,
-    "pistas": ["Todas las palabras se relacionan con la actitud de no abandonar la oración.",
-               "PERSEVERAR y CONSTANCIA son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Lc 11,5-10: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "AMIGO y MEDIANOCHE son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N21-CO05", "A02", {
@@ -26939,7 +26939,7 @@ _agregar("C0N21-CO05", "A02", {
     "incluir": ["PERSEVERAR", "CONSTANCIA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: HABITO y VIGILIA.",
-               "Las ocho palabras son las mismas que las del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N21-CO05", "A03", {
@@ -27128,21 +27128,21 @@ _agregar("C0N21-CO05", "A10", {
 # -- C0N21-CO06: Mi plan de oración --
 _agregar("C0N21-CO06", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: organizando mi propio plan de oración",
+    "titulo": "Crucigrama bíblico: Lc 11,1-13",
     "items": [
-        {"texto": "Palabra que resume la organización concreta de cuándo, dónde y cómo orar cada día.", "respuesta": "PLAN"},
-        {"texto": "Momento fijo del día que eliges para dedicarlo a la oración.", "respuesta": "HORARIO"},
-        {"texto": "Condición que ayuda a escuchar mejor a Dios, lejos del ruido y las distracciones.", "respuesta": "SILENCIO"},
-        {"texto": "Práctica de leer un pasaje bíblico breve como parte del propio plan de oración.", "respuesta": "LECTURA"},
-        {"texto": "Actitud de agradecer a Dios por lo bueno recibido, parte importante de un buen plan de oración.", "respuesta": "GRATITUD"},
-        {"texto": "Repaso breve del día para ver dónde estuvo Dios presente y dónde se puede mejorar.", "respuesta": "EXAMEN"},
-        {"texto": "Decisión concreta que se toma para mejorar algo después de orar y reflexionar.", "respuesta": "PROPOSITO"},
-        {"texto": "Palabra que describe la decisión firme de cumplir el plan de oración, no solo una buena intención.", "respuesta": "COMPROMISO"},
+        {"texto": "Lc 11,1 — Cuando Jesús terminó de hacer esto, sus seguidores le pidieron aprender: estaba ______.", "respuesta": "ORANDO"},
+        {"texto": "Lc 11,1 — Verbo con que sus seguidores piden a Jesús que los instruya: que les ______ a rezar.", "respuesta": "ENSEÑAR"},
+        {"texto": "Lc 11,2 — Con esta palabra empieza la oración que Jesús nos dejó.", "respuesta": "PADRE"},
+        {"texto": "Lc 11,4 — Pedimos a Dios que nos ______ las faltas, igual que nosotros lo hacemos con los demás.", "respuesta": "PERDONAR"},
+        {"texto": "Lc 11,10 — Quien hace esto recibe; primer verbo de la petición confiada que enseña Jesús.", "respuesta": "PIDE"},
+        {"texto": "Lc 11,2 — Lo que pedimos que sea reconocido como santo en la oración: el ______ del Padre.", "respuesta": "NOMBRE"},
+        {"texto": "Lc 11,13 — Los padres saben dar cosas ______ a sus hijos; más aún el Padre celestial.", "respuesta": "BUENAS"},
+        {"texto": "Lc 11,13 — Regalo supremo del Padre para quien lo pide: el ______ Santo.", "respuesta": "ESPIRITU"},
     ],
-    "incluir": ["PLAN", "PROPOSITO"],
+    "incluir": ["ORANDO", "PIDE"],
     "requisito": 6,
-    "pistas": ["Todas las palabras se relacionan con armar un plan de oración personal.",
-               "PLAN y PROPOSITO son las palabras centrales: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Lc 11,1-13: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "ORANDO y PIDE son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N21-CO06", "A02", {
@@ -27152,7 +27152,7 @@ _agregar("C0N21-CO06", "A02", {
     "incluir": ["PLAN", "PROPOSITO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: PLAN y EXAMEN.",
-               "Las ocho palabras son las mismas que las del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N21-CO06", "A03", {
@@ -27346,21 +27346,21 @@ _agregar("C0N21-CO06", "A10", {
 # -- C0N22-CO01: ¿Quién es Jesús? --
 _agregar("C0N22-CO01", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: ¿quién dicen que soy yo?",
+    "titulo": "Crucigrama bíblico: Mt 16,13-16",
     "items": [
-        {"texto": "Nombre con que Simón Pedro confiesa a Jesús: el enviado de Dios.", "respuesta": "CRISTO"},
-        {"texto": "Palabra que completa el título 'Hijo del ______', que Jesús usa para hablar de sí mismo.", "respuesta": "HOMBRE"},
-        {"texto": "Nombre propio del Maestro que camina con sus discípulos hacia Cesarea de Filipo.", "respuesta": "JESUS"},
-        {"texto": "Apóstol que responde con la confesión de fe más clara: «Tú eres el Cristo».", "respuesta": "PEDRO"},
-        {"texto": "Palabra que significa «ungido»: título que anunciaba al liberador esperado por Israel.", "respuesta": "MESIAS"},
-        {"texto": "Lo que hace Jesús a sus discípulos cuando les dice: «¿Y ustedes, quién dicen que soy yo?»", "respuesta": "PREGUNTA"},
-        {"texto": "Acto de declarar públicamente lo que uno cree, como hace Pedro ante Jesús.", "respuesta": "CONFESION"},
-        {"texto": "Relación que une a Jesús con Dios Padre, según la respuesta de Pedro: «el Hijo de Dios vivo».", "respuesta": "HIJO"},
+        {"texto": "Mt 16,13 — Maestro que llegó a la región de Cesarea y preguntó a los suyos por su identidad.", "respuesta": "JESUS"},
+        {"texto": "Mt 16,13 — Los seguidores más cercanos a quienes Jesús pregunta qué piensa la gente de él.", "respuesta": "DISCIPULOS"},
+        {"texto": "Mt 16,13 — Jesús llegó a la región de Cesarea de ______ (nombre propio de seis letras).", "respuesta": "FILIPO"},
+        {"texto": "Mt 16,14 — Algunos decían que Jesús era Juan, el que sumergía a la gente en el Jordán, apodado el ______.", "respuesta": "BAUTISTA"},
+        {"texto": "Mt 16,14 — Profeta antiguo del carro de fuego que algunos creían que había regresado en Jesús.", "respuesta": "ELIAS"},
+        {"texto": "Mt 16,14 — Algunos creían que Jesús era uno de estos mensajeros de Dios del pasado (plural).", "respuesta": "PROFETAS"},
+        {"texto": "Mt 16,16 — Seguidor que contesta a la pregunta de Jesús y lo confiesa con fe; más tarde recibirá un nuevo nombre.", "respuesta": "PEDRO"},
+        {"texto": "Mt 16,14 — Profeta de las lamentaciones; otros pensaban que Jesús era este mensajero de Dios (nombre propio de ocho letras).", "respuesta": "JEREMIAS"},
     ],
-    "incluir": ["JESUS", "CRISTO"],
+    "incluir": ["JESUS", "DISCIPULOS"],
     "requisito": 6,
-    "pistas": ["Todas las palabras aparecen en el relato de Mateo 16,13-16.",
-               "JESUS y CRISTO son las palabras centrales del contenido: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Mt 16,13-16: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "JESUS y DISCIPULOS son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N22-CO01", "A02", {
@@ -27370,7 +27370,7 @@ _agregar("C0N22-CO01", "A02", {
     "incluir": ["JESUS", "CRISTO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: JESUS e HIJO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N22-CO01", "A03", {
@@ -27559,21 +27559,21 @@ _agregar("C0N22-CO01", "A10", {
 # -- C0N22-CO02: Creo en Dios Padre --
 _agregar("C0N22-CO02", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: Dios, Padre y Creador",
+    "titulo": "Crucigrama bíblico: Mt 16,16-17",
     "items": [
-        {"texto": "Primera Persona de la Santísima Trinidad, a quien llamamos así.", "respuesta": "PADRE"},
-        {"texto": "Palabra que describe a Dios como quien hizo todo lo que existe de la nada.", "respuesta": "CREADOR"},
-        {"texto": "Nombre del misterio de un solo Dios en tres personas: Padre, Hijo y Espíritu Santo.", "respuesta": "TRINIDAD"},
-        {"texto": "Cuidado constante de Dios Padre sobre su creación y sobre cada persona.", "respuesta": "PROVIDENCIA"},
-        {"texto": "Característica de Dios Padre: no tiene principio ni fin.", "respuesta": "ETERNO"},
-        {"texto": "Lo que Dios Padre nos tiene, según el Credo, incluso antes de que existiéramos.", "respuesta": "AMOR"},
-        {"texto": "Todo lo creado tiene en Dios Padre su ______, es decir, su punto de partida.", "respuesta": "ORIGEN"},
-        {"texto": "Título que expresa que Dios Padre puede hacer todo lo que quiere para el bien.", "respuesta": "TODOPODEROSO"},
+        {"texto": "Mt 16,16 — Pedro confiesa que Jesús es el Hijo de ______, el Creador.", "respuesta": "DIOS"},
+        {"texto": "Mt 16,16 — Pedro declara que Jesús es el ______ de Dios, su relación más íntima con él.", "respuesta": "HIJO"},
+        {"texto": "Mt 16,17 — Jesús dice que la fe de Pedro no nace de su propio esfuerzo: el Padre se la quiso ______.", "respuesta": "REVELAR"},
+        {"texto": "Mt 16,16 — Nombre con que se llamaba primero el discípulo que confiesa la fe, antes de recibir otro nombre.", "respuesta": "SIMON"},
+        {"texto": "Mt 16,16 — Nombre del discípulo que responde con una confesión de fe, al que Jesús llamará roca.", "respuesta": "PEDRO"},
+        {"texto": "Mt 16,17 — Quien responde a Pedro y lo felicita por su confesión de fe.", "respuesta": "JESUS"},
+        {"texto": "Mt 16,17 — Jesús dice que quien dio a Pedro esa luz es «mi ______ que está en el cielo».", "respuesta": "PADRE"},
+        {"texto": "Mt 16,17 — Lugar donde está el Padre que da a conocer a Pedro la identidad de Jesús (en plural).", "respuesta": "CIELOS"},
     ],
-    "incluir": ["PADRE", "CREADOR"],
+    "incluir": ["PADRE", "REVELAR"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con el primer artículo del Credo.",
-               "PADRE y CREADOR son las palabras centrales del contenido: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Mt 16,16-17: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "PADRE y REVELAR son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N22-CO02", "A02", {
@@ -27583,7 +27583,7 @@ _agregar("C0N22-CO02", "A02", {
     "incluir": ["PADRE", "CREADOR"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: PADRE y AMOR.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N22-CO02", "A03", {
@@ -27772,21 +27772,21 @@ _agregar("C0N22-CO02", "A10", {
 # -- C0N22-CO03: Creo en Jesucristo --
 _agregar("C0N22-CO03", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: Dios hecho hombre",
+    "titulo": "Crucigrama bíblico: Mt 16,13-17",
     "items": [
-        {"texto": "Misterio por el cual el Hijo de Dios se hizo hombre.", "respuesta": "ENCARNACION"},
-        {"texto": "Título de Jesús: quien libera del pecado entregando su vida por nosotros.", "respuesta": "REDENTOR"},
-        {"texto": "Palabra que resume la misión de Jesús: librarnos del pecado y darnos vida nueva.", "respuesta": "SALVACION"},
-        {"texto": "Otro título de Jesús: aquel que trae la salvación.", "respuesta": "SALVADOR"},
-        {"texto": "Según Juan, el Verbo de Dios se hizo ______.", "respuesta": "HOMBRE"},
-        {"texto": "Nombre que usa el evangelio de Juan para el Hijo de Dios antes de encarnarse: el ______.", "respuesta": "VERBO"},
-        {"texto": "Instrumento de muerte que Jesús acepta por amor para salvarnos.", "respuesta": "CRUZ"},
-        {"texto": "Relación que Jesús tiene con Dios Padre, confesada por Pedro en Mateo 16.", "respuesta": "HIJO"},
+        {"texto": "Mt 16,13 — Jesús se refiere a sí mismo con un título que habla de su condición humana: el Hijo del ______.", "respuesta": "HOMBRE"},
+        {"texto": "Mt 16,13 — Jesús quiere saber qué dice la gente de él, y empieza por ______ a sus seguidores.", "respuesta": "PREGUNTAR"},
+        {"texto": "Mt 16,13 — Jesús llegó a la región de ______ de Filipo, en el norte, y allí hizo su pregunta.", "respuesta": "CESAREA"},
+        {"texto": "Mt 16,14 — Nombre propio de cuatro letras del profeta bautizador con quien algunos confundían a Jesús.", "respuesta": "JUAN"},
+        {"texto": "Mt 16,17 — Nombre con que Jesús se dirige al discípulo que ha confesado su fe, antes de llamarlo roca.", "respuesta": "SIMON"},
+        {"texto": "Mt 16,16 — Seguidor que toma la palabra y responde por todos a la pregunta de Jesús sobre su identidad.", "respuesta": "PEDRO"},
+        {"texto": "Mt 16,16 — Pedro confiesa que Jesús es el Hijo de ______, el Creador.", "respuesta": "DIOS"},
+        {"texto": "Mt 16,14 — Algunos creían que Jesús era uno de estos mensajeros de Dios del pasado.", "respuesta": "PROFETAS"},
     ],
-    "incluir": ["ENCARNACION", "REDENTOR"],
+    "incluir": ["HOMBRE", "PREGUNTAR"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con quién es Jesucristo y su misión salvadora.",
-               "ENCARNACION y REDENTOR son las palabras centrales del contenido: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Mt 16,13-17: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "HOMBRE y PREGUNTAR son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N22-CO03", "A02", {
@@ -27796,7 +27796,7 @@ _agregar("C0N22-CO03", "A02", {
     "incluir": ["ENCARNACION", "REDENTOR"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: CRUZ e HIJO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N22-CO03", "A03", {
@@ -27985,21 +27985,21 @@ _agregar("C0N22-CO03", "A10", {
 # -- C0N22-CO04: Creo en el Espíritu Santo --
 _agregar("C0N22-CO04", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: el Espíritu que da vida",
+    "titulo": "Crucigrama bíblico: Mt 16,13-17",
     "items": [
-        {"texto": "Tercera Persona de la Santísima Trinidad.", "respuesta": "ESPIRITU"},
-        {"texto": "Título del Espíritu Santo: quien nos hace santos y nos une a Dios.", "respuesta": "SANTIFICADOR"},
-        {"texto": "Nombre que Jesús usa para el Espíritu Santo: el ______, el que ayuda y consuela.", "respuesta": "PARACLITO"},
-        {"texto": "Capacidades que el Espíritu Santo regala para vivir la fe: los ______ del Espíritu.", "respuesta": "DONES"},
-        {"texto": "Día en que el Espíritu Santo desciende sobre los apóstoles y nace la misión de la Iglesia.", "respuesta": "PENTECOSTES"},
-        {"texto": "Función del Espíritu Santo: acompañar y animar a los discípulos en las dificultades.", "respuesta": "CONSOLADOR"},
-        {"texto": "El Espíritu Santo es llamado «Señor y dador de ______» en el Credo.", "respuesta": "VIDA"},
-        {"texto": "Imagen bíblica del Espíritu Santo asociada al viento y al aliento de Dios.", "respuesta": "SOPLO"},
+        {"texto": "Mt 16,17 — Jesús dice que Pedro no lo supo por sí mismo: se lo dio a conocer el Padre; el verbo es ______.", "respuesta": "REVELAR"},
+        {"texto": "Mt 16,17 — Jesús dice que lo que Pedro sabe viene de «mi ______ que está en el cielo».", "respuesta": "PADRE"},
+        {"texto": "Mt 16,14 — Apodo del profeta del desierto que sumergía a la gente en el Jordán, con quien algunos confundían a Jesús.", "respuesta": "BAUTISTA"},
+        {"texto": "Mt 16,14 — Nombre propio de cuatro letras de ese profeta bautizador; algunos pensaban que Jesús era él.", "respuesta": "JUAN"},
+        {"texto": "Mt 16,13 — Jesús pregunta qué dice la gente del Hijo del ______, título que usa para sí mismo.", "respuesta": "HOMBRE"},
+        {"texto": "Mt 16,17 — Nombre con que Jesús llama a su discípulo, hijo de Jonás, al felicitarlo por su fe.", "respuesta": "SIMON"},
+        {"texto": "Mt 16,14 — Profeta antiguo que subió al cielo en un carro de fuego; algunos creían que había vuelto en Jesús.", "respuesta": "ELIAS"},
+        {"texto": "Mt 16,13 — Grupo cercano al que Jesús dirige sus preguntas sobre su identidad.", "respuesta": "DISCIPULOS"},
     ],
-    "incluir": ["ESPIRITU", "PENTECOSTES"],
+    "incluir": ["REVELAR", "PADRE"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con quién es el Espíritu Santo y cómo actúa.",
-               "ESPIRITU y PENTECOSTES son las palabras centrales del contenido: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Mt 16,13-17: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "REVELAR y PADRE son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N22-CO04", "A02", {
@@ -28009,7 +28009,7 @@ _agregar("C0N22-CO04", "A02", {
     "incluir": ["ESPIRITU", "PENTECOSTES"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: VIDA y DONES.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N22-CO04", "A03", {
@@ -28198,21 +28198,21 @@ _agregar("C0N22-CO04", "A10", {
 # -- C0N22-CO05: Creo en la Iglesia y los sacramentos --
 _agregar("C0N22-CO05", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: la Iglesia, signo de gracia",
+    "titulo": "Crucigrama bíblico: Mt 16,17-19",
     "items": [
-        {"texto": "Comunidad de los que creen en Jesucristo y forman su Cuerpo.", "respuesta": "IGLESIA"},
-        {"texto": "Signo eficaz de la gracia de Dios, instituido por Jesús: palabra clave de los siete ritos centrales de la fe.", "respuesta": "SACRAMENTO"},
-        {"texto": "Primer sacramento que nos incorpora a la Iglesia y nos hace hijos de Dios.", "respuesta": "BAUTISMO"},
-        {"texto": "Sacramento en el que recibimos el Cuerpo y la Sangre de Cristo.", "respuesta": "EUCARISTIA"},
-        {"texto": "Imagen con la que San Pablo describe a la Iglesia: el ______ de Cristo.", "respuesta": "CUERPO"},
-        {"texto": "Lo que es un sacramento: un ______ visible de una realidad invisible de gracia.", "respuesta": "SIGNO"},
-        {"texto": "Grupo de personas unidas por la misma fe y una misma misión.", "respuesta": "COMUNIDAD"},
-        {"texto": "Don gratuito de Dios que recibimos especialmente a través de los sacramentos.", "respuesta": "GRACIA"},
+        {"texto": "Mt 16,18 — Comunidad que Jesús promete levantar sobre el discípulo confesor: «mi ______».", "respuesta": "IGLESIA"},
+        {"texto": "Mt 16,18 — Base firme de cantera (seis letras) sobre la que Jesús levantará su comunidad.", "respuesta": "PIEDRA"},
+        {"texto": "Mt 16,18 — Nuevo nombre que Jesús da al discípulo que lo confesó, y sobre el que fundará su comunidad.", "respuesta": "PEDRO"},
+        {"texto": "Mt 16,17 — Nombre con que Jesús llama primero al discípulo, hijo de Jonás, antes de darle otro nombre.", "respuesta": "SIMON"},
+        {"texto": "Mt 16,19 — Jesús promete dar a Pedro estos objetos que abren y cierran puertas, signo de autoridad.", "respuesta": "LLAVES"},
+        {"texto": "Mt 16,19 — Jesús promete a Pedro autoridad sobre el ______ de los cielos, el gobierno de Dios.", "respuesta": "REINO"},
+        {"texto": "Mt 16,19 — Lugar de Dios donde queda confirmado lo que se decide aquí abajo (plural).", "respuesta": "CIELOS"},
+        {"texto": "Mt 16,19 — Lo que Pedro ate o desate aquí, sobre la ______, quedará confirmado en lo alto.", "respuesta": "TIERRA"},
     ],
-    "incluir": ["IGLESIA", "SACRAMENTO"],
+    "incluir": ["IGLESIA", "PIEDRA"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con la Iglesia como comunidad y los sacramentos como signos.",
-               "IGLESIA y SACRAMENTO son las palabras centrales del contenido: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Mt 16,17-19: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "IGLESIA y PIEDRA son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N22-CO05", "A02", {
@@ -28222,7 +28222,7 @@ _agregar("C0N22-CO05", "A02", {
     "incluir": ["IGLESIA", "SACRAMENTO"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: CUERPO y SIGNO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N22-CO05", "A03", {
@@ -28411,21 +28411,21 @@ _agregar("C0N22-CO05", "A10", {
 # -- C0N22-CO06: Resurrección y vida eterna --
 _agregar("C0N22-CO06", "A01", {
     "tipo": "crucigrama",
-    "titulo": "Crucigrama: la tumba vacía y la esperanza",
+    "titulo": "Crucigrama bíblico: Mt 16,18-20",
     "items": [
-        {"texto": "Milagro central de la fe cristiana: Jesús vuelve a la vida después de morir en la cruz.", "respuesta": "RESURRECCION"},
-        {"texto": "Lo que Jesús tiene después de resucitar: ya no puede morir, vive para siempre.", "respuesta": "VIDA"},
-        {"texto": "Tipo de vida que esperamos los cristianos después de la muerte, junto a Dios para siempre.", "respuesta": "ETERNA"},
-        {"texto": "Lugar donde habían puesto el cuerpo de Jesús y que las mujeres encontraron vacío.", "respuesta": "SEPULCRO"},
-        {"texto": "Estado en que encontraron el sepulcro las mujeres la mañana de Pascua.", "respuesta": "VACIO"},
-        {"texto": "Actitud cristiana ante la muerte, basada en la resurrección de Jesús: no es desesperación, sino ______.", "respuesta": "ESPERANZA"},
-        {"texto": "Palabra que describe a Jesús después de la resurrección: está ______, vivo para siempre.", "respuesta": "RESUCITADO"},
-        {"texto": "Plenitud de vida, luz y felicidad junto a Dios que esperamos alcanzar.", "respuesta": "GLORIA"},
+        {"texto": "Mt 16,18 — Comunidad de Jesús sobre la que no prevalecerán las fuerzas del mal: «mi ______».", "respuesta": "IGLESIA"},
+        {"texto": "Mt 16,19 — Verbo de sujetar con una cuerda (cuatro letras): lo que Pedro haga así aquí abajo, quedará así en lo alto.", "respuesta": "ATAR"},
+        {"texto": "Mt 16,19 — Verbo que significa liberar de las ligaduras (siete letras): tarea de Pedro, confirmada en lo alto.", "respuesta": "DESATAR"},
+        {"texto": "Mt 16,20 — Jesús pidió a sus seguidores que por ahora no se lo dijeran a ______: ni una sola persona.", "respuesta": "NADIE"},
+        {"texto": "Mt 16,20 — Quienes reciben de Jesús la orden de guardar silencio por ahora sobre su identidad.", "respuesta": "DISCIPULOS"},
+        {"texto": "Mt 16,19 — El mundo de los humanos, donde Pedro ejercerá la autoridad que Jesús le promete.", "respuesta": "TIERRA"},
+        {"texto": "Mt 16,19 — Autoridad sobre el ______ de los cielos, el gobierno de Dios, que Jesús promete a Pedro.", "respuesta": "REINO"},
+        {"texto": "Mt 16,20 — Maestro de Nazaret que pide discreción por ahora sobre su verdadera identidad.", "respuesta": "JESUS"},
     ],
-    "incluir": ["RESURRECCION", "VIDA"],
+    "incluir": ["IGLESIA", "DESATAR"],
     "requisito": 6,
-    "pistas": ["Todas las palabras tienen que ver con la Pascua y la esperanza cristiana.",
-               "RESURRECCION y VIDA son las palabras centrales del contenido: empieza por esas."],
+    "pistas": ["Todas las palabras salen de Mt 16,18-20: la referencia de cada pista te dice en qué versículo buscarla en tu Biblia.",
+               "IGLESIA y DESATAR son las palabras centrales de este tema: empieza por esas."],
 })
 
 _agregar("C0N22-CO06", "A02", {
@@ -28435,7 +28435,7 @@ _agregar("C0N22-CO06", "A02", {
     "incluir": ["RESURRECCION", "VIDA"],
     "requisito": 6,
     "pistas": ["Busca primero las palabras más cortas: VIDA y VACIO.",
-               "Las ocho palabras son las mismas del crucigrama de esta actividad."],
+               "Las ocho palabras están relacionadas con el tema de este contenido."],
 })
 
 _agregar("C0N22-CO06", "A03", {
