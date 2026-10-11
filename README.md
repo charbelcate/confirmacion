@@ -80,7 +80,7 @@ catequesis-confirmacion-pwa/
 ├── .dockerignore
 ├── backend/
 │   ├── app.py           (API REST — idéntico en lógica al de Primera Comunión)
-│   ├── motor.py         (motor de reforzamiento — sin cambios)
+│   ├── motor.py         (motor de reforzamiento — escalera de 10 intentos; al 10.º se muestran resultados y se sigue adelante)
 │   ├── db.py             (persistencia SQLite — sin cambios, DB propia)
 │   ├── nlp_eval.py       (similitud semántica opcional — sin cambios)
 │   ├── content.py        (base de conocimiento — C0N1 a C0N3, 180 actividades)
@@ -103,3 +103,19 @@ catequesis-confirmacion-pwa/
   9 del documento fuente **no** se implementó todavía: por ahora se
   reutilizan los mismos mensajes de logro/falta genéricos del proyecto
   de Primera Comunión.
+
+## Regla de evaluación: acompañar, no bloquear (10 intentos)
+
+La evaluación existe para acompañar. Cada actividad admite hasta **10 intentos**
+con ayuda graduada (retroalimentación → pistas 1-3 → otro enfoque → explicación →
+ejemplo resuelto → paso a paso → último intento con aviso). Si al **décimo
+intento** no se alcanza el requisito, la app **muestra los resultados** (cada
+consigna con su respuesta correcta) y el joven puede **seguir adelante**:
+
+- La actividad queda `COMPLETADA_CON_RESULTADOS` y cuenta como terminada para
+  desbloquear el siguiente contenido.
+- El contenido no pasa a `LOGRADO` por eso; si 2 o más actividades del mismo
+  contenido terminan con resultados, el contenido pasa a
+  `REQUIERE_ACOMPANAMIENTO` y aparece en rojo en el módulo del catequista.
+- El joven puede volver a intentar la actividad cuando quiera; si la logra,
+  pasa a `LOGRADO`.

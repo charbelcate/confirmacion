@@ -392,7 +392,7 @@ def resumen_nino(codigo):
     filas = cur.fetchall()
     cur.close()
     conn.close()
-    conteos = {"LOGRADO": 0, "EN_PROCESO": 0, "REQUIERE_ACOMPANAMIENTO": 0}
+    conteos = {"LOGRADO": 0, "EN_PROCESO": 0, "COMPLETADA_CON_RESULTADOS": 0, "REQUIERE_ACOMPANAMIENTO": 0}
     for f in filas:
         conteos[f["estado"]] = f["n"]
     return conteos

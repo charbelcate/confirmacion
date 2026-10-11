@@ -525,11 +525,13 @@ MENSAJE_BLOQUEADO = ("No puedes avanzar todavía: primero debes completar todas 
 
 
 def contenido_completo(codigo, contenido_id):
-    """True si TODAS las actividades de ese contenido están LOGRADO para
-    este niño (no solo el 80% que ya lo marca como LOGRADO)."""
+    """True si TODAS las actividades de ese contenido están terminadas para
+    este niño: LOGRADO o COMPLETADA_CON_RESULTADOS (tras 10 intentos se
+    muestran los resultados y se puede seguir adelante; ninguna actividad
+    bloquea el camino)."""
     aids = content.actividades_de_contenido(contenido_id)
     estados = db.estados_de_contenido(codigo, aids)
-    return len(estados) > 0 and all(e == "LOGRADO" for e in estados)
+    return len(estados) > 0 and all(motor.actividad_terminada(e) for e in estados)
 
 
 def contenido_desbloqueado(codigo, contenido_id):
@@ -565,16 +567,19 @@ def api_encuentros():
         contenidos = content.contenidos_de_encuentro(e["id"])
         total_actividades = 0
         logradas = 0
+        completadas = 0
         for c in contenidos:
             aids = content.actividades_de_contenido(c["id"])
             estados = db.estados_de_contenido(codigo, aids)
             total_actividades += len(aids)
             logradas += sum(1 for est in estados if est == "LOGRADO")
+            completadas += sum(1 for est in estados if motor.actividad_terminada(est))
         desbloqueado, requiere = contenido_desbloqueado(codigo, contenidos[0]["id"])
         out.append({
             "id": e["id"], "titulo": e["titulo"], "texto_biblico": e["texto_biblico"],
             "total_contenidos": len(contenidos), "total_actividades": total_actividades,
             "logradas": logradas,
+            "completadas": completadas,
             "desbloqueado": desbloqueado,
             "requiere": requiere,
         })
@@ -601,6 +606,7 @@ def api_encuentro(encuentro_id):
             "titulo": c["titulo"],
             "total_actividades": len(aids),
             "logradas": sum(1 for e in estados if e == "LOGRADO"),
+            "completadas": sum(1 for e in estados if motor.actividad_terminada(e)),
             "estado": motor.estado_contenido(estados),
             "desbloqueado": desbloqueado,
             "requiere": requiere,
@@ -692,7 +698,11 @@ def api_responder(actividad_id):
     intento_actual = (estado_previo["intentos"] if estado_previo else 0) + 1
 
     aciertos, total = evaluar_respuestas(a, respuestas)
-    resultado = motor.evaluar(a, aciertos, total, intento_actual)
+    resultado = motor.evaluar(a, aciertos, total, intento_actual,
+                              estado_previo["estado"] if estado_previo else None)
+    # Un reintento voluntario después de LOGRADO nunca hace retroceder la actividad.
+    if estado_previo and estado_previo["estado"] == motor.LOGRADO and not resultado["logrado"]:
+        resultado["estado_actividad"] = motor.LOGRADO
 
     # Si alguna respuesta a un ítem "abierta" contiene una palabra de
     # content.PALABRAS_ALERTA, o no toca ninguna "palabras_esperadas" del
@@ -727,11 +737,14 @@ def api_responder(actividad_id):
     # "contenido_completo": TODAS sus actividades logradas (no solo el 80% que
     # ya marca el contenido como LOGRADO) — es lo que dispara la invitación a
     # pasar al siguiente tema, para que aparezca justo al terminar la última.
-    contenido_completo = len(estados) > 0 and all(e == "LOGRADO" for e in estados)
+    contenido_completo = len(estados) > 0 and all(motor.actividad_terminada(e) for e in estados)
 
     respuesta_correcta = None
-    if resultado["mostrar_respuesta"]:
+    resultados = None
+    if resultado["mostrar_resultados"]:
         respuesta_correcta = extraer_respuesta_correcta(a)
+        resultados = extraer_resultados(a)
+    ejemplo = extraer_ejemplo(a) if resultado["mostrar_ejemplo"] else None
 
     contenido_actual = content.contenido_de(a["contenido_id"])
     siguiente = content.siguiente_contenido_de(a["contenido_id"])
@@ -747,6 +760,8 @@ def api_responder(actividad_id):
         "intento": intento_actual,
         "pistas_usadas": pistas_usadas,
         "respuesta_correcta": respuesta_correcta,
+        "resultados": resultados,
+        "ejemplo": ejemplo,
         "estado_contenido": estado_contenido,
         "contenido_completo": contenido_completo,
         "contenido_titulo": contenido_actual["titulo"] if contenido_actual else None,
@@ -757,6 +772,48 @@ def api_responder(actividad_id):
         ),
         "camino_completo": camino_completo,
     })
+
+
+def extraer_resultados(actividad):
+    """Lista de {"texto", "respuesta", "abierta"} para la pantalla de
+    resultados que se muestra al décimo intento: cada consigna con su
+    respuesta correcta. En respuestas abiertas no hay una única respuesta:
+    se muestran las ideas esperadas como criterio."""
+    tipo = actividad["tipo"]
+    if tipo == "sopa_letras":
+        return [{"texto": "Palabra escondida", "respuesta": p, "abierta": False}
+                for p in actividad["palabras"]]
+    if tipo == "unir_parejas":
+        return [{"texto": p["termino"], "respuesta": p["definicion"], "abierta": False}
+                for p in actividad["pares"]]
+    out = []
+    for it in actividad.get("items", []):
+        texto = it.get("texto", "")
+        if it.get("abierta"):
+            esperadas = it.get("palabras_esperadas") or []
+            resp = ("Respuesta personal. Se esperaba que mencionaras ideas como: " + ", ".join(esperadas)
+                    if esperadas else "Respuesta personal: no hay una única respuesta correcta.")
+            out.append({"texto": texto, "respuesta": resp, "abierta": True})
+        elif "respuesta" in it:
+            r = it["respuesta"]
+            if isinstance(r, bool):
+                r = "Verdadero" if r else "Falso"
+            out.append({"texto": texto, "respuesta": r, "abierta": False})
+        elif "opciones" in it:
+            idxs = it.get("correctas")
+            if idxs is None:
+                idxs = [it["correcta"]] if "correcta" in it else []
+            out.append({"texto": texto, "respuesta": " · ".join(it["opciones"][i] for i in idxs), "abierta": False})
+    return out or None
+
+
+def extraer_ejemplo(actividad):
+    """Una sola respuesta resuelta como modelo (intentos 7 a 9): la primera
+    consigna que no sea abierta."""
+    for r in extraer_resultados(actividad) or []:
+        if not r["abierta"]:
+            return r
+    return None
 
 
 def extraer_respuesta_correcta(actividad):
@@ -858,6 +915,18 @@ def _normalizar_grupo(texto):
     return texto  # por si el catequista usa otro formato de grupo
 
 
+def _contenidos_que_requieren_acompanamiento(codigo):
+    """Cuántos contenidos de este joven tienen 2 o más actividades que
+    terminaron con resultados mostrados (motor.UMBRAL_ACOMPANAMIENTO)."""
+    progreso = db.progreso_completo_nino(codigo)
+    por_contenido = {}
+    for aid, p in progreso.items():
+        a = content.ACTIVIDADES.get(aid)
+        if a and p and p.get("estado") == motor.COMPLETADA_CON_RESULTADOS:
+            por_contenido[a["contenido_id"]] = por_contenido.get(a["contenido_id"], 0) + 1
+    return sum(1 for n in por_contenido.values() if n >= motor.UMBRAL_ACOMPANAMIENTO)
+
+
 @app.route("/api/catequista/ninos")
 def api_catequista_ninos():
     if not _autorizado_catequista():
@@ -876,6 +945,8 @@ def api_catequista_ninos():
             continue
         conteos = db.resumen_nino(n["codigo"])
         logradas = conteos["LOGRADO"]
+        con_resultados = conteos.get("COMPLETADA_CON_RESULTADOS", 0)
+        contenidos_acompanar = _contenidos_que_requieren_acompanamiento(n["codigo"])
         dias_inactivo = _dias_desde(n["ultima_actividad"] or n["creado_en"])
         out.append({
             "codigo": n["codigo"],
@@ -886,8 +957,10 @@ def api_catequista_ninos():
             "logradas": logradas,
             "total_actividades": total_actividades,
             "en_proceso": conteos["EN_PROCESO"],
-            "requiere_acompanamiento": conteos["REQUIERE_ACOMPANAMIENTO"],
-            "estado": _semaforo(logradas, total_actividades, conteos["REQUIERE_ACOMPANAMIENTO"], dias_inactivo),
+            "con_resultados": con_resultados,
+            "requiere_acompanamiento": conteos["REQUIERE_ACOMPANAMIENTO"] + contenidos_acompanar,
+            "estado": _semaforo(logradas + con_resultados, total_actividades,
+                                conteos["REQUIERE_ACOMPANAMIENTO"] + contenidos_acompanar, dias_inactivo),
         })
     # Los que necesitan ánimo primero, para que el catequista los vea de una vez.
     orden_estado = {"necesita_animo": 0, "en_proceso": 1, "sin_empezar": 2, "al_dia": 3}

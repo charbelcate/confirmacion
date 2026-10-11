@@ -136,6 +136,7 @@ input[type="text"] {
 .badge-EN_PROCESO { background: #FCEBC9; color: #8A5A00; }
 .badge-LOGRADO { background: #DFF3E4; color: var(--verde); }
 .badge-REQUIERE_ACOMPANAMIENTO { background: #FBE2DF; color: var(--rojo); }
+.badge-COMPLETADA_CON_RESULTADOS { background: #E3ECF9; color: #2C5AA0; }
 
 /* --- bloqueo de avance (no se puede saltar sin completar lo anterior) --- */
 .tarjeta-bloqueada { cursor: not-allowed; opacity: 0.55; }
@@ -374,6 +375,17 @@ textarea.input-abierta {
 .catequista-actividad.estado-logrado .catequista-actividad-estado { color: var(--verde); }
 .catequista-actividad.estado-en_proceso .catequista-actividad-estado { color: #8A5A00; }
 .catequista-actividad.estado-requiere_acompanamiento .catequista-actividad-estado { color: var(--rojo); }
+.catequista-actividad.estado-completada_con_resultados .catequista-actividad-estado { color: #2C5AA0; }
+
+/* Pantalla de resultados (décimo intento) y ejemplo resuelto (intentos 7-9) */
+.panel-feedback.resultados { border-color: #2C5AA0; }
+.panel-resultados { margin-top: .6rem; }
+.panel-resultados .resultados-logrado { font-weight: 600; color: var(--verde); margin: .2rem 0; }
+.panel-resultados .resultados-titulo { font-weight: 600; margin: .6rem 0 .2rem; }
+.lista-resultados { padding-left: 1.2rem; margin: .2rem 0 .6rem; }
+.lista-resultados li { margin: .35rem 0; line-height: 1.35; }
+.lista-resultados .resultado-respuesta { color: #2C5AA0; }
+.ejemplo { background: #F3F7FD; border-radius: 8px; padding: .5rem .7rem; margin: .5rem 0; }
 .catequista-actividad.estado-no_iniciada .catequista-actividad-estado,
 .catequista-actividad.estado-no_logrado .catequista-actividad-estado { color: var(--gris); }
 

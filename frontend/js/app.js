@@ -17,6 +17,7 @@ const ICONOS_TIPO = {
 const NOMBRES_ESTADO = {
   null: "Por comenzar", NO_LOGRADO: "Por comenzar", EN_PROCESO: "En camino",
   LOGRADO: "¡Logrado!", REQUIERE_ACOMPANAMIENTO: "Pide ayuda a tu catequista",
+  COMPLETADA_CON_RESULTADOS: "Resultados revisados",
   NO_INICIADA: "Sin empezar",
 };
 
@@ -630,7 +631,7 @@ async function pantallaEncuentros() {
     const data = await api(`/api/encuentros?nino=${encodeURIComponent(getCodigo())}`);
     const { encuentros } = data;
     const caminoCompleto = encuentros.length > 0 && encuentros.every(
-      (e) => e.total_actividades > 0 && e.logradas === e.total_actividades
+      (e) => e.total_actividades > 0 && (e.completadas ?? e.logradas) === e.total_actividades
     );
 
     $app.innerHTML = `
@@ -652,7 +653,10 @@ async function pantallaEncuentros() {
 
     const $lista = document.getElementById("lista-encuentros");
     encuentros.forEach((e, i) => {
-      const completo = e.total_actividades > 0 && e.logradas === e.total_actividades;
+      // "Completo" = todas las actividades terminadas: logradas o completadas
+      // con resultados (tras 10 intentos ninguna actividad bloquea el camino).
+      const completadas = e.completadas ?? e.logradas;
+      const completo = e.total_actividades > 0 && completadas === e.total_actividades;
       const bloqueado = e.desbloqueado === false;
       const btn = document.createElement("button");
       btn.className = "tarjeta" + (bloqueado ? " tarjeta-bloqueada" : "");
@@ -801,10 +805,14 @@ async function pantallaActividad(actividadId) {
         body: JSON.stringify({ nino: getCodigo(), respuestas }),
       });
       mostrarFeedback(r, $feedback, actividad);
-      if (r.logrado) {
-        $comprobar.textContent = "¡Listo! Volver al tema";
-        $comprobar.onclick = () => irA(`#/contenido/${actividad.contenido_id}`);
-        $comprobar.disabled = false;
+      if (r.logrado || r.mostrar_resultados) {
+        // Logrado, o décimo intento: se muestran los resultados y se sigue
+        // adelante. Se reemplaza el botón para no volver a contar intentos.
+        const $nuevo = $comprobar.cloneNode(false);
+        $nuevo.textContent = r.logrado ? "¡Listo! Volver al tema" : "Seguir adelante";
+        $nuevo.disabled = false;
+        $nuevo.addEventListener("click", () => irA(`#/contenido/${actividad.contenido_id}`));
+        $comprobar.replaceWith($nuevo);
       } else {
         $comprobar.disabled = false;
       }
@@ -816,10 +824,26 @@ async function pantallaActividad(actividadId) {
 }
 
 function mostrarFeedback(r, $feedback, actividad) {
-  const clase = r.logrado ? "ok" : (r.estado_actividad === "REQUIERE_ACOMPANAMIENTO" ? "acompanamiento" : "");
+  const clase = r.logrado ? "ok" : (r.mostrar_resultados ? "resultados" : (r.estado_actividad === "REQUIERE_ACOMPANAMIENTO" ? "acompanamiento" : ""));
   let extra = "";
   if (r.pista) extra += `<p class="pista">💡 Pista: ${r.pista}</p>`;
-  if (r.respuesta_correcta) extra += `<p class="respuesta">Respuesta: ${formatearRespuesta(actividad, r.respuesta_correcta)}</p>`;
+  if (r.ejemplo && !r.mostrar_resultados) {
+    extra += `<p class="ejemplo">🧭 Ejemplo resuelto: ${r.ejemplo.texto ? `${r.ejemplo.texto} → ` : ""}<strong>${r.ejemplo.respuesta}</strong></p>`;
+  }
+  if (r.mostrar_resultados) {
+    // Décimo intento: primero lo que sí logró, luego cada consigna con su
+    // respuesta correcta, y el botón "Seguir adelante" (ver pantallaActividad).
+    const filas = (r.resultados || []).map((it) => `
+      <li>${it.texto ? `<span class="resultado-texto">${it.texto}</span> ` : ""}<strong class="resultado-respuesta">${it.respuesta}</strong></li>`).join("");
+    extra += `
+      <div class="panel-resultados">
+        <p class="resultados-logrado">✔ Lograste ${r.aciertos} de ${r.total}. ¡Eso también cuenta!</p>
+        <p class="resultados-titulo">📖 Estas son las respuestas:</p>
+        ${filas ? `<ol class="lista-resultados">${filas}</ol>`
+                : (r.respuesta_correcta ? `<p class="respuesta">${formatearRespuesta(actividad, r.respuesta_correcta)}</p>` : "")}
+        <p class="subinfo">Puedes volver a esta actividad cuando quieras para intentarlo de nuevo.</p>
+      </div>`;
+  }
 
   // Si con esta actividad se completaron TODAS las del contenido (no solo
   // esta), se invita de una vez a seguir con el siguiente tema. Si además
@@ -830,13 +854,14 @@ function mostrarFeedback(r, $feedback, actividad) {
   // (22 temas) esté terminado — solo que se llegó al final de lo cargado
   // hasta el momento. El texto se actualizará al agregar C0N4-C0N22.
   let bannerContenido = "";
-  if (r.logrado && r.camino_completo) {
+  const terminada = r.logrado || r.mostrar_resultados;
+  if (terminada && r.camino_completo) {
     bannerContenido = `
       <div class="panel-contenido-logrado">
         <p class="mensaje">🎉 ¡Felicidades! Terminaste «${r.contenido_titulo}» y completaste el prototipo de los tres primeros temas (C0N1-C0N3).</p>
         <button type="button" class="btn-primario" id="btn-siguiente-contenido">Ver mi celebración del prototipo</button>
       </div>`;
-  } else if (r.logrado && r.contenido_completo) {
+  } else if (terminada && r.contenido_completo) {
     bannerContenido = r.siguiente_contenido
       ? `<div class="panel-contenido-logrado">
            <p class="mensaje">🎉 ¡Felicidades! Terminaste las actividades de «${r.contenido_titulo}».</p>
@@ -851,7 +876,7 @@ function mostrarFeedback(r, $feedback, actividad) {
   $feedback.innerHTML = `
     <div class="panel-feedback ${clase}">
       <p class="mensaje">${r.mensaje}</p>
-      <p class="subinfo">Aciertos: ${r.aciertos}/${r.total} · Necesitas: ${r.requisito}/${r.total}</p>
+      <p class="subinfo">Aciertos: ${r.aciertos}/${r.total} · Necesitas: ${r.requisito}/${r.total}${!r.logrado && r.intento <= (r.intentos_maximos || 10) ? ` · Intento ${r.intento} de ${r.intentos_maximos || 10}` : ""}</p>
       ${extra}
     </div>
     ${bannerContenido}`;
@@ -882,7 +907,7 @@ async function pantallaCelebracionFinal() {
     const data = await api(`/api/encuentros?nino=${encodeURIComponent(getCodigo())}`);
     const { encuentros } = data;
     const caminoCompleto = encuentros.length > 0 && encuentros.every(
-      (e) => e.total_actividades > 0 && e.logradas === e.total_actividades
+      (e) => e.total_actividades > 0 && (e.completadas ?? e.logradas) === e.total_actividades
     );
     if (!caminoCompleto) { irA("#/home"); return; }
 

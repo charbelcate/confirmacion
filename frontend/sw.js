@@ -11,7 +11,7 @@
 // versión anterior, incompatible con los datos que manda el servidor
 // actualizado). Con red-primero, siempre se usa la versión más reciente
 // cuando hay conexión, y el caché solo se usa si el teléfono está sin señal.
-const CACHE = "catequesis-confirmacion-v1";
+const CACHE = "catequesis-confirmacion-v2";
 const ARCHIVOS = [
   "/", "/index.html", "/css/style.css", "/js/app.js", "/manifest.json",
   "/icons/icon-192.png", "/icons/icon-512.png",
